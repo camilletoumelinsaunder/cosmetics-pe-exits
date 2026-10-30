@@ -1,0 +1,1274 @@
+{
+ "companies": [
+  {
+   "company": "Solabia Group",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Actifs biotech / ingrédients haute performance (fermentation, extraction végétale) + diagnostic",
+   "hq_city": "Paris",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Astorg (fonds Astorg VIII)",
+     "role": "majoritaire",
+     "entry_date": "2025-05",
+     "deal_type": "LBO secondaire",
+     "seller": "TA Associates",
+     "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719",
+     "source_title": "Astorg prend le contrôle de Solabia",
+     "source_date": "2025-05-08"
+    },
+    {
+     "name": "TA Associates",
+     "role": "minoritaire",
+     "entry_date": "2021",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719",
+     "source_title": "Astorg prend le contrôle de Solabia",
+     "source_date": "2025-05-08"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "TA Associates (majoritaire)",
+     "entry": "fin 2021",
+     "exit": "2025 (cède la majorité à Astorg, réinvestit)",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Solabia-se-refait-une-beaute-avec-un-fonds-mid-cap-529292"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "130 M€",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Solabia-se-refait-une-beaute-avec-un-fonds-mid-cap-529292"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "près de 60 M€ (estimation presse citant Capital Finance)",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 900 salariés",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719"
+    },
+    {
+     "metric": "autre",
+     "value": "Valeur d'entreprise estimée 1,1-1,2 Md€ (~20x EBITDA), non officielle",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Signature mai 2025, sous réserve d'autorisations; CFNEWS date l'opération liée au 01/10/2025 (probable closing). TA Associates réinvestit aux côtés d'Astorg. Entrée récente: pas de signal de sortie."
+  },
+  {
+   "company": "Sophim",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Ingrédients végétaux (squalane végétal d'olive)",
+   "hq_city": "Peyruis (Alpes-de-Haute-Provence)",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Smalt Capital (ex-ACG Management)",
+     "role": "minoritaire",
+     "entry_date": "2014",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.personalcareinsights.com/news/sophim-accelerates-global-reach-of-natural-cosmetic-ingredients-with-%E2%82%AC20m-funding.html",
+     "source_title": "Sophim accelerates global reach of natural cosmetic ingredients with €20M funding",
+     "source_date": "2023-09-13"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Jacques Margnat",
+    "title": "Président (Alexis Margnat: directeur général)",
+    "source_url": "https://www.personalcareinsights.com/news/sophim-accelerates-global-reach-of-natural-cosmetic-ingredients-with-%E2%82%AC20m-funding.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 50 M€ (attendu)",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/Sophim-se-nimbe-d-un-fonds-familier-455764"
+    },
+    {
+     "metric": "autre",
+     "value": "Financement de 20 M€ dont 4,5 M€ en fonds propres apportés par Smalt Capital (seul investisseur financier)",
+     "year": "2023",
+     "source_url": "https://www.personalcareinsights.com/news/sophim-accelerates-global-reach-of-natural-cosmetic-ingredients-with-%E2%82%AC20m-funding.html"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "DOUTEUX sur le rôle: CFNEWS classe l'opération de sept. 2023 en 'OBO' ('Sophim se nimbe d'un fonds familier', opération LBO datée 12/09/2023) mais la part de Smalt n'est pas publiée; Smalt accompagne Sophim depuis 2014 (année d'entrée reprise d'un article CosmeticObs vu en résultat de recherche, non lu intégralement). Rôle 'minoritaire' supposé à vérifier."
+  },
+  {
+   "company": "Groupe Aiglon",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Émollients minéraux et naturels (vaselines, cires, gels, huiles blanches) pour cosmétique et pharma",
+   "hq_city": "Précy-sur-Oise",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Trajan Capital",
+     "role": "majoritaire",
+     "entry_date": "2025-07",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Aiglon-hydrate-son-capital-avec-un-MBI-primaire-543347",
+     "source_title": "Aiglon hydrate son capital avec un MBI primaire",
+     "source_date": "2025-10-01"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Philippe Conti (ancien président, reste actionnaire minoritaire)",
+     "entry": null,
+     "exit": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/gregoire-huet-devient-president-d,26608"
+    }
+   ],
+   "ceo": {
+    "name": "Grégoire Huet",
+    "title": "Président",
+    "source_url": "https://www.premiumbeautynews.com/fr/gregoire-huet-devient-president-d,26608"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 14 M€",
+     "year": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Aiglon-hydrate-son-capital-avec-un-MBI-primaire-543347"
+    },
+    {
+     "metric": "autre",
+     "value": "Plus de 200 clients",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/gregoire-huet-devient-president-d,26608"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "MBI primaire (CFNEWS, opération datée 29/07/2025). Premium Beauty News parle d'une société 'récemment reprise' par Trajan; pourcentage non publié (rôle majoritaire déduit de 'reprise'). Entrée récente."
+  },
+  {
+   "company": "Essences & Parfums",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Compositions parfumées (maison de parfums B2B indépendante)",
+   "hq_city": "Grasse",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Sagard (Sagard Europe MidCap)",
+     "role": "majoritaire",
+     "entry_date": "2026-05",
+     "deal_type": "LBO secondaire",
+     "seller": "Trajan",
+     "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/",
+     "source_title": "Squire Patton Boggs Advises on Sale of Essences et Parfums",
+     "source_date": "2026-02-12"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Trajan (contrôle, MBI)",
+     "entry": "2023",
+     "exit": "2026-05",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Essences-Parfums-s-impregne-d-un-fonds-mid-cap-558659"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 25 M€",
+     "year": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Essences-Parfums-s-impregne-d-un-fonds-mid-cap-558659"
+    },
+    {
+     "metric": "autre",
+     "value": "Clients dans plus de 30 pays",
+     "year": null,
+     "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Annonce fév. 2026, closing attendu au printemps 2026; CFNEWS date l'opération liée au 21/05/2026. Pourcentage Sagard non publié (Squire: Trajan contrôlait et cède à Sagard). Fondée en 1993."
+  },
+  {
+   "company": "AMI Ingrédients",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Distribution et reconditionnement de matières premières cosmétiques et alimentaires",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Arkéa Capital",
+     "role": "minoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://arkea-capital.com/arkea-capital-entre-au-capital-dami-ingredients/",
+     "source_title": "Arkéa Capital entre au capital d'AMI Ingrédients",
+     "source_date": "2021-12-16"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "44 M€",
+     "year": "2021",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/AMI-Ingredients-revoit-sa-formule-386399"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Première ouverture de capital; prise de participation minoritaire (pourcentage non publié). CFNEWS qualifie l'opération d'OBO (16/12/2021). Dirigeant cité: Jean-Marc Venin (titre non précisé par la source). Détention ~5 ans en 2026: horizon de sortie classique d'un minoritaire, mais aucune annonce trouvée."
+  },
+  {
+   "company": "Safic-Alcan",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Distribution de spécialités chimiques (dont cosmétique)",
+   "hq_city": "Paris La Défense",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "IK Partners",
+     "role": "minoritaire",
+     "entry_date": "2022-06",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    },
+    {
+     "name": "Equistone",
+     "role": "minoritaire",
+     "entry_date": "2022-06",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    },
+    {
+     "name": "GENEO Capital Entrepreneur",
+     "role": "minoritaire",
+     "entry_date": "2022-06",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    },
+    {
+     "name": "EMZ Partners",
+     "role": "minoritaire",
+     "entry_date": null,
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    },
+    {
+     "name": "Sagard",
+     "role": "minoritaire",
+     "entry_date": null,
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    },
+    {
+     "name": "Société Générale Capital Partenaires",
+     "role": "minoritaire",
+     "entry_date": null,
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/",
+     "source_title": "Safic-Alcan together with six private equity funds announces the start of a new entrepreneurial project",
+     "source_date": "2022-06-23"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Yann Lissillour",
+    "title": "CEO (depuis avril 2022)",
+    "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "725 M€",
+     "year": "2021",
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/"
+    },
+    {
+     "metric": "effectif",
+     "value": "697 salariés",
+     "year": "2022",
+     "source_url": "https://ikpartners.com/press-release/safic-alcan-together-with-six-private-equity-funds-announces-the-start-of-a-new-entrepreneurial-project/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Majorité détenue par le management et les salariés; 6 fonds minoritaires (EMZ, Sagard, SGCP historiques; IK, Equistone, GENEO entrés en juin 2022). Le type 'OBO' est une qualification de structure (management majoritaire), le communiqué ne l'emploie pas. Distributeur multi-industries: part cosmétique non publiée. Pool de fonds en place depuis ~4 ans."
+  },
+  {
+   "company": "Groupe Herbarom",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Ingrédients naturels (huiles essentielles, extraits végétaux) et CDMO compléments liquides",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Bpifrance",
+     "role": "minoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.personalcaremagazine.com/story/37331/two-invest-in-herbarom",
+     "source_title": "Two invest in Herbarom",
+     "source_date": "2021-12-16"
+    },
+    {
+     "name": "BNP Paribas Développement",
+     "role": "minoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.personalcaremagazine.com/story/37331/two-invest-in-herbarom",
+     "source_title": "Two invest in Herbarom",
+     "source_date": "2021-12-16"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Luc Ardouvin",
+    "title": "CEO",
+    "source_url": "https://www.personalcaremagazine.com/story/37331/two-invest-in-herbarom"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 50 M€ par an",
+     "year": "2021",
+     "source_url": "https://www.personalcaremagazine.com/story/37331/two-invest-in-herbarom"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Groupe familial drômois (CFNEWS: fabricant 'valentinois'); minoritaires financiers sans pourcentage publié. Détention ~5 ans en 2026."
+  },
+  {
+   "company": "H. Reynaud & Fils",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "sub_segment": "Matières premières aromatiques naturelles (huiles essentielles) pour parfumerie et cosmétique",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "JADEL",
+     "role": "minoritaire",
+     "entry_date": "2024-12",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://www.lemondedudroit.fr/deals/97741-bblm-avocats-accompagne-les-actionnaires-du-groupe-familial-h-reynaud-fils-dans-la-mise-en-place-de-leur-strategie-de-transmission-a-la-cinquieme-generation.html",
+     "source_title": "BBLM Avocats accompagne les actionnaires du groupe familial H. Reynaud & Fils dans la mise en place de leur stratégie de transmission à la cinquième génération",
+     "source_date": "2025-03-20"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Gabriel Lalande",
+    "title": "Directeur général",
+    "source_url": "https://www.lemondedudroit.fr/deals/97741-bblm-avocats-accompagne-les-actionnaires-du-groupe-familial-h-reynaud-fils-dans-la-mise-en-place-de-leur-strategie-de-transmission-a-la-cinquieme-generation.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "près de 90 M€ (≈90% à l'international)",
+     "year": null,
+     "source_url": "https://www.lemondedudroit.fr/deals/97741-bblm-avocats-accompagne-les-actionnaires-du-groupe-familial-h-reynaud-fils-dans-la-mise-en-place-de-leur-strategie-de-transmission-a-la-cinquieme-generation.html"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "OBO primaire de transmission familiale (5e génération). CFNEWS ('H.Reynaud & Fils embaume un fonds evergreen', 17/03/2025) date l'opération au 31/12/2024 et situe le groupe dans la Drôme avec un site à Saint-Didier. JADEL décrit comme fonds evergreen par CFNEWS; part non publiée. Contrôle familial maintenu."
+  },
+  {
+   "company": "Albéa",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Tubes, rigid packaging cosmétique et parfum, beauty solutions",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "PAI Partners",
+     "role": "majoritaire",
+     "entry_date": "2018",
+     "deal_type": "LBO secondaire",
+     "seller": "Sun European Partners",
+     "source_url": "https://www.paipartners.com/wp-content/uploads/2025/08/Press-release_PAI-Partners-enters-into-exclusive-negotiations-with-an-affiliate-of-Sun-European-Partners-for-the-acquisition-of-Albea_020118.pdf",
+     "source_title": "PAI Partners enters into exclusive negotiations with an affiliate of Sun European Partners for the acquisition of Albéa",
+     "source_date": "2018-01-02"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Sun European Partners",
+     "entry": "2010",
+     "exit": "2018",
+     "source_url": "https://beautymatter.com/articles/silgan-acquires-albeas-dispensing-business-for-900-million"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "326 M$ (T1 2026, +6% a/a)",
+     "year": "2026",
+     "source_url": "https://octus.com/resources/articles/albea-group-to-carve-out-tubes-segment-after-ae-talks-stall/"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "173 M$ (LTM reporté au 31/03/2026)",
+     "year": "2026",
+     "source_url": "https://octus.com/resources/articles/albea-group-to-carve-out-tubes-segment-after-ae-talks-stall/"
+    },
+    {
+     "metric": "autre",
+     "value": "Dette nette 778 M$ (4,5x); TLB 646 M€ échéance 2027",
+     "year": "2026",
+     "source_url": "https://octus.com/resources/articles/albea-group-to-carve-out-tubes-segment-after-ae-talks-stall/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "PAI cherche à scinder Albéa et vendre le segment tubes (≈100 M$ d'EBITDA annualisé); offres non engageantes attendues le 18 juin; Barclays mandaté",
+     "date": "2026-06",
+     "source_url": "https://octus.com/resources/articles/albea-group-to-carve-out-tubes-segment-after-ae-talks-stall/"
+    },
+    {
+     "fact": "Discussions d'amend & extend du TLB de 646 M€ (échéance 2027) au point mort",
+     "date": "2026-06",
+     "source_url": "https://octus.com/resources/articles/albea-group-to-carve-out-tubes-segment-after-ae-talks-stall/"
+    },
+    {
+     "fact": "Cession d'Innovative Beauty Group (services BPC) à Fremman Capital",
+     "date": "2024-06",
+     "source_url": "https://www.premiumbeautynews.com/fr/albea-cede-innovative-beauty-group,24006"
+    },
+    {
+     "fact": "Cession antérieure de l'activité dispensing à Silgan (offre ferme 900 M$)",
+     "date": "2020-01",
+     "source_url": "https://beautymatter.com/articles/silgan-acquires-albeas-dispensing-business-for-900-million"
+    }
+   ],
+   "notes": "Fonds PAI depuis 2018 (8 ans): démantèlement en cours (dispensing 2020, IBG 2024, tubes 2026). CEO actuel non confirmé par une source récente (François Luscan était CEO en janv. 2018). Siège non confirmé par source lue."
+  },
+  {
+   "company": "Cosmogen",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Packaging primaire et applicateurs techniques (brosses, applicateurs brevetés)",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Weinberg Capital Partners (WCP#4)",
+     "role": "majoritaire",
+     "entry_date": "2024-12",
+     "deal_type": "LBO secondaire",
+     "seller": "MBO+",
+     "source_url": "https://www.premiumbeautynews.com/fr/avec-weinberg-capital-partners,24926",
+     "source_title": "Avec Weinberg Capital Partners, Cosmogen ...",
+     "source_date": "2024-12-10"
+    },
+    {
+     "name": "BNP Paribas Développement",
+     "role": "co-investisseur",
+     "entry_date": "2024-12",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.lemondedudroit.fr/deals/104727-racine-accompagne-weinberg-capital-partners-et-cosmogen-dans-le-cadre-de-lacquisition-par-cette-derniere-dasquan.html",
+     "source_title": "Racine accompagne Weinberg Capital Partners et Cosmogen dans le cadre de l'acquisition par cette dernière d'Asquan",
+     "source_date": "2026-06-19"
+    },
+    {
+     "name": "WCP Co-Invest",
+     "role": "co-investisseur",
+     "entry_date": "2024-12",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.lemondedudroit.fr/deals/104727-racine-accompagne-weinberg-capital-partners-et-cosmogen-dans-le-cadre-de-lacquisition-par-cette-derniere-dasquan.html",
+     "source_title": "Racine accompagne Weinberg Capital Partners et Cosmogen dans le cadre de l'acquisition par cette dernière d'Asquan",
+     "source_date": "2026-06-19"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "MBO+ (spin-off d'Alkos Group)",
+     "entry": "2016",
+     "exit": "2024-12",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Cosmogen-se-refait-une-beaute-509409"
+    }
+   ],
+   "ceo": {
+    "name": "Priscille Allais",
+    "title": "Présidente-directrice générale (depuis 2019)",
+    "source_url": "https://www.premiumbeautynews.com/fr/avec-weinberg-capital-partners,24926"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 23 M€ (prévision, +15%)",
+     "year": "2024",
+     "source_url": "https://www.premiumbeautynews.com/fr/avec-weinberg-capital-partners,24926"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Build-up: acquisition d'Asquan (packaging premium multi-catégories, présence US) en juin 2026, création de 'Cosmogen & Asquan Group'. Entrée du fonds récente."
+  },
+  {
+   "company": "Groupe Verpack",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Étuis et coffrets carton premium (parfum, cosmétique, luxe)",
+   "hq_city": "Paris",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Aldebaran Capital Partners (Aldebaran Transformation Fund I)",
+     "role": "minoritaire",
+     "entry_date": "2026-07",
+     "deal_type": "LBO secondaire",
+     "seller": "Crédit Mutuel Equity",
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753",
+     "source_title": "Un LBO bis dans le coffret de Verpack",
+     "source_date": "2026-09-25"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Crédit Mutuel Equity (minoritaire)",
+     "entry": "2020",
+     "exit": "2026-07",
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+    }
+   ],
+   "ceo": {
+    "name": "Stéphane Viers",
+    "title": "Président",
+    "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "55 M€",
+     "year": "2025",
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+    },
+    {
+     "metric": "CA",
+     "value": "objectif 60 M€",
+     "year": "2026",
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+    },
+    {
+     "metric": "effectif",
+     "value": "530 salariés (5 sites France, 1 Tunisie)",
+     "year": "2026",
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+    },
+    {
+     "metric": "autre",
+     "value": "Ticket Aldebaran 20-30 M€",
+     "year": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Minorité 'significative'; Aldebaran devient actionnaire de référence aux côtés de la famille Viers, qui reste majoritaire. Entrée très récente."
+  },
+  {
+   "company": "Coverpla",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Flacons de parfum et packaging standard premium personnalisable",
+   "hq_city": "Nice",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "GENEO Capital Entrepreneur",
+     "role": "majoritaire",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/",
+     "source_title": "Coverpla Group – investissement majoritaire mené par GENEO Capital Entrepreneur (Oaklins)",
+     "source_date": null
+    },
+    {
+     "name": "MACSF",
+     "role": "co-investisseur",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/",
+     "source_title": "Coverpla Group – investissement majoritaire mené par GENEO Capital Entrepreneur (Oaklins)",
+     "source_date": null
+    },
+    {
+     "name": "Société Générale Capital Partenaires",
+     "role": "co-investisseur",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/",
+     "source_title": "Coverpla Group – investissement majoritaire mené par GENEO Capital Entrepreneur (Oaklins)",
+     "source_date": null
+    },
+    {
+     "name": "BNP Paribas Développement",
+     "role": "co-investisseur",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/",
+     "source_title": "Coverpla Group – investissement majoritaire mené par GENEO Capital Entrepreneur (Oaklins)",
+     "source_date": null
+    },
+    {
+     "name": "Bpifrance",
+     "role": "co-investisseur",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/",
+     "source_title": "Coverpla Group – investissement majoritaire mené par GENEO Capital Entrepreneur (Oaklins)",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "SGCP, BNP Paribas Développement, Bpifrance (trois LBO depuis 2010)",
+     "entry": "2010",
+     "exit": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Quaternaire/Coverpla-met-de-nouveaux-investisseurs-au-parfum-503419"
+    }
+   ],
+   "ceo": {
+    "name": "Bruno Diepois",
+    "title": "Président (Chairman)",
+    "source_url": "https://www.oaklins.com/ca/fr/deals/110436/"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 25 M€",
+     "year": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Quaternaire/Coverpla-met-de-nouveaux-investisseurs-au-parfum-503419"
+    },
+    {
+     "metric": "autre",
+     "value": "Plus de 70% du CA à l'international; ventes dans plus de 70 pays",
+     "year": null,
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110436/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "LBO quaternaire (CFNEWS 22/10/2024, opération datée 25/09/2024). Pool majoritaire mené par GENEO; SGCP, BNP Paribas Dév et Bpifrance, présents depuis 2010, figurent toujours dans le tour de table (vendeurs exacts non publiés). Le type 'LBO secondaire' est une approximation."
+  },
+  {
+   "company": "Diam International",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Merchandising / présentoirs PLV et packaging pour beauté et luxe",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Ardian Expansion (Ardian Expansion VI)",
+     "role": null,
+     "entry_date": "2024-07",
+     "deal_type": "LBO secondaire",
+     "seller": "EMZ Partners, Idia Capital Investissement, Socadif, BNP Paribas Développement (partiel)",
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275",
+     "source_title": "Diam expose un LBO quinte",
+     "source_date": "2024-07-05"
+    },
+    {
+     "name": "BNP Paribas Développement",
+     "role": "co-investisseur",
+     "entry_date": "2012",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275",
+     "source_title": "Diam expose un LBO quinte",
+     "source_date": "2024-07-05"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "EMZ Partners, Idia CI, Socadif (minoritaires)",
+     "entry": "2018",
+     "exit": "2024-07",
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+    }
+   ],
+   "ceo": {
+    "name": "Françoise Raoul-Duval",
+    "title": "Présidente-directrice générale",
+    "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 400 M€",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "marge supérieure à 15%",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+    },
+    {
+     "metric": "effectif",
+     "value": "environ 3 200 personnes (20 pays)",
+     "year": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+    },
+    {
+     "metric": "autre",
+     "value": "Valorisation ≈ 7-8x EBITDA, un peu plus de 500 M€ (CFNEWS); levier ~3,5x",
+     "year": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "BORDERLINE segment: Diam est d'abord un spécialiste du merchandising/PLV beauté-luxe, pas un pur emballeur. Ardian investit 100-150 M€ (montant > position majoritaire non confirmée par la source: rôle null). Management et 150+ cadres réinvestissent. Entrée de BNP Paribas Dév (2012) et année 2018 des minoritaires issues de résultats de recherche CFNEWS, à confirmer."
+  },
+  {
+   "company": "Groupe Pinard (Pinard Beauty Pack / Lablabo)",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Flacons et pots plastiques haut de gamme; airless bag-in-bottle (Lablabo)",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Bluegem Capital Partners",
+     "role": "majoritaire",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": "IK Partners",
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110383/",
+     "source_title": "Bluegem Capital Partners et AREV Partners acquièrent le Groupe Pinard (Oaklins)",
+     "source_date": null
+    },
+    {
+     "name": "AREV Partners",
+     "role": "co-investisseur",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": "IK Partners",
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110383/",
+     "source_title": "Bluegem Capital Partners et AREV Partners acquièrent le Groupe Pinard (Oaklins)",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "IK Partners",
+     "entry": "2017",
+     "exit": "2024-09",
+     "source_url": "https://www.oaklins.com/ca/fr/deals/110383/"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Oaklins: acquisition de 100% du Groupe Pinard auprès d'IK Partners (sept. 2024). Répartition Bluegem/AREV non publiée (Bluegem: investissement 2024, statut 'current' sur https://www.bluegemcp.com/pinard). Société créée en 1970. Entrée IK en 2017 issue d'un résultat de recherche (lemondedudroit/Goodwin), non relue."
+  },
+  {
+   "company": "Axilone",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Capots parfum, étuis de rouge à lèvres, packaging maquillage plastique et métal",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "CITIC Capital (CITIC Capital China Partners III)",
+     "role": "majoritaire",
+     "entry_date": "2018-01",
+     "deal_type": "LBO secondaire",
+     "seller": "Oaktree Capital Management",
+     "source_url": "https://www.packaging-gateway.com/news/citic-capital-closes-acquisition-french-cosmetics-packaging-provider/",
+     "source_title": "CITIC Capital closes acquisition of French cosmetics packaging provider",
+     "source_date": "2018-01-15"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Oaktree Capital Management (via Iléos)",
+     "entry": "2011",
+     "exit": "2018-01",
+     "source_url": "https://www.packaging-gateway.com/news/citic-capital-closes-acquisition-french-cosmetics-packaging-provider/"
+    }
+   ],
+   "ceo": {
+    "name": "Laurent Chevallier",
+    "title": "CEO du groupe Axilone",
+    "source_url": "https://www.premiumbeautynews.com/fr/un-vent-d-optimisme-souffle-sur,28265"
+   },
+   "key_figures": [
+    {
+     "metric": "autre",
+     "value": "8 usines (France, Espagne, Chine); croissance du CA ~15% en 2026",
+     "year": "2026",
+     "source_url": "https://www.premiumbeautynews.com/fr/un-vent-d-optimisme-souffle-sur,28265"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "DOUTEUX: actionnariat CITIC non reconfirmé par une source postérieure à 2018 (aucune annonce de revente trouvée). Si toujours détenu, holding de ~8,5 ans. L'entrée d'Oaktree (déc. 2011) concerne le groupe Iléos (source: résultats de recherche Premium Beauty News)."
+  },
+  {
+   "company": "Verescence",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Flaconnage verre parfumerie et cosmétique",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Movendo Capital (consortium avec Draycott)",
+     "role": null,
+     "entry_date": "2025-05",
+     "deal_type": "LBO secondaire",
+     "seller": "Stirling Square Capital Partners",
+     "source_url": "https://www.premiumbeautynews.com/fr/verre-stirling-square-cede,25811",
+     "source_title": "Verre : Stirling Square cède Verescence ...",
+     "source_date": "2025-05-27"
+    },
+    {
+     "name": "Draycott",
+     "role": null,
+     "entry_date": "2025-05",
+     "deal_type": "LBO secondaire",
+     "seller": "Stirling Square Capital Partners",
+     "source_url": "https://www.premiumbeautynews.com/fr/verre-stirling-square-cede,25811",
+     "source_title": "Verre : Stirling Square cède Verescence ...",
+     "source_date": "2025-05-27"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Stirling Square Capital Partners",
+     "entry": "2019-03",
+     "exit": "2025-05",
+     "source_url": "https://www.premiumbeautynews.com/fr/stirling-square-capital-partners,14761"
+    },
+    {
+     "name": "Oaktree Capital Management",
+     "entry": null,
+     "exit": "2019-03",
+     "source_url": "https://www.premiumbeautynews.com/fr/stirling-square-capital-partners,14761"
+    }
+   ],
+   "ceo": {
+    "name": "Thomas Riou",
+    "title": "Président",
+    "source_url": "https://www.premiumbeautynews.com/fr/verre-stirling-square-cede,25811"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "environ 2 500 salariés",
+     "year": "2024",
+     "source_url": "https://www.premiumbeautynews.com/fr/verre-stirling-square-cede,25811"
+    },
+    {
+     "metric": "CA",
+     "value": "305 M€",
+     "year": "2018",
+     "source_url": "https://www.premiumbeautynews.com/fr/stirling-square-capital-partners,14761"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "DOUTEUX sur la nature 'fonds': Movendo et Draycott sont décrits comme des holdings familiales d'investissement (capital patient), pas des fonds de PE classiques. Part de chacun non publiée. Sortie de Stirling Square = exit récent (voir 'exited')."
+  },
+  {
+   "company": "Cosfibel Group",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Packaging promotionnel et coffrets luxe, gifting",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Ontario Teachers' Pension Plan (via GPA Global, co-contrôle)",
+     "role": "co-investisseur",
+     "entry_date": "2023-01",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://otpp.com/en-ca/about-us/news-and-insights/2023/gpa-global-announces-the-acquisition-of-cosfibel-group/",
+     "source_title": "GPA Global announces the acquisition of Cosfibel Group",
+     "source_date": "2023-01-10"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Marie Sermadiras",
+    "title": "CEO",
+    "source_url": "https://otpp.com/en-ca/about-us/news-and-insights/2023/gpa-global-announces-the-acquisition-of-cosfibel-group/"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "plus de 200 experts",
+     "year": "2023",
+     "source_url": "https://otpp.com/en-ca/about-us/news-and-insights/2023/gpa-global-announces-the-acquisition-of-cosfibel-group/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "DOUTEUX: filiale de GPA Global (groupe industriel), lui-même co-contrôlé par OTPP (fonds de pension) depuis sept. 2022. Propriété PE indirecte; date d'entrée 2023-01 = acquisition par GPA."
+  },
+  {
+   "company": "Pure Trade",
+   "country": "FR",
+   "segment": "Packaging",
+   "sub_segment": "Packaging secondaire et promotionnel; nouvelle division packaging primaire/secondaire beauté",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "AGIC Capital",
+     "role": "majoritaire",
+     "entry_date": "2023",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/pure-trade-cree-une-nouvelle,24580",
+     "source_title": "Pure Trade crée une nouvelle division packaging",
+     "source_date": "2024-10-12"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Virginie Honoré",
+    "title": "Directrice générale",
+    "source_url": "https://www.premiumbeautynews.com/fr/pure-trade-cree-une-nouvelle,24580"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "objectif 100 M€ fixé par AGIC Capital",
+     "year": "2025",
+     "source_url": "https://www.premiumbeautynews.com/fr/pure-trade-cree-une-nouvelle,24580"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "BORDERLINE segment (bagagerie, accessoires promotionnels, textile + packaging). Rôle 'majoritaire' déduit de 'a acquis' (pourcentage non publié). Division packaging créée à Paris."
+  },
+  {
+   "company": "Virospack",
+   "country": "ES",
+   "segment": "Packaging",
+   "sub_segment": "Compte-gouttes (droppers) cosmétiques",
+   "hq_city": "Badalona",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Investindustrial (Investindustrial Growth III)",
+     "role": "majoritaire",
+     "entry_date": "2023-09",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://premiumbeautynews.com/en/investindustrial-acquires-majority,22647",
+     "source_title": "Investindustrial acquires majority stake in Virospack",
+     "source_date": "2023-09-25"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Vicens Rodriguez",
+    "title": "Executive Chairman",
+    "source_url": "https://premiumbeautynews.com/en/investindustrial-acquires-majority,22647"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 60 M€",
+     "year": null,
+     "source_url": "https://premiumbeautynews.com/en/investindustrial-acquires-majority,22647"
+    },
+    {
+     "metric": "effectif",
+     "value": "près de 400",
+     "year": null,
+     "source_url": "https://premiumbeautynews.com/en/investindustrial-acquires-majority,22647"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "51% acquis par Investindustrial; famille Rodriguez reste partenaire. Plateforme 'Luxury Cosmetic Solutions' avec Eurovetrocap (CA combiné >120 M€, ~500 salariés)."
+  },
+  {
+   "company": "Eurovetrocap",
+   "country": "IT",
+   "segment": "Packaging",
+   "sub_segment": "Intégrateur de packaging cosmétique (flacons, pots, accessoires)",
+   "hq_city": "Trezzano sul Naviglio",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Investindustrial (Investindustrial Growth III)",
+     "role": "majoritaire",
+     "entry_date": "2025-01",
+     "deal_type": "LBO primaire",
+     "seller": "Famille Cattaneo (conserve une minorité)",
+     "source_url": "https://www.premiumbeautynews.com/fr/investindustrial-le-proprietaire,25034",
+     "source_title": "Investindustrial, le propriétaire de Virospack, acquiert Eurovetrocap",
+     "source_date": "2025-01-09"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 120 M€ (combiné avec Virospack)",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/investindustrial-le-proprietaire,25034"
+    },
+    {
+     "metric": "effectif",
+     "value": "près de 500 (combiné)",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/investindustrial-le-proprietaire,25034"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Add-on de la plateforme Virospack; équipe dirigeante maintenue."
+  },
+  {
+   "company": "Alltub Group",
+   "country": "NL",
+   "segment": "Packaging",
+   "sub_segment": "Tubes souples aluminium et laminés, aérosols (cosmétique, pharma, food)",
+   "hq_city": "Amsterdam",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "One Equity Partners",
+     "role": "majoritaire",
+     "entry_date": "2018-11",
+     "deal_type": "LBO secondaire",
+     "seller": null,
+     "source_url": "https://www.oneequity.com/news/one-equity-partners-acquires-alltub-a-market-leader-in-aluminum-and-laminate-specialty-packaging/",
+     "source_title": "One Equity Partners acquires Alltub, a market leader in aluminum and laminate specialty packaging",
+     "source_date": "2018-10-31"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Aurora Resurgence",
+     "entry": "2011",
+     "exit": "2018",
+     "source_url": "https://www.cfnews.net/L-actualite/International/Operations/LBO/Alltub-emballe-un-californien-127702"
+    },
+    {
+     "name": "Naxicap / Capzanine",
+     "entry": null,
+     "exit": "2011",
+     "source_url": "https://www.cfnews.net/L-actualite/International/Operations/LBO/Alltub-emballe-un-californien-127702"
+    }
+   ],
+   "ceo": {
+    "name": "Mark Köllmann",
+    "title": "CEO",
+    "source_url": "https://www.alltub.com/wp-content/uploads/2026/02/press-release-alltub-acquisition-of-la-metallurgica-05-02-2026.pdf"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "150 M€",
+     "year": "2017",
+     "source_url": "https://www.oneequity.com/news/one-equity-partners-acquires-alltub-a-market-leader-in-aluminum-and-laminate-specialty-packaging/"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 1 400",
+     "year": "2018",
+     "source_url": "https://www.oneequity.com/news/one-equity-partners-acquires-alltub-a-market-leader-in-aluminum-and-laminate-specialty-packaging/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Toujours décrit comme 'owned by One Equity Partners' en fév. 2026 (détention de plus de 7 ans); build-up Tubettificio La Metallurgica",
+     "date": "2026-02",
+     "source_url": "https://www.alltub.com/wp-content/uploads/2026/02/press-release-alltub-acquisition-of-la-metallurgica-05-02-2026.pdf"
+    }
+   ],
+   "notes": "Origine française (ex-Alcan Packaging) avec usines en France; siège juridique Alltub Group BV à Amsterdam. Historique Naxicap/Capzanine -> Aurora (2011) d'après résultat de recherche CFNEWS (article déc. 2011)."
+  }
+ ],
+ "exited": [
+  {
+   "company": "Groupe Verpack",
+   "country": "FR",
+   "segment": "Packaging",
+   "fund": "Crédit Mutuel Equity",
+   "entry": "2020",
+   "exit_date": "2026-07",
+   "buyer": "Aldebaran Capital Partners (minoritaire de référence); famille Viers reste majoritaire",
+   "source_url": "https://www.cfnews.net/Acces-libre/Un-LBO-bis-dans-le-coffret-de-Verpack-735753"
+  },
+  {
+   "company": "Groupe Pinard (Pinard Beauty Pack)",
+   "country": "FR",
+   "segment": "Packaging",
+   "fund": "IK Partners",
+   "entry": "2017",
+   "exit_date": "2024-09",
+   "buyer": "Bluegem Capital Partners et AREV Partners",
+   "source_url": "https://www.oaklins.com/ca/fr/deals/110383/"
+  },
+  {
+   "company": "Cosmogen",
+   "country": "FR",
+   "segment": "Packaging",
+   "fund": "MBO+",
+   "entry": "2016",
+   "exit_date": "2024-12",
+   "buyer": "Weinberg Capital Partners (WCP#4)",
+   "source_url": "https://www.premiumbeautynews.com/fr/avec-weinberg-capital-partners,24926"
+  },
+  {
+   "company": "Verescence",
+   "country": "FR",
+   "segment": "Packaging",
+   "fund": "Stirling Square Capital Partners",
+   "entry": "2019-03",
+   "exit_date": "2025-05",
+   "buyer": "Consortium Movendo Capital / Draycott (holdings familiales d'investissement)",
+   "source_url": "https://www.premiumbeautynews.com/fr/verre-stirling-square-cede,25811"
+  },
+  {
+   "company": "Diam International",
+   "country": "FR",
+   "segment": "Packaging",
+   "fund": "EMZ Partners, Idia CI, Socadif (BNP Paribas Dév réinvestit)",
+   "entry": "2018",
+   "exit_date": "2024-07",
+   "buyer": "Ardian Expansion",
+   "source_url": "https://www.cfnews.net/Acces-libre/Diam-expose-un-LBO-quinte-491275"
+  },
+  {
+   "company": "Essences & Parfums",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "fund": "Trajan",
+   "entry": "2023",
+   "exit_date": "2026-05",
+   "buyer": "Sagard (Sagard Europe MidCap)",
+   "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/"
+  },
+  {
+   "company": "Solabia Group",
+   "country": "FR",
+   "segment": "Ingrédients et actifs",
+   "fund": "TA Associates (sortie partielle: réinvestit en minoritaire)",
+   "entry": "2021",
+   "exit_date": "2025-05",
+   "buyer": "Astorg",
+   "source_url": "https://www.premiumbeautynews.com/fr/astorg-prend-le-controle-de,25719"
+  },
+  {
+   "company": "Innovative Beauty Group (ex-Albéa Beauty Solutions)",
+   "country": null,
+   "segment": "Packaging",
+   "fund": "PAI Partners (via Albéa)",
+   "entry": "2018",
+   "exit_date": "2024-06",
+   "buyer": "Fremman Capital",
+   "source_url": "https://www.premiumbeautynews.com/fr/albea-cede-innovative-beauty-group,24006"
+  },
+  {
+   "company": "Lumson",
+   "country": "IT",
+   "segment": "Packaging",
+   "fund": "Fondo Strategico Italiano (FSI) – minoritaire",
+   "entry": "2018-08",
+   "exit_date": "2022-11",
+   "buyer": null,
+   "source_url": "https://www.fondofsi.it/en/investimenti-fsi/lumson/"
+  }
+ ],
+ "searched_but_not_confirmed": [
+  "Greentech (actifs, Saint-Beauzire): aucun fonds identifié",
+  "Codif: aucune information d'actionnariat trouvée",
+  "Lessonia: reprise par les managers en 2023 (CEO Sébastien Guillotin), fonds éventuel non identifié",
+  "Alban Muller: racheté par Croda (coté) – exclu",
+  "Biolandes: familial – exclu",
+  "Cosmo International Fragrances: familial – exclu",
+  "Jean Niel: familial – exclu",
+  "Expressions Parfumées: Givaudan depuis 2018 (ex-Orfite) – exclu",
+  "TechnicoFlor: familial – exclu",
+  "Groupe Neroli (Créations & Parfums/Floressence): repris par Symrise – exclu",
+  "Payan Bertrand: actionnariat non trouvé",
+  "Sozio: groupe familial – exclu",
+  "Bontoux (huiles essentielles): CFNEWS évoque sortie de Cerea Partenaire vers Unigrains, non confirmé par source lisible",
+  "Agriland (Grasse): capital développement juin 2024, investisseurs non visibles",
+  "Elixens, Aromatech, Lautier 1795, Parfex, Unipex: actionnariat PE non confirmé (budget de recherche épuisé pour les trois derniers)",
+  "Seqens (SK Capital): pas de lien cosmétique confirmé (Minasolve non rattaché)",
+  "Provital (ES), Mibelle Biochemistry (CH, propriété Persán; Solabia acquéreur annoncé, non vérifié): pas de PE confirmé",
+  "Barentz (Cinven), Caldic (Advent): distributeurs européens, propriété PE non vérifiée par source lue",
+  "Quadpack: coté sur Euronext Growth – exclu; Texen: filiale PSB Industries rapprochée de Quadpack (oct. 2024)",
+  "HCP Packaging: Carlyle depuis 2022 mais siège en Chine – hors périmètre",
+  "Geka: cédé par 3i à Sulzer (coté) en 2016 – exclu",
+  "Lumson: famille Moretti après sortie de FSI (2022) – exclu",
+  "Baralan, Faca Packaging, Groupe Rose, Faiveley Plast, Inoplast (BEWI), Topline (PSB), Louvrette (Quadpack), Lisi Cosmetics (Pochet/Qualipac 2011): pas de fonds PE confirmé",
+  "Pochet/Qualipac, Gattefossé, Silab, Expanscience: familiaux – exclus; Givaudan, Sederma (Croda), Seppic (Air Liquide), Naturex, Aptar: cotés/corporate – exclus",
+  "Gerresheimer Centor + Primary Packaging Plastics: cession à Apax signée juillet 2026, non finalisée et orientée pharma – non retenu",
+  "Aroma-Zone: marque (exclue selon consigne), LBO bis Partners Group 2026",
+  "Iléos (Oaktree): groupe démantelé (Axilone, Alliora Coffrets cédés)"
+ ]
+}

@@ -1,0 +1,16 @@
+# All parameters of the cosmetics PE-exit tracker. Thresholds shown on the page are editable there too.
+api:
+  recherche_entreprises_base: https://recherche-entreprises.api.gouv.fr
+  timeout_s: 30
+  max_retries: 8
+  min_interval_s: 0.25
+
+# Analyst hypothesis (not a market statistic): holding period window in which an exit becomes likely.
+# The page lets the user change it; these are the defaults.
+holding_window_years: [4, 6]
+
+segments: ["Marques", "Sous-traitants", "Ingrédients et actifs", "Packaging"]
+
+# NAF codes accepted when a French company is matched by name rather than SIREN (cosmetics and suppliers).
+naf_cosmetics: ["20.42Z", "20.53Z", "20.59Z", "20.14Z", "21.20Z", "46.45Z", "47.75Z", "22.22Z", "22.29A", "22.29B",
+                "23.13Z", "17.21A", "17.21B", "17.21C", "17.29Z", "25.92Z", "32.99Z", "70.10Z", "64.20Z", "10.89Z", "72.19Z", "82.92Z"]

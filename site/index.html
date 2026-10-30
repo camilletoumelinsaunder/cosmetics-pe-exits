@@ -1,0 +1,461 @@
+<title>Sorties PE Cosmétique</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+/* Layout: sticky header, filter rail on the left, summary then table on the right, company sheet as a side drawer. */
+:root {
+  --bg: #F5F3F4; --surface: #FFFFFF; --ink: #1E1A1D; --muted: #675E64; --line: #E0DADD;
+  --accent: #6B2D5C; --accent-soft: #F1E6EE; --ok: #2F6B4F; --ok-soft: #E3F0E9; --warn: #8A5A00; --warn-soft: #F7EDD6;
+  --bad: #A33A2E; --bad-soft: #F6E2DF; --idle: #5E6670; --idle-soft: #E9ECEF;
+  --f-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141114; --surface: #1D191C; --ink: #ECE6EA; --muted: #A79DA4; --line: #322B30;
+  --accent: #D39AC4; --accent-soft: #3A2534; --ok: #7CC4A0; --ok-soft: #1E3329; --warn: #E2B45C; --warn-soft: #3A2F18;
+  --bad: #EE8E80; --bad-soft: #3D2320; --idle: #A8B0B9; --idle-soft: #2A2E33; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #141114; --surface: #1D191C; --ink: #ECE6EA; --muted: #A79DA4; --line: #322B30;
+  --accent: #D39AC4; --accent-soft: #3A2534; --ok: #7CC4A0; --ok-soft: #1E3329; --warn: #E2B45C; --warn-soft: #3A2F18;
+  --bad: #EE8E80; --bad-soft: #3D2320; --idle: #A8B0B9; --idle-soft: #2A2E33; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--accent); }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line);
+  padding-block: 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; justify-content: space-between; }
+h1 { font-family: var(--f-display); font-weight: 600; font-size: 1.5rem; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-weight: 600; font-size: 1.2rem; margin: 0; text-wrap: balance; }
+h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0; font-weight: 600; }
+.hint { color: var(--muted); font-size: .85rem; }
+.mono { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+.wrap { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 16px; align-items: start;
+  padding-block: 16px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (max-width: 860px) { .wrap { grid-template-columns: minmax(0, 1fr); } aside.rail { position: static !important; max-height: none !important; } }
+aside.rail { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px;
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 72px); max-height: calc(100vh - 96px); overflow: auto; }
+.field { display: grid; gap: 4px; }
+.field label, .field .lbl { font-size: .8rem; color: var(--muted); }
+.field input, .field select, .field textarea { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: var(--r); background: var(--bg); }
+.checks { display: grid; gap: 4px; }
+.field .checks input { width: auto; }
+.cell-in { font: inherit; font-size: .82rem; padding: 3px 6px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); color: var(--ink); }
+input.cell-in[type=date] { font-family: var(--f-data); }
+textarea.cell-in.next { width: 190px; resize: vertical; }
+select.prio-h { border-color: var(--bad); color: var(--bad); } select.prio-m { border-color: var(--warn); color: var(--warn); }
+.checks label { display: flex; gap: 8px; align-items: center; font-size: .9rem; color: var(--ink); }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+main { display: grid; gap: 16px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.row { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; justify-content: space-between; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; gap: 2px; }
+.kpi .v { font-family: var(--f-data); font-size: 1.5rem; font-variant-numeric: tabular-nums; }
+.kpi .l { font-size: .8rem; color: var(--muted); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 7px 12px; cursor: pointer; }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.btn.small { padding: 3px 8px; font-size: .8rem; }
+.tablebox { max-height: 640px; overflow: auto; border: 1px solid var(--line); border-radius: var(--r); }
+table.data { border-collapse: collapse; width: 100%; font-size: .86rem; }
+table.data th { position: sticky; top: 0; background: var(--surface); text-align: left; font-weight: 600; font-size: .78rem; color: var(--muted);
+  padding: 8px 10px; border-bottom: 1px solid var(--line); cursor: pointer; white-space: nowrap; }
+table.data th[aria-sort="ascending"]::after { content: " ↑"; } table.data th[aria-sort="descending"]::after { content: " ↓"; }
+table.data td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.data tbody tr[data-id] { cursor: pointer; } table.data tbody tr[data-id]:hover { background: var(--accent-soft); }
+td.name { font-weight: 600; } .sub { font-weight: 400; color: var(--muted); font-size: .78rem; }
+.num { text-align: right; font-family: var(--f-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .76rem; font-weight: 500; white-space: nowrap; }
+.chip.in { background: var(--ok-soft); color: var(--ok); } .chip.over { background: var(--bad-soft); color: var(--bad); }
+.chip.soon { background: var(--warn-soft); color: var(--warn); } .chip.early, .chip.unk { background: var(--idle-soft); color: var(--idle); }
+.chip.sig { background: var(--accent-soft); color: var(--accent); } .chip.track { background: var(--idle-soft); color: var(--ink); }
+.tbc { color: var(--warn); font-style: italic; }
+.chart svg { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--muted); font-family: var(--f-data); font-size: 11px; }
+.chart .bar { fill: var(--accent); } .chart .bar.past { fill: var(--bad); } .chart .grid { stroke: var(--line); }
+.chart .val { fill: var(--ink); }
+.scrim { position: fixed; inset: 0; background: rgb(0 0 0 / .35); z-index: 20; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(620px, 100%); z-index: 21; background: var(--surface); border-left: 1px solid var(--line); overflow: auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 16px) max(18px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) 18px; display: grid; gap: 18px; align-content: start; }
+.drawer section { display: grid; gap: 8px; }
+.drawer dl { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 4px 12px; margin: 0; }
+.drawer dt { color: var(--muted); font-size: .84rem; } .drawer dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.why { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--r); padding: 12px 14px; background: var(--accent-soft); display: grid; gap: 6px; }
+.verif { border: 1px solid var(--line); border-left: 3px solid var(--warn); border-radius: var(--r); padding: 10px 14px; background: var(--warn-soft); display: grid; gap: 6px; }
+.verif.ok { border-left-color: var(--ok); background: var(--ok-soft); }
+.verif ul { margin: 0; padding-left: 18px; }
+.why ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.timeline { display: grid; gap: 8px; }
+.ev { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 10px; }
+.ev .d { font-family: var(--f-data); font-size: .8rem; color: var(--muted); }
+.src { font-size: .76rem; color: var(--muted); }
+.person { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.person:last-child { border-bottom: 0; }
+form.inline { display: grid; gap: 8px; grid-template-columns: 1fr 1fr; }
+form.inline .full { grid-column: 1 / -1; }
+.saved { color: var(--ok); font-size: .82rem; } .err { color: var(--bad); }
+@media (prefers-reduced-motion: no-preference) { .drawer { animation: slide .18s ease-out; } @keyframes slide { from { transform: translateX(24px); opacity: .6; } } }
+</style>
+
+<header class="top">
+  <div><h1>Sorties PE Cosmétique</h1><div class="hint" id="meta">Chargement…</div></div>
+  <div class="hint">France en priorité, Europe en complément · marques, sous-traitants, ingrédients, packaging</div>
+</header>
+<div class="wrap">
+  <aside class="rail" id="rail" aria-label="Filtres"></aside>
+  <main id="main"><section class="card"><p class="hint">Chargement des données…</p></section></main>
+</div>
+<div id="drawer-root"></div>
+
+<script>
+/* ---------- State ---------- */
+// Contacts and follow-up are personal: they live under data/users/<viewer id>/, private to each viewer.
+let DATA = null, DB = null, DL = null, ME = null, CONTACTS = {}, SUIVI = {};
+const P = sub => `data/users/${ME}/pe/${sub}`;
+const STATUTS = ["À qualifier", "À approcher", "En contact", "Opportunité", "Écarté"];
+const EFFECTIF = { "00": "0 salarié", "01": "1–2", "02": "3–5", "03": "6–9", "11": "10–19", "12": "20–49", "21": "50–99", "22": "100–199",
+  "31": "200–249", "32": "250–499", "41": "500–999", "42": "1 000–1 999", "51": "2 000–4 999", "52": "5 000–9 999", "53": "10 000 et plus" };
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+                set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+const F = { q: "", segments: [], countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null, sort: ["prio", 1], ...store.get("pe-filters", {}) };
+const save = () => store.set("pe-filters", F);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const nf0 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }), nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1, minimumFractionDigits: 1 });
+const TBC = `<span class="tbc">à vérifier</span>`;
+const MONTHS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
+const fmtYm = v => { if (!v) return null; const [y, m] = v.split("-"); return m ? `${MONTHS[+m - 1]} ${y}` : y; };
+const fmtDay = v => v ? new Date(v).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" }) : "";
+const meur = v => v == null ? null : `${nf1.format(v / 1e6)} M€`;
+const win = () => [F.min ?? DATA.holding_window_years[0], F.max ?? DATA.holding_window_years[1]];
+const srcLink = (url, title) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(title || new URL(url).hostname)}</a>` : esc(title || "source non précisée");
+
+/* ---------- Exit analysis (estimate from sourced dates + the user's holding hypothesis) ---------- */
+function entryDate(v) { if (!v) return null; const [y, m] = v.split("-").map(Number); return new Date(y, m ? m - 1 : 6, m ? 15 : 1); }
+function exitInfo(c) {
+  const [lo, hi] = win(), d = entryDate(c.ref_entry);
+  if (!d) return { status: "unk", label: "Entrée à vérifier", hold: null, open: null, close: null };
+  const hold = (Date.now() - d) / (365.25 * 864e5), y = d.getFullYear();
+  const status = hold < lo - 1 ? "early" : hold < lo ? "soon" : hold <= hi ? "in" : "over";
+  const label = { early: "Trop tôt", soon: "Fenêtre dans < 1 an", in: "Dans la fenêtre", over: "Au-delà de la fenêtre" }[status];
+  return { status, label, hold, approx: !c.ref_entry.includes("-"), open: y + lo, close: y + hi };
+}
+const ORDER = { in: 0, over: 1, soon: 2, early: 3, unk: 4 };
+const PRIO = { Haute: 0, Moyenne: 1, Basse: 2 };
+// Order: analyst priority, then published signal, window status and holding length.
+// The viewer's own priority (follow-up doc) overrides Claude's opinion.
+const prioOf = c => SUIVI[c.id]?.priorite || c.priorite;
+const prio = c => { const e = exitInfo(c); return (PRIO[prioOf(c)] ?? 3) * 100 + (c.exit_signals?.length ? 0 : 10) + ORDER[e.status] - (e.hold || 0) / 100; };
+function why(c) {
+  const e = exitInfo(c), [lo, hi] = win(), out = [];
+  const ref = (c.funds || []).find(f => f.name === c.ref_fund);
+  if (ref) out.push(`${esc(ref.name)} est entré${ref.role ? ` (${esc(ref.role)})` : ""} en ${esc(fmtYm(ref.entry_date))}${ref.deal_type ? `, ${esc(ref.deal_type)}` : ""}${ref.seller ? `, cédant ${esc(ref.seller)}` : ""} : ${e.approx ? "environ " : ""}${nf1.format(e.hold)} ans de détention aujourd'hui.`);
+  else out.push("Date d'entrée du fonds non trouvée dans les sources : la fenêtre de sortie ne peut pas être calculée.");
+  if (e.open) out.push(`Fenêtre de sortie estimée <strong>${e.open}–${e.close}</strong>, avec votre hypothèse de ${lo} à ${hi} ans de détention : ${e.label.toLowerCase()}.`);
+  const prev = c.previous_owners || [];
+  if (prev.length) out.push(`La société a déjà changé de mains (précédents actionnaires : ${prev.map(p => esc(p.name) + (p.exit ? ` jusqu'en ${esc(p.exit)}` : "")).join(", ")}) : un acheteur financier suivant est plausible.`);
+  const others = (c.funds || []).filter(f => f !== ref);
+  if (others.length) out.push(`Autres fonds au capital : ${others.map(f => esc(f.name) + (f.entry_date ? ` (${esc(fmtYm(f.entry_date))})` : "")).join(", ")}.`);
+  for (const s of c.exit_signals || []) out.push(`<strong>Signal publié${s.date ? `, ${esc(fmtYm(s.date))}` : ""} :</strong> ${esc(s.fact)} ${s.source_url ? `(${srcLink(s.source_url, "source")})` : ""}`);
+  return out;
+}
+
+/* ---------- Figures ---------- */
+function latestCA(c) {
+  const r = (c.finances || []).find(f => f.metric === "ca");
+  if (r) return { v: meur(r.value), year: r.year, src: `${r.source}, appel du ${fmtDay(r.fetched_at)}` };
+  const k = (c.key_figures || []).find(f => f.metric === "CA");
+  return k ? { v: k.value, year: k.year, src: k.source_url ? new URL(k.source_url).hostname : k.source_title, url: k.source_url } : null;
+}
+const contactsOf = id => Object.entries(CONTACTS).filter(([, p]) => (p.liens || []).some(l => l.societe === id)).map(([cid, p]) => ({ id: cid, ...p }));
+const suiviOf = id => SUIVI[id]?.statut || "À qualifier";
+// Follow-up docs are merged, so a table edit never wipes fields saved from the sheet.
+async function saveSuivi(id, patch) {
+  const body = { ...(SUIVI[id] || {}), ...patch, updated_at: new Date().toISOString() };
+  await DB.doc(`${P("suivi")}/${id}`).set(body); SUIVI[id] = body; return body;
+}
+const stop = 'onclick="event.stopPropagation()" onkeydown="event.stopPropagation()"';
+
+/* ---------- Load ---------- */
+async function boot() {
+  try {
+    const r = await fetch("data.json"); if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    DATA = await r.json();
+  } catch (e) { document.getElementById("main").innerHTML = `<section class="card"><p class="err">Les données n'ont pas pu être chargées (${esc(e.message)}). Rechargez la page.</p></section>`; return; }
+  document.getElementById("meta").textContent = `${nf0.format(DATA.companies.length)} sociétés détenues par des fonds · données compilées le ${fmtDay(DATA.generated_at)} · chaque fait renvoie à sa source`;
+  render(true); connect();
+}
+async function connect() {
+  if (!window.claude?.use) return;
+  try {
+    DB = await window.claude.use("db");
+    const user = DB && await window.claude.use("user");
+    ME = user ? await user.id() : null;
+    if (!ME) DB = null;
+    if (DB) {
+      DB.collection(P("contacts")).onSnapshot(s => { CONTACTS = {}; for (const d of s.docs) CONTACTS[d.id] = d.data(); render(false); refreshDrawer(); }, () => {});
+      DB.collection(P("suivi")).onSnapshot(s => { SUIVI = {}; for (const d of s.docs) SUIVI[d.id] = d.data(); render(false); }, () => {});
+    }
+  } catch { DB = null; }
+  try { DL = await window.claude.use("downloads"); } catch { DL = null; }
+  render(false);
+}
+
+/* ---------- Rail ---------- */
+function rail() {
+  const countries = [...new Set(DATA.companies.map(c => c.country || "?"))].sort();
+  const [lo, hi] = win();
+  document.getElementById("rail").innerHTML = `
+    <div class="field"><label for="f-q">Recherche (société, fonds, dirigeant)</label><input id="f-q" type="search" value="${esc(F.q)}"></div>
+    <div class="field"><span class="lbl">Segment</span><div class="checks">${DATA.segments.map(s => `<label><input type="checkbox" data-seg="${esc(s)}" ${!F.segments.length || F.segments.includes(s) ? "checked" : ""}> ${esc(s)}</label>`).join("")}</div></div>
+    <div class="field"><label for="f-country">Pays</label><select id="f-country"><option value="all">Tous</option><option value="FR" ${F.countries === "FR" ? "selected" : ""}>France</option><option value="EU" ${F.countries === "EU" ? "selected" : ""}>Europe hors France</option>
+      ${countries.filter(c => c !== "FR").map(c => `<option value="${esc(c)}" ${F.countries === c ? "selected" : ""}>${esc(c)}</option>`).join("")}</select></div>
+    <div class="field"><label for="f-status">Fenêtre de sortie</label><select id="f-status">
+      ${[["all", "Toutes"], ["in", "Dans la fenêtre"], ["over", "Au-delà de la fenêtre"], ["soon", "Dans moins d'un an"], ["early", "Trop tôt"], ["unk", "Entrée à vérifier"], ["sig", "Avec signal publié"]].map(([v, l]) => `<option value="${v}" ${F.status === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
+    <div class="field"><label for="f-verif">Fiabilité</label><select id="f-verif">${[["all", "Toutes"], ["Vérifié", "Vérifié"], ["À vérifier", "À vérifier"]].map(([v, l]) => `<option value="${v}" ${F.verif === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
+    <div class="field"><label for="f-suivi">Mon suivi</label><select id="f-suivi"><option value="all">Tous</option>${STATUTS.map(s => `<option ${F.suivi === s ? "selected" : ""}>${s}</option>`).join("")}</select></div>
+    <div class="field"><span class="lbl">Hypothèse de durée de détention (années)</span>
+      <div class="pair"><input id="f-min" type="number" min="1" max="15" step="1" value="${lo}" aria-label="Minimum"><input id="f-max" type="number" min="1" max="20" step="1" value="${hi}" aria-label="Maximum"></div>
+      <span class="hint">Votre hypothèse, pas une statistique publiée. Elle fixe la fenêtre de sortie estimée.</span></div>
+    <button class="btn" id="f-reset">Réinitialiser les filtres</button>`;
+  const on = (id, ev, fn) => document.getElementById(id).addEventListener(ev, e => { fn(e.target); save(); render(false); });
+  on("f-q", "input", t => F.q = t.value);
+  on("f-country", "change", t => F.countries = t.value);
+  on("f-status", "change", t => F.status = t.value);
+  on("f-suivi", "change", t => F.suivi = t.value);
+  on("f-verif", "change", t => F.verif = t.value);
+  on("f-min", "change", t => F.min = Math.max(1, +t.value || 1));
+  on("f-max", "change", t => F.max = Math.max(F.min ?? 1, +t.value || 1));
+  document.querySelectorAll("[data-seg]").forEach(b => b.addEventListener("change", () => {
+    F.segments = [...document.querySelectorAll("[data-seg]:checked")].map(x => x.dataset.seg);
+    if (F.segments.length === DATA.segments.length) F.segments = [];
+    save(); render(false);
+  }));
+  document.getElementById("f-reset").onclick = () => { Object.assign(F, { q: "", segments: [], countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null }); save(); render(true); };
+}
+
+/* ---------- Main view ---------- */
+function filtered() {
+  const q = F.q.trim().toLowerCase();
+  return DATA.companies.filter(c => {
+    const e = exitInfo(c);
+    return (!F.segments.length || F.segments.includes(c.segment))
+      && (F.countries === "all" || (F.countries === "EU" ? c.country !== "FR" : c.country === F.countries))
+      && (F.status === "all" || (F.status === "sig" ? (c.exit_signals || []).length > 0 : e.status === F.status))
+      && (F.suivi === "all" || suiviOf(c.id) === F.suivi)
+      && (F.verif === "all" || c.verification === F.verif)
+      && (!q || [c.company, c.legal_name, c.sub_segment, c.hq_city, c.ceo?.name, ...(c.funds || []).map(f => f.name), ...(c.officers || []).map(o => o.nom)].join(" ").toLowerCase().includes(q));
+  });
+}
+const SORTS = { prio: prio, nom: c => c.company.toLowerCase(), segment: c => c.segment, pays: c => c.country, fonds: c => (c.ref_fund || "~").toLowerCase(),
+  entree: c => c.ref_entry || "9999", hold: c => -(exitInfo(c).hold ?? -1), fenetre: c => exitInfo(c).open ?? 9999,
+  signaux: c => -(c.exit_signals || []).length, verif: c => c.verification === "Vérifié" ? 0 : 1, ca: c => -((c.finances || []).find(f => f.metric === "ca")?.value ?? -1), contacts: c => -contactsOf(c.id).length,
+  dernier: c => SUIVI[c.id]?.dernier_contact ? -Date.parse(SUIVI[c.id].dernier_contact) : Infinity, next: c => (SUIVI[c.id]?.next_steps || "~").toLowerCase(), suivi: c => STATUTS.indexOf(suiviOf(c.id)) };
+
+function chart(rows) {
+  const now = new Date().getFullYear(), years = [];
+  for (let y = now - 1; y <= now + 6; y++) years.push(y);
+  const counts = years.map(y => rows.filter(c => { const e = exitInfo(c); return e.open != null && (y === now - 1 ? e.open <= y : e.open === y); }).length);
+  const W = 640, H = 170, pad = { l: 28, r: 8, t: 16, b: 34 }, max = Math.max(1, ...counts), bw = (W - pad.l - pad.r) / years.length;
+  const yScale = v => H - pad.b - (v / max) * (H - pad.t - pad.b);
+  const ticks = [0, Math.ceil(max / 2), max].filter((v, i, a) => a.indexOf(v) === i);
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Nombre de sociétés par année d'ouverture de la fenêtre de sortie">
+    ${ticks.map(t => `<line class="grid" x1="${pad.l}" x2="${W - pad.r}" y1="${yScale(t)}" y2="${yScale(t)}"/><text x="${pad.l - 6}" y="${yScale(t) + 4}" text-anchor="end">${t}</text>`).join("")}
+    ${years.map((y, i) => { const x = pad.l + i * bw + 6, h = H - pad.b - yScale(counts[i]);
+      return `<rect class="bar ${i === 0 ? "past" : ""}" x="${x}" y="${yScale(counts[i])}" width="${bw - 12}" height="${Math.max(0, h)}" rx="2"/>
+      ${counts[i] ? `<text class="val" x="${x + (bw - 12) / 2}" y="${yScale(counts[i]) - 4}" text-anchor="middle">${counts[i]}</text>` : ""}
+      <text x="${x + (bw - 12) / 2}" y="${H - pad.b + 16}" text-anchor="middle">${i === 0 ? `≤ ${y}` : y}</text>`; }).join("")}
+  </svg>`;
+}
+
+function render(rebuildRail) {
+  if (!DATA) return;
+  if (rebuildRail) rail();
+  const box = document.querySelector("#main .tablebox")?.scrollTop, y = window.scrollY;
+  const rows = filtered();
+  const [k, dir] = F.sort, key = SORTS[k] || SORTS.prio;
+  rows.sort((a, b) => { const x = key(a), z = key(b); return (x < z ? -1 : x > z ? 1 : 0) * dir || a.company.localeCompare(b.company); });
+  const e = rows.map(exitInfo);
+  const kpis = `<div class="kpis">
+    <div class="kpi"><span class="v">${nf0.format(rows.length)}</span><span class="l">Sociétés affichées</span></div>
+    <div class="kpi"><span class="v">${nf0.format(e.filter(x => x.status === "in").length)}</span><span class="l">Dans la fenêtre (${win().join("–")} ans)</span></div>
+    <div class="kpi"><span class="v">${nf0.format(e.filter(x => x.status === "over").length)}</span><span class="l">Au-delà de la fenêtre</span></div>
+    <div class="kpi"><span class="v">${nf0.format(rows.filter(c => (c.exit_signals || []).length).length)}</span><span class="l">Avec signal de sortie publié</span></div>
+    <div class="kpi"><span class="v">${nf0.format(rows.filter(c => c.verification !== "Vérifié").length)}</span><span class="l">À vérifier</span></div>
+    <div class="kpi"><span class="v">${nf0.format(rows.filter(c => contactsOf(c.id).length).length)}</span><span class="l">Avec au moins un de vos contacts</span></div></div>`;
+  const cols = [
+    ["nom", "Société", c => `<td class="name">${esc(c.company)}<div class="sub">${esc(c.sub_segment || c.segment || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></td>`],
+    ["prio", "Priorité", c => { const v = prioOf(c), mine = !!SUIVI[c.id]?.priorite;
+      return `<td><select class="cell-in prio-${{ Haute: "h", Moyenne: "m", Basse: "b" }[v] || "x"}" data-f="priorite" data-id="${esc(c.id)}" aria-label="Priorité de ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>
+        ${["Haute", "Moyenne", "Basse"].map(o => `<option ${v === o ? "selected" : ""}>${o}</option>`).join("")}</select>
+        <div class="sub">${mine ? `modifiée${c.priorite && c.priorite !== v ? ` (avis Claude : ${esc(c.priorite)})` : ""}` : "avis Claude"}</div></td>`; }],
+    ["segment", "Segment", c => `<td>${esc(c.segment || "—")}</td>`],
+    ["pays", "Pays", c => `<td class="mono">${esc(c.country || "?")}</td>`],
+    ["fonds", "Fonds de référence", c => `<td>${c.ref_fund ? esc(c.ref_fund) : TBC}${(c.funds || []).length > 1 ? `<div class="sub">+ ${c.funds.length - 1} autre(s)</div>` : ""}</td>`],
+    ["entree", "Entrée", c => `<td class="mono">${c.ref_entry ? esc(fmtYm(c.ref_entry)) : TBC}</td>`],
+    ["hold", "Détention", c => { const x = exitInfo(c); return `<td class="num">${x.hold != null ? `${x.approx ? "≈ " : ""}${nf1.format(x.hold)} ans` : "—"}</td>`; }],
+    ["fenetre", "Fenêtre estimée", c => { const x = exitInfo(c); return `<td><span class="chip ${x.status}">${esc(x.label)}</span>${x.open ? `<div class="sub mono">${x.open}–${x.close}</div>` : ""}</td>`; }],
+    ["verif", "Fiabilité", c => `<td><span class="chip ${c.verification === "Vérifié" ? "in" : "soon"}" title="${esc((c.verification_points || []).join(" · "))}">${esc(c.verification)}</span>${(c.verification_points || []).length ? `<div class="sub">${c.verification_points.length} point(s)</div>` : ""}</td>`],
+    ["signaux", "Signaux", c => `<td>${(c.exit_signals || []).length ? `<span class="chip sig">${c.exit_signals.length} publié(s)</span>` : "—"}</td>`],
+    ["ca", "CA", c => { const v = latestCA(c); return `<td class="num">${v ? `${esc(v.v)}<div class="sub">${esc(v.year || "")}</div>` : TBC}</td>`; }],
+    ["contacts", "Mes contacts", c => { const n = contactsOf(c.id).length; return `<td class="num">${n || "—"}</td>`; }],
+    ["suivi", "Mon suivi", c => `<td><span class="chip track">${esc(suiviOf(c.id))}</span></td>`],
+    ["dernier", "Dernier contact", c => `<td><input type="date" class="cell-in" data-f="dernier_contact" data-id="${esc(c.id)}" value="${esc(SUIVI[c.id]?.dernier_contact || "")}" aria-label="Dernier contact avec ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}></td>`],
+    ["next", "Next steps", c => `<td><textarea class="cell-in next" rows="2" data-f="next_steps" data-id="${esc(c.id)}" placeholder="Prochaine action…" aria-label="Next steps pour ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>${esc(SUIVI[c.id]?.next_steps || "")}</textarea></td>`],
+  ];
+  const head = cols.map(([key, l]) => `<th data-sort="${key}" ${F.sort[0] === key ? `aria-sort="${F.sort[1] > 0 ? "ascending" : "descending"}"` : ""}>${l}</th>`).join("");
+  const body = rows.map(c => `<tr data-id="${esc(c.id)}" tabindex="0">${cols.map(x => x[2](c)).join("")}</tr>`).join("");
+  const exited = DATA.exited || [];
+  document.getElementById("main").innerHTML = `${kpis}
+    <section class="card chart"><div class="row"><h2>Ouverture de la fenêtre de sortie</h2><span class="hint">Année d'entrée du fonds + ${win()[0]} ans, sociétés filtrées</span></div>${chart(rows)}
+      <p class="hint">Estimation calculée à partir des dates d'entrée sourcées et de votre hypothèse de détention. La première barre regroupe les fenêtres déjà ouvertes.</p></section>
+    <section class="card"><div class="row"><h2>${nf0.format(rows.length)} sociétés</h2>
+      <div class="row"><button class="btn" id="sort-prio" ${F.sort[0] === "prio" ? "disabled" : ""}>Trier par priorité de sortie</button><button class="btn primary" id="xls" ${DL ? "" : "disabled"}>Exporter en Excel</button></div></div>
+      <div class="tablebox"><table class="data" id="tbl"><thead><tr>${head}</tr></thead><tbody>${body || `<tr><td colspan="${cols.length}" class="hint">Aucune société avec ces filtres.</td></tr>`}</tbody></table></div>
+      <p class="hint">Tri par priorité : la vôtre si vous l'avez changée, sinon mon avis argumenté dans chaque fiche, puis signal de sortie publié, puis position dans la fenêtre.</p></section>
+    ${exited.length ? `<section class="card"><h2>Sorties récentes (références)</h2><div class="tablebox"><table class="data"><thead><tr><th>Société</th><th>Fonds sortant</th><th>Acquéreur</th><th>Date</th><th>Source</th></tr></thead><tbody>
+      ${exited.map(x => `<tr><td class="name">${esc(x.company)}<div class="sub">${esc(x.segment || "")} · ${esc(x.country || "")}</div></td><td>${esc(x.fund || x.seller || (x.funds || []).map(f => f.name).join(", ") || "—")}</td><td>${esc(x.buyer || "—")}</td><td class="mono">${esc(fmtYm(x.exit_date) || x.exit_date || "—")}</td><td>${x.source_url ? srcLink(x.source_url, "lien") : "—"}</td></tr>`).join("")}
+      </tbody></table></div></section>` : ""}`;
+  const tb = document.querySelector("#main .tablebox"); if (box && tb) tb.scrollTop = box; if (!rebuildRail) window.scrollTo(0, y);
+  const tbl = document.getElementById("tbl");
+  tbl.querySelectorAll("th[data-sort]").forEach(th => th.onclick = () => { const key = th.dataset.sort; F.sort = [key, F.sort[0] === key ? -F.sort[1] : 1]; save(); render(false); });
+  tbl.querySelectorAll("tr[data-id]").forEach(tr => { tr.onclick = () => openSheet(tr.dataset.id); tr.onkeydown = ev => { if (ev.key === "Enter") openSheet(tr.dataset.id); }; });
+  tbl.querySelectorAll(".cell-in[data-f]").forEach(el => el.addEventListener("change", async () => {
+    el.disabled = true;
+    try { await saveSuivi(el.dataset.id, { [el.dataset.f]: el.value.trim() }); if (el.dataset.f === "priorite") render(false); }
+    catch { /* keep the typed value so the viewer can retry */ }
+    el.disabled = false;
+  }));
+  document.getElementById("sort-prio").onclick = () => { F.sort = ["prio", 1]; save(); render(false); };
+  document.getElementById("xls").onclick = ev => exportExcel(rows, ev.currentTarget);
+}
+
+/* ---------- Company sheet ---------- */
+let OPEN = null;
+const refreshDrawer = () => { if (OPEN) openSheet(OPEN, true); };
+function openSheet(id, keepScroll) {
+  const c = DATA.companies.find(x => x.id === id); if (!c) return;
+  OPEN = id;
+  const root = document.getElementById("drawer-root"), prevScroll = keepScroll ? root.querySelector(".drawer")?.scrollTop : 0;
+  const e = exitInfo(c), ca = latestCA(c), people = contactsOf(id), st = SUIVI[id] || {};
+  const fin = (c.finances || []);
+  const years = [...new Set(fin.map(f => f.year))].slice(0, 4);
+  const finTable = years.length ? `<div class="tablebox"><table class="data"><thead><tr><th>Exercice</th><th>CA</th><th>Résultat net</th></tr></thead><tbody>
+      ${years.map(yr => { const g = m => fin.find(f => f.year === yr && f.metric === m)?.value; return `<tr><td class="mono">${yr}</td><td class="num">${g("ca") != null ? meur(g("ca")) : TBC}</td><td class="num">${g("resultat_net") != null ? meur(g("resultat_net")) : TBC}</td></tr>`; }).join("")}
+      </tbody></table></div><div class="src">${esc(c.registry_source)}, appel du ${fmtDay(c.registry_fetched_at)} · SIREN ${esc(c.siren)} · ${esc(c.registry_match)}</div>` : "";
+  const kf = (c.key_figures || []).map(k => `<li>${esc(k.metric)} ${k.year ? esc(k.year) : ""} : <strong>${esc(k.value)}</strong> <span class="src">(${k.source_url ? srcLink(k.source_url, "source") : esc(k.source_title || "")})</span></li>`).join("");
+  const funds = [...(c.previous_owners || []).map(p => ({ d: p.entry, t: `${esc(p.name)} (ancien actionnaire${p.exit ? `, sorti en ${esc(p.exit)}` : ""})`, url: p.source_url })),
+    ...(c.funds || []).map(f => ({ d: f.entry_date, t: `<strong>${esc(f.name)}</strong>${f.role ? `, ${esc(f.role)}` : ""}${f.deal_type ? ` · ${esc(f.deal_type)}` : ""}${f.seller ? ` · cédant : ${esc(f.seller)}` : ""}`, url: f.source_url, title: f.source_title, sd: f.source_date }))]
+    .sort((a, b) => String(a.d || "9999").localeCompare(String(b.d || "9999")));
+  const officers = (c.officers || []).filter(o => o.nom).slice(0, 8);
+  const inCo = people.filter(p => p.liens.some(l => l.societe === id && l.type === "societe")), inFund = people.filter(p => !inCo.includes(p));
+  const personHTML = p => `<div class="person"><div><strong>${esc([p.prenom, p.nom].join(" "))}</strong> · ${esc(p.poste || "poste non renseigné")}
+      <div class="sub">${esc(p.entreprise || "")}${p.linkedin ? ` · <a href="${esc(p.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>` : ""} · ${esc(p.source || "")}</div>
+      <textarea class="p-note" data-id="${esc(p.id)}" rows="1" placeholder="Note sur ce contact" aria-label="Note sur ${esc(p.prenom)} ${esc(p.nom)}" style="width:100%;margin-top:6px;padding:5px 8px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg)">${esc(p.notes || "")}</textarea></div>
+      <div><button class="btn small" data-del="${esc(p.id)}">Retirer</button></div></div>`;
+  root.innerHTML = `<div class="scrim" id="scrim"></div><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title">
+    <div class="row"><div><h2 id="d-title">${esc(c.company)}</h2><div class="hint">${esc(c.segment || "")}${c.sub_segment ? " · " + esc(c.sub_segment) : ""} · ${esc(c.country || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></div>
+      <button class="btn" id="d-close" aria-label="Fermer">Fermer</button></div>
+    ${c.comment ? `<div class="why"><h3>Commentaire</h3><p style="margin:0"><strong>Statut.</strong> ${esc(c.comment.statut)}</p><p style="margin:0"><strong>Pourquoi une sortie.</strong> ${esc(c.comment.these)}</p>
+      <div class="src">${esc(c.comment.auteur)}, ${fmtDay(c.comment.date)}. Analyse à partir des faits sourcés ci-dessous, à confirmer.</div></div>` : ""}
+    <div class="verif ${c.verification === "Vérifié" ? "ok" : ""}"><h3>${c.verification === "Vérifié" ? "Données vérifiées" : "À vérifier"}</h3>
+      ${(c.verification_points || []).length ? `<ul>${c.verification_points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p class="hint" style="margin:0">Actionnariat et date d'entrée confirmés par les sources citées.</p>`}
+      ${c.registry_match && c.registry_match.includes("vérifier") ? `<p class="hint" style="margin:0">Entité du registre rapprochée par le nom : ${esc(c.legal_name)} (SIREN ${esc(c.siren)}). Vérifiez que c'est la bonne société.</p>` : ""}</div>
+    <div class="why"><h3>Sortie possible : quand et pourquoi</h3><ul>${why(c).map(x => `<li>${x}</li>`).join("")}</ul>
+      <div class="src">Les dates et signaux viennent des sources citées. La fenêtre est une estimation à partir de votre hypothèse de détention, pas une information publiée.</div></div>
+    <section><h3>Mon suivi</h3>
+      <div class="pair"><div class="field"><label for="s-statut">Statut</label><select id="s-statut" ${DB ? "" : "disabled"}>${STATUTS.map(s => `<option ${suiviOf(id) === s ? "selected" : ""}>${s}</option>`).join("")}</select></div>
+      <div class="field"><label for="s-next">Prochaine étape (date)</label><input id="s-next" type="date" value="${esc(st.prochaine_date || "")}" ${DB ? "" : "disabled"}></div></div>
+      <div class="pair"><div class="field"><label for="s-last">Dernier contact</label><input id="s-last" type="date" value="${esc(st.dernier_contact || "")}" ${DB ? "" : "disabled"}></div>
+      <div class="field"><label for="s-prio">Priorité</label><select id="s-prio" ${DB ? "" : "disabled"}>${["Haute", "Moyenne", "Basse"].map(o => `<option ${prioOf(c) === o ? "selected" : ""}>${o}</option>`).join("")}</select></div></div>
+      <div class="field"><label for="s-steps">Next steps</label><textarea id="s-steps" rows="2" ${DB ? "" : "disabled"}>${esc(st.next_steps || "")}</textarea></div>
+      <div class="field"><label for="s-notes">Notes</label><textarea id="s-notes" rows="3" ${DB ? "" : "disabled"}>${esc(st.notes || "")}</textarea></div>
+      <div class="row"><span id="s-msg" class="hint">${DB ? (st.updated_at ? `Enregistré le ${fmtDay(st.updated_at)}` : "") : "Connexion requise pour enregistrer votre suivi."}</span><button class="btn primary" id="s-save" ${DB ? "" : "disabled"}>Enregistrer</button></div></section>
+    <section><h3>Mes contacts (${people.length})</h3>
+      <div><div class="hint">Dans la société</div>${inCo.map(personHTML).join("") || `<p class="hint">Aucun contact trouvé dans vos relations.</p>`}</div>
+      <div><div class="hint">Dans les fonds actionnaires</div>${inFund.map(personHTML).join("") || `<p class="hint">Aucun contact trouvé dans vos relations.</p>`}</div>
+      <details><summary class="btn small" style="display:inline-block">Ajouter un contact</summary>
+        <form class="inline" id="p-form" style="margin-top:8px">
+          <div class="field"><label for="p-prenom">Prénom</label><input id="p-prenom" required></div><div class="field"><label for="p-nom">Nom</label><input id="p-nom" required></div>
+          <div class="field"><label for="p-poste">Poste</label><input id="p-poste"></div>
+          <div class="field"><label for="p-lien">Rattachement</label><select id="p-lien"><option value="societe|${esc(c.company)}">${esc(c.company)} (société)</option>${(c.funds || []).map(f => `<option value="fonds|${esc(f.name)}">${esc(f.name)} (fonds)</option>`).join("")}</select></div>
+          <div class="field full"><label for="p-li">Profil LinkedIn (facultatif)</label><input id="p-li" type="url" placeholder="https://www.linkedin.com/in/…"></div>
+          <div class="full row"><span id="p-msg" class="hint"></span><button class="btn primary" type="submit" ${DB ? "" : "disabled"}>Ajouter</button></div></form></details></section>
+    <section><h3>Actionnaires et historique</h3><div class="timeline">${funds.map(f => `<div class="ev"><span class="d">${esc(fmtYm(f.d) || "date ?")}</span><div>${f.t}${f.url ? `<div class="src">${srcLink(f.url, f.title)}${f.sd ? `, ${fmtDay(f.sd)}` : ""}</div>` : f.title ? `<div class="src">${esc(f.title)}</div>` : ""}</div></div>`).join("") || `<p class="hint">Aucun actionnaire sourcé.</p>`}</div></section>
+    <section><h3>Dirigeants</h3><dl>
+      <dt>CEO (source)</dt><dd>${c.ceo ? `${esc(c.ceo.name)}, ${esc(c.ceo.title || "")} <span class="src">(${c.ceo.source_url ? srcLink(c.ceo.source_url, "source") : esc(c.ceo.source_title || "")})</span>` : TBC}</dd>
+      ${officers.length ? `<dt>Registre (RNE)</dt><dd>${officers.map(o => `${esc(o.nom)}${o.qualite ? ` <span class="sub">${esc(o.qualite)}</span>` : ""}`).join("<br>")}</dd>` : ""}</dl></section>
+    <section><h3>Chiffres clés</h3><dl>
+      <dt>Dernier CA connu</dt><dd>${ca ? `${esc(ca.v)} ${ca.year ? `(${esc(ca.year)})` : ""} <span class="src">${ca.url ? srcLink(ca.url, ca.src) : esc(ca.src)}</span>` : TBC}</dd>
+      <dt>Effectif (registre)</dt><dd>${c.effectif_code ? `${esc(EFFECTIF[c.effectif_code] || c.effectif_code)} salariés${c.effectif_year ? ` (${esc(c.effectif_year)})` : ""}` : TBC}</dd>
+      ${c.legal_name ? `<dt>Raison sociale</dt><dd>${esc(c.legal_name)} · NAF ${esc(c.naf || "")}${c.date_creation ? ` · créée le ${fmtDay(c.date_creation)}` : ""}</dd>` : ""}
+      ${c.website ? `<dt>Site</dt><dd><a href="${esc(c.website)}" target="_blank" rel="noopener">${esc(c.website)}</a></dd>` : ""}</dl>
+      ${finTable}${kf ? `<ul style="margin:0;padding-left:18px">${kf}</ul>` : ""}</section>
+    ${c.notes ? `<section><h3>Notes de recherche</h3><p style="margin:0">${esc(c.notes)}</p></section>` : ""}
+  </aside>`;
+  const drawer = root.querySelector(".drawer"); if (prevScroll) drawer.scrollTop = prevScroll;
+  const close = () => { root.innerHTML = ""; OPEN = null; document.removeEventListener("keydown", onKey); };
+  const onKey = ev => { if (ev.key === "Escape") close(); };
+  document.addEventListener("keydown", onKey);
+  document.getElementById("scrim").onclick = close; document.getElementById("d-close").onclick = close;
+  if (!keepScroll) document.getElementById("d-close").focus();
+  if (!DB) return;
+  document.getElementById("s-save").onclick = async () => {
+    const msg = document.getElementById("s-msg");
+    const v = k => document.getElementById(k).value.trim();
+    const patch = { statut: v("s-statut"), prochaine_date: v("s-next"), dernier_contact: v("s-last"), next_steps: v("s-steps"), notes: v("s-notes") };
+    if (v("s-prio") !== c.priorite || SUIVI[id]?.priorite) patch.priorite = v("s-prio");
+    try { await saveSuivi(id, patch); msg.className = "saved"; msg.textContent = "Enregistré."; render(false); }
+    catch (err) { msg.className = "err"; msg.textContent = `Échec de l'enregistrement (${err?.code || "erreur"}). Réessayez.`; }
+  };
+  root.querySelectorAll("[data-del]").forEach(b => b.onclick = async () => {
+    const pid = b.dataset.del, p = CONTACTS[pid], rest = (p.liens || []).filter(l => l.societe !== id);
+    b.disabled = true;
+    try { if (rest.length) await DB.doc(`${P("contacts")}/${pid}`).update({ liens: rest, updated_at: new Date().toISOString() }); else await DB.doc(`${P("contacts")}/${pid}`).delete(); }
+    catch { b.disabled = false; }
+  });
+  root.querySelectorAll(".p-note").forEach(t => t.onchange = async () => {
+    try { await DB.doc(`${P("contacts")}/${t.dataset.id}`).update({ notes: t.value.trim(), updated_at: new Date().toISOString() }); } catch {}
+  });
+  document.getElementById("p-form").onsubmit = async ev => {
+    ev.preventDefault();
+    const v = k => document.getElementById(k).value.trim(), [type, nom] = v("p-lien").split("|"), msg = document.getElementById("p-msg");
+    const now = new Date().toISOString(), pid = "m-" + Math.random().toString(36).slice(2, 10);
+    try {
+      await DB.doc(`${P("contacts")}/${pid}`).set({ prenom: v("p-prenom"), nom: v("p-nom"), poste: v("p-poste"), entreprise: nom, linkedin: v("p-li"),
+        liens: [{ type, societe: id, nom }], source: "Saisi à la main", notes: "", created_at: now, updated_at: now });
+    } catch (err) { msg.className = "err"; msg.textContent = `Échec de l'ajout (${err?.code || "erreur"}).`; }
+  };
+}
+
+/* ---------- Excel export ---------- */
+async function exportExcel(rows, btn) {
+  if (!DL || !window.XLSX) return;
+  btn.disabled = true;
+  const sheet = rows.map(c => { const e = exitInfo(c), ca = latestCA(c), ppl = contactsOf(c.id);
+    return { "Société": c.company, "Segment": c.segment, "Sous-segment": c.sub_segment || "", "Pays": c.country, "Ville": c.hq_city || "", "SIREN": c.siren || "",
+      "Fonds de référence": c.ref_fund || "à vérifier", "Entrée": c.ref_entry || "à vérifier", "Détention (ans)": e.hold != null ? +e.hold.toFixed(1) : "",
+      "Fenêtre estimée": e.open ? `${e.open}–${e.close}` : "", "Statut fenêtre": e.label, "Signaux publiés": (c.exit_signals || []).map(s => `${s.date || ""} ${s.fact}`).join(" | "),
+      "Autres fonds": (c.funds || []).filter(f => f.name !== c.ref_fund).map(f => f.name).join(", "), "CEO": c.ceo?.name || "à vérifier",
+      "Dernier CA": ca ? ca.v : "à vérifier", "Année CA": ca?.year || "", "Source CA": ca ? (ca.url || ca.src) : "",
+      "Priorité": prioOf(c) || "", "Avis Claude": c.priorite || "", "Fiabilité": c.verification, "Points à vérifier": (c.verification_points || []).join(" | "),
+      "Statut (commentaire)": c.comment?.statut || "", "Pourquoi une sortie (commentaire)": c.comment?.these || "", "Mes contacts": ppl.map(p => `${p.prenom} ${p.nom} (${p.poste || ""}, ${p.entreprise || ""})`).join(" | "), "Mon suivi": suiviOf(c.id), "Dernier contact": SUIVI[c.id]?.dernier_contact || "", "Next steps": SUIVI[c.id]?.next_steps || "", "Mes notes": SUIVI[c.id]?.notes || "" }; });
+  const sources = rows.flatMap(c => [...(c.funds || []).map(f => ({ "Société": c.company, "Fait": `Entrée ${f.name} ${f.entry_date || ""}`, "Source": f.source_url || f.source_title || "", "Date source": f.source_date || "" })),
+    ...(c.exit_signals || []).map(s => ({ "Société": c.company, "Fait": s.fact, "Source": s.source_url || "", "Date source": s.date || "" }))]);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sheet), "Sociétés");
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sources), "Sources");
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["Fenêtre de sortie", `Estimation : année d'entrée + ${win()[0]} à ${win()[1]} ans (hypothèse de l'utilisateur)`], ["Export", new Date().toISOString()]]), "Méthode");
+  try { await DL.save({ filename: `sorties-pe-cosmetique-${new Date().toISOString().slice(0, 10)}.xlsx`, data: new Blob([XLSX.write(wb, { type: "array", bookType: "xlsx" })]) }); } catch {}
+  btn.disabled = false;
+}
+
+boot();
+</script>

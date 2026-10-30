@@ -1,0 +1,993 @@
+{
+  "companies": [
+    {
+      "company": "Aroma-Zone",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Cosmétiques naturels / huiles essentielles (DIY & soins)",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Eurazeo (Eurazeo Capital IV)",
+          "role": "majoritaire",
+          "entry_date": "2021-07",
+          "deal_type": null,
+          "seller": "Famille Vausselin (fondateurs)",
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html",
+          "source_title": "Eurazeo enters into exclusive discussions with Partners Group regarding the contemplated sale of its stake in Aroma-Zone and its reinvestment",
+          "source_date": "2026-08-06"
+        },
+        {
+          "name": "Partners Group (acquéreur en cours)",
+          "role": "majoritaire",
+          "entry_date": "2026",
+          "deal_type": "LBO secondaire",
+          "seller": "Eurazeo Capital IV",
+          "source_url": "https://www.vermoegenszentrum.ch/fr/bourses-et-marches/news/partners-group-feu-vert-europeen-pour-la-majorite-daroma-zone",
+          "source_title": "Partners Group: feu vert européen pour la majorité d'Aroma-Zone",
+          "source_date": "2026-09-24"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "Famille Vausselin (fondateurs, 1999)",
+          "entry": "1999",
+          "exit": null,
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html"
+        }
+      ],
+      "ceo": {
+        "name": "Sabrina Herlory-Rouget",
+        "title": "Chief Executive Officer",
+        "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html"
+      },
+      "key_figures": [
+        {
+          "metric": "autre",
+          "value": "CA plus que triplé depuis 2021; > 5 millions de clients actifs",
+          "year": "2026",
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html"
+        },
+        {
+          "metric": "autre",
+          "value": "Produit de cession brut pour Eurazeo ~576 M EUR",
+          "year": "2026",
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html"
+        },
+        {
+          "metric": "autre",
+          "value": "Croissance de 50% l'an dernier; 15 ouvertures de magasins et > 400 recrutements prévus en 2026 (selon La Provence)",
+          "year": "2025",
+          "source_url": "https://www.vermoegenszentrum.ch/fr/bourses-et-marches/news/partners-group-feu-vert-europeen-pour-la-majorite-daroma-zone"
+        }
+      ],
+      "exit_signals": [
+        {
+          "fact": "Négociations exclusives Eurazeo / Partners Group pour la cession de la participation d'Eurazeo Capital IV (réinvestissement d'Eurazeo Capital V)",
+          "date": "2026-08",
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-enters-into-exclusive-discussions-with-partners-group-regarding-the-contemplated-sale-of-its-stake-in-aroma-zone-and-its-reinvestment-ed1d9-52e2c.html"
+        },
+        {
+          "fact": "Feu vert de la Commission européenne à la prise de majorité de Partners Group",
+          "date": "2026-09",
+          "source_url": "https://www.vermoegenszentrum.ch/fr/bourses-et-marches/news/partners-group-feu-vert-europeen-pour-la-majorite-daroma-zone"
+        }
+      ],
+      "notes": "Cession en cours (closing non confirmé au moment de la recherche). Eurazeo restera minoritaire via Capital V. Partners Group était déjà prêteur (direct lending) depuis 2021 selon la presse. Valorisation ~2 Md EUR selon presse (FT), non confirmée officiellement."
+    },
+    {
+      "company": "Parfums de Marly / Initio Parfums Privés (Sprecher Berrier Group)",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfumerie de niche",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Advent International",
+          "role": "majoritaire",
+          "entry_date": "2023-06",
+          "deal_type": "LBO primaire",
+          "seller": "Julien Sprecher (fondateur)",
+          "source_url": "https://www.adventinternational.com/news/advent-international-to-enter-a-partnership-with-the-founder-of-the-parfums-de-marly-and-initio-parfums-prives-niche-fragrance-brands-to-accelerate-global-growth/",
+          "source_title": "Advent International to enter a partnership with the founder of the Parfums de Marly and Initio Parfums Privés niche fragrance brands",
+          "source_date": "2023-06-22"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": {
+        "name": "Julien Sausset",
+        "title": "Group CEO",
+        "source_url": "https://www.adventinternational.com/news/advent-international-to-enter-a-partnership-with-the-founder-of-the-parfums-de-marly-and-initio-parfums-prives-niche-fragrance-brands-to-accelerate-global-growth/"
+      },
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "~375-400 M EUR de ventes annuelles",
+          "year": "2026",
+          "source_url": "https://www.beautymatter.com/articles/advent-hires-jefferies-goldman-sachs-to-sell-parfums-de-marly"
+        },
+        {
+          "metric": "autre",
+          "value": "Advent détient 70%, le fondateur Julien Sprecher 30%",
+          "year": "2026",
+          "source_url": "https://www.beautymatter.com/articles/advent-hires-jefferies-goldman-sachs-to-sell-parfums-de-marly"
+        }
+      ],
+      "exit_signals": [
+        {
+          "fact": "Advent a mandaté Jefferies et Goldman Sachs pour une cession potentielle; process à un stade précoce; valorisation visée ~2 Md EUR",
+          "date": "2026-04",
+          "source_url": "https://www.beautymatter.com/articles/advent-hires-jefferies-goldman-sachs-to-sell-parfums-de-marly"
+        }
+      ],
+      "notes": "Deal type 'LBO primaire' déduit (première entrée d'un fonds, rachat au fondateur). Julien Sprecher reste Executive Chairman et Directeur de la création. HQ non confirmé (communiqué daté de Paris)."
+    },
+    {
+      "company": "Juliette Has A Gun",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfumerie de niche",
+      "hq_city": "Paris",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Cathay Capital Private Equity",
+          "role": "minoritaire",
+          "entry_date": "2021-01",
+          "deal_type": "capital développement",
+          "seller": null,
+          "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Augmentation-de-capital/Juliette-has-a-gun-exhale-son-parfum-avec-un-fonds-352137",
+          "source_title": "Juliette has a gun exhale son parfum avec un fonds",
+          "source_date": "2021-01-12"
+        },
+        {
+          "name": "Weinberg Capital Partners",
+          "role": "minoritaire",
+          "entry_date": "2023-05",
+          "deal_type": "LBO primaire",
+          "seller": null,
+          "source_url": "https://fashionunited.com/news/business/juliette-has-a-gun-secures-fresh-capital/2023051053805",
+          "source_title": "Juliette Has A Gun secures fresh capital",
+          "source_date": "2023-05-10"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "120 M EUR de ventes au détail (retail sales value)",
+          "year": "2022",
+          "source_url": "https://fashionunited.com/news/business/juliette-has-a-gun-secures-fresh-capital/2023051053805"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Cathay a renforcé sa participation en mai 2023 lors d'un LBO primaire (CFNEWS) avec l'entrée minoritaire de Weinberg; les fondateurs Romano et Antina Ricci restent actionnaires et dirigeants. Répartition exacte du capital non publiée. Source CFNEWS du LBO 2023: https://www.cfnews.net/L-actualite/LBO/Operations/LBO/Juliette-has-a-gun-degaine-un-LBO-primaire-441071"
+    },
+    {
+      "company": "Les Secrets de Loly",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Capillaire (cheveux bouclés/texturés)",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Quadrivio Group (Made in Italy Fund II / Lifestyle Fund II)",
+          "role": "majoritaire",
+          "entry_date": "2026-03",
+          "deal_type": null,
+          "seller": "Quilvest Capital Partners (minoritaire sortant)",
+          "source_url": "https://www.premiumbeautynews.com/fr/quadrivio-group-acquiert-une,27255",
+          "source_title": "Quadrivio Group acquiert une participation majoritaire dans Les Secrets de Loly",
+          "source_date": "2026-03-10"
+        },
+        {
+          "name": "Weinberg Capital Partners",
+          "role": "co-investisseur",
+          "entry_date": "2026-03",
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.premiumbeautynews.com/fr/quadrivio-group-acquiert-une,27255",
+          "source_title": "Quadrivio Group acquiert une participation majoritaire dans Les Secrets de Loly",
+          "source_date": "2026-03-10"
+        },
+        {
+          "name": "Three Hills Capital Partners",
+          "role": "co-investisseur",
+          "entry_date": "2026-03",
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.premiumbeautynews.com/fr/quadrivio-group-acquiert-une,27255",
+          "source_title": "Quadrivio Group acquiert une participation majoritaire dans Les Secrets de Loly",
+          "source_date": "2026-03-10"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "Quilvest Capital Partners (minoritaire)",
+          "entry": "2022",
+          "exit": "2026-03",
+          "source_url": "https://www.quadriviogroup.com/en/media/press-review/les-secrets-de-loly-sells-majority-stake-quadrivio-led-consortium"
+        }
+      ],
+      "ceo": {
+        "name": "Carlota Thévenot",
+        "title": "CEO",
+        "source_url": "https://www.premiumbeautynews.com/fr/quadrivio-group-acquiert-une,27255"
+      },
+      "key_figures": [
+        {
+          "metric": "autre",
+          "value": "Croissance annuelle moyenne > 40% sur 3 ans; objectif > 100 M EUR de CA",
+          "year": "2026",
+          "source_url": "https://www.premiumbeautynews.com/fr/quadrivio-group-acquiert-une,27255"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Fondatrice Kelly Massol réinvestit et garde une participation significative. Le nom du fonds Quadrivio diffère selon les sources (Made in Italy Fund II vs Lifestyle Fund II)."
+    },
+    {
+      "company": "Baïja (Bains & Nature)",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Cosmétiques naturels / parfums",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "CICLAD",
+          "role": "majoritaire",
+          "entry_date": "2023-11",
+          "deal_type": "OBO",
+          "seller": "Fondateurs Elisabeth Arnaud et Fabrice Saïd (partiel)",
+          "source_url": "https://ciclad.com/en/2023/11/15/ciclad-acquires-a-majority-stake-in-baija",
+          "source_title": "CICLAD acquires a majority stake in Baïja",
+          "source_date": "2023-11-15"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "6,4 M EUR",
+          "year": null,
+          "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/Un-nouveau-majoritaire-prend-soin-de-Baija-461998"
+        },
+        {
+          "metric": "CA",
+          "value": "> 6 M EUR (2022), 8,6 M EUR prévus en 2023",
+          "year": "2022",
+          "source_url": "https://ciclad.com/en/2023/11/15/ciclad-acquires-a-majority-stake-in-baija"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Deux managers clés entrent au capital. Société basée en Ile-de-France (ville non précisée)."
+    },
+    {
+      "company": "Manucurist",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Ongles (vernis & soins)",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Inflexion Private Equity",
+          "role": "minoritaire",
+          "entry_date": "2026-09",
+          "deal_type": "LBO primaire",
+          "seller": "Famille fondatrice (partiel)",
+          "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894",
+          "source_title": "Manucurist applique son premier LBO",
+          "source_date": "2026-10-02"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": {
+        "name": "Gaëlle Lebrat Personnaz",
+        "title": "CEO",
+        "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894"
+      },
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "~70 M EUR",
+          "year": "2025",
+          "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894"
+        },
+        {
+          "metric": "CA",
+          "value": "~35 M EUR",
+          "year": "2023",
+          "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894"
+        },
+        {
+          "metric": "effectif",
+          "value": "~80 salariés",
+          "year": "2026",
+          "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894"
+        },
+        {
+          "metric": "autre",
+          "value": "Valorisation ~300 M EUR (chiffres L'Informé confirmés par CFNEWS)",
+          "year": "2026",
+          "source_url": "https://www.cfnews.net/Les-alertes-de-CFNEWS/Manucurist-applique-son-premier-LBO-736894"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "LBO minoritaire (~49%) signé le 25/09/2026, closing attendu fin octobre 2026. La dirigeante et son conjoint restent majoritaires. Process Alantra avec ~15 marques d'intérêt."
+    },
+    {
+      "company": "Ex Nihilo",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfumerie de niche",
+      "hq_city": "Paris",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "L Catterton",
+          "role": "minoritaire",
+          "entry_date": "2026-01",
+          "deal_type": "LBO secondaire",
+          "seller": "Eurazeo",
+          "source_url": "https://www.premiumbeautynews.com/eurazeo-cede-a-l-catterton-sa,26947",
+          "source_title": "Eurazeo cède à L Catterton sa participation dans Ex Nihilo",
+          "source_date": "2026-01-20"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "Eurazeo (minoritaire)",
+          "entry": null,
+          "exit": "2026-02",
+          "source_url": "https://en.newsroom.eurazeo.com/assets/eurazeo-closing-ex-nihilo-press-release-pdf-e7501-52e2c.html?dl=1"
+        }
+      ],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "100 M EUR de ventes au détail",
+          "year": null,
+          "source_url": "https://www.premiumbeautynews.com/eurazeo-cede-a-l-catterton-sa,26947"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Participation minoritaire mais significative de L Catterton; fondateurs (Sylvie Loday, Olivier Royère, Benoît Verdier) et management réinvestissent. CFNEWS qualifie l'opération de LBO bis: https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Ex-Nihilo-eveille-ses-sens-avec-un-franco-americain-555954"
+    },
+    {
+      "company": "Adopt' Parfums",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfums & cosmétiques accessibles (réseau de boutiques)",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "NextStage AM",
+          "role": "majoritaire",
+          "entry_date": "2015/2016",
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.premiumbeautynews.com/fr/adopt-parfums-un-nouvel,25694",
+          "source_title": "Adopt' Parfums: un nouvel actionnaire (Arkéa Capital)",
+          "source_date": "2025-05-03"
+        },
+        {
+          "name": "Trocadero Capital Partners",
+          "role": "minoritaire",
+          "entry_date": "2022-05",
+          "deal_type": "capital développement",
+          "seller": null,
+          "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Augmentation-de-capital/Un-deuxieme-fonds-pointe-son-nez-chez-Adopt-Parfums-403292",
+          "source_title": "Un deuxième fonds pointe son nez chez Adopt Parfums",
+          "source_date": "2022-05-13"
+        },
+        {
+          "name": "Arkéa Capital",
+          "role": "minoritaire",
+          "entry_date": "2025-04",
+          "deal_type": "capital développement",
+          "seller": null,
+          "source_url": "https://fiscalonline.com/on-en-parle/FTPA-a-conseille-NextStage-AM-et-Adopt-Parfums-dans-le-cadre-de-l-entree-d-Arkea-Capital-au-capital-de-la-societe",
+          "source_title": "FTPA a conseillé NextStage AM et Adopt Parfums dans le cadre de l'entrée d'Arkéa Capital",
+          "source_date": "2025-04-30"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": {
+        "name": "Frédéric Stoeckel",
+        "title": "Président",
+        "source_url": "https://www.premiumbeautynews.com/fr/adopt-parfums-un-nouvel,25694"
+      },
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "> 170 M EUR (+49%)",
+          "year": "2024",
+          "source_url": "https://www.premiumbeautynews.com/fr/adopt-parfums-un-nouvel,25694"
+        },
+        {
+          "metric": "autre",
+          "value": "~400 boutiques dont 300 en France",
+          "year": "2025",
+          "source_url": "https://www.premiumbeautynews.com/fr/adopt-parfums-un-nouvel,25694"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "NextStage et la famille Loyez accompagnent la marque depuis décembre 2015 (PBN) ; 2016 selon CFNEWS. Levée de 26,2 M EUR en 2022. Fondée à Cestas (Gironde)."
+    },
+    {
+      "company": "La Phocéenne de Cosmétique (Le Petit Olivier, Lovea, Laboratoires de Biarritz)",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Hygiène-beauté naturelle grande distribution / pharmacie",
+      "hq_city": "Salon-de-Provence",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Azulis Capital",
+          "role": "minoritaire",
+          "entry_date": "2021-10",
+          "deal_type": "OBO",
+          "seller": "Fondateurs Eric Renard et Xavier Padovani (partiel)",
+          "source_url": "https://www.hoche-avocats.com/en/hoche-avocats-advises-the-two-founding-directors-eric-renard-and-xavier-padovani-of-la-phoceenne-de-cosmetique-best-known-for-its-brands-le-petit-olivier-and-lovea-in-connection-with-the-acquisitio/",
+          "source_title": "Hoche Avocats advises the two founding directors of La Phocéenne de Cosmétique ... Azulis Capital",
+          "source_date": "2021-11-02"
+        },
+        {
+          "name": "BNP Paribas Développement",
+          "role": "co-investisseur",
+          "entry_date": "2021-10",
+          "deal_type": "OBO",
+          "seller": null,
+          "source_url": "https://www.hoche-avocats.com/en/hoche-avocats-advises-the-two-founding-directors-eric-renard-and-xavier-padovani-of-la-phoceenne-de-cosmetique-best-known-for-its-brands-le-petit-olivier-and-lovea-in-connection-with-the-acquisitio/",
+          "source_title": "Hoche Avocats advises the two founding directors of La Phocéenne de Cosmétique ... Azulis Capital",
+          "source_date": "2021-11-02"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "effectif",
+          "value": "98 salariés",
+          "year": "2021",
+          "source_url": "https://www.hoche-avocats.com/en/hoche-avocats-advises-the-two-founding-directors-eric-renard-and-xavier-padovani-of-la-phoceenne-de-cosmetique-best-known-for-its-brands-le-petit-olivier-and-lovea-in-connection-with-the-acquisitio/"
+        },
+        {
+          "metric": "autre",
+          "value": "Objectif > 50 M EUR de CA à 4 ans (2021)",
+          "year": "2021",
+          "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/La-Phoceenne-de-Cosmetique-formule-son-OBO-381328"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Les fondateurs conservent une large majorité. Build-up: acquisition des Laboratoires de Biarritz (mars 2026, CFNEWS https://www.cfnews.net/L-actualite/Build-up/La-Phoceenne-de-Cosmetique-se-place-en-pharmacie-577913), toujours accompagnée par Azulis et BNP Paribas Développement."
+    },
+    {
+      "company": "Nuxe",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Soins naturels / pharmacie",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Sofina",
+          "role": "minoritaire",
+          "entry_date": "2019",
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.sofinagroup.com/en/portfolio/sofina-direct/nuxe",
+          "source_title": "Sofina portfolio - Nuxe",
+          "source_date": null
+        }
+      ],
+      "previous_owners": [],
+      "ceo": {
+        "name": "Aliza Jabès",
+        "title": "Fondatrice, CEO et actionnaire majoritaire",
+        "source_url": "https://www.sofinagroup.com/en/portfolio/sofina-direct/nuxe"
+      },
+      "key_figures": [],
+      "exit_signals": [],
+      "notes": "DOUTEUX quant à la qualification 'fonds PE': Sofina est une holding d'investissement cotée belge (pas un fonds à durée de vie limitée). Participation de 49% (page Sofina) ; 45,13% annoncés en 2019 dans la presse. Faible probabilité de sortie 'mécanique'."
+    },
+    {
+      "company": "Diptyque",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfums & bougies",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Manzanita Capital",
+          "role": "majoritaire",
+          "entry_date": "2005-04",
+          "deal_type": null,
+          "seller": "Fondateurs (Yves Coueslant, Christiane Gautrot)",
+          "source_url": "https://fashionunited.uk/news/fashion/diptyque-bought-by-manzanita-capital/2005041436585",
+          "source_title": "Diptyque bought by Manzanita Capital",
+          "source_date": "2005-04-14"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [],
+      "exit_signals": [],
+      "notes": "Manzanita (PE basé au Royaume-Uni) détient toujours Diptyque selon Premium Beauty News (2024-02-03): https://www.premiumbeautynews.com/en/diptyque-and-space-nk-owner,23302. Détention très longue (> 20 ans). Aucun signal de vente de Diptyque trouvé ; Manzanita a par ailleurs lancé la vente de Space NK (distributeur) en 2024-2025."
+    },
+    {
+      "company": "Essential Parfums",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Parfumerie de niche",
+      "hq_city": "Paris",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Style Capital",
+          "role": "minoritaire",
+          "entry_date": "2026-07",
+          "deal_type": "capital développement",
+          "seller": null,
+          "source_url": "https://www.cfnews.net/L-actualite/International/Operations/Capital-Developpement/Essential-Parfums-s-infuse-du-fonds-italien-721180",
+          "source_title": "Essential Parfums s'infuse du fonds italien",
+          "source_date": "2026-07-16"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "44,2 M EUR",
+          "year": null,
+          "source_url": "https://www.cfnews.net/L-actualite/International/Operations/Capital-Developpement/Essential-Parfums-s-infuse-du-fonds-italien-721180"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Entrée très récente; pas de signal de sortie attendu à court terme."
+    },
+    {
+      "company": "Laboratoires Embryolisse",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Dermo-cosmétique",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "MBO Partenaires (MBO+, fonds MBO Capital IV)",
+          "role": "minoritaire",
+          "entry_date": "2018-06",
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoires-Embryolisse-s-embellit-en-LBO-274353",
+          "source_title": "Laboratoires Embryolisse s'embellit en LBO",
+          "source_date": "2018-06-29"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "près de 30 M EUR visés en 2018",
+          "year": "2018",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoires-Embryolisse-s-embellit-en-LBO-274353"
+        },
+        {
+          "metric": "autre",
+          "value": "Ticket ~16 M EUR, valorisation 50-100 M EUR (Unquote)",
+          "year": "2018",
+          "source_url": "https://www.unquote.com/france/official-record/3010724/mbo-partenaires-backs-laboratoires-embryolisse"
+        }
+      ],
+      "exit_signals": [
+        {
+          "fact": "Participation détenue depuis 2018 (> 8 ans) par un fonds de 2018 (MBO Capital IV)",
+          "date": "2018-06",
+          "source_url": "https://www.unquote.com/france/official-record/3010724/mbo-partenaires-backs-laboratoires-embryolisse"
+        }
+      ],
+      "notes": "DOUTEUX: aucune annonce de sortie trouvée, mais statut actuel non confirmé (site MBO+ inaccessible depuis la session). Dirigeants: Alain Cassam-Chenaï (président) et Nazoura Cassam-Chenaï (Unquote)."
+    },
+    {
+      "company": "Laboratoire Gravier",
+      "country": "FR",
+      "segment": "Marques",
+      "sub_segment": "Hygiène & cosmétiques bio",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Ekkio Capital",
+          "role": "majoritaire",
+          "entry_date": "2018-07",
+          "deal_type": "LBO secondaire",
+          "seller": "Naxicap Partners",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoire-Gravier-quitte-Naxicap-pour-275573",
+          "source_title": "Laboratoire Gravier quitte Naxicap pour Ekkio Capital",
+          "source_date": "2018-07-13"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "Naxicap Partners (minoritaire)",
+          "entry": "2010-10",
+          "exit": "2018-07",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoire-Gravier-quitte-Naxicap-pour-275573"
+        }
+      ],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "objectif 50 M EUR",
+          "year": "2018",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoire-Gravier-quitte-Naxicap-pour-275573"
+        }
+      ],
+      "exit_signals": [
+        {
+          "fact": "LBO majoritaire de 2018 (> 8 ans) : durée de détention atypique, statut à vérifier",
+          "date": "2018-07",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/Laboratoire-Gravier-quitte-Naxicap-pour-275573"
+        }
+      ],
+      "notes": "DOUTEUX: aucune sortie trouvée mais la recherche n'a pas pu confirmer qu'Ekkio est toujours actionnaire (budget de recherche épuisé). Entrée Naxicap en 2010 selon Unquote (résumé de recherche)."
+    },
+    {
+      "company": "Kiko Milano",
+      "country": "IT",
+      "segment": "Marques",
+      "sub_segment": "Maquillage",
+      "hq_city": "Bergamo",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "L Catterton",
+          "role": "majoritaire",
+          "entry_date": "2024-04",
+          "deal_type": "LBO primaire",
+          "seller": "Famille Percassi",
+          "source_url": "https://www.premiumbeautynews.com/en/l-catterton-acquires-majority,23798",
+          "source_title": "L Catterton acquires majority stake in Kiko Milano",
+          "source_date": "2024-04-26"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "~800 M EUR (CA net, +~20%)",
+          "year": "2023",
+          "source_url": "https://www.premiumbeautynews.com/en/l-catterton-acquires-majority,23798"
+        },
+        {
+          "metric": "autre",
+          "value": "Valeur d'entreprise ~1,4 Md EUR (sources financières); 70% cédés",
+          "year": "2024",
+          "source_url": "https://quifinanza.it/economia/kiko-cessione-l-catterton/812770/"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "La famille Percassi conserve une participation significative (~30%). Ville = lieu de fondation (1997), siège non explicitement confirmé."
+    },
+    {
+      "company": "Wella Company",
+      "country": "CH",
+      "segment": "Marques",
+      "sub_segment": "Capillaire professionnel & grand public",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "KKR",
+          "role": "majoritaire",
+          "entry_date": "2020",
+          "deal_type": "LBO primaire",
+          "seller": "Coty",
+          "source_url": "https://www.nextinbeautymag.com/en/business/economy-sector/wella-prepares-its-ipo-in-the-us-after-invoicing-2940-million-dollars-and-returning-to-profit_2952_102.html",
+          "source_title": "Wella prepares its IPO in the U.S. after invoicing 2,940 million dollars and returning to profit",
+          "source_date": "2026-09-03"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "Coty (60% cédés en 2020, solde 25,8% racheté ensuite par KKR)",
+          "entry": null,
+          "exit": null,
+          "source_url": "https://www.nextinbeautymag.com/en/business/economy-sector/wella-prepares-its-ipo-in-the-us-after-invoicing-2940-million-dollars-and-returning-to-profit_2952_102.html"
+        }
+      ],
+      "ceo": {
+        "name": "Calvin McDonald",
+        "title": "CEO",
+        "source_url": "https://www.nextinbeautymag.com/en/business/economy-sector/wella-prepares-its-ipo-in-the-us-after-invoicing-2940-million-dollars-and-returning-to-profit_2952_102.html"
+      },
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "2,939 Md USD (+9,2%)",
+          "year": "FY2026 (clos 30/06/2026)",
+          "source_url": "https://www.nextinbeautymag.com/en/business/economy-sector/wella-prepares-its-ipo-in-the-us-after-invoicing-2940-million-dollars-and-returning-to-profit_2952_102.html"
+        },
+        {
+          "metric": "autre",
+          "value": "Résultat net 62,3 M USD; résultat opérationnel 243,3 M USD",
+          "year": "FY2026",
+          "source_url": "https://www.nextinbeautymag.com/en/business/economy-sector/wella-prepares-its-ipo-in-the-us-after-invoicing-2940-million-dollars-and-returning-to-profit_2952_102.html"
+        }
+      ],
+      "exit_signals": [
+        {
+          "fact": "Dépôt d'un S-1 auprès de la SEC pour une IPO au NYSE (ticker WELA), > 500 M USD visés",
+          "date": "2026-09",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0002125056/000162828026059572/wellaoperations-sx1.htm"
+        }
+      ],
+      "notes": "DOUTEUX sur le pays: le siège (Genève, CH) n'a pas été confirmé dans les pages lues. KKR restera actionnaire de contrôle après IPO selon le S-1 (pourcentage non encore publié)."
+    },
+    {
+      "company": "Beautynova (milk_shake, z.one concept, Medavita)",
+      "country": "IT",
+      "segment": "Marques",
+      "sub_segment": "Capillaire professionnel",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "PAI Partners (PAI Mid-Market Fund)",
+          "role": "majoritaire",
+          "entry_date": "2024-03",
+          "deal_type": "LBO secondaire",
+          "seller": "BlueGem Capital Partners",
+          "source_url": "https://www.privateequitywire.co.uk/pai-partners-acquires-beautynova-from-bluegem/",
+          "source_title": "PAI Partners acquires Beautynova from BlueGem",
+          "source_date": "2024-03-19"
+        }
+      ],
+      "previous_owners": [
+        {
+          "name": "BlueGem Capital Partners (conserve une participation significative)",
+          "entry": "2020",
+          "exit": null,
+          "source_url": "https://www.privateequitywire.co.uk/pai-partners-acquires-beautynova-from-bluegem/"
+        }
+      ],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "autre",
+          "value": "70% du CA hors Italie; US = 18% des ventes; ventes triplées depuis 2020",
+          "year": "2024",
+          "source_url": "https://www.privateequitywire.co.uk/pai-partners-acquires-beautynova-from-bluegem/"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "BlueGem reste co-actionnaire significatif."
+    },
+    {
+      "company": "HB Aesthetics (Fusion Meso, Ekseption)",
+      "country": "ES",
+      "segment": "Marques",
+      "sub_segment": "Dermo-cosmétique professionnelle",
+      "hq_city": "Vilafant",
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Amethis (Edmond de Rothschild Private Equity)",
+          "role": "minoritaire",
+          "entry_date": "2023-05",
+          "deal_type": "LBO primaire",
+          "seller": null,
+          "source_url": "https://www.avca.africa/news-insights/member-news/amethis-invests-in-hb-aesthetics-to-accelerate-mea-expansion/",
+          "source_title": "Amethis invests in HB Aesthetics to accelerate MEA expansion",
+          "source_date": null
+        },
+        {
+          "name": "Siparex Intermezzo",
+          "role": "co-investisseur",
+          "entry_date": "2023-05",
+          "deal_type": "LBO primaire",
+          "seller": null,
+          "source_url": "https://www.avca.africa/news-insights/member-news/amethis-invests-in-hb-aesthetics-to-accelerate-mea-expansion/",
+          "source_title": "Amethis invests in HB Aesthetics to accelerate MEA expansion",
+          "source_date": null
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [
+        {
+          "metric": "CA",
+          "value": "~30 M EUR",
+          "year": "2023",
+          "source_url": "https://www.cfnews.net/L-actualite/Exclusif-CFNEWS/HB-Aesthetics-formule-son-premier-LBO-442884"
+        },
+        {
+          "metric": "autre",
+          "value": "> 95% du CA à l'export, > 60 pays",
+          "year": "2023",
+          "source_url": "https://www.avca.africa/news-insights/member-news/amethis-invests-in-hb-aesthetics-to-accelerate-mea-expansion/"
+        }
+      ],
+      "exit_signals": [],
+      "notes": "Minorité significative d'Amethis; le fondateur Raphaël Chauchard-Rios reste président. Siparex Intermezzo apporte aussi un financement unitranche."
+    },
+    {
+      "company": "Gisou",
+      "country": "NL",
+      "segment": "Marques",
+      "sub_segment": "Capillaire premium",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Eurazeo (Eurazeo Brands)",
+          "role": "minoritaire",
+          "entry_date": "2022-04",
+          "deal_type": "capital développement",
+          "seller": null,
+          "source_url": "https://en.newsroom.eurazeo.com/news/eurazeo-completes-investment-in-premium-haircare-brand-gisou-0f645-52e2c.html",
+          "source_title": "Eurazeo completes investment in premium haircare brand Gisou",
+          "source_date": "2022-04-21"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [],
+      "exit_signals": [],
+      "notes": "Les cofondateurs Negin Mirsalehi et Maurits Stibbe restent majoritaires. Aucun signal de sortie trouvé; Eurazeo a cédé en 2026 d'autres marques beauté (Ex Nihilo, Aroma-Zone en cours)."
+    },
+    {
+      "company": "Susanne Kaufmann",
+      "country": "AT",
+      "segment": "Marques",
+      "sub_segment": "Soins naturels premium",
+      "hq_city": null,
+      "website": null,
+      "siren": null,
+      "funds": [
+        {
+          "name": "Manzanita Capital",
+          "role": null,
+          "entry_date": null,
+          "deal_type": null,
+          "seller": null,
+          "source_url": "https://www.premiumbeautynews.com/en/diptyque-and-space-nk-owner,23302",
+          "source_title": "Diptyque and Space NK owner Manzanita Capital ... (D.S. & Durga)",
+          "source_date": "2024-02-03"
+        }
+      ],
+      "previous_owners": [],
+      "ceo": null,
+      "key_figures": [],
+      "exit_signals": [],
+      "notes": "DOUTEUX: seule mention trouvée = liste du portefeuille Manzanita dans Premium Beauty News (2024). Date d'entrée et taille de participation non confirmées."
+    }
+  ],
+  "exited": [
+    {
+      "company": "Payot (Laboratoires Payot)",
+      "country": "FR",
+      "fund": "LBO France (Hexagone III)",
+      "entry": "2014-09",
+      "exit_date": "2025-03",
+      "buyer": "Ushopal (groupe beauté chinois)",
+      "source_url": "https://www.lbofrance.com/en/lbo-france-sells-payot-to-ushopal/",
+      "notes": "CA 25 M EUR (2014) -> 38 M EUR (2024). Racheté à Puig en 2014."
+    },
+    {
+      "company": "Ex Nihilo",
+      "country": "FR",
+      "fund": "Eurazeo (minoritaire)",
+      "entry": null,
+      "exit_date": "2026-02",
+      "buyer": "L Catterton (minoritaire) + fondateurs",
+      "source_url": "https://en.newsroom.eurazeo.com/assets/eurazeo-closing-ex-nihilo-press-release-pdf-e7501-52e2c.html?dl=1",
+      "notes": "Retour > 2,5x en ~2 ans selon Eurazeo (résumé de recherche)."
+    },
+    {
+      "company": "Les Secrets de Loly",
+      "country": "FR",
+      "fund": "Quilvest Capital Partners (minoritaire)",
+      "entry": "2022",
+      "exit_date": "2026-03",
+      "buyer": "Quadrivio Group (majoritaire), avec Weinberg et Three Hills",
+      "source_url": "https://www.quadriviogroup.com/en/media/press-review/les-secrets-de-loly-sells-majority-stake-quadrivio-led-consortium",
+      "notes": null
+    },
+    {
+      "company": "Groupe Berdoues Parfums et Cosmétiques",
+      "country": "FR",
+      "fund": "Bpifrance, GSO Capital, Multicroissance",
+      "entry": null,
+      "exit_date": "2025-07",
+      "buyer": "Compagnie Léa Nature (60%)",
+      "source_url": "https://www.premiumbeautynews.com/fr/lea-nature-entre-sur-le-marche-du,26072",
+      "notes": "CA 20 M EUR (2024). CEO Sophie Berdoues-Coudouy garde une part significative."
+    },
+    {
+      "company": "Laboratoires SVR",
+      "country": "FR",
+      "fund": "Groupe HLD (dernier quart du capital)",
+      "entry": "2014",
+      "exit_date": "2024-06",
+      "buyer": "Actionnaire majoritaire (family office, Kresk Développement de Didier Tabary selon CFNEWS)",
+      "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Rachat-de-titres/SVR-unifie-son-actionnariat-490413",
+      "notes": "CA 140 M EUR. HLD = holding d'investissement."
+    },
+    {
+      "company": "Galderma",
+      "country": "CH",
+      "fund": "EQT (consortium avec ADIA, Auba/GIC)",
+      "entry": "2019-10",
+      "exit_date": "2026-03",
+      "buyer": "Marché (placement accéléré, ~14,3% du capital); L'Oréal avait acquis 10% supplémentaires en décembre 2025",
+      "source_url": "https://eqtgroup.com/en/news/eqt-exits-galderma-group-ag-in-full-via-largest-sponsor-backed-block-trade-ever-2026-03-13",
+      "notes": "CA 5,2 Md USD (2025). Dermatologie/dermo-cosmétique (Cetaphil)."
+    },
+    {
+      "company": "Medik8",
+      "country": "GB",
+      "fund": "Inflexion",
+      "entry": "2021",
+      "exit_date": "2025-06",
+      "buyer": "L'Oréal (majoritaire); Inflexion conserve une minorité",
+      "source_url": "https://www.inflexion.com/news-and-insights/news/2025/loreal-to-acquire-majority-stake-in-medik8/",
+      "notes": "Sortie de contrôle; valorisation ~1 Md EUR selon FT (résumé de recherche)."
+    }
+  ],
+  "searched_but_not_confirmed": [
+    "Aroma-Zone: inclus, mais closing de la cession à Partners Group non confirmé (en cours au 30/10/2026).",
+    "Essences & Parfums (Grasse): Trajan -> Sagard Europe MidCap (closing 21/05/2026, Houlihan Lokey) — exclu car maison de composition de parfums B2B, pas une marque (https://hl.com/about-us/transactions/trajan-essences-parfums-sagard/).",
+    "Maesa (incubateur de marques, Levallois-Perret/New York): Bain Capital majoritaire depuis avril 2019 (cession par Andera) — exclu car siège principal New York (https://www.premiumbeautynews.com/fr/bain-capital-prend-le-controle-de,14873).",
+    "RoC Skincare: Bridgepoint (Europe VII) a racheté à Gryphon en 2024 — exclu car siège New York, à reconsidérer (https://www.bridgepointgroup.com/about-us/news-and-insights/press-releases/2024/bridgepoint-to-acquire-roc-skincare).",
+    "Cible Skin: investissement Verlinvest (févr. 2024) vu uniquement sur la page transactions de Cambon Partners; nature/taille de la participation non confirmée.",
+    "BDK Parfums: minorité LVMH Luxury Ventures (nov. 2025) — exclu (fonds corporate, pas PE).",
+    "Absolution: 1 M EUR d'Extendam et Rives Croissance (2018) — statut actuel non confirmé.",
+    "Carole Franck: XAnge et Bred Perspectives & Participations (MBI, date non confirmée).",
+    "Bo.ho Green: Alter Equity 1 M EUR (date non confirmée).",
+    "Patyka: minoritaires Agregator Capital / Mode et Finance mentionnés, non confirmés.",
+    "Laboratoires Uriage: Puig + M3 Invest (industriel) — exclu.",
+    "Alès Groupe (Lierac, Phyto, Jowaé): repris par Impala (holding de Jacques Veyrat) en 2020 — exclu (holding, pas fonds PE).",
+    "Cinq Mondes: minoritaires industriels/familiaux (Groupe Batteur, Groupe Gilbert) — exclu.",
+    "Eugène Perma (Pétrole Hahn, Eugène Color): repris à la barre en 2023 par un consortium industriel — exclu.",
+    "Christophe Robin (THG), Garancia (Unilever), Thalgo (familial) — pas de fonds PE trouvé.",
+    "Typology: VC (Alven etc.), pas de PE confirmé.",
+    "Vabel (Naxicap), Prévost Laboratory Concept (IDI), Cosmogen (Weinberg) — exclus car façonniers/packaging, pas des marques.",
+    "Provalliance (Franck Provost; Core Equity Holdings 2021) — exclu (réseau de salons principalement).",
+    "Diptyque: statut confirmé seulement jusqu'en 2024 (Premium Beauty News).",
+    "Non recherchés faute de budget (limite de recherches web atteinte): L'Occitane (minorités Blackstone/Goldman?), Rituals, Xerjoff, Montale/Mancera, Puressentiel, Pranarôm, Durance, Créations & Parfums, Lorience, T.LeClerc/Innoxa (LJV Capital), Noreva (ACM), Lumene, Maria Nila, Natura Bissé, Laboratorios Babé, Sesderma, Bionike, Deborah Group, Bottega Verde, Diego dalla Palma, Bielenda, Eveline, Rodial, Tropic."
+  ]
+}

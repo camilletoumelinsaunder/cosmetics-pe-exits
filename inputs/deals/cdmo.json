@@ -1,0 +1,688 @@
+{
+ "companies": [
+  {
+   "company": "Groupe Vabel (Vabel Cosmétique, incl. Sarbec Cosmetics, Parfums Vabel/CCSP)",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "formulation & fabrication soin/parfum, conditionnement",
+   "hq_city": "Chartres",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Naxicap Partners",
+     "role": "majoritaire",
+     "entry_date": "2021-03",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Vabel-s-offre-une-reference-455473",
+     "source_title": "Vabel s'offre une référence (CFNEWS)",
+     "source_date": "2023-09-22"
+    },
+    {
+     "name": "Nord Est Partenaires",
+     "role": "minoritaire",
+     "entry_date": "2021-03",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Vabel-s-offre-une-reference-455473",
+     "source_title": "Vabel s'offre une référence (CFNEWS)",
+     "source_date": "2023-09-22"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Christophe Sallès",
+    "title": "fondateur et dirigeant",
+    "source_url": "https://www.premiumbeautynews.com/fr/groupe-vabel-rachete-sarbec-pour,22645"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 30 M€",
+     "year": "2021",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO/Vabel-Cosmetique-faconne-son-premier-LBO-360130"
+    },
+    {
+     "metric": "CA",
+     "value": "environ 170 M€ (consolidé après rachat de Sarbec)",
+     "year": "2023",
+     "source_url": "https://www.premiumbeautynews.com/fr/groupe-vabel-rachete-sarbec-pour,22645"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 2 000 salariés, 7 sites (300 000 m²)",
+     "year": "2023",
+     "source_url": "https://www.premiumbeautynews.com/fr/groupe-vabel-rachete-sarbec-pour,22645"
+    },
+    {
+     "metric": "autre",
+     "value": "Objectif Naxicap: 250 M€ de CA",
+     "year": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/groupe-vabel-rachete-sarbec-pour,22645"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Naxicap au capital depuis le LBO primaire de mars 2021 (plus de 5 ans de détention en 2026)",
+     "date": "2021-03",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO/Vabel-Cosmetique-faconne-son-premier-LBO-360130"
+    },
+    {
+     "fact": "Build-up structurant: rachat de 100% de Sarbec Cosmetics (~150 M€ de CA) pour un peu plus de 100 M€, dette Eurazeo",
+     "date": "2023-09",
+     "source_url": "https://www.cfnews.net/Acces-libre/Vabel-s-offre-une-reference-455473"
+    }
+   ],
+   "notes": "Deal LBO daté du 23/03/2021 (CFNEWS). Clearwater décrit Vabel comme fabricant de flacons parfumerie/cosmétique de luxe; CFNEWS comme formulateur-fabricant. CFNEWS tag Hauts-de-France mais texte 'chartrain'."
+  },
+  {
+   "company": "Capsum",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "CDMO formulation soin, maquillage, parfum (microfluidique)",
+   "hq_city": "Marseille",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Motion Equity Partners",
+     "role": "majoritaire",
+     "entry_date": "2026-10",
+     "deal_type": "LBO primaire",
+     "seller": "Chanel",
+     "source_url": "https://www.premiumbeautynews.com/en/motion-equity-partners-takes-over,28385",
+     "source_title": "Motion Equity Partners takes over Capsum (Premium Beauty News)",
+     "source_date": "2026-10-21"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Chanel (industriel, conserve une minorité)",
+     "entry": "années 2010",
+     "exit": "2026-10",
+     "source_url": "https://www.premiumbeautynews.com/en/motion-equity-partners-takes-over,28385"
+    }
+   ],
+   "ceo": {
+    "name": "Sébastien Bardon",
+    "title": "fondateur et CEO",
+    "source_url": "https://www.premiumbeautynews.com/en/motion-equity-partners-takes-over,28385"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "68 M€",
+     "year": "2024",
+     "source_url": "https://www.premiumbeautynews.com/chanel-set-to-exit-microfluidics,27738"
+    },
+    {
+     "metric": "CA",
+     "value": "près de 80 M€ (annual sales)",
+     "year": null,
+     "source_url": "https://beautymatter.com/articles/motion-equity-partners-takes-majority-stake-in-capsum"
+    },
+    {
+     "metric": "effectif",
+     "value": "270 salariés",
+     "year": "2026",
+     "source_url": "https://beautymatter.com/articles/motion-equity-partners-takes-majority-stake-in-capsum"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Entrée annoncée le 20/10/2026; CFNEWS titre 'Capsum dépose son premier LBO' (21/10/2026, listing https://www.cfnews.net/index/Mots-cles/cosmetique?page=1). Chanel détenait >90% avec le fondateur avant l'opération (L'Informé via PBN). Deal très récent: pas un candidat de sortie à court terme."
+  },
+  {
+   "company": "Fiabila",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "CDMO vernis à ongles / soins des ongles",
+   "hq_city": "Maintenon",
+   "website": "https://www.fiabila.net",
+   "siren": null,
+   "funds": [
+    {
+     "name": "Apheon",
+     "role": "majoritaire",
+     "entry_date": "2024",
+     "deal_type": "LBO primaire",
+     "seller": "Famille fondatrice (Pierre Miasnik) - partiellement, réinvestit",
+     "source_url": "https://apheon.com/wp-content/uploads/2024/08/Fiabila-Press-Release-Apheon-vFinal.pdf",
+     "source_title": "Apheon enters into exclusive negotiations to acquire a majority stake in Fiabila",
+     "source_date": "2023-12-05"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 137 M€",
+     "year": "2023",
+     "source_url": "https://apheon.com/wp-content/uploads/2024/08/Fiabila-Press-Release-Apheon-vFinal.pdf"
+    },
+    {
+     "metric": "effectif",
+     "value": "~480 salariés, 10 sites (France, USA, Brésil, Inde, Japon)",
+     "year": "2023",
+     "source_url": "https://apheon.com/wp-content/uploads/2024/08/Fiabila-Press-Release-Apheon-vFinal.pdf"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "EUR 25m (2022) estimé, attendu EUR 30m en 2023 (estimation Mergermarket)",
+     "year": "2022",
+     "source_url": "https://ionanalytics.com/insights/mergermarket/private-equity-funds-starting-to-see-the-allure-of-cosmetics-manufacturing-and-outsourcing/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Négociations exclusives annoncées 05/12/2023, closing attendu T1 2024 (CFNEWS 'Fiabila polit un LBO primaire', 07/12/2023). Les investisseurs financiers minoritaires historiques restent; CFNEWS listing cite Crédit Mutuel Equity et Sodero Gestion (rôle exact non confirmé)."
+  },
+  {
+   "company": "Groupe PLC (Prévost Laboratory Concept, incl. Creapharm Cosmetics, Floralpina)",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "CDMO formulation/façonnage cosmétiques (liquides, semi-liquides, coulage à chaud, solaires) et compléments alimentaires",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "IDI",
+     "role": "majoritaire",
+     "entry_date": "2023-08",
+     "deal_type": "LBO secondaire",
+     "seller": "Abénex, Arkéa Capital",
+     "source_url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/01/FCECO073408_20240108.pdf",
+     "source_title": "Le Groupe PLC, soutenu par l'IDI et Stags, élargit son portefeuille de galéniques avec l'acquisition de Creapharm Cosmetics (communiqué IDI)",
+     "source_date": "2024-01-08"
+    },
+    {
+     "name": "Stags",
+     "role": "co-investisseur",
+     "entry_date": null,
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/01/FCECO073408_20240108.pdf",
+     "source_title": "Communiqué IDI 8 janvier 2024",
+     "source_date": "2024-01-08"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Abénex (majoritaire) et Arkéa Capital",
+     "entry": "2020-05",
+     "exit": "2023-07",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Prevost-Laboratory-Concept-formule-un-LBO-bis-448269"
+    }
+   ],
+   "ceo": {
+    "name": "Marc-Henry Lussigny",
+    "title": "Président de PLC",
+    "source_url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/01/FCECO073408_20240108.pdf"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 22 M€ pro forma (vs c. 16 M€ en 2022)",
+     "year": "2023",
+     "source_url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/01/FCECO073408_20240108.pdf"
+    },
+    {
+     "metric": "effectif",
+     "value": "près de 80 salariés",
+     "year": "2024",
+     "source_url": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2024/01/FCECO073408_20240108.pdf"
+    },
+    {
+     "metric": "autre",
+     "value": "Objectif 35-40 M€ de CA en 2026 (CFNEWS 'Groupe PLC ingurgite un complément d'activité')",
+     "year": "2026",
+     "source_url": "https://www.cfnews.net/index/Mots-cles/cosmetique?page=1"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Buy-and-build actif: Creapharm Cosmetics (01/2024), Floralpina (07/2026)",
+     "date": "2026-07",
+     "source_url": "https://www.webdisclosure.com/article/plc-group-strengthens-its-offering-with-the-acquisition-of-floralpina-lMeNgb8jeTU"
+    }
+   ],
+   "notes": "IDI a signé pour ~90% (annonce 06/07/2023, easybourse). Basé en Ille-et-Vilaine (Bretagne); ville non confirmée. La famille Placet (Creapharm) réinvestit en minoritaire."
+  },
+  {
+   "company": "Anjac Health & Beauty",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "façonnier cosmétiques, parfums et dispositifs médicaux (multi-sites, dont Sicaf)",
+   "hq_city": "Paris",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "KKR",
+     "role": null,
+     "entry_date": "2024-10",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.cfnews.net/in-the-news/ANJAC-HEALTH-BEAUTY-6417?page=1",
+     "source_title": "Anjac prend soin d'un groupe slovène (CFNEWS, teaser: 'Appuyé notamment par KKR et Krefeld depuis 2024')",
+     "source_date": "2025-11-12"
+    },
+    {
+     "name": "Krefeld",
+     "role": null,
+     "entry_date": "2024-10",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.cfnews.net/in-the-news/ANJAC-HEALTH-BEAUTY-6417?page=1",
+     "source_title": "Anjac prend soin d'un groupe slovène (CFNEWS)",
+     "source_date": "2025-11-12"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Andera Partners (Andera Mid-cap), Idia Capital, Bpifrance (entrés en avril 2020; sortie non confirmée)",
+     "entry": "2020-04",
+     "exit": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/Rachat-de-titres/Anjac-repulpe-son-capital-501352"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "près de 800 M€",
+     "year": "2024",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/Rachat-de-titres/Anjac-repulpe-son-capital-501352"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Réorganisation du capital (rachat de titres) en oct. 2024; panneau CFNEWS liste KKR, Krefeld, Mubadala, Bpifrance, Andera, Idia sans préciser les rôles",
+     "date": "2024-10",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/Rachat-de-titres/Anjac-repulpe-son-capital-501352"
+    }
+   ],
+   "notes": "Groupe familial historiquement; rôle (minoritaire probable) de KKR/Krefeld NON confirmé par source lue. Date d'entrée 2024-10 déduite de l'article du 08/10/2024 (+ 'depuis 2024'). Sicaf (Valréas) fait partie d'Anjac."
+  },
+  {
+   "company": "Lorcos (Lorraine Cosmétique)",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "façonnier soin / produits solides, syndets, liquides",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Ekkio Capital",
+     "role": null,
+     "entry_date": "2023-06",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.cfnews.net/in-the-news/EKKIO-CAPITAL-1777?page=1",
+     "source_title": "Lorcos façonne son MBI (CFNEWS, listé sur la page Ekkio Capital)",
+     "source_date": "2023-06-13"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 12 M€",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Lorcos-faconne-son-MBI-444834"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "MBI (deal daté 01/06/2023) par un ex-cadre dirigeant de L'Oréal (nom non visible). Rôle exact d'Ekkio non confirmé (article payant). Ville: Lunéville selon annuaires vus en résultats de recherche, non confirmée par page lue."
+  },
+  {
+   "company": "Essences & Parfums",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "création et fabrication de compositions parfumées pour marques/distributeurs",
+   "hq_city": "Grasse",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Sagard (Sagard Europe MidCap)",
+     "role": "majoritaire",
+     "entry_date": "2026-05",
+     "deal_type": "LBO secondaire",
+     "seller": "Trajan Capital",
+     "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/",
+     "source_title": "Squire Patton Boggs Advises on Sale of Essences et Parfums",
+     "source_date": "2026-02-12"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Trajan Capital (MBI)",
+     "entry": "2023-04",
+     "exit": "2026-05",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Essences-Parfums-s-impregne-d-un-fonds-mid-cap-558659"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 17 M€",
+     "year": "2022",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Essences-Parfums-distille-sa-transmission-440819"
+    },
+    {
+     "metric": "CA",
+     "value": "environ 25 M€",
+     "year": "2025",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Essences-Parfums-s-impregne-d-un-fonds-mid-cap-558659"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Maison de compositions parfumées (fournisseur B2B), cas limite vs façonnier. Rôle 'majoritaire' déduit: Trajan contrôlait et cède (Squire Patton Boggs); % non publié. Closing deal 21/05/2026 (CFNEWS)."
+  },
+  {
+   "company": "Groupe Alkos (Alkos Cosmétiques, Inter Cosmétiques, Sagal Cosmétiques) - filiale de kdc/one",
+   "country": "FR",
+   "segment": "Sous-traitants",
+   "sub_segment": "façonnier soin, maquillage, hygiène",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Cornell Capital (via kdc/one)",
+     "role": "majoritaire",
+     "entry_date": "2019-07",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://cosmeticsbusiness.com/groupe-alkos-bought-by-private-equity-partnership-156212",
+     "source_title": "Groupe Alkos bought by private equity partnership (Cosmetics Business)",
+     "source_date": "2019-07-08"
+    },
+    {
+     "name": "KKR (via kdc/one)",
+     "role": "minoritaire",
+     "entry_date": "2022",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/kkr-entre-au-capital-de-kdc-one,20147",
+     "source_title": "KKR entre au capital de KDC/One (Premium Beauty News)",
+     "source_date": "2022-04-09"
+    },
+    {
+     "name": "CDPQ (via kdc/one)",
+     "role": "co-investisseur",
+     "entry_date": null,
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.premiumbeautynews.com/fr/kkr-entre-au-capital-de-kdc-one,20147",
+     "source_title": "KKR entre au capital de KDC/One (Premium Beauty News)",
+     "source_date": "2022-04-09"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Détention indirecte: Alkos appartient à kdc/one (Canada), dont Cornell Capital reste l'actionnaire principal après l'entrée 'significative' de KKR (2022). Une sortie se jouerait au niveau de kdc/one. Rôle 'majoritaire' de Cornell = 'principal actionnaire' (pas % publié). Les CFNEWS de 2019 évoquent un groupe ~50 M€ de CA (non lu directement)."
+  },
+  {
+   "company": "Gotha Cosmetics",
+   "country": "IT",
+   "segment": "Sous-traitants",
+   "sub_segment": "CDMO maquillage (formulation, vrac, remplissage, packaging)",
+   "hq_city": "Lallio (Bergame)",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Capvis (Capvis Equity IV)",
+     "role": "majoritaire",
+     "entry_date": "2016-09",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.capvis.com/en/news/capvis-invests-in-gotha-cosmetics-srl.html",
+     "source_title": "Capvis invests in Gotha Cosmetics Srl.",
+     "source_date": "2016-09-26"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Shawn Sedaghat",
+    "title": "founder and CEO (minoritaire significatif)",
+    "source_url": "https://www.capvis.com/en/news/capvis-invests-in-gotha-cosmetics-srl.html"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "plus de 100 salariés",
+     "year": "2016",
+     "source_url": "https://www.capvis.com/en/news/capvis-invests-in-gotha-cosmetics-srl.html"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Détenu depuis 2016 (10 ans), toujours listé comme participation actuelle sur le site Capvis",
+     "date": null,
+     "source_url": "https://www.capvis.com/en/investments.html"
+    },
+    {
+     "fact": "Capvis a retiré un processus de vente lancé début 2023 pour se concentrer sur des acquisitions (Mergermarket)",
+     "date": "2023",
+     "source_url": "https://ionanalytics.com/insights/mergermarket/private-equity-funds-starting-to-see-the-allure-of-cosmetics-manufacturing-and-outsourcing/"
+    },
+    {
+     "fact": "Build-ups: iColor (Chine, 2022), Mia Cosmetic Factory (2022), Beauty Rain (03/2023)",
+     "date": "2023-03",
+     "source_url": "https://www.capvis.com/en/news/gotha-cosmetics-strengthens-its-industrial-capacity-further-with-a-new-acquisition.html"
+    }
+   ],
+   "notes": "Candidat de sortie prioritaire (durée de détention très longue, processus avorté en 2023)."
+  },
+  {
+   "company": "Ancorotti Cosmetics (groupe Ancorotti, incl. Cosmoproject)",
+   "country": "IT",
+   "segment": "Sous-traitants",
+   "sub_segment": "maquillage (mascara, poudres), soin et fond de teint",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "L-GAM",
+     "role": null,
+     "entry_date": "2021-06",
+     "deal_type": "LBO secondaire",
+     "seller": "White Bridge Investments (et en partie les fondateurs)",
+     "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/",
+     "source_title": "L-Gam al controllo dei trucchi Ancorotti Cosmetics, exit per White Bridge (BeBeez)",
+     "source_date": "2021-06-25"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "White Bridge Investments (minoritaire)",
+     "entry": "2017",
+     "exit": "2021",
+     "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/"
+    }
+   ],
+   "ceo": {
+    "name": "Renato Ancorotti",
+    "title": "Presidente e CEO",
+    "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 220 M€ (groupe après rachat de Cosmoproject)",
+     "year": "2024",
+     "source_url": "https://beautymatter.com/articles/ancorotti-cosmetics-buys-cosmoproject"
+    },
+    {
+     "metric": "effectif",
+     "value": "~500 (Ancorotti), groupe attendu >800 en 2025",
+     "year": "2024",
+     "source_url": "https://beautymatter.com/articles/ancorotti-cosmetics-buys-cosmoproject"
+    },
+    {
+     "metric": "CA",
+     "value": "72 M€",
+     "year": "2016",
+     "source_url": "https://world-ma.com/transactions/detail/news/white-bridge-investments-acquires-minority-stake-in-italian-ancorotti-cosmetics"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Build-up majeur: rachat de Cosmoproject (~70 M€ de CA) dans le plan stratégique lancé avec L-GAM en 2021",
+     "date": "2024-12",
+     "source_url": "https://beautymatter.com/articles/ancorotti-cosmetics-buys-cosmoproject"
+    }
+   ],
+   "notes": "Rôle L-GAM contradictoire: BeBeez parle d'une quota di maggioranza; Houlihan Lokey (non lu, vu en résultat de recherche) parle de la cession par WBI d'une participation de 40% non contrôlante. Rôle laissé null. Usine à Crema."
+  },
+  {
+   "company": "Plateforme beauté Orienta (Trendcolor + InUnUp + New Cosmesy)",
+   "country": "IT",
+   "segment": "Sous-traitants",
+   "sub_segment": "maquillage (InUnUp, Trendcolor) et parfums private label (New Cosmesy)",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Orienta Capital Partners",
+     "role": null,
+     "entry_date": "2021",
+     "deal_type": "LBO primaire",
+     "seller": "Actionnaires fondateurs; Route Capital pour New Cosmesy",
+     "source_url": "https://www.lincolninternational.com/transactions/orienta-capital-partners-and-armonia-sgr-alongside-square-capital-club-have-acquired-new-cosmesy-and-inunup-to-create-a-new-beauty-sector-platform-together-with-trendcolor/",
+     "source_title": "Orienta Capital Partners and Armònia SGR alongside Square Capital Club have acquired New Cosmesy and InUnUp (Lincoln International)",
+     "source_date": "2025"
+    },
+    {
+     "name": "Armònia SGR",
+     "role": "co-investisseur",
+     "entry_date": "2025",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital",
+     "source_title": "Osborne Clarke advises Route Capital on acquisition of InUnUp and New Cosmesy by Orienta Capital",
+     "source_date": "2026-01-02"
+    },
+    {
+     "name": "Square Capital Club (club deal Deutsche Bank)",
+     "role": "co-investisseur",
+     "entry_date": "2025",
+     "deal_type": null,
+     "seller": null,
+     "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital",
+     "source_title": "Osborne Clarke",
+     "source_date": "2026-01-02"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Route Capital (New Cosmesy)",
+     "entry": null,
+     "exit": "2025",
+     "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 60 M€ attendus (Trendcolor+New Cosmesy+InUnUp)",
+     "year": "2025",
+     "source_url": "https://www.lincolninternational.com/transactions/orienta-capital-partners-and-armonia-sgr-alongside-square-capital-club-have-acquired-new-cosmesy-and-inunup-to-create-a-new-beauty-sector-platform-together-with-trendcolor/"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 200 salariés",
+     "year": "2025",
+     "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "100% du capital d'InUnUp et New Cosmesy acquis. New Cosmesy siège à Milan, InUnUp province de Lecco (Lincoln). Orienta a lancé la plateforme avec Trendcolor en 2021 (Lincoln); date exacte d'entrée Trendcolor non confirmée."
+  }
+ ],
+ "exited": [
+  {
+   "company": "Prévost Laboratory Concept (Groupe PLC)",
+   "country": "FR",
+   "fund": "Abénex et Arkéa Capital",
+   "entry": "2020-05",
+   "exit_date": "2023-07",
+   "buyer": "IDI (avec Stags)",
+   "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Prevost-Laboratory-Concept-formule-un-LBO-bis-448269"
+  },
+  {
+   "company": "Essences & Parfums",
+   "country": "FR",
+   "fund": "Trajan Capital",
+   "entry": "2023-04",
+   "exit_date": "2026-05",
+   "buyer": "Sagard (Sagard Europe MidCap)",
+   "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/"
+  },
+  {
+   "company": "New Cosmesy",
+   "country": "IT",
+   "fund": "Route Capital",
+   "entry": null,
+   "exit_date": "2025",
+   "buyer": "Orienta Capital Partners, Armònia SGR, Square Capital Club",
+   "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital"
+  },
+  {
+   "company": "Ancorotti Cosmetics",
+   "country": "IT",
+   "fund": "White Bridge Investments",
+   "entry": "2017",
+   "exit_date": "2021-06",
+   "buyer": "L-GAM",
+   "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/"
+  },
+  {
+   "company": "Cosmogen (packaging/applicateurs, hors périmètre strict)",
+   "country": "FR",
+   "fund": "MBO & Co (MBO Partenaires)",
+   "entry": "2016-12",
+   "exit_date": "2024-12",
+   "buyer": "Weinberg Capital Partners (WCP#4) + BNP Paribas Développement",
+   "source_url": "https://www.cfnews.net/in-the-news/COSMOGEN-236444?page=1"
+  }
+ ],
+ "searched_but_not_confirmed": [
+  "Lessonia (Saint-Thonan, façonnier cosmétique/ingrédients, ~30 M€): MBO mars 2023 mené par Sébastien Guillotin; présence de fonds (Bpifrance? BNP?) non confirmée",
+  "La Phocéenne de Cosmétique (Azulis Capital + BNP Paribas Développement, OBO 2021): exclue car propriétaire de marques (Le Petit Olivier, Lovea, Laboratoires Vendôme, Laboratoires de Biarritz), pas façonnier",
+  "Laboratoires Vendôme: repris en 2023 par La Phocéenne de Cosmétique (marque), exclu",
+  "Cosmogen (Weinberg Capital Partners majoritaire depuis 12/2024, BNP Paribas Dév.): fabricant de packaging/applicateurs, hors périmètre façonnier",
+  "Laboratoires Gilbert / Groupe Gilbert: actionnariat familial (Financière Batteur), aucun fonds trouvé",
+  "Superga Beauty: groupe familial (Superga Invest, famille Bréau), aucun fonds",
+  "Biocos (Revel): aucun fonds confirmé",
+  "Hyteck: aucune opération PE trouvée",
+  "Thépenier Pharma & Cosmetics: filiale de Nippon Shikizai (industriel), exclu",
+  "Sicaf (Valréas): filiale d'Anjac Health & Beauty (voir Anjac)",
+  "Chromavis (IT): contrôlée par Fareva (familial) depuis 2013; ex-CAPE",
+  "Fareva: familial, exclu",
+  "Arcade Beauty (Socoplan, échantillons): recapitalisation par prêteurs/actionnaires, identité des fonds non confirmée",
+  "Cosmo International Fragrances: aucune présence PE trouvée",
+  "TechnicoFlor (Marseille, parfums): actionnaire majoritaire non identifié",
+  "Nature & Stratégie (fabricant hygiène bio; Arkéa Capital, Ouest Croissance, Unexo cités en 2026): modèle façonnier non confirmé",
+  "Ada International / ADA Cosmetics (DE, produits d'accueil hôtelier): cédé par Ardian à un fonds autrichien en 2018; statut actuel non vérifié",
+  "Intercos (IT): coté, exclu",
+  "Ceuta Group (UK, Juggernaut): externalisation commerciale, pas fabricant",
+  "HB Aesthetics (ES, LBO 2023): investisseur et modèle (marque vs façonnier) non confirmés",
+  "Omnicos, Art Cosmetics, Regi (IT): cités comme façonniers, actionnariat non vérifié",
+  "Laboratoire Cosmétique de Lécousse: rattachement à LDA Global Cosmetics (PitchBook) non confirmé, pas de fonds",
+  "IBG (spin-off d'Albéa, conception packaging et produits cosmétiques, 'first-time fund' 2024): fonds et modèle non confirmés",
+  "PU Cosmetica (IT, Orienta 2019): statut actuel non vérifié"
+ ]
+}

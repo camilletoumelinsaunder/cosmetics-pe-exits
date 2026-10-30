@@ -1,0 +1,389 @@
+{
+ "adopt-parfums": {
+  "doubts": [
+   "Date d'entrée de NextStage : déc. 2015 selon Premium Beauty News, 2016 selon CFNEWS."
+  ],
+  "statut": "NextStage majoritaire depuis 2015, Trocadero (2022) et Arkéa (2025) minoritaires. CA > 170 M€ en 2024 (+49 %).",
+  "these": "Près de 11 ans de détention par NextStage, bien au-delà d'un cycle classique, avec une forte croissance récente : un LBO de sortie pour NextStage est logique. L'entrée d'Arkéa en 2025 peut aussi préparer une recomposition du capital.",
+  "priorite": "Haute"
+ },
+ "albea": {
+  "doubts": [
+   "CEO actuel non confirmé (dernier nom trouvé : 2018).",
+   "Siège non confirmé par une source lue."
+  ],
+  "statut": "PAI majoritaire depuis 2018 (LBO secondaire, cédant Sun European). CA T1 2026 : 326 M$ ; EBITDA LTM 173 M$ ; dette nette 4,5x.",
+  "these": "Lead le plus avancé : PAI découpe le groupe (dispensing vendu en 2020, IBG en 2024) et cherchait en juin 2026 à vendre les tubes, Barclays mandaté. Le prêt de 646 M€ arrive à échéance en 2027 et la renégociation est au point mort : la pression pour céder ou refinancer est forte d'ici 2027.",
+  "priorite": "Haute"
+ },
+ "alltub-group": {
+  "doubts": [
+   "Historique avant 2018 tiré de résultats de recherche, pas d'une page lue."
+  ],
+  "statut": "One Equity Partners majoritaire depuis nov. 2018, toujours propriétaire en fév. 2026.",
+  "these": "Près de 8 ans de détention, au-delà de la fenêtre classique, et un build-up récent (Tubettificio La Metallurgica) qui étoffe l'equity story avant une cession.",
+  "priorite": "Haute"
+ },
+ "ami-ingredients": {
+  "doubts": [
+   "Part d'Arkéa non publiée.",
+   "CEO non confirmé (dirigeant cité sans titre)."
+  ],
+  "statut": "Arkéa Capital minoritaire depuis déc. 2021 (première ouverture du capital). CA 44 M€ en 2021.",
+  "these": "Environ 5 ans de détention : c'est l'horizon habituel de sortie d'un minoritaire, mais aucune annonce trouvée. À surveiller pour un rachat de la part d'Arkéa ou un premier LBO.",
+  "priorite": "Moyenne"
+ },
+ "ancorotti-cosmetics-groupe-ancorotti-incl-cosmoproject": {
+  "doubts": [
+   "Rôle de L-GAM contradictoire : majorité selon BeBeez, 40 % non contrôlant selon Houlihan Lokey (non lu)."
+  ],
+  "statut": "L-GAM au capital depuis juin 2021 (rachat de la part de White Bridge). CA > 220 M€ après le rachat de Cosmoproject (2024).",
+  "these": "Plus de 5 ans de détention et un build-up majeur en 2024 qui double la taille : le schéma typique d'une plateforme préparée pour une sortie vers un fonds plus grand ou un industriel.",
+  "priorite": "Moyenne"
+ },
+ "anjac-health-beauty": {
+  "doubts": [
+   "Rôle de KKR et Krefeld non publié (minoritaire probable).",
+   "Sortie d'Andera, Idia et Bpifrance non confirmée."
+  ],
+  "statut": "Groupe familial ; KKR et Krefeld entrés en oct. 2024 lors d'une réorganisation du capital. CA près de 800 M€.",
+  "these": "Entrée de KKR trop récente pour une sortie à court terme. L'intérêt est plutôt la sortie possible des minoritaires historiques (Andera, Idia, Bpifrance, entrés en 2020), non confirmée.",
+  "priorite": "Basse"
+ },
+ "aroma-zone": {
+  "doubts": [],
+  "statut": "Eurazeo majoritaire depuis juil. 2021. Négociation exclusive avec Partners Group (août 2026), feu vert de la Commission européenne (sept. 2026), closing non confirmé.",
+  "these": "Sortie en cours : Eurazeo Capital IV cède à Partners Group, Eurazeo Capital V réinvestit en minoritaire. Plus un lead de sortie qu'une cible : utile pour suivre le closing et approcher le nouvel actionnaire.",
+  "override": {
+   "ref_fund": "Eurazeo (Eurazeo Capital IV)"
+  },
+  "priorite": "Haute"
+ },
+ "axilone": {
+  "doubts": [
+   "Actionnariat de CITIC non reconfirmé par une source postérieure à 2018."
+  ],
+  "statut": "CITIC Capital majoritaire depuis janv. 2018 (rachat à Oaktree). 8 usines, croissance du CA d'environ 15 % en 2026.",
+  "these": "Si CITIC est toujours actionnaire, la détention atteint environ 9 ans, très au-delà d'un cycle normal, avec une croissance qui facilite une cession. Statut à confirmer en priorité.",
+  "priorite": "Haute"
+ },
+ "baija-bains-nature": {
+  "doubts": [],
+  "statut": "Ciclad majoritaire depuis nov. 2023 (OBO), deux managers au capital. CA d'environ 6 à 9 M€.",
+  "these": "Moins de 3 ans de détention : trop tôt. Petite taille, la sortie passera probablement par un build-up ou un industriel vers 2027-2029.",
+  "priorite": "Basse"
+ },
+ "beautynova-milk-shake-z-one-concept-medavita": {
+  "doubts": [],
+  "statut": "PAI majoritaire depuis mars 2024 (LBO secondaire), BlueGem reste actionnaire significatif. 70 % du CA hors Italie.",
+  "these": "Entrée récente de PAI : pas de sortie attendue avant 2028. La part résiduelle de BlueGem (au capital depuis 2020) peut sortir plus tôt.",
+  "priorite": "Basse"
+ },
+ "capsum": {
+  "doubts": [],
+  "statut": "Motion Equity Partners majoritaire depuis oct. 2026 (premier LBO, rachat à Chanel qui garde une minorité). CA 68 M€ en 2024.",
+  "these": "Deal de ce mois-ci : pas un candidat de sortie avant 2030. Intéressant comme plateforme de build-up dans les CDMO.",
+  "priorite": "Basse"
+ },
+ "cosfibel-group": {
+  "doubts": [
+   "Détention PE indirecte : filiale de GPA Global, co-contrôlé par le fonds de pension Ontario Teachers'."
+  ],
+  "statut": "Racheté par GPA Global en janv. 2023 ; GPA est co-contrôlé par OTPP depuis 2022.",
+  "these": "La sortie se jouerait au niveau de GPA Global, pas de Cosfibel. Faible priorité sauf signal sur GPA.",
+  "priorite": "Basse"
+ },
+ "cosmogen": {
+  "doubts": [],
+  "statut": "Weinberg Capital majoritaire depuis déc. 2024 (LBO secondaire, rachat à MBO+). Build-up d'Asquan en juin 2026. CA d'environ 23 M€ (2024).",
+  "these": "Entrée récente et buy-and-build en cours : sortie plutôt vers 2028-2030, une fois la plateforme Cosmogen & Asquan constituée.",
+  "priorite": "Basse"
+ },
+ "coverpla": {
+  "doubts": [
+   "Vendeurs exacts du LBO de 2024 non publiés."
+  ],
+  "statut": "Pool mené par GENEO depuis sept. 2024 (LBO quaternaire). CA d'environ 25 M€, plus de 70 % à l'international.",
+  "these": "Quatrième LBO : la société change de mains régulièrement entre fonds. Prochaine sortie attendue vers 2028-2030, sans doute vers un autre fonds.",
+  "priorite": "Basse"
+ },
+ "diam-international": {
+  "doubts": [
+   "Majorité d'Ardian non confirmée (rôle non publié).",
+   "Segment limite : d'abord PLV et merchandising, pas un pur emballeur."
+  ],
+  "statut": "Ardian Expansion au capital depuis juil. 2024 (100-150 M€ investis), management réinvesti. CA > 400 M€, marge d'EBITDA > 15 %.",
+  "these": "Entrée récente : sortie plutôt vers 2028-2030. Taille et marges en font une cible naturelle pour un grand fonds ou un industriel à ce moment-là.",
+  "priorite": "Basse"
+ },
+ "diptyque": {
+  "doubts": [
+   "Détention de Manzanita confirmée seulement jusqu'à fév. 2024."
+  ],
+  "statut": "Manzanita Capital majoritaire depuis avr. 2005.",
+  "these": "Plus de 20 ans de détention, ce qui sort de tout cycle normal. Manzanita a vendu Space NK en 2024-2025 : une rotation du portefeuille, dont Diptyque, est plausible, mais aucun signal direct trouvé.",
+  "priorite": "Moyenne"
+ },
+ "essences-parfums": {
+  "doubts": [
+   "Majorité de Sagard déduite (Trajan contrôlait et a cédé), pourcentage non publié.",
+   "Segment limite : maison de compositions parfumées."
+  ],
+  "statut": "Sagard majoritaire depuis mai 2026 (rachat à Trajan, entré en 2023). CA d'environ 25 M€ en 2025.",
+  "these": "Sortie de Trajan déjà faite ; Sagard vient d'entrer. Pas de sortie attendue avant 2030.",
+  "priorite": "Basse"
+ },
+ "essential-parfums": {
+  "doubts": [],
+  "statut": "Style Capital minoritaire depuis juil. 2026. CA 44,2 M€.",
+  "these": "Entrée très récente : pas de sortie attendue à court terme.",
+  "priorite": "Basse"
+ },
+ "eurovetrocap": {
+  "doubts": [],
+  "statut": "Investindustrial majoritaire depuis janv. 2025, au sein de la plateforme Virospack (CA combiné > 120 M€).",
+  "these": "Add-on récent : la sortie se fera avec la plateforme Virospack, vers 2028-2030.",
+  "priorite": "Basse"
+ },
+ "ex-nihilo": {
+  "doubts": [],
+  "statut": "L Catterton minoritaire significatif depuis janv. 2026 (LBO bis, rachat de la part d'Eurazeo).",
+  "these": "Sortie d'Eurazeo déjà faite ; L Catterton vient d'entrer. Pas de sortie attendue avant 2030.",
+  "priorite": "Basse"
+ },
+ "fiabila": {
+  "doubts": [
+   "Rôle de Crédit Mutuel Equity et Sodero Gestion non confirmé.",
+   "Mois d'entrée non publié (closing attendu T1 2024)."
+  ],
+  "statut": "Apheon majoritaire depuis 2024 (premier LBO, la famille réinvestit). CA > 137 M€, environ 480 salariés sur 10 sites.",
+  "these": "Détention de 2 à 3 ans : trop tôt pour Apheon. Les minoritaires historiques restés au capital pourraient sortir plus tôt.",
+  "priorite": "Basse"
+ },
+ "gisou": {
+  "doubts": [],
+  "statut": "Eurazeo Brands minoritaire depuis avr. 2022, les cofondateurs restent majoritaires.",
+  "these": "4,5 ans de détention, et Eurazeo cède ses marques beauté en 2026 (Ex Nihilo, Aroma-Zone) : une sortie d'Eurazeo de Gisou dans les 1 à 2 ans est plausible, sans annonce à ce stade.",
+  "priorite": "Moyenne"
+ },
+ "gotha-cosmetics": {
+  "doubts": [],
+  "statut": "Capvis majoritaire depuis sept. 2016, toujours en portefeuille. Build-ups en 2022-2023 (iColor, Mia Cosmetic Factory, Beauty Rain).",
+  "these": "Lead prioritaire : 10 ans de détention, un processus de vente lancé puis retiré en 2023, et des build-ups faits depuis pour renforcer le dossier. Une relance du processus est probable.",
+  "priorite": "Haute"
+ },
+ "groupe-aiglon": {
+  "doubts": [
+   "Majorité de Trajan déduite du mot « reprise », pourcentage non publié."
+  ],
+  "statut": "Trajan Capital depuis juil. 2025 (MBI). CA d'environ 14 M€.",
+  "these": "Entrée récente : pas de sortie attendue avant 2029-2030.",
+  "priorite": "Basse"
+ },
+ "groupe-alkos-alkos-cosmetiques-inter-cosmetiques-sagal-cosmetiques-filiale-de-kdc-one": {
+  "doubts": [
+   "Détention indirecte via kdc/one : une sortie se ferait au niveau de kdc/one.",
+   "Majorité de Cornell déduite de « principal actionnaire »."
+  ],
+  "statut": "Filiale de kdc/one (Canada), dont Cornell Capital est le principal actionnaire depuis 2019, avec KKR (2022) et CDPQ.",
+  "these": "Plus de 7 ans pour Cornell sur kdc/one : une sortie ou recomposition au niveau du groupe est plausible, ce qui toucherait Alkos. À suivre au niveau de kdc/one.",
+  "priorite": "Moyenne"
+ },
+ "groupe-herbarom": {
+  "doubts": [
+   "Parts des minoritaires non publiées."
+  ],
+  "statut": "Groupe familial, Bpifrance et BNP Paribas Développement minoritaires depuis déc. 2021. CA d'environ 50 M€.",
+  "these": "Environ 5 ans pour deux minoritaires : l'horizon typique de leur sortie, via un rachat par la famille ou l'entrée d'un nouveau fonds.",
+  "priorite": "Moyenne"
+ },
+ "groupe-pinard-pinard-beauty-pack-lablabo": {
+  "doubts": [
+   "Répartition entre Bluegem et AREV non publiée.",
+   "Entrée d'IK en 2017 issue d'un résultat de recherche, non relue."
+  ],
+  "statut": "Bluegem et AREV propriétaires à 100 % depuis sept. 2024 (rachat à IK).",
+  "these": "Entrée récente : sortie plutôt vers 2028-2030.",
+  "priorite": "Basse"
+ },
+ "groupe-plc-prevost-laboratory-concept-incl-creapharm-cosmetics-floralpina": {
+  "doubts": [],
+  "statut": "IDI majoritaire (environ 90 %) depuis août 2023 (LBO secondaire). Buy-and-build : Creapharm (2024), Floralpina (2026). Objectif 35-40 M€ de CA en 2026.",
+  "these": "3 ans de détention et un buy-and-build actif : la fenêtre s'ouvre en 2027. Si l'objectif de CA est atteint, IDI aura un dossier prêt vers 2027-2028.",
+  "priorite": "Moyenne"
+ },
+ "groupe-vabel-vabel-cosmetique-incl-sarbec-cosmetics-parfums-vabel-ccsp": {
+  "doubts": [],
+  "statut": "Naxicap majoritaire depuis mars 2021 (LBO primaire). Rachat de Sarbec en 2023 : CA d'environ 170 M€, plus de 2 000 salariés.",
+  "these": "5,5 ans de détention, dans la fenêtre, et la taille a été multipliée par plus de 5 avec Sarbec. Le dossier est mûr pour une sortie vers un fonds plus grand, l'objectif affiché de Naxicap étant 250 M€ de CA.",
+  "priorite": "Haute"
+ },
+ "groupe-verpack": {
+  "doubts": [],
+  "statut": "Aldebaran minoritaire significatif depuis juil. 2026 (rachat de la part de Crédit Mutuel Equity), la famille Viers reste majoritaire. CA 55 M€ en 2025.",
+  "these": "Sortie de Crédit Mutuel Equity déjà faite ; Aldebaran vient d'entrer. Pas de sortie attendue avant 2030.",
+  "priorite": "Basse"
+ },
+ "h-reynaud-fils": {
+  "doubts": [
+   "Part de JADEL non publiée."
+  ],
+  "statut": "JADEL (fonds evergreen) minoritaire depuis déc. 2024, contrôle familial maintenu. CA près de 90 M€.",
+  "these": "Fonds evergreen, donc sans contrainte de durée : faible probabilité de sortie mécanique.",
+  "priorite": "Basse"
+ },
+ "hb-aesthetics-fusion-meso-ekseption": {
+  "doubts": [],
+  "statut": "Amethis minoritaire significatif depuis mai 2023, avec Siparex. CA d'environ 30 M€, plus de 95 % à l'export.",
+  "these": "3,5 ans de détention : la fenêtre s'ouvre en 2027. Croissance à l'export et petite taille : une sortie vers un industriel de la dermo-cosmétique est plausible.",
+  "priorite": "Moyenne"
+ },
+ "juliette-has-a-gun": {
+  "doubts": [
+   "Répartition exacte du capital non publiée."
+  ],
+  "statut": "Cathay minoritaire depuis janv. 2021, renforcé en mai 2023 avec l'entrée de Weinberg (LBO primaire). Ventes au détail de 120 M€ en 2022.",
+  "these": "Cathay approche 6 ans de présence : sa sortie est plausible d'ici 1 à 2 ans. La parfumerie de niche est très recherchée (processus Parfums de Marly en 2026).",
+  "priorite": "Moyenne"
+ },
+ "kiko-milano": {
+  "doubts": [],
+  "statut": "L Catterton majoritaire (70 %) depuis avr. 2024, la famille Percassi garde environ 30 %. CA d'environ 800 M€.",
+  "these": "Entrée récente : sortie plutôt vers 2028-2030, probablement par une IPO ou une vente à un grand fonds vu la taille.",
+  "priorite": "Basse"
+ },
+ "la-phoceenne-de-cosmetique-le-petit-olivier-lovea-laboratoires-de-biarritz": {
+  "doubts": [],
+  "statut": "Azulis et BNP Paribas Développement minoritaires depuis oct. 2021, les fondateurs gardent une large majorité. Build-up des Laboratoires de Biarritz (mars 2026).",
+  "these": "5 ans pour deux minoritaires, dans la fenêtre, et un build-up récent : un premier LBO majoritaire ou une sortie des minoritaires est plausible en 2027.",
+  "priorite": "Moyenne"
+ },
+ "laboratoire-gravier": {
+  "doubts": [
+   "Pas confirmé qu'Ekkio est toujours actionnaire."
+  ],
+  "statut": "Ekkio majoritaire depuis juil. 2018 (LBO secondaire, rachat à Naxicap).",
+  "these": "Si Ekkio est toujours au capital, plus de 8 ans de détention, très au-delà de la fenêtre : une sortie est probable à court terme. Statut à confirmer en priorité.",
+  "priorite": "Haute"
+ },
+ "laboratoires-embryolisse": {
+  "doubts": [
+   "Statut actuel non confirmé (site MBO+ inaccessible)."
+  ],
+  "statut": "MBO+ minoritaire depuis juin 2018 (fonds MBO Capital IV).",
+  "these": "Si MBO+ est toujours au capital, plus de 8 ans de détention, très au-delà de la fenêtre : une sortie est probable à court terme. Statut à confirmer en priorité.",
+  "priorite": "Haute"
+ },
+ "les-secrets-de-loly": {
+  "doubts": [
+   "Nom du fonds Quadrivio différent selon les sources."
+  ],
+  "statut": "Quadrivio majoritaire depuis mars 2026, avec Weinberg et Three Hills, la fondatrice réinvestit.",
+  "these": "Entrée très récente : pas de sortie attendue avant 2030.",
+  "priorite": "Basse"
+ },
+ "lorcos-lorraine-cosmetique": {
+  "doubts": [
+   "Rôle d'Ekkio non confirmé (article payant).",
+   "Ville non confirmée."
+  ],
+  "statut": "Ekkio au capital depuis juin 2023 (MBI par un ancien dirigeant de L'Oréal). CA > 12 M€.",
+  "these": "3 ans de détention : la fenêtre s'ouvre en 2027. Petite taille : sortie probable vers un consolidateur de CDMO.",
+  "priorite": "Moyenne"
+ },
+ "manucurist": {
+  "doubts": [],
+  "statut": "Inflexion minoritaire (environ 49 %) : signé en sept. 2026, closing attendu fin oct. 2026. CA d'environ 70 M€ en 2025.",
+  "these": "Deal en cours de closing : pas de sortie attendue avant 2030.",
+  "priorite": "Basse"
+ },
+ "nuxe": {
+  "doubts": [
+   "Sofina est une holding cotée, pas un fonds à durée limitée.",
+   "Part : 49 % selon Sofina, 45,13 % en 2019 selon la presse."
+  ],
+  "statut": "Sofina minoritaire (environ 49 %) depuis 2019, Aliza Jabès reste aux commandes.",
+  "these": "Pas de contrainte de durée pour Sofina : faible probabilité de sortie mécanique. Un changement de contrôle se jouerait avec la fondatrice.",
+  "priorite": "Basse"
+ },
+ "parfums-de-marly-initio-parfums-prives-sprecher-berrier-group": {
+  "doubts": [
+   "Qualification « LBO primaire » déduite, la source n'emploie pas le terme."
+  ],
+  "statut": "Advent majoritaire (70 %) depuis juin 2023, le fondateur garde 30 %. Ventes d'environ 375-400 M€.",
+  "these": "Processus de vente engagé : Advent a mandaté Jefferies et Goldman Sachs en avril 2026, valorisation visée d'environ 2 Md€. Sortie rapide, après 3 ans, portée par l'appétit pour la parfumerie de niche.",
+  "priorite": "Haute"
+ },
+ "plateforme-beaute-orienta-trendcolor-inunup-new-cosmesy": {
+  "doubts": [
+   "Date exacte d'entrée dans Trendcolor non confirmée.",
+   "Rôle d'Orienta non publié."
+  ],
+  "statut": "Plateforme lancée par Orienta avec Trendcolor en 2021, élargie en 2025 (InUnUp, New Cosmesy) avec Armònia et Square Capital Club. CA > 60 M€ attendu en 2025.",
+  "these": "5 ans depuis le lancement et une plateforme qui vient d'être élargie : une sortie de l'ensemble vers 2027-2028 est plausible.",
+  "priorite": "Moyenne"
+ },
+ "pure-trade": {
+  "doubts": [
+   "Majorité d'AGIC déduite de « a acquis ».",
+   "Segment limite : surtout packaging secondaire et promotionnel."
+  ],
+  "statut": "AGIC Capital depuis 2023, objectif de 100 M€ de CA.",
+  "these": "3 ans de détention et un objectif de CA à atteindre : sortie plutôt vers 2027-2029.",
+  "priorite": "Moyenne"
+ },
+ "safic-alcan": {
+  "doubts": [
+   "Part cosmétique du CA non publiée (distributeur multi-industries)."
+  ],
+  "statut": "Management et salariés majoritaires, six fonds minoritaires dont IK, Equistone et GENEO depuis juin 2022. CA 725 M€ en 2021.",
+  "these": "Environ 4,5 ans pour le pool de fonds entré en 2022, dans la fenêtre : une recomposition du capital minoritaire est plausible d'ici 1 à 2 ans.",
+  "priorite": "Moyenne"
+ },
+ "solabia-group": {
+  "doubts": [],
+  "statut": "Astorg majoritaire depuis mai 2025 (rachat de la majorité à TA Associates, qui réinvestit). CA 130 M€ en 2023, EBITDA d'environ 60 M€ (presse).",
+  "these": "Sortie de TA (majorité) déjà faite ; Astorg vient d'entrer. Pas de sortie attendue avant 2029-2030.",
+  "priorite": "Basse"
+ },
+ "sophim": {
+  "doubts": [
+   "Rôle et part de Smalt non publiés.",
+   "Année d'entrée 2014 issue d'un résultat de recherche."
+  ],
+  "statut": "Smalt Capital au capital depuis 2014, réinvesti en sept. 2023 (OBO). CA d'environ 50 M€ attendu en 2023.",
+  "these": "Un fonds présent depuis 12 ans, réinvesti en 2023 : la détention actuelle date de 3 ans, donc pas de sortie attendue avant 2027-2028.",
+  "priorite": "Basse"
+ },
+ "susanne-kaufmann": {
+  "doubts": [
+   "Date d'entrée et part de Manzanita inconnues."
+  ],
+  "statut": "Dans le portefeuille de Manzanita Capital selon Premium Beauty News (2024).",
+  "these": "Manzanita fait tourner son portefeuille (vente de Space NK en 2024-2025). Pas de signal direct sur Susanne Kaufmann, et la date d'entrée manque.",
+  "priorite": "Basse"
+ },
+ "verescence": {
+  "doubts": [
+   "Movendo et Draycott sont des holdings familiales, pas des fonds PE classiques.",
+   "Parts de chacun non publiées."
+  ],
+  "statut": "Movendo et Draycott depuis mai 2025 (rachat à Stirling Square). Environ 2 500 salariés.",
+  "these": "Actionnaires patients et récents : faible probabilité de sortie à court terme.",
+  "priorite": "Basse"
+ },
+ "virospack": {
+  "doubts": [],
+  "statut": "Investindustrial majoritaire (51 %) depuis sept. 2023, la famille Rodriguez reste partenaire. Plateforme avec Eurovetrocap.",
+  "these": "3 ans de détention et une plateforme en construction : sortie plutôt vers 2027-2029.",
+  "priorite": "Moyenne"
+ },
+ "wella-company": {
+  "doubts": [
+   "Siège (Genève) non confirmé par une source lue."
+  ],
+  "statut": "KKR contrôle depuis 2020 (rachat à Coty). CA 2,94 Md$ sur l'exercice clos en juin 2026.",
+  "these": "Sortie partielle en cours par IPO : dossier S-1 déposé à la SEC en sept. 2026 (NYSE, ticker WELA). KKR resterait actionnaire de contrôle après l'introduction.",
+  "priorite": "Haute"
+ }
+}
