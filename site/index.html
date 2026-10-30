@@ -117,8 +117,9 @@ form.inline .full { grid-column: 1 / -1; }
 
 <script>
 /* ---------- State ---------- */
-// Contacts and follow-up are personal: they live under data/users/<viewer id>/, private to each viewer.
-let DATA = null, DB = null, DL = null, ME = null, CONTACTS = {}, SUIVI = {};
+// Contacts and follow-up (status, priority, last contact, next steps) are shared with everyone the page is shared with.
+// Free notes stay private under data/users/<viewer id>/pe/notes.
+let DATA = null, DB = null, DL = null, ME = null, USER = null, CONTACTS = {}, SUIVI = {}, NOTES = {}, NAMES = {};
 const P = sub => `data/users/${ME}/pe/${sub}`;
 const STATUTS = ["À qualifier", "À approcher", "En contact", "Opportunité", "Écarté"];
 const EFFECTIF = { "00": "0 salarié", "01": "1–2", "02": "3–5", "03": "6–9", "11": "10–19", "12": "20–49", "21": "50–99", "22": "100–199",
@@ -178,8 +179,20 @@ const contactsOf = id => Object.entries(CONTACTS).filter(([, p]) => (p.liens || 
 const suiviOf = id => SUIVI[id]?.statut || "À qualifier";
 // Follow-up docs are merged, so a table edit never wipes fields saved from the sheet.
 async function saveSuivi(id, patch) {
-  const body = { ...(SUIVI[id] || {}), ...patch, updated_at: new Date().toISOString() };
-  await DB.doc(`${P("suivi")}/${id}`).set(body); SUIVI[id] = body; return body;
+  const body = { ...(SUIVI[id] || {}), ...patch, updated_at: new Date().toISOString(), updated_by: ME };
+  await DB.doc(`suivi/${id}`).set(body); SUIVI[id] = body; return body;
+}
+async function saveNote(id, notes) {
+  const body = { notes, updated_at: new Date().toISOString() };
+  await DB.doc(`${P("notes")}/${id}`).set(body); NOTES[id] = body;
+}
+// Who changed a shared row: names are resolved at render time from stored user ids, never stored.
+const who = uid => !uid ? "" : uid === ME ? "vous" : (NAMES[uid] || "un collègue");
+async function resolveNames() {
+  if (!USER?.profiles) return;
+  const ids = [...new Set([...Object.values(SUIVI), ...Object.values(CONTACTS)].map(d => d.updated_by).filter(u => u && u !== ME && !(u in NAMES)))];
+  if (!ids.length) return;
+  try { const ps = await USER.profiles(ids); for (const i of ids) NAMES[i] = ps[i]?.name || ""; render(false); refreshDrawer(); } catch {}
 }
 const stop = 'onclick="event.stopPropagation()" onkeydown="event.stopPropagation()"';
 
@@ -196,12 +209,13 @@ async function connect() {
   if (!window.claude?.use) return;
   try {
     DB = await window.claude.use("db");
-    const user = DB && await window.claude.use("user");
-    ME = user ? await user.id() : null;
+    USER = DB && await window.claude.use("user");
+    ME = USER ? await USER.id() : null;
     if (!ME) DB = null;
     if (DB) {
-      DB.collection(P("contacts")).onSnapshot(s => { CONTACTS = {}; for (const d of s.docs) CONTACTS[d.id] = d.data(); render(false); refreshDrawer(); }, () => {});
-      DB.collection(P("suivi")).onSnapshot(s => { SUIVI = {}; for (const d of s.docs) SUIVI[d.id] = d.data(); render(false); }, () => {});
+      DB.collection("contacts").onSnapshot(s => { CONTACTS = {}; for (const d of s.docs) CONTACTS[d.id] = d.data(); render(false); refreshDrawer(); resolveNames(); }, () => {});
+      DB.collection("suivi").onSnapshot(s => { SUIVI = {}; for (const d of s.docs) SUIVI[d.id] = d.data(); render(false); resolveNames(); }, () => {});
+      DB.collection(P("notes")).onSnapshot(s => { NOTES = {}; for (const d of s.docs) NOTES[d.id] = d.data(); }, () => {});
     }
   } catch { DB = null; }
   try { DL = await window.claude.use("downloads"); } catch { DL = null; }
@@ -220,7 +234,7 @@ function rail() {
     <div class="field"><label for="f-status">Fenêtre de sortie</label><select id="f-status">
       ${[["all", "Toutes"], ["in", "Dans la fenêtre"], ["over", "Au-delà de la fenêtre"], ["soon", "Dans moins d'un an"], ["early", "Trop tôt"], ["unk", "Entrée à vérifier"], ["sig", "Avec signal publié"]].map(([v, l]) => `<option value="${v}" ${F.status === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
     <div class="field"><label for="f-verif">Fiabilité</label><select id="f-verif">${[["all", "Toutes"], ["Vérifié", "Vérifié"], ["À vérifier", "À vérifier"]].map(([v, l]) => `<option value="${v}" ${F.verif === v ? "selected" : ""}>${l}</option>`).join("")}</select></div>
-    <div class="field"><label for="f-suivi">Mon suivi</label><select id="f-suivi"><option value="all">Tous</option>${STATUTS.map(s => `<option ${F.suivi === s ? "selected" : ""}>${s}</option>`).join("")}</select></div>
+    <div class="field"><label for="f-suivi">Suivi</label><select id="f-suivi"><option value="all">Tous</option>${STATUTS.map(s => `<option ${F.suivi === s ? "selected" : ""}>${s}</option>`).join("")}</select></div>
     <div class="field"><span class="lbl">Hypothèse de durée de détention (années)</span>
       <div class="pair"><input id="f-min" type="number" min="1" max="15" step="1" value="${lo}" aria-label="Minimum"><input id="f-max" type="number" min="1" max="20" step="1" value="${hi}" aria-label="Maximum"></div>
       <span class="hint">Votre hypothèse, pas une statistique publiée. Elle fixe la fenêtre de sortie estimée.</span></div>
@@ -289,7 +303,7 @@ function render(rebuildRail) {
     <div class="kpi"><span class="v">${nf0.format(e.filter(x => x.status === "over").length)}</span><span class="l">Au-delà de la fenêtre</span></div>
     <div class="kpi"><span class="v">${nf0.format(rows.filter(c => (c.exit_signals || []).length).length)}</span><span class="l">Avec signal de sortie publié</span></div>
     <div class="kpi"><span class="v">${nf0.format(rows.filter(c => c.verification !== "Vérifié").length)}</span><span class="l">À vérifier</span></div>
-    <div class="kpi"><span class="v">${nf0.format(rows.filter(c => contactsOf(c.id).length).length)}</span><span class="l">Avec au moins un de vos contacts</span></div></div>`;
+    <div class="kpi"><span class="v">${nf0.format(rows.filter(c => contactsOf(c.id).length).length)}</span><span class="l">Avec au moins un contact</span></div></div>`;
   const cols = [
     ["nom", "Société", c => `<td class="name">${esc(c.company)}<div class="sub">${esc(c.sub_segment || c.segment || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></td>`],
     ["prio", "Priorité", c => { const v = prioOf(c), mine = !!SUIVI[c.id]?.priorite;
@@ -305,10 +319,10 @@ function render(rebuildRail) {
     ["verif", "Fiabilité", c => `<td><span class="chip ${c.verification === "Vérifié" ? "in" : "soon"}" title="${esc((c.verification_points || []).join(" · "))}">${esc(c.verification)}</span>${(c.verification_points || []).length ? `<div class="sub">${c.verification_points.length} point(s)</div>` : ""}</td>`],
     ["signaux", "Signaux", c => `<td>${(c.exit_signals || []).length ? `<span class="chip sig">${c.exit_signals.length} publié(s)</span>` : "—"}</td>`],
     ["ca", "CA", c => { const v = latestCA(c); return `<td class="num">${v ? `${esc(v.v)}<div class="sub">${esc(v.year || "")}</div>` : TBC}</td>`; }],
-    ["contacts", "Mes contacts", c => { const n = contactsOf(c.id).length; return `<td class="num">${n || "—"}</td>`; }],
-    ["suivi", "Mon suivi", c => `<td><span class="chip track">${esc(suiviOf(c.id))}</span></td>`],
+    ["contacts", "Contacts", c => { const n = contactsOf(c.id).length; return `<td class="num">${n || "—"}</td>`; }],
+    ["suivi", "Suivi", c => `<td><span class="chip track">${esc(suiviOf(c.id))}</span></td>`],
     ["dernier", "Dernier contact", c => `<td><input type="date" class="cell-in" data-f="dernier_contact" data-id="${esc(c.id)}" value="${esc(SUIVI[c.id]?.dernier_contact || "")}" aria-label="Dernier contact avec ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}></td>`],
-    ["next", "Next steps", c => `<td><textarea class="cell-in next" rows="2" data-f="next_steps" data-id="${esc(c.id)}" placeholder="Prochaine action…" aria-label="Next steps pour ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>${esc(SUIVI[c.id]?.next_steps || "")}</textarea></td>`],
+    ["next", "Next steps", c => `<td><textarea class="cell-in next" rows="2" data-f="next_steps" data-id="${esc(c.id)}" placeholder="Prochaine action…" aria-label="Next steps pour ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>${esc(SUIVI[c.id]?.next_steps || "")}</textarea>${SUIVI[c.id]?.updated_by ? `<div class="sub">par ${esc(who(SUIVI[c.id].updated_by))}, ${fmtDay(SUIVI[c.id].updated_at)}</div>` : ""}</td>`],
   ];
   const head = cols.map(([key, l]) => `<th data-sort="${key}" ${F.sort[0] === key ? `aria-sort="${F.sort[1] > 0 ? "ascending" : "descending"}"` : ""}>${l}</th>`).join("");
   const body = rows.map(c => `<tr data-id="${esc(c.id)}" tabindex="0">${cols.map(x => x[2](c)).join("")}</tr>`).join("");
@@ -370,15 +384,15 @@ function openSheet(id, keepScroll) {
       ${c.registry_match && c.registry_match.includes("vérifier") ? `<p class="hint" style="margin:0">Entité du registre rapprochée par le nom : ${esc(c.legal_name)} (SIREN ${esc(c.siren)}). Vérifiez que c'est la bonne société.</p>` : ""}</div>
     <div class="why"><h3>Sortie possible : quand et pourquoi</h3><ul>${why(c).map(x => `<li>${x}</li>`).join("")}</ul>
       <div class="src">Les dates et signaux viennent des sources citées. La fenêtre est une estimation à partir de votre hypothèse de détention, pas une information publiée.</div></div>
-    <section><h3>Mon suivi</h3>
+    <section><h3>Suivi (partagé)</h3>
       <div class="pair"><div class="field"><label for="s-statut">Statut</label><select id="s-statut" ${DB ? "" : "disabled"}>${STATUTS.map(s => `<option ${suiviOf(id) === s ? "selected" : ""}>${s}</option>`).join("")}</select></div>
       <div class="field"><label for="s-next">Prochaine étape (date)</label><input id="s-next" type="date" value="${esc(st.prochaine_date || "")}" ${DB ? "" : "disabled"}></div></div>
       <div class="pair"><div class="field"><label for="s-last">Dernier contact</label><input id="s-last" type="date" value="${esc(st.dernier_contact || "")}" ${DB ? "" : "disabled"}></div>
       <div class="field"><label for="s-prio">Priorité</label><select id="s-prio" ${DB ? "" : "disabled"}>${["Haute", "Moyenne", "Basse"].map(o => `<option ${prioOf(c) === o ? "selected" : ""}>${o}</option>`).join("")}</select></div></div>
       <div class="field"><label for="s-steps">Next steps</label><textarea id="s-steps" rows="2" ${DB ? "" : "disabled"}>${esc(st.next_steps || "")}</textarea></div>
-      <div class="field"><label for="s-notes">Notes</label><textarea id="s-notes" rows="3" ${DB ? "" : "disabled"}>${esc(st.notes || "")}</textarea></div>
-      <div class="row"><span id="s-msg" class="hint">${DB ? (st.updated_at ? `Enregistré le ${fmtDay(st.updated_at)}` : "") : "Connexion requise pour enregistrer votre suivi."}</span><button class="btn primary" id="s-save" ${DB ? "" : "disabled"}>Enregistrer</button></div></section>
-    <section><h3>Mes contacts (${people.length})</h3>
+      <div class="field"><label for="s-notes">Notes privées</label><textarea id="s-notes" rows="3" ${DB ? "" : "disabled"}>${esc(NOTES[id]?.notes || "")}</textarea><span class="hint">Visibles par vous seul.</span></div>
+      <div class="row"><span id="s-msg" class="hint">${DB ? (st.updated_at ? `Suivi partagé, modifié par ${esc(who(st.updated_by) || "?")} le ${fmtDay(st.updated_at)}` : "Suivi partagé avec les personnes qui ont accès à la page.") : "Connexion requise pour enregistrer votre suivi."}</span><button class="btn primary" id="s-save" ${DB ? "" : "disabled"}>Enregistrer</button></div></section>
+    <section><h3>Contacts (${people.length}, partagés)</h3>
       <div><div class="hint">Dans la société</div>${inCo.map(personHTML).join("") || `<p class="hint">Aucun contact trouvé dans vos relations.</p>`}</div>
       <div><div class="hint">Dans les fonds actionnaires</div>${inFund.map(personHTML).join("") || `<p class="hint">Aucun contact trouvé dans vos relations.</p>`}</div>
       <details><summary class="btn small" style="display:inline-block">Ajouter un contact</summary>
@@ -410,26 +424,26 @@ function openSheet(id, keepScroll) {
   document.getElementById("s-save").onclick = async () => {
     const msg = document.getElementById("s-msg");
     const v = k => document.getElementById(k).value.trim();
-    const patch = { statut: v("s-statut"), prochaine_date: v("s-next"), dernier_contact: v("s-last"), next_steps: v("s-steps"), notes: v("s-notes") };
+    const patch = { statut: v("s-statut"), prochaine_date: v("s-next"), dernier_contact: v("s-last"), next_steps: v("s-steps") };
     if (v("s-prio") !== c.priorite || SUIVI[id]?.priorite) patch.priorite = v("s-prio");
-    try { await saveSuivi(id, patch); msg.className = "saved"; msg.textContent = "Enregistré."; render(false); }
+    try { await saveSuivi(id, patch); if (v("s-notes") !== (NOTES[id]?.notes || "")) await saveNote(id, v("s-notes")); msg.className = "saved"; msg.textContent = "Enregistré."; render(false); }
     catch (err) { msg.className = "err"; msg.textContent = `Échec de l'enregistrement (${err?.code || "erreur"}). Réessayez.`; }
   };
   root.querySelectorAll("[data-del]").forEach(b => b.onclick = async () => {
     const pid = b.dataset.del, p = CONTACTS[pid], rest = (p.liens || []).filter(l => l.societe !== id);
     b.disabled = true;
-    try { if (rest.length) await DB.doc(`${P("contacts")}/${pid}`).update({ liens: rest, updated_at: new Date().toISOString() }); else await DB.doc(`${P("contacts")}/${pid}`).delete(); }
+    try { if (rest.length) await DB.doc(`contacts/${pid}`).update({ liens: rest, updated_at: new Date().toISOString(), updated_by: ME }); else await DB.doc(`contacts/${pid}`).delete(); }
     catch { b.disabled = false; }
   });
   root.querySelectorAll(".p-note").forEach(t => t.onchange = async () => {
-    try { await DB.doc(`${P("contacts")}/${t.dataset.id}`).update({ notes: t.value.trim(), updated_at: new Date().toISOString() }); } catch {}
+    try { await DB.doc(`contacts/${t.dataset.id}`).update({ notes: t.value.trim(), updated_at: new Date().toISOString(), updated_by: ME }); } catch {}
   });
   document.getElementById("p-form").onsubmit = async ev => {
     ev.preventDefault();
     const v = k => document.getElementById(k).value.trim(), [type, nom] = v("p-lien").split("|"), msg = document.getElementById("p-msg");
     const now = new Date().toISOString(), pid = "m-" + Math.random().toString(36).slice(2, 10);
     try {
-      await DB.doc(`${P("contacts")}/${pid}`).set({ prenom: v("p-prenom"), nom: v("p-nom"), poste: v("p-poste"), entreprise: nom, linkedin: v("p-li"),
+      await DB.doc(`contacts/${pid}`).set({ updated_by: ME, prenom: v("p-prenom"), nom: v("p-nom"), poste: v("p-poste"), entreprise: nom, linkedin: v("p-li"),
         liens: [{ type, societe: id, nom }], source: "Saisi à la main", notes: "", created_at: now, updated_at: now });
     } catch (err) { msg.className = "err"; msg.textContent = `Échec de l'ajout (${err?.code || "erreur"}).`; }
   };
@@ -446,7 +460,7 @@ async function exportExcel(rows, btn) {
       "Autres fonds": (c.funds || []).filter(f => f.name !== c.ref_fund).map(f => f.name).join(", "), "CEO": c.ceo?.name || "à vérifier",
       "Dernier CA": ca ? ca.v : "à vérifier", "Année CA": ca?.year || "", "Source CA": ca ? (ca.url || ca.src) : "",
       "Priorité": prioOf(c) || "", "Avis Claude": c.priorite || "", "Fiabilité": c.verification, "Points à vérifier": (c.verification_points || []).join(" | "),
-      "Statut (commentaire)": c.comment?.statut || "", "Pourquoi une sortie (commentaire)": c.comment?.these || "", "Mes contacts": ppl.map(p => `${p.prenom} ${p.nom} (${p.poste || ""}, ${p.entreprise || ""})`).join(" | "), "Mon suivi": suiviOf(c.id), "Dernier contact": SUIVI[c.id]?.dernier_contact || "", "Next steps": SUIVI[c.id]?.next_steps || "", "Mes notes": SUIVI[c.id]?.notes || "" }; });
+      "Statut (commentaire)": c.comment?.statut || "", "Pourquoi une sortie (commentaire)": c.comment?.these || "", "Contacts": ppl.map(p => `${p.prenom} ${p.nom} (${p.poste || ""}, ${p.entreprise || ""})`).join(" | "), "Suivi": suiviOf(c.id), "Dernier contact": SUIVI[c.id]?.dernier_contact || "", "Next steps": SUIVI[c.id]?.next_steps || "", "Mes notes privées": NOTES[c.id]?.notes || "" }; });
   const sources = rows.flatMap(c => [...(c.funds || []).map(f => ({ "Société": c.company, "Fait": `Entrée ${f.name} ${f.entry_date || ""}`, "Source": f.source_url || f.source_title || "", "Date source": f.source_date || "" })),
     ...(c.exit_signals || []).map(s => ({ "Société": c.company, "Fait": s.fact, "Source": s.source_url || "", "Date source": s.date || "" }))]);
   const wb = XLSX.utils.book_new();

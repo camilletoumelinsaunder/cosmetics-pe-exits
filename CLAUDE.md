@@ -29,14 +29,17 @@ previous_owners: [{name, entry, exit, source_url}], ceo: {name, title, source_ur
 key_figures: [{metric, value, year, source_url}], exit_signals: [{fact, date, source_url}], notes}],
 "exited": [...]}.
 
-## Contacts (personal data)
-- Stored only in the page database: collection `data/users/<viewer id>/pe/contacts` (private to each viewer; ArtifactData collection `data/users/me/pe/contacts`) (`li-<slug>` from LinkedIn, `m-<random>` manual),
-  fields prenom, nom, poste, entreprise, linkedin, liens [{type: societe|fonds, societe: <company id>, nom}],
-  notes, source. Never in the repo, data.json or the API cache.
+## Contacts and follow-up (shared with everyone the page is shared with)
+- Collection `contacts` (shared): `li-<slug>` from LinkedIn, `m-<random>` manual; fields prenom, nom, poste,
+  entreprise, linkedin, liens [{type: societe|fonds, societe: <company id>, nom}], notes, source, updated_by (user id).
+  Personal data: never in the repo, data.json or the API cache.
+- Collection `suivi/<company id>` (shared): statut, priorite (overrides the analyst priority), dernier_contact,
+  next_steps, prochaine_date, updated_at, updated_by. Names are resolved at view time from user ids, never stored.
+- Collection `data/users/<viewer id>/pe/notes/<company id>` (private to each viewer): free notes.
+- Viewers with read-only access see everything shared but cannot write.
 - `scripts/match_contacts.py CONNECTIONS_JSON OUT_DIR` matches the user's LinkedIn connections (current
-  company only) to tracked companies and their funds; Claude loads the result with ArtifactData, creating
-  only missing documents.
-- Per-company follow-up: collection `data/users/<viewer id>/pe/suivi/<company id>` {statut, priorite (overrides the analyst priority), dernier_contact, next_steps, prochaine_date, notes, updated_at}.
+  company only) to tracked companies and their funds; Claude loads the result into `contacts` with ArtifactData,
+  creating only missing documents.
 
 ## Commands
 ```bash
@@ -49,7 +52,7 @@ python3 scripts/match_contacts.py data/linkedin_connections.json /tmp/contacts
 ## Page
 Private claude.ai artifact: https://claude.ai/artifact/GE9MGoJKM4uxanSU4y3uon (capabilities db, user, downloads).
 Republish `site/index.html` with `data.json` to that URL without `capabilities` or `icon`, so the page keeps its
-database. Never touch `data/users/*` documents except creating missing contacts (see above).
+database. Never modify the page's database except creating missing `contacts` documents (see above).
 
 ## Refresh every two weeks (scheduled routine, 1st and 15th of the month, 03:23 Paris)
 A fresh cloud session clones this repo and:
