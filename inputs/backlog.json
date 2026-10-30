@@ -1,0 +1,360 @@
+{
+ "note": "Candidates not yet confirmed as PE-backed. The two-weekly refresh works through this list, adds confirmed ones to inputs/deals and marks the others.",
+ "candidates": [
+  {
+   "name": "Aroma-Zone: inclus, mais closing de la cession à Partners Group non confirmé (en cours au 30/10/2026).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Essences & Parfums (Grasse): Trajan -> Sagard Europe MidCap (closing 21/05/2026, Houlihan Lokey) — exclu car maison de composition de parfums B2B, pas une marque (https://hl.com/about-us/transactions/trajan-essences-parfums-sagard/).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Maesa (incubateur de marques, Levallois-Perret/New York): Bain Capital majoritaire depuis avril 2019 (cession par Andera) — exclu car siège principal New York (https://www.premiumbeautynews.com/fr/bain-capital-prend-le-controle-de,14873).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "RoC Skincare: Bridgepoint (Europe VII) a racheté à Gryphon en 2024 — exclu car siège New York, à reconsidérer (https://www.bridgepointgroup.com/about-us/news-and-insights/press-releases/2024/bridgepoint-to-acquire-roc-skincare).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Cible Skin: investissement Verlinvest (févr. 2024) vu uniquement sur la page transactions de Cambon Partners; nature/taille de la participation non confirmée.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "BDK Parfums: minorité LVMH Luxury Ventures (nov. 2025) — exclu (fonds corporate, pas PE).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Absolution: 1 M EUR d'Extendam et Rives Croissance (2018) — statut actuel non confirmé.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Carole Franck: XAnge et Bred Perspectives & Participations (MBI, date non confirmée).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Bo.ho Green: Alter Equity 1 M EUR (date non confirmée).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Patyka: minoritaires Agregator Capital / Mode et Finance mentionnés, non confirmés.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Laboratoires Uriage: Puig + M3 Invest (industriel) — exclu.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Alès Groupe (Lierac, Phyto, Jowaé): repris par Impala (holding de Jacques Veyrat) en 2020 — exclu (holding, pas fonds PE).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Cinq Mondes: minoritaires industriels/familiaux (Groupe Batteur, Groupe Gilbert) — exclu.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Eugène Perma (Pétrole Hahn, Eugène Color): repris à la barre en 2023 par un consortium industriel — exclu.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Christophe Robin (THG), Garancia (Unilever), Thalgo (familial) — pas de fonds PE trouvé.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Typology: VC (Alven etc.), pas de PE confirmé.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Vabel (Naxicap), Prévost Laboratory Concept (IDI), Cosmogen (Weinberg) — exclus car façonniers/packaging, pas des marques.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Provalliance (Franck Provost; Core Equity Holdings 2021) — exclu (réseau de salons principalement).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Diptyque: statut confirmé seulement jusqu'en 2024 (Premium Beauty News).",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Non recherchés faute de budget (limite de recherches web atteinte): L'Occitane (minorités Blackstone/Goldman?), Rituals, Xerjoff, Montale/Mancera, Puressentiel, Pranarôm, Durance, Créations & Parfums, Lorience, T.LeClerc/Innoxa (LJV Capital), Noreva (ACM), Lumene, Maria Nila, Natura Bissé, Laboratorios Babé, Sesderma, Bionike, Deborah Group, Bottega Verde, Diego dalla Palma, Bielenda, Eveline, Rodial, Tropic.",
+   "from": "brands.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Lessonia (Saint-Thonan, façonnier cosmétique/ingrédients, ~30 M€): MBO mars 2023 mené par Sébastien Guillotin; présence de fonds (Bpifrance? BNP?) non confirmée",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "La Phocéenne de Cosmétique (Azulis Capital + BNP Paribas Développement, OBO 2021): exclue car propriétaire de marques (Le Petit Olivier, Lovea, Laboratoires Vendôme, Laboratoires de Biarritz), pas façonnier",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Laboratoires Vendôme: repris en 2023 par La Phocéenne de Cosmétique (marque), exclu",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Cosmogen (Weinberg Capital Partners majoritaire depuis 12/2024, BNP Paribas Dév.): fabricant de packaging/applicateurs, hors périmètre façonnier",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Laboratoires Gilbert / Groupe Gilbert: actionnariat familial (Financière Batteur), aucun fonds trouvé",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Superga Beauty: groupe familial (Superga Invest, famille Bréau), aucun fonds",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Biocos (Revel): aucun fonds confirmé",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Hyteck: aucune opération PE trouvée",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Thépenier Pharma & Cosmetics: filiale de Nippon Shikizai (industriel), exclu",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Sicaf (Valréas): filiale d'Anjac Health & Beauty (voir Anjac)",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Chromavis (IT): contrôlée par Fareva (familial) depuis 2013; ex-CAPE",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Fareva: familial, exclu",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Arcade Beauty (Socoplan, échantillons): recapitalisation par prêteurs/actionnaires, identité des fonds non confirmée",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Cosmo International Fragrances: aucune présence PE trouvée",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "TechnicoFlor (Marseille, parfums): actionnaire majoritaire non identifié",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Nature & Stratégie (fabricant hygiène bio; Arkéa Capital, Ouest Croissance, Unexo cités en 2026): modèle façonnier non confirmé",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Ada International / ADA Cosmetics (DE, produits d'accueil hôtelier): cédé par Ardian à un fonds autrichien en 2018; statut actuel non vérifié",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Intercos (IT): coté, exclu",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Ceuta Group (UK, Juggernaut): externalisation commerciale, pas fabricant",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "HB Aesthetics (ES, LBO 2023): investisseur et modèle (marque vs façonnier) non confirmés",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Omnicos, Art Cosmetics, Regi (IT): cités comme façonniers, actionnariat non vérifié",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Laboratoire Cosmétique de Lécousse: rattachement à LDA Global Cosmetics (PitchBook) non confirmé, pas de fonds",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "IBG (spin-off d'Albéa, conception packaging et produits cosmétiques, 'first-time fund' 2024): fonds et modèle non confirmés",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "PU Cosmetica (IT, Orienta 2019): statut actuel non vérifié",
+   "from": "cdmo.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Greentech (actifs, Saint-Beauzire): aucun fonds identifié",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Codif: aucune information d'actionnariat trouvée",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Lessonia: reprise par les managers en 2023 (CEO Sébastien Guillotin), fonds éventuel non identifié",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Alban Muller: racheté par Croda (coté) – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Biolandes: familial – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Cosmo International Fragrances: familial – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Jean Niel: familial – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Expressions Parfumées: Givaudan depuis 2018 (ex-Orfite) – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "TechnicoFlor: familial – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Groupe Neroli (Créations & Parfums/Floressence): repris par Symrise – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Payan Bertrand: actionnariat non trouvé",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Sozio: groupe familial – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Bontoux (huiles essentielles): CFNEWS évoque sortie de Cerea Partenaire vers Unigrains, non confirmé par source lisible",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Agriland (Grasse): capital développement juin 2024, investisseurs non visibles",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Elixens, Aromatech, Lautier 1795, Parfex, Unipex: actionnariat PE non confirmé (budget de recherche épuisé pour les trois derniers)",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Seqens (SK Capital): pas de lien cosmétique confirmé (Minasolve non rattaché)",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Provital (ES), Mibelle Biochemistry (CH, propriété Persán; Solabia acquéreur annoncé, non vérifié): pas de PE confirmé",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Barentz (Cinven), Caldic (Advent): distributeurs européens, propriété PE non vérifiée par source lue",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Quadpack: coté sur Euronext Growth – exclu; Texen: filiale PSB Industries rapprochée de Quadpack (oct. 2024)",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "HCP Packaging: Carlyle depuis 2022 mais siège en Chine – hors périmètre",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Geka: cédé par 3i à Sulzer (coté) en 2016 – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Lumson: famille Moretti après sortie de FSI (2022) – exclu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Baralan, Faca Packaging, Groupe Rose, Faiveley Plast, Inoplast (BEWI), Topline (PSB), Louvrette (Quadpack), Lisi Cosmetics (Pochet/Qualipac 2011): pas de fonds PE confirmé",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Pochet/Qualipac, Gattefossé, Silab, Expanscience: familiaux – exclus; Givaudan, Sederma (Croda), Seppic (Air Liquide), Naturex, Aptar: cotés/corporate – exclus",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Gerresheimer Centor + Primary Packaging Plastics: cession à Apax signée juillet 2026, non finalisée et orientée pharma – non retenu",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Aroma-Zone: marque (exclue selon consigne), LBO bis Partners Group 2026",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  },
+  {
+   "name": "Iléos (Oaktree): groupe démantelé (Axilone, Alliora Coffrets cédés)",
+   "from": "ingredients_packaging.json",
+   "status": "à rechercher"
+  }
+ ]
+}

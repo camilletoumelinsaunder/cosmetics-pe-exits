@@ -54,7 +54,7 @@ database. Never touch `data/users/*` documents except creating missing contacts 
 ## Refresh every two weeks (scheduled routine, 1st and 15th of the month, 03:23 Paris)
 A fresh cloud session clones this repo and:
 1. Installs requirements, runs the tests (stops on failure).
-2. Re-checks every tracked company for news since the last run (sale process, mandate, closing, new owner,
+2. Finds NEW targets first (target: at least 10 newly confirmed PE-backed companies per run, France first), working through `inputs/backlog.json`, fund portfolio pages and new deal announcements; then re-checks every tracked company for news since the last run (sale process, mandate, closing, new owner,
    refinancing, IPO, build-up), looks for new PE deals in French and European cosmetics, and moves completed
    exits to "exited". Same golden rule as the initial research: every new fact has a source URL; unconfirmed
    items stay in base with a doubt in `inputs/review.json`.
