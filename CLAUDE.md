@@ -42,7 +42,8 @@ key_figures: [{metric, value, year, source_url}], exit_signals: [{fact, date, so
 ```bash
 python3 -m pytest -q tests
 python3 scripts/build.py
-python3 scripts/match_contacts.py ../acquisition-dashboard/data/linkedin_connections.json /tmp/contacts
+python3 scripts/linkedin_sync.py                    # needs LINKEDIN_TOKEN
+python3 scripts/match_contacts.py data/linkedin_connections.json /tmp/contacts
 ```
 
 ## Page
