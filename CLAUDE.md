@@ -44,3 +44,21 @@ python3 -m pytest -q tests
 python3 scripts/build.py
 python3 scripts/match_contacts.py ../acquisition-dashboard/data/linkedin_connections.json /tmp/contacts
 ```
+
+## Page
+Private claude.ai artifact: https://claude.ai/artifact/GE9MGoJKM4uxanSU4y3uon (capabilities db, user, downloads).
+Republish `site/index.html` with `data.json` to that URL without `capabilities` or `icon`, so the page keeps its
+database. Never touch `data/users/*` documents except creating missing contacts (see above).
+
+## Refresh every two weeks (scheduled routine, 1st and 15th of the month, 03:23 Paris)
+A fresh cloud session clones this repo and:
+1. Installs requirements, runs the tests (stops on failure).
+2. Re-checks every tracked company for news since the last run (sale process, mandate, closing, new owner,
+   refinancing, IPO, build-up), looks for new PE deals in French and European cosmetics, and moves completed
+   exits to "exited". Same golden rule as the initial research: every new fact has a source URL; unconfirmed
+   items stay in base with a doubt in `inputs/review.json`.
+3. Updates `inputs/review.json` (doubts, statut, these, priorite) only where facts changed.
+4. `python3 scripts/build.py`, tests again, then commits ONLY `inputs/` and `site/data.json` to main and pushes.
+   Code changes are never made by the routine.
+5. If `LINKEDIN_TOKEN` is set: refreshes connections and creates missing contact documents only.
+6. Republishes the page and reports the changes in French.
