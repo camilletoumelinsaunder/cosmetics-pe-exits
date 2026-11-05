@@ -75,10 +75,11 @@ def main() -> None:
     token = os.environ.get("LINKEDIN_TOKEN")
     if not token:
         raise SystemExit("LINKEDIN_TOKEN absent : ajoutez-le dans les réglages de l'environnement.")
-    contacts = []
+    contacts, seen = [], set()
     for c in fetch_connections(token):
         cid = contact_id(c["linkedin"])
-        if cid:
+        if cid and cid not in seen:  # the API can return the same connection on several pages
+            seen.add(cid)
             contacts.append({"id": cid, **c})
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(contacts, ensure_ascii=False, indent=1), encoding="utf-8")
