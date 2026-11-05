@@ -55,7 +55,7 @@ Republish `site/index.html` with `data.json` to that URL without `capabilities` 
 database. Never modify the page's database except creating missing `contacts` documents (see above).
 
 ## Refresh every two weeks (scheduled routine, 1st and 15th of the month, 03:23 Paris)
-A fresh cloud session clones this repo and:
+The scheduled task wakes the owner's working Claude session (fresh sessions cannot attach the repo), which pulls this repo and:
 1. Installs requirements, runs the tests (stops on failure).
 2. Finds NEW targets first (target: at least 10 newly confirmed PE-backed companies per run, France first), working through `inputs/backlog.json`, fund portfolio pages and new deal announcements; then re-checks every tracked company for news since the last run (sale process, mandate, closing, new owner,
    refinancing, IPO, build-up), looks for new PE deals in French and European cosmetics, and moves completed
