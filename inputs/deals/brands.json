@@ -905,7 +905,8 @@
       "exit_date": "2025-03",
       "buyer": "Ushopal (groupe beauté chinois)",
       "source_url": "https://www.lbofrance.com/en/lbo-france-sells-payot-to-ushopal/",
-      "notes": "CA 25 M EUR (2014) -> 38 M EUR (2024). Racheté à Puig en 2014."
+      "notes": "CA 25 M EUR (2014) -> 38 M EUR (2024). Racheté à Puig en 2014.",
+      "maillon": "Marque"
     },
     {
       "company": "Ex Nihilo",
@@ -915,7 +916,8 @@
       "exit_date": "2026-02",
       "buyer": "L Catterton (minoritaire) + fondateurs",
       "source_url": "https://en.newsroom.eurazeo.com/assets/eurazeo-closing-ex-nihilo-press-release-pdf-e7501-52e2c.html?dl=1",
-      "notes": "Retour > 2,5x en ~2 ans selon Eurazeo (résumé de recherche)."
+      "notes": "Retour > 2,5x en ~2 ans selon Eurazeo (résumé de recherche).",
+      "maillon": "Marque"
     },
     {
       "company": "Les Secrets de Loly",
@@ -925,7 +927,8 @@
       "exit_date": "2026-03",
       "buyer": "Quadrivio Group (majoritaire), avec Weinberg et Three Hills",
       "source_url": "https://www.quadriviogroup.com/en/media/press-review/les-secrets-de-loly-sells-majority-stake-quadrivio-led-consortium",
-      "notes": null
+      "notes": null,
+      "maillon": "Marque"
     },
     {
       "company": "Groupe Berdoues Parfums et Cosmétiques",
@@ -935,7 +938,8 @@
       "exit_date": "2025-07",
       "buyer": "Compagnie Léa Nature (60%)",
       "source_url": "https://www.premiumbeautynews.com/fr/lea-nature-entre-sur-le-marche-du,26072",
-      "notes": "CA 20 M EUR (2024). CEO Sophie Berdoues-Coudouy garde une part significative."
+      "notes": "CA 20 M EUR (2024). CEO Sophie Berdoues-Coudouy garde une part significative.",
+      "maillon": "Marque"
     },
     {
       "company": "Laboratoires SVR",
@@ -945,7 +949,8 @@
       "exit_date": "2024-06",
       "buyer": "Actionnaire majoritaire (family office, Kresk Développement de Didier Tabary selon CFNEWS)",
       "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Rachat-de-titres/SVR-unifie-son-actionnariat-490413",
-      "notes": "CA 140 M EUR. HLD = holding d'investissement."
+      "notes": "CA 140 M EUR. HLD = holding d'investissement.",
+      "maillon": "Marque"
     },
     {
       "company": "Galderma",
@@ -955,7 +960,8 @@
       "exit_date": "2026-03",
       "buyer": "Marché (placement accéléré, ~14,3% du capital); L'Oréal avait acquis 10% supplémentaires en décembre 2025",
       "source_url": "https://eqtgroup.com/en/news/eqt-exits-galderma-group-ag-in-full-via-largest-sponsor-backed-block-trade-ever-2026-03-13",
-      "notes": "CA 5,2 Md USD (2025). Dermatologie/dermo-cosmétique (Cetaphil)."
+      "notes": "CA 5,2 Md USD (2025). Dermatologie/dermo-cosmétique (Cetaphil).",
+      "maillon": "Marque"
     },
     {
       "company": "Medik8",
@@ -965,7 +971,8 @@
       "exit_date": "2025-06",
       "buyer": "L'Oréal (majoritaire); Inflexion conserve une minorité",
       "source_url": "https://www.inflexion.com/news-and-insights/news/2025/loreal-to-acquire-majority-stake-in-medik8/",
-      "notes": "Sortie de contrôle; valorisation ~1 Md EUR selon FT (résumé de recherche)."
+      "notes": "Sortie de contrôle; valorisation ~1 Md EUR selon FT (résumé de recherche).",
+      "maillon": "Marque"
     }
   ],
   "searched_but_not_confirmed": [

@@ -1,0 +1,512 @@
+{
+ "companies": [
+  {
+   "company": "Jimmy Fairly",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Marque DNVB de lunettes optiques et solaires avec réseau de boutiques en propre",
+   "hq_city": "Paris",
+   "website": "https://www.jimmyfairly.com",
+   "funds": [
+    {
+     "name": "HLD",
+     "role": "majoritaire",
+     "entry_date": "2021-07",
+     "deal_type": "LBO primaire",
+     "seller": "Fondateurs et Experienced Capital",
+     "source_url": "https://fr.fashionnetwork.com/news/Jimmy-fairly-va-changer-d-actionnaire-majoritaire,1320989.html",
+     "source_title": "Jimmy Fairly va changer d'actionnaire majoritaire (FashionNetwork)",
+     "source_date": "2021-07-19"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Experienced Capital",
+     "entry": "2017",
+     "exit": "2021",
+     "source_url": "https://www.modaes.com/empresas/la-optica-seduce-al-capital-experienced-capital-partners-compra-el-43-de-jimmy-fairly"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "plus de 160 boutiques dans 6 pays (nombre de points de vente)",
+     "year": "2025",
+     "source_url": "https://groupehld.com/news/jimmy-fairly-strengthens-its-footprint-in-belgium"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Fondée en 2011 par Antonin Chartier et Sacha Bostoni. Experienced Capital avait pris 43 % en 2017 (Oaklins évoque 46 % cédés par Odyssée Venture). Négociations exclusives HLD annoncées en juillet 2021 (McDermott conseil HLD). HLD (actionnaire de long terme, holding evergreen) toujours actionnaire en avril 2025. CA groupe non publié (38 M€ cité par FashionNetwork, année non confirmée).",
+   "id": "jimmy-fairly"
+  },
+  {
+   "company": "Izipizi",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Lunettes de lecture et solaires mode, distribution multicanal (7 000 revendeurs, 80 pays)",
+   "hq_city": "Paris",
+   "website": "https://www.izipizi.com",
+   "funds": [
+    {
+     "name": "TowerBrook Capital Partners",
+     "role": "minoritaire",
+     "entry_date": "2022-07",
+     "deal_type": "capital développement (prise de 25 %, OBO selon CFNews)",
+     "seller": "Fondateurs",
+     "source_url": "https://fr.fashionnetwork.com/news/Izipizi-ouvre-son-capital-a-towerbrook,1426963.html",
+     "source_title": "Izipizi ouvre son capital à TowerBrook (FashionNetwork)",
+     "source_date": "2022-07-25"
+    },
+    {
+     "name": "TowerBrook Capital Partners",
+     "role": "minoritaire",
+     "entry_date": "2022-07",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/Izipizi-flashe-sur-un-fonds-anglo-saxon-409848",
+     "source_title": "Izipizi flashe sur un fonds anglo-saxon (CFNews)",
+     "source_date": "2022-07-21"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Fondée en 2010 par Xavier Aguera, Charles Brun et Quentin Couturier. TowerBrook (également actionnaire de Jimmy Choo/Kaporal selon FashionNetwork) a pris 25 % ; Modaes évoque ~45 M$ (non confirmé par une 2e source). Fabrication à Taïwan. Chiffres non publiés.",
+   "id": "izipizi"
+  },
+  {
+   "company": "Seaport ODLM",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Création et distribution de lunettes sous licences « luxe abordable » (Vanessa Bruno, Nuxe, Mauboussin, Petit Bateau…)",
+   "hq_city": "Lyon",
+   "website": null,
+   "funds": [
+    {
+     "name": "B & Capital (fonds RB Capital France 1)",
+     "role": "majoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "LBO primaire",
+     "seller": "Co-fondateur Guy Azoulay (sortant) ; Francis Kessous réinvestit",
+     "source_url": "https://www.lemondedudroit.fr/deals/78877-moncey-avocats-aux-cotes-bcapital-management-prise-participation-majoritaire-seaport-odlm.html",
+     "source_title": "Moncey Avocats aux côtés de B&Capital et du management pour la prise de participation majoritaire dans Seaport ODLM",
+     "source_date": "2021-12-15"
+    },
+    {
+     "name": "B & Capital",
+     "role": "majoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://fiscalonline.com/on-en-parle/moncey-avocats-a-conseille-le-fonds-d-investissement-b-capital-et-le-management-dans-le-cadre-du-premier-lbo-sur-seaport-odlm-",
+     "source_title": "Premier LBO sur Seaport ODLM (Fiscalonline)",
+     "source_date": "2021-12-14"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Nicolas Berdugo",
+    "title": "Président (Francis Kessous président du conseil de surveillance)",
+    "source_url": "https://www.ewintelligence.com/executive-changes/seaport-odlm-appoints-new-president/108167.article"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "40 M€",
+     "year": "2024",
+     "source_url": "https://www.lejournaldesentreprises.com/article/le-distributeur-de-lunettes-seaport-odlm-voit-double-horizon-2030-2119718"
+    },
+    {
+     "metric": "effectif",
+     "value": "130",
+     "year": "2024",
+     "source_url": "https://www.lejournaldesentreprises.com/article/le-distributeur-de-lunettes-seaport-odlm-voit-double-horizon-2030-2119718"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Objectif affiché de doubler de taille à horizon 2030 ; diversification des licences et partenariat de distribution européen avec Bollé Brands",
+     "date": "2025",
+     "source_url": "https://www.lejournaldesentreprises.com/article/le-distributeur-de-lunettes-seaport-odlm-voit-double-horizon-2030-2119718"
+    }
+   ],
+   "notes": "B & Capital détient ~75 % (Journal des Entreprises). Prix de 50 M€ cité par une base de données (MergerLinks) non confirmé. Licences : Mauboussin (oct. 2024), Petit Bateau (2025), Nuxe, Vanessa Bruno. Positionnement « luxe abordable » plutôt premium que luxe.",
+   "id": "seaport-odlm"
+  },
+  {
+   "company": "Bollé Brands (Bollé, Bollé Safety)",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Lunettes de soleil sport, masques de ski, casques et lunettes de protection",
+   "hq_city": "Lyon",
+   "website": "https://www.bolle.com",
+   "funds": [
+    {
+     "name": "A&M Capital Europe",
+     "role": "majoritaire",
+     "entry_date": "2018-08",
+     "deal_type": "Carve-out (LBO primaire)",
+     "seller": "Vista Outdoor",
+     "source_url": "https://www.a-mcapital.com/am-capital-europe-acquires-bolle-brands/",
+     "source_title": "A&M Capital Europe Acquires Bollé Brands",
+     "source_date": "2018-08-31"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Vista Outdoor",
+     "entry": null,
+     "exit": "2018",
+     "source_url": "https://www.a-mcapital.com/am-capital-europe-acquires-bolle-brands/"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "≈ 39 M$ (SPY+ et Serengeti seuls, cédés)",
+     "year": "2025",
+     "source_url": "https://www.mintz.com/insights-center/news-press/mintz-advises-bolle-brands-sale-its-spy-and-serengeti-eyewear-brands"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Cession des marques SPY+ et Serengeti à Safilo (carve-out), après la vente de Cébé en 2022 : recentrage préalable à une sortie",
+     "date": "2026-07",
+     "source_url": "https://www.mintz.com/insights-center/news-press/mintz-advises-bolle-brands-sale-its-spy-and-serengeti-eyewear-brands"
+    }
+   ],
+   "notes": "Acquis pour ~158 M$ selon la presse (2018). Portefeuille A&M toujours « Current ». Après cession de Cébé (2022), SPY et Serengeti (2026), il reste Bollé (sport) et Bollé Safety. Peter Smith nommé CEO en 2018, dirigeant actuel non vérifié. Positionnement sport/protection, peu luxe.",
+   "id": "bolle-brands"
+  },
+  {
+   "company": "Groupe Afflelou (Alain Afflelou, Optical Discount)",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Distribution & retail",
+   "positionnement": "Grand public",
+   "sub_segment": "Franchiseur d'optique et d'audioprothèse (1 456 magasins, 20 pays)",
+   "hq_city": "Paris",
+   "website": "https://www.afflelou.com",
+   "funds": [
+    {
+     "name": "Lion Capital (dont fonds de continuation 2023)",
+     "role": "majoritaire",
+     "entry_date": "2012",
+     "deal_type": "LBO secondaire (puis fonds de continuation en 2023)",
+     "seller": "Bridgepoint, Apax, Altamir",
+     "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf",
+     "source_title": "Afflelou press release – transaction announcement",
+     "source_date": "2025-07-01"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Apax Partners (participation minoritaire résiduelle)",
+     "entry": null,
+     "exit": "2021",
+     "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf"
+    },
+    {
+     "name": "CDPQ",
+     "entry": null,
+     "exit": "2023",
+     "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf"
+    }
+   ],
+   "ceo": {
+    "name": "Anthony Afflelou",
+    "title": "Chief Executive Officer",
+    "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "410 M€",
+     "year": "2024",
+     "source_url": "https://www.cfnews.net/index/Mots-cles/optique-lunettes"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Création en 2023 d'un fonds de continuation contrôlé par Lion Capital (sortie de la CDPQ)",
+     "date": "2023",
+     "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf"
+    },
+    {
+     "fact": "La famille Afflelou porte sa part de 29 % à 38 % ; Lion Capital conserve 62 % ; dividend recap de 80 M€ + PIK 70 M€",
+     "date": "2025-07",
+     "source_url": "https://www.afflelou.com/media/wysiwyg/cms/informations-financieres/2025/Afflelou-Press-Release-Transaction-Announcement-July-2025.pdf"
+    }
+   ],
+   "notes": "Hors cœur luxe (franchise optique grand public) : retenu comme actif PE majeur de la lunetterie française, à filtrer si nécessaire. Entrée Lion en 2012 (~780–800 M€ de valeur selon la presse). Le CA 410 M€ (CFNews, juillet 2024) correspond aux revenus du groupe franchiseur.",
+   "id": "groupe-afflelou"
+  },
+  {
+   "company": "Rodenstock (Rodenstock, Porsche Design licence lunettes)",
+   "country": "DE",
+   "secteur": "Lunettes",
+   "maillon": "Matières & composants",
+   "positionnement": "Premium",
+   "sub_segment": "Verres ophtalmiques haut de gamme (technologie DNEye)",
+   "hq_city": "Munich",
+   "website": "https://www.rodenstock.com",
+   "funds": [
+    {
+     "name": "Apax Partners (avec Mubadala minoritaire)",
+     "role": "majoritaire",
+     "entry_date": "2021-03",
+     "deal_type": "LBO secondaire",
+     "seller": "Compass Partners",
+     "source_url": "http://www.apax.com/news-views/apax-funds-to-acquire-rodenstock",
+     "source_title": "Apax Funds to acquire Rodenstock",
+     "source_date": "2021-03-24"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Compass Partners",
+     "entry": null,
+     "exit": "2021",
+     "source_url": "http://www.apax.com/news-views/apax-funds-to-acquire-rodenstock"
+    }
+   ],
+   "ceo": {
+    "name": "Anders Hedegaard",
+    "title": "CEO (en 2021)",
+    "source_url": "http://www.apax.com/news-views/apax-funds-to-acquire-rodenstock"
+   },
+   "key_figures": [],
+   "exit_signals": [
+    {
+     "fact": "Titre de presse australien « Rodenstock braced for AU$2.3 billion sale – report » (contenu non vérifié)",
+     "date": "2026",
+     "source_url": "https://www.insightnews.com.au/rodenstock-sale-going-ahead-with-apax-acquisition/"
+    }
+   ],
+   "notes": "Valorisée ~1,5 Md€ en 2021 (Bloomberg). Quatrième propriétaire PE en moins de 20 ans. Activité montures cédée à De Rigo en 2023 : recentrage sur les verres. Pertinence luxe indirecte (verres premium).",
+   "id": "rodenstock"
+  },
+  {
+   "company": "Ahlem",
+   "country": "US",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Marque de lunettes de luxe (atelier-boutique à Paris)",
+   "hq_city": "Los Angeles",
+   "website": "https://www.ahlemeyewear.com",
+   "funds": [
+    {
+     "name": "1686 Partners",
+     "role": "minoritaire",
+     "entry_date": "2025-02",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://fashionunited.com/news/business/ahlem-secures-investment-from-1686-partners/2025021964562",
+     "source_title": "Ahlem secures investment from 1686 Partners (FashionUnited)",
+     "source_date": "2025-02-19"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Enrico Sanavia",
+    "title": "Global CEO (ex-Thélios)",
+    "source_url": "https://fashionunited.com/news/business/ahlem-secures-investment-from-1686-partners/2025021964562"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Fondée en 2014 par Ahlem Manai-Platt. 1686 Partners (Luxembourg, créé en 2023 par David Wertheimer) : premier investisseur externe. Objectif de doubler l'activité en trois ans. Hors Europe (HQ US) mais forte présence parisienne.",
+   "id": "ahlem"
+  },
+  {
+   "company": "Edgard Opticiens",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Distribution & retail",
+   "positionnement": "Premium",
+   "sub_segment": "Réseau d'opticiens haut de gamme (succursales et franchises)",
+   "hq_city": "Tours",
+   "website": null,
+   "funds": [
+    {
+     "name": "Bpifrance, Ouest Croissance, Crédit Agricole Régions Investissement",
+     "role": "minoritaire",
+     "entry_date": "2019-01",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/Capital-innovation-developpement/Operations/Augmentation-de-capital/Edgard-Opticiens-etend-son-champ-de-vision-286769",
+     "source_title": "Edgard Opticiens étend son champ de vision (CFNews)",
+     "source_date": "2019-01-03"
+    },
+    {
+     "name": "Bpifrance, Ouest Croissance, Crédit Agricole (mêmes investisseurs)",
+     "role": null,
+     "entry_date": "2023-11",
+     "deal_type": "MBO",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBO/Edgard-revoit-son-capital-avec-trois-fonds-463519",
+     "source_title": "Edgard revoit son capital avec trois fonds (CFNews)",
+     "source_date": "2023-11-28"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Jean-François Porte",
+    "title": "Fondateur",
+    "source_url": "https://podcast.ausha.co/comment-t-as-fait-les-rencontres-d-entrepreneurs/23-jean-francois-porte-edgard-opticiens-comment-t-as-fait-pour-passer-d-opticien-a-chef-d-entreprise-d-un-groupe-de"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "31 M€",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBO/Edgard-revoit-son-capital-avec-trois-fonds-463519"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Les noms des fonds du MBO 2023 sont tronqués dans l'aperçu CFNews (Bpifrance, « Ouest C… », « Crédit … ») ; recoupés avec le tour de 2019. Pertinence luxe modérée (optique haut de gamme régionale).",
+   "id": "edgard-opticiens"
+  },
+  {
+   "company": "Cubitts",
+   "country": "GB",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Lunetier londonien artisanal, sur-mesure, boutiques en propre (Londres, New York)",
+   "hq_city": "Londres",
+   "website": "https://cubitts.com",
+   "funds": [
+    {
+     "name": "Active Partners",
+     "role": "minoritaire",
+     "entry_date": "2018-03",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://www.cityam.com/?p=2425313",
+     "source_title": "Cubitts plots expansion to Ireland despite swinging to £1m loss (City AM)",
+     "source_date": "2026-05-18"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Tom Broughton",
+    "title": "Fondateur (actionnaire principal)",
+    "source_url": "https://www.cityam.com/?p=2425313"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "16,8 M£",
+     "year": "2025",
+     "source_url": "https://www.cityam.com/?p=2425313"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Date d'entrée (tour mené par Active Partners le 14/03/2018) issue de Caplight (https://www.caplight.com/company/cubitts), non confirmée par source primaire. Perte de 967 k£ sur l'exercice clos mars 2025. Le fondateur reste premier actionnaire.",
+   "id": "cubitts"
+  },
+  {
+   "company": "TechVision (DM Tecnik, Biemme)",
+   "country": "IT",
+   "secteur": "Lunettes",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Composants métalliques et finitions galvaniques pour lunettes de luxe (district de Belluno)",
+   "hq_city": "Belluno (Mel)",
+   "website": null,
+   "funds": [
+    {
+     "name": "Ethica Global Investments (club deal Ethica Group)",
+     "role": "minoritaire",
+     "entry_date": "2019-10",
+     "deal_type": "club deal / augmentation de capital (40 %)",
+     "seller": null,
+     "source_url": "https://bebeez.it/club-deal/techvision-ethica-va-al-controllo-degli-occhiali-dm-tecnik/",
+     "source_title": "TechVision (Ethica) va al controllo degli occhiali DM Tecnik (BeBeez)",
+     "source_date": "2020-10-27"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "≈ 3 M€ (DM Tecnik seul)",
+     "year": "2019",
+     "source_url": "https://bebeez.it/club-deal/techvision-ethica-va-al-controllo-degli-occhiali-dm-tecnik/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Cession d'Ideal (filiale composants) à Visottica Group",
+     "date": "2023-04",
+     "source_url": "https://www.milanofinanza.it/news/visottica-compra-ideal-da-techvision-2598876"
+    }
+   ],
+   "notes": "Ethica a pris 40 % d'Elledue/TechVision en oct. 2019 ; TechVision a acquis 75 % de DM Tecnik en oct. 2020. Clients du pôle : Luxottica, Safilo, Marcolin, Kering Eyewear, Louis Vuitton. Ideal vendu à Visottica en 2023 : périmètre restant et actionnariat actuel incertains.",
+   "id": "techvision"
+  }
+ ],
+ "exited": [
+  {
+   "company": "Marcolin (Tom Ford, Zegna, Christian Louboutin, ic! berlin licences)",
+   "country": "IT",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "fund": "PAI Partners",
+   "entry": "2012",
+   "exit_date": "2025-12",
+   "buyer": "VSP Vision (Marchon Eyewear)",
+   "source_url": "https://www.marcolin.com/wp-content/uploads/2025/09/Marcolin-Press-Release-Final-ENG-05.09.2025.pdf",
+   "notes": "Accord annoncé le 05/09/2025 (PAI + minoritaires) ; closing fin 2025 (finalisation rapportée le 06/01/2026 : https://footwearmagazine.com/vsp-vision-marcolin-acquisition/). Valorisation visée ~1,3 Md€ selon presse, non confirmée."
+  },
+  {
+   "company": "Vuarnet",
+   "country": "FR",
+   "secteur": "Lunettes",
+   "maillon": "Marque",
+   "fund": "NEO Investment Partners",
+   "entry": "2009",
+   "exit_date": "2023-09",
+   "buyer": "Thélios (LVMH)",
+   "source_url": "https://www.lvmh.com/fr/les-actualites-lvmh/thelios-acquiert-la-marque-francaise-emblematique-de-leyewear-vuarnet",
+   "notes": "Neo présent depuis ~14 ans selon CFNews (entrée 2009 via Alain Mikli International/Neo) ; montant non divulgué."
+  },
+  {
+   "company": "Ideal Srl (composants métalliques)",
+   "country": "IT",
+   "secteur": "Lunettes",
+   "maillon": "Matières & composants",
+   "fund": "TechVision / Ethica Global Investments (club deal)",
+   "entry": "2019",
+   "exit_date": "2023-04",
+   "buyer": "Visottica Group",
+   "source_url": "https://www.milanofinanza.it/news/visottica-compra-ideal-da-techvision-2598876",
+   "notes": "100 % d'Ideal (Quero, Belluno) cédé par TechVision à Visottica ; Visottica (Susegana) semble familial."
+  },
+  {
+   "company": "Demenego (chaîne d'optique Nord-Est)",
+   "country": "IT",
+   "secteur": "Lunettes",
+   "maillon": "Distribution & retail",
+   "fund": "Vam Investments",
+   "entry": "2020",
+   "exit_date": "2024-10",
+   "buyer": "Montefiore Investment (LBO secondaire)",
+   "source_url": "https://www.milanofinanza.it/fashion/vam-cede-a-montefiore-la-maggioranza-di-demenego-202410151228302201",
+   "notes": "Accord engageant oct. 2024 ; CA ~35 M€ (CFNews 16/10/2024). Retail optique peu luxe ; désormais détenu par Montefiore (non retenu comme candidat car hors luxe)."
+  }
+ ]
+}

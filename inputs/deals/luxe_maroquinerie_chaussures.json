@@ -1,0 +1,766 @@
+{
+ "companies": [
+  {
+   "company": "Camille Fournet",
+   "country": "FR",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Bracelets de montres cuir pour l'horlogerie suisse, petite maroquinerie et sacs haut de gamme (sous-traitance + marque propre)",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "Crédit Mutuel Equity",
+     "role": "minoritaire",
+     "entry_date": "2024-02",
+     "deal_type": "capital développement (renouvellement d'actionnariat minoritaire)",
+     "seller": "Pool d'actionnaires minoritaires sortants",
+     "source_url": "https://www.lemondedudroit.fr/deals/91640-hoche-avocats-conseille-le-groupe-camille-fournet-dans-le-renouvellement-de-son-actionnariat.html",
+     "source_title": "Hoche Avocats conseille le groupe Camille Fournet dans le renouvellement de son actionnariat",
+     "source_date": "2024-02-27"
+    },
+    {
+     "name": "Turenne Capital Groupe (fonds Regain 340, Reboost)",
+     "role": "minoritaire",
+     "entry_date": "2024-02",
+     "deal_type": "capital développement",
+     "seller": "Pool d'actionnaires minoritaires sortants",
+     "source_url": "https://www.lemondedudroit.fr/deals/91640-hoche-avocats-conseille-le-groupe-camille-fournet-dans-le-renouvellement-de-son-actionnariat.html",
+     "source_title": "Hoche Avocats conseille le groupe Camille Fournet dans le renouvellement de son actionnariat",
+     "source_date": "2024-02-27"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Jean-Luc Déchery",
+    "title": "Président (repreneur en 1994, majoritaire)",
+    "source_url": "https://www.lemondedudroit.fr/deals/91640-hoche-avocats-conseille-le-groupe-camille-fournet-dans-le-renouvellement-de-son-actionnariat.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "40 M€",
+     "year": "2023",
+     "source_url": "https://www.lemondedudroit.fr/deals/91640-hoche-avocats-conseille-le-groupe-camille-fournet-dans-le-renouvellement-de-son-actionnariat.html"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Crédit Mutuel Equity (lead) et Turenne entrés en minoritaires en 2024 ; le dirigeant reste majoritaire avec une perspective de transmission à terme (selon les résultats de recherche ; page Crédit Mutuel Equity : CA 40 M€). Manufacture à Laon.",
+   "id": "camille-fournet"
+  },
+  {
+   "company": "Maroquinerie Thomas",
+   "country": "FR",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Fabrication de sacs et petite maroquinerie pour grandes maisons de luxe",
+   "hq_city": "Paris",
+   "website": null,
+   "funds": [
+    {
+     "name": "RAISE Invest (à confirmer)",
+     "role": "minoritaire",
+     "entry_date": "2023-12",
+     "deal_type": "capital développement (première ouverture du capital)",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Augmentation-de-capital/Maroquinerie-Thomas-s-assemble-a-un-fonds-465713",
+     "source_title": "Maroquinerie Thomas s'assemble à un fonds (CFNEWS)",
+     "source_date": "2023-12-15"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "141 M€",
+     "year": "2021",
+     "source_url": "https://www.cfnews.net/L-actualite/Capital-developpement/Operations/Augmentation-de-capital/Maroquinerie-Thomas-s-assemble-a-un-fonds-465713"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "CFNEWS (paywall) : un fonds entre en minoritaire, première ouverture du capital hors famille fondatrice, opération du 13/12/2023. Le nom du fonds n'est pas visible ; la base privateequityinfo.com cite RAISE Invest comme investisseur (sans date) : https://privateequityinfo.com/directory/private-equity-portfolio-company/3/maroquinerie-thomas. Le groupe a racheté 100 % de l'atelier toscan B&G.",
+   "id": "maroquinerie-thomas"
+  },
+  {
+   "company": "Polène",
+   "country": "FR",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Marque de sacs à main premium accessible, fabriqués à Ubrique (Espagne)",
+   "hq_city": "Paris",
+   "website": "https://www.polene-paris.com",
+   "funds": [
+    {
+     "name": "L Catterton",
+     "role": "minoritaire",
+     "entry_date": "2024-08",
+     "deal_type": "capital développement (rachat de participation minoritaire)",
+     "seller": "Eutopia (Otium Capital, P.-E. Stérin)",
+     "source_url": "https://fashionunited.in/news/business/bernard-arnaults-l-catterton-snaps-up-stake-in-polene/2024083046428",
+     "source_title": "Bernard Arnault's L Catterton snaps up stake in Polène",
+     "source_date": "2024-08-30"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Eutopia / Otium Capital",
+     "entry": null,
+     "exit": "2024",
+     "source_url": "https://fashionunited.in/news/business/bernard-arnaults-l-catterton-snaps-up-stake-in-polene/2024083046428"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Fondée par Elsa, Mathieu et Antoine Mothay. Sortie d'Otium révélée par Les Echos (11 juillet 2024), entrée de L Catterton révélée par L'Informé (août 2024). Montants et pourcentages non publiés.",
+   "id": "polene"
+  },
+  {
+   "company": "Conceria Pasubio (UNICA, Antiba, SK!N)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Premium",
+   "sub_segment": "Tannerie : cuir automobile premium (≈73 % de l'EBITDA) et diversification mode/luxe (Antiba, SK!N, plateforme UNICA)",
+   "hq_city": "Vicence",
+   "website": "https://www.pasubio.com",
+   "funds": [
+    {
+     "name": "PAI Partners (PAI Europe VII)",
+     "role": "majoritaire",
+     "entry_date": "2021-10",
+     "deal_type": "LBO secondaire",
+     "seller": "CVC Capital Partners VI",
+     "source_url": "https://paipartners.com/wp-content/uploads/2021/06/press-release-pai-partners-to-acquire-pasubio-from-cvc-230621.pdf",
+     "source_title": "PAI Partners to acquire Pasubio from CVC Capital Partners VI",
+     "source_date": "2021-06-23"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "CVC Capital Partners VI",
+     "entry": "2017",
+     "exit": "2021",
+     "source_url": "https://www.laconceria.it/en/tannery/pasubio-changes-ownership-going-to-the-french-fund-pai-partners/"
+    }
+   ],
+   "ceo": {
+    "name": "Luca Pretto",
+    "title": "CEO (en 2021)",
+    "source_url": "https://paipartners.com/wp-content/uploads/2021/06/press-release-pai-partners-to-acquire-pasubio-from-cvc-230621.pdf"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "323,5 M€",
+     "year": "2025",
+     "source_url": "https://www.teleborsa.it/DettaglioNews/153_2026-05-18_TLB/Conceria-Pasubio-declassata-da-Moodys-a-B3-con-difficolt-del-settore-auto.html"
+    },
+    {
+     "metric": "effectif",
+     "value": "≈1 000",
+     "year": "2021",
+     "source_url": "https://paipartners.com/wp-content/uploads/2021/06/press-release-pai-partners-to-acquire-pasubio-from-cvc-230621.pdf"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Moody's abaisse la note de B2 à B3 ; levier dette/EBITDA ajusté 11,6x en 2025 (7,3x en 2024)",
+     "date": "2026-05",
+     "source_url": "https://www.teleborsa.it/DettaglioNews/153_2026-05-18_TLB/Conceria-Pasubio-declassata-da-Moodys-a-B3-con-difficolt-del-settore-auto.html"
+    },
+    {
+     "fact": "Rachat de Conceria Antiba (57 M€ de CA, 12 M€ d'EBITDA ajusté) et SK!N pour se diversifier dans la mode, financé par ≈45 M€ de dette additionnelle",
+     "date": "2025-04",
+     "source_url": "https://www.laconceria.it/en/tannery/conceria-pasubio-scores-a-double-acquisition-buys-conceria-antiba-and-skn"
+    }
+   ],
+   "notes": "Famille Pretto réinvestie aux côtés de PAI. Activité majoritairement automobile ; le pivot luxe (Antiba, SK!N, UNICA) date de 2025. Closing PAI prévu en octobre 2021.",
+   "id": "conceria-pasubio"
+  },
+  {
+   "company": "Rino Mastrotto Group",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Tannerie : cuirs pour la maroquinerie, la chaussure et l'automobile de luxe ; intègre Conceria Superior et Tannerie Limoges (apport de Prada)",
+   "hq_city": "Trissino (Vicence)",
+   "website": "https://www.rinomastrotto.com",
+   "funds": [
+    {
+     "name": "NB Renaissance Partners",
+     "role": "majoritaire",
+     "entry_date": "2019-08",
+     "deal_type": "LBO primaire",
+     "seller": "Famille Mastrotto",
+     "source_url": "https://www.laconceria.it/en/tannery/rino-mastrotto-group-70-goes-to-nb-renaissance-partners/",
+     "source_title": "Rino Mastrotto Group: 70% goes to NB Renaissance Partners",
+     "source_date": "2019-08-29"
+    },
+    {
+     "name": "NB Aurora",
+     "role": "minoritaire",
+     "entry_date": "2019",
+     "deal_type": "co-investissement",
+     "seller": null,
+     "source_url": "https://bebeez.it/private-equity/nb-aurora-coinveste-nelle-pelli-rino-mastrotto-con-nb-renaissance/",
+     "source_title": "NB Aurora coinveste nelle pelli Rino Mastrotto con NB Renaissance (BeBeez)",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Matteo Mastrotto",
+    "title": "Amministratore delegato",
+    "source_url": "https://www.milanofinanza.it/fashion/prada-entra-col-10-in-rino-mastrotto-renaissance-in-un-operazione-mista-di-conferimento-e-cash-i-202506050816359007"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "360 M€",
+     "year": "2024",
+     "source_url": "https://www.milanofinanza.it/fashion/la-strategia-di-servizio-di-rino-mastrotto-group-202510221426108052"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "75 M€",
+     "year": "2024",
+     "source_url": "https://www.milanofinanza.it/fashion/prada-entra-col-10-in-rino-mastrotto-renaissance-in-un-operazione-mista-di-conferimento-e-cash-i-202506050816359007"
+    },
+    {
+     "metric": "effectif",
+     "value": "1 300",
+     "year": "2025",
+     "source_url": "https://www.milanofinanza.it/fashion/la-strategia-di-servizio-di-rino-mastrotto-group-202510221426108052"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Prada entre à 10 % (apport de Conceria Superior et Tannerie Limoges + cash) ; Renaissance cède 5 % et passe à ≈65 %, famille à 25 %",
+     "date": "2025-06",
+     "source_url": "https://www.milanofinanza.it/fashion/prada-entra-col-10-in-rino-mastrotto-renaissance-in-un-operazione-mista-di-conferimento-e-cash-i-202506050816359007"
+    },
+    {
+     "fact": "Émission obligataire de 320 M€ cotée à Luxembourg, échéance 2031",
+     "date": "2025-06",
+     "source_url": "https://www.milanofinanza.it/fashion/prada-entra-col-10-in-rino-mastrotto-renaissance-in-un-operazione-mista-di-conferimento-e-cash-i-202506050816359007"
+    }
+   ],
+   "notes": "MF Fashion donne CA 2024 > 340 M€ (article de juin 2025) puis 360 M€ (octobre 2025). Répartition du capital post-Prada selon MF, non confirmée par les sociétés. CA 2018 : 320 M€, 850 salariés à l'entrée de NB.",
+   "id": "rino-mastrotto-group"
+  },
+  {
+   "company": "AMF Group (AMF Snaps, Mimest, Italcatene, Chaines et Cie, Benelli Ademaro)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Accessoires métalliques (fermoirs, boutons-pression, chaînes, composants) pour maroquinerie, chaussure et habillement de luxe",
+   "hq_city": "Bassano del Grappa (Vicence)",
+   "website": null,
+   "funds": [
+    {
+     "name": "Alpha Private Equity",
+     "role": "majoritaire",
+     "entry_date": "2019-07",
+     "deal_type": "LBO primaire (65 %, valorisation 150 M€)",
+     "seller": "Actionnaires historiques (dont Italglobal Partners, Simax, HB 2.0 selon d'autres sources)",
+     "source_url": "https://bebeez.it/2019/07/18/fondo-alpha-sigla-lacquisizione-degli-accessori-metallici-amf-snaps-deal-150-mln-euro/",
+     "source_title": "Fondo Alpha sigla l'acquisizione degli accessori metallici Amf Snaps. Deal da 150 mln euro (BeBeez)",
+     "source_date": "2019-07-18"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Andrea Vittadini",
+    "title": "CEO du groupe AMF",
+    "source_url": "https://www.teleborsa.it/News/2025/10/10/moda-e-lusso-amf-group-acquisisce-benelli-ademaro-65.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "> 130 M€",
+     "year": "2025",
+     "source_url": "https://www.teleborsa.it/News/2025/10/10/moda-e-lusso-amf-group-acquisisce-benelli-ademaro-65.html"
+    },
+    {
+     "metric": "CA",
+     "value": "≈54 M€",
+     "year": "2018",
+     "source_url": "https://bebeez.it/2019/07/18/fondo-alpha-sigla-lacquisizione-degli-accessori-metallici-amf-snaps-deal-150-mln-euro/"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "≈15 M€",
+     "year": "2018",
+     "source_url": "https://bebeez.it/2019/07/18/fondo-alpha-sigla-lacquisizione-degli-accessori-metallici-amf-snaps-deal-150-mln-euro/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Selon Il Sole 24 Ore (repris par La Conceria), Alpha étudierait la cession du groupe ; GBL citée parmi les acquéreurs potentiels",
+     "date": null,
+     "source_url": "https://www.laconceria.it/en/finance/ma-in-metal-accessories-amf-group-acquires-benelli-ademaro"
+    },
+    {
+     "fact": "Add-on Benelli Ademaro (Scandicci) avec refinancement de la dette existante",
+     "date": "2025-10",
+     "source_url": "https://www.teleborsa.it/News/2025/10/10/moda-e-lusso-amf-group-acquisisce-benelli-ademaro-65.html"
+    }
+   ],
+   "notes": "Au deal 2019, Nicole Faerber et Carmen Toffanello réinvestissent pour 25 %. L'information sur la revue d'options (GBL) n'a été vue qu'en extrait de recherche (page La Conceria en erreur 503) : à confirmer.",
+   "id": "amf-group"
+  },
+  {
+   "company": "MTW Holding (Metalworks, Mengoni & Nassini, FGF, Fixo, Florenradica, Metalstudio)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Accessoires métalliques et plastiques pour marques de luxe : boucles de ceinture, fermoirs et clous de sacs et chaussures, logos",
+   "hq_city": "Castelli Calepio (Bergame)",
+   "website": "https://www.mtwh.it/en",
+   "funds": [
+    {
+     "name": "DBAG Fund VIII (Deutsche Beteiligungs AG)",
+     "role": "majoritaire",
+     "entry_date": "2022-06",
+     "deal_type": "LBO secondaire (MBO, ≈62 %)",
+     "seller": "Bravo Capital Partners",
+     "source_url": "https://www.dbag.com/fileadmin/user_upload/220516_DBAG_PM_Metalworks_eng_s.pdf",
+     "source_title": "Deutsche Beteiligungs AG invests in Metalworks Holding",
+     "source_date": "2022-05-16"
+    },
+    {
+     "name": "Luxempart",
+     "role": "minoritaire",
+     "entry_date": "2022",
+     "deal_type": "co-investissement",
+     "seller": null,
+     "source_url": "https://www.dbag.com/fileadmin/user_upload/220516_DBAG_PM_Metalworks_eng_s.pdf",
+     "source_title": "Deutsche Beteiligungs AG invests in Metalworks Holding",
+     "source_date": "2022-05-16"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Bravo Capital Partners",
+     "entry": "2016",
+     "exit": "2022",
+     "source_url": "https://www.dbag.com/fileadmin/user_upload/220516_DBAG_PM_Metalworks_eng_s.pdf"
+    }
+   ],
+   "ceo": {
+    "name": "Cesare Luzzana",
+    "title": "CEO (en 2022)",
+    "source_url": "https://www.dbag.com/fileadmin/user_upload/220516_DBAG_PM_Metalworks_eng_s.pdf"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "124 M€",
+     "year": "2025",
+     "source_url": "https://www.dbag.com/portfolio/current-portfolio-companies/mtwh/"
+    },
+    {
+     "metric": "effectif",
+     "value": "> 650",
+     "year": "2025",
+     "source_url": "https://www.dbag.com/portfolio/current-portfolio-companies/mtwh/"
+    },
+    {
+     "metric": "CA",
+     "value": "≈60 M€",
+     "year": "2021",
+     "source_url": "https://www.dbag.com/fileadmin/user_upload/220516_DBAG_PM_Metalworks_eng_s.pdf"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Plateforme créée en 2016 par Bravo Capital Partners. Add-ons sous DBAG : Fixo (2022), Florenradica (2023), Metalstudio (2023, a doublé le CA). DBAG investit jusqu'à 60 M€ (dont 13 M€ en propre). Filiale à Paris pour les maisons françaises.",
+   "id": "mtw-holding"
+  },
+  {
+   "company": "Eurmoda (ex-Margot : ABC Morini, Macuz, La Cerniera)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Accessoires métalliques pour maroquinerie de luxe (sacs, ceintures ≈90 % du CA), accessoires en acier",
+   "hq_city": "Pederobba (Trévise)",
+   "website": null,
+   "funds": [
+    {
+     "name": "Aurora Growth Capital",
+     "role": "majoritaire",
+     "entry_date": "2025-07",
+     "deal_type": "LBO secondaire (≈47-50 % + augmentation de capital)",
+     "seller": "Mindful Capital Partners, Marco Vecellio et minoritaires",
+     "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175",
+     "source_title": "Aurora è vicina ad acquisire il 50% di Eurmoda (MF Fashion)",
+     "source_date": "2025-06-04"
+    },
+    {
+     "name": "Mindful Capital Partners (ex-Mandarin Capital Partners III)",
+     "role": "minoritaire",
+     "entry_date": "2019-10",
+     "deal_type": "LBO primaire (création de la holding Margot)",
+     "seller": null,
+     "source_url": "https://www.ilnordest.it/economia/imprese/la-trevigiana-margot-alza-gli-stipendi-al-30-per-cento-dei-propri-dipendenti-aobxav52",
+     "source_title": "La trevigiana Margot alza gli stipendi al 30 per cento dei propri dipendenti",
+     "source_date": "2022-12-18"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Marco Vecellio",
+    "title": "Fondateur et amministratore delegato",
+    "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "≈60 M€",
+     "year": "2024",
+     "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "≈10 M€",
+     "year": "2024",
+     "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175"
+    },
+    {
+     "metric": "CA",
+     "value": "≈90 M€ (pro forma avec La Cerniera)",
+     "year": "2025",
+     "source_url": "https://bebeez.it/private-equity/eurmoda-aurora-growth-capital-e-mindful-capital-partners-rileva-la-cerniera-dalla-loro-unione-nascera-un-colosso-da-90-mln-di-fatturato/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Sortie partielle de Mindful Capital Partners (reste ≈27 %) au profit d'Aurora Growth Capital",
+     "date": "2025-07",
+     "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175"
+    },
+    {
+     "fact": "Rachat de La Cerniera (Florence), financé par Aurora",
+     "date": "2025-09",
+     "source_url": "https://www.leadersleague.com/es/news/eurmoda-acquires-la-cerniera-to-strengthen-its-position-in-luxury-leather-accessories"
+    }
+   ],
+   "notes": "Holding Margot créée en 2019 par Mandarin (rebaptisé Mindful Capital Partners) puis fusionnée dans Eurmoda au 1er janvier 2024. Pourcentage d'Aurora : 50 % (MF, juin 2025) vs 47 % (titre La Conceria). Aurora Growth Capital est lié à NB Renaissance (même équipe).",
+   "id": "eurmoda"
+  },
+  {
+   "company": "Altofare Group (Lampa, Tacchificio Monti, Gruppo PF, CDC Luxury Chains, Griste...)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Plateforme d'accessoires et finitions pour maisons de luxe : composants métalliques, chaînes, talons et semelles",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "White Bridge Investments II",
+     "role": "majoritaire",
+     "entry_date": "2021",
+     "deal_type": "LBO primaire (plateforme buy-and-build)",
+     "seller": null,
+     "source_url": "https://bebeez.it/crisi-rilanci/altofare-white-bridge-investments-ii-sta-esplorando-la-possibilita-di-rimodulare-lindebitamento-a-causa-delle-frenata-dei-consumi-di-lusso/",
+     "source_title": "Altofare (White Bridge Investments II) sta esplorando la possibilità di rimodulare l'indebitamento (BeBeez)",
+     "source_date": "2025-03-31"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "110 M€ (Lampa consolidé)",
+     "year": "2023",
+     "source_url": "https://bebeez.it/crisi-rilanci/altofare-white-bridge-investments-ii-sta-esplorando-la-possibilita-di-rimodulare-lindebitamento-a-causa-delle-frenata-dei-consumi-di-lusso/"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "11 M€",
+     "year": "2023",
+     "source_url": "https://bebeez.it/crisi-rilanci/altofare-white-bridge-investments-ii-sta-esplorando-la-possibilita-di-rimodulare-lindebitamento-a-causa-delle-frenata-dei-consumi-di-lusso/"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Échéances d'amortissement non payées sur 145 M€ de dette bancaire ; KPMG et Chiomenti mandatés pour renégocier avec les banques",
+     "date": "2025-03",
+     "source_url": "https://bebeez.eu/2025/04/02/italys-distressed-assets-and-npes-weekly-round-up-news-from-altofare-white-bridge-investments-clessidra-and-more"
+    }
+   ],
+   "notes": "Dette nette 126,4 M€ fin 2023, perte nette 32 M€ en 2023. Bris de covenants fin 2023 déjà renégocié. Le CEO Davide Aicardi est cité dans une interview La Conceria (vue seulement en résultat de recherche).",
+   "id": "altofare-group"
+  },
+  {
+   "company": "Tre Zeta Group (Brenta Suole, Stil Stampi, Magonio, Do.Gi, Walking World, Tacchificio Pienne)",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Semelles (sneakers et cuir), talons et composants pour chaussures de grandes marques de luxe",
+   "hq_city": "San Donato (Pise)",
+   "website": null,
+   "funds": [
+    {
+     "name": "Koinos Capital (Koinos Uno)",
+     "role": "majoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "LBO primaire",
+     "seller": null,
+     "source_url": "https://www.privateequitywire.co.uk/koinos-capital-acquires-majority-stake-tre-zeta-group/",
+     "source_title": "Koinos Capital acquires majority stake in Tre Zeta Group",
+     "source_date": "2021-12-02"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "> 40 M€ (estimé)",
+     "year": "2021",
+     "source_url": "https://www.privateequitywire.co.uk/koinos-capital-acquires-majority-stake-tre-zeta-group/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Cinq add-ons depuis l'entrée de Koinos (BeBeez) : Stil Stampi (2022), Suolificio Magonio (2023), Do.Gi (2023), Walking World (2024), Tacchificio Pienne (2024). Source BeBeez : https://bebeez.it/tag/tre-zeta-group-2/",
+   "id": "tre-zeta-group"
+  },
+  {
+   "company": "Pôle chaussure Equita (Everyn, Calzaturificio Maruska)",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Fabrication artisanale de chaussures femme haut de gamme pour marques de luxe internationales (Toscane)",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "EQUITA Smart Capital – ELTIF",
+     "role": "majoritaire",
+     "entry_date": "2024-08",
+     "deal_type": "LBO primaire (création de pôle)",
+     "seller": "Fondateurs (réinvestis significativement)",
+     "source_url": "https://sgr.equita.eu/en/news/equita-smart-capital-eltif-creates-a-new-made-in-italy-center-of-excellence-for-the-handcrafting-of-high-end-women-s-footwear.html",
+     "source_title": "EQUITA Smart Capital-ELTIF creates a new Made in Italy center of excellence for the handcrafting of high-end women's footwear",
+     "source_date": "2024-08-05"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Massimo Pelagotti (Everyn) / Fabrizio Tempesti (Maruska)",
+    "title": "CEO des filiales",
+    "source_url": "https://sgr.equita.eu/en/news/equita-smart-capital-eltif-creates-a-new-made-in-italy-center-of-excellence-for-the-handcrafting-of-high-end-women-s-footwear.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "> 30 M€",
+     "year": "2024",
+     "source_url": "https://sgr.equita.eu/en/news/equita-smart-capital-eltif-creates-a-new-made-in-italy-center-of-excellence-for-the-handcrafting-of-high-end-women-s-footwear.html"
+    },
+    {
+     "metric": "effectif",
+     "value": "> 100",
+     "year": "2024",
+     "source_url": "https://sgr.equita.eu/en/news/equita-smart-capital-eltif-creates-a-new-made-in-italy-center-of-excellence-for-the-handcrafting-of-high-end-women-s-footwear.html"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Intégration verticale prévue (tiges, contreforts, semelles). Equita a également acquis GT Emme (vu en résultat de recherche, non vérifié).",
+   "id": "pole-chaussure-equita"
+  },
+  {
+   "company": "Filiera Toscana della Calzatura (FTC)",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Plateforme de 4 façonniers de chaussures pour le luxe (Toscane)",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "Azimut Libera Impresa SGR (Azimut ELTIF Private Equity – Ophelia)",
+     "role": "minoritaire",
+     "entry_date": "2024-11",
+     "deal_type": "capital développement (augmentation de capital, >30 %)",
+     "seller": null,
+     "source_url": "https://laconceria.it/en/finance/the-new-ftc-manufacturing-cluster-presents-itself-by-aggregating-4-companies",
+     "source_title": "The new FTC manufacturing cluster presents itself by aggregating 4 companies",
+     "source_date": "2024-11-25"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Plateforme initiée par P4 (Michele Paris, entrepreneur du buy-and-build dans la filière mode-luxe), majoritaire. OC&C a conseillé P4 (décembre 2024).",
+   "id": "filiera-toscana-della-calzatura"
+  },
+  {
+   "company": "Tod's Group (Tod's, Hogan, Roger Vivier, Fay)",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Chaussures et maroquinerie de luxe (mocassins Tod's, sneakers Hogan, Roger Vivier)",
+   "hq_city": "Sant'Elpidio a Mare",
+   "website": "https://www.todsgroup.com",
+   "funds": [
+    {
+     "name": "L Catterton",
+     "role": "minoritaire",
+     "entry_date": "2024-05",
+     "deal_type": "public-to-private (OPA avec la famille Della Valle)",
+     "seller": "Actionnaires flottants et Diego Della Valle (10,45 %)",
+     "source_url": "https://fashionunited.uk/news/business/tods-to-be-delisted-after-successful-takeover-bid-by-fund-associated-with-lvmh/2024050675437",
+     "source_title": "Tod's to be delisted after successful takeover bid by fund associated with LVMH",
+     "source_date": "2024-05-06"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "1 120 M€",
+     "year": "2023",
+     "source_url": "https://fashionunited.uk/news/business/tods-to-be-delisted-after-successful-takeover-bid-by-fund-associated-with-lvmh/2024050675437"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Structure visée : famille Della Valle 54 %, L Catterton ≈36 %, LVMH (Delphine) 10 %. OPA à 43 €/action, valorisation > 1,4 Md€. Le périmètre de l'offre a été ajusté (27,9 %) car L Catterton détenait déjà 7,9 % ; pourcentage final non confirmé. Retrait de la cote le 8 mai 2024.",
+   "id": "tod-s-group"
+  },
+  {
+   "company": "Golden Goose",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Sneakers de luxe et prêt-à-porter",
+   "hq_city": "Milan",
+   "website": "https://www.goldengoose.com",
+   "funds": [
+    {
+     "name": "HSG (ex-Sequoia China)",
+     "role": "majoritaire",
+     "entry_date": "2026-06",
+     "deal_type": "LBO secondaire",
+     "seller": "Permira (reste minoritaire)",
+     "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/",
+     "source_title": "Golden Goose officially welcomes HSG as majority investor and Temasek as minority shareholder",
+     "source_date": "2026-06-24"
+    },
+    {
+     "name": "Temasek / True Light Capital",
+     "role": "minoritaire",
+     "entry_date": "2026-06",
+     "deal_type": "co-investissement",
+     "seller": "Permira",
+     "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/",
+     "source_title": "Golden Goose officially welcomes HSG as majority investor and Temasek as minority shareholder",
+     "source_date": "2026-06-24"
+    },
+    {
+     "name": "Permira",
+     "role": "minoritaire",
+     "entry_date": "2020",
+     "deal_type": "réinvestissement minoritaire",
+     "seller": null,
+     "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/",
+     "source_title": "Golden Goose officially welcomes HSG as majority investor and Temasek as minority shareholder",
+     "source_date": "2026-06-24"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Permira (majoritaire)",
+     "entry": "2020",
+     "exit": "2026",
+     "source_url": "https://www.bloomberg.com/news/articles/2025-12-19/golden-goose-sneakers-sold-by-permira-to-chinese-firm-hsg"
+    }
+   ],
+   "ceo": {
+    "name": "Silvio Campara",
+    "title": "CEO",
+    "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "734 M€",
+     "year": "2025",
+     "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Accord annoncé le 19/12/2025 (valorisation ≈2,5 Md€ selon Bloomberg, non confirmée par la société), closing le 24/06/2026. Marco Bizzarri président non exécutif. Permira avait acheté en 2020 pour ≈1,3 Md€ (presse).",
+   "id": "golden-goose"
+  }
+ ],
+ "exited": [
+  {
+   "company": "Golden Goose",
+   "country": "IT",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "fund": "Permira (cession du contrôle, reste minoritaire)",
+   "entry": "2020",
+   "exit_date": "2026-06",
+   "buyer": "HSG (majoritaire) et Temasek / True Light Capital (minoritaires)",
+   "source_url": "https://we.goldengoose.com/we-are-golden/media/news/26-06-24-golden-goose-officially-welcomes-hsg-temasek-investors/",
+   "notes": "Accord du 19/12/2025, valorisation ≈2,5 Md€ (Bloomberg). CA 2025 : 734 M€. Sortie partielle : Permira reste minoritaire stratégique."
+  },
+  {
+   "company": "Eurmoda (ex-Margot)",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "fund": "Mindful Capital Partners (ex-Mandarin) – sortie partielle",
+   "entry": "2019",
+   "exit_date": "2025-07",
+   "buyer": "Aurora Growth Capital (≈50 %)",
+   "source_url": "https://www.milanofinanza.it/fashion/aurora-e-vicina-ad-acquisire-il-50-di-eurmoda-202506041802153175",
+   "notes": "MCP conserve ≈27 %. CA 2024 ≈60 M€, EBITDA ≈10 M€ (marge 18 %). Closing prévu fin juillet 2025."
+  },
+  {
+   "company": "Rino Mastrotto Group",
+   "country": "IT",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "fund": "NB Renaissance Partners – cession partielle de 5 %",
+   "entry": "2019",
+   "exit_date": "2025-06",
+   "buyer": "Prada (10 % via apport de Conceria Superior et Tannerie Limoges + cash)",
+   "source_url": "https://www.milanofinanza.it/fashion/prada-entra-col-10-in-rino-mastrotto-renaissance-in-un-operazione-mista-di-conferimento-e-cash-i-202506050816359007",
+   "notes": "Sortie partielle uniquement ; NB Renaissance reste majoritaire (≈65 %). Référence de valorisation : EBITDA 2024 de 75 M€."
+  },
+  {
+   "company": "Minerva Hub",
+   "country": "IT",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Matières & composants",
+   "fund": "Xenon Private Equity (via XPP Seven, 51 %)",
+   "entry": "2022",
+   "exit_date": "2023-04",
+   "buyer": "San Quirico (holding des familles Garrone et Mondini)",
+   "source_url": "https://www.milanofinanza.it/news/minerva-hub-passa-a-san-quirico-202304051658541525",
+   "notes": "À CONFIRMER : MF (5/4/2023) rapporte l'entrée de San Quirico (valorisation > 500 M€), sans préciser si elle est majoritaire ni si Xenon sort ; un résultat de recherche évoque 75 % pour San Quirico. Pôle cuirs, broderies, traitements de surface, composants."
+  }
+ ]
+}

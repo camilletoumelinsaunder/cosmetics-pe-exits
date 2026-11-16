@@ -1,9 +1,16 @@
-# CLAUDE.md — Cosmetics PE-exit tracker (AlixPartners)
+# CLAUDE.md — Cosmetics & luxury PE-exit tracker (AlixPartners)
 
-Separate project from the acquisition-screening dashboard. Tracks cosmetics companies held by private-equity
-funds (France first, then Europe) to spot likely exits. UI in French, code comments in English.
+Separate project from the acquisition-screening dashboard. Tracks cosmetics and luxury companies (brands and
+supply chain) held by private-equity funds (France first, then Europe) to spot likely exits. UI in French, code comments in English.
 
-Segments: Marques, Sous-traitants (façonniers / CDMO), Ingrédients et actifs, Packaging.
+Classification (`config.yaml → taxonomy`), three axes:
+- Secteur: Beauté & parfum, Prêt-à-porter, Maroquinerie & sacs, Chaussures, Accessoires, Lunettes, Joaillerie & horlogerie,
+  Luxe multi-secteurs.
+- Maillon: Marque, Sous-traitant / façonnier, Matières & composants, Packaging & PLV, Distribution & retail.
+- Positionnement: Luxe & prestige, Premium, Grand public (analyst view; `review.json → positionnement` overrides).
+The original cosmetics files only carry the legacy `segment` (Marques, Sous-traitants, Ingrédients et actifs, Packaging):
+`build.py` maps it to secteur « Beauté & parfum » and the matching maillon. New research files set `secteur`, `maillon`,
+`positionnement` directly (`inputs/deals/luxe_*.json`). Family-office-only or corporate-owned companies are out of scope.
 
 ## Golden rule
 - Never invent or estimate a fact. Every company, fund, entry date, CEO, figure and exit signal carries the
@@ -21,9 +28,10 @@ Segments: Marques, Sous-traitants (façonniers / CDMO), Ingrédients et actifs, 
 4. Republish `site/index.html` with `data.json` to the artifact URL (see below).
 
 Reference fund = latest dated majority entry, else latest dated entry. Name-based registry matches are accepted
-only with an identical normalised name and a cosmetics-related NAF code, and are flagged « à vérifier ».
+only with an identical normalised name and a cosmetics- or luxury-related NAF code, and are flagged « à vérifier ».
 
-Research JSON schema: {"companies": [{company, country, segment, sub_segment, hq_city, website, siren,
+Research JSON schema: {"companies": [{id (optional, keeps shared follow-up attached), company, country,
+segment | secteur + maillon + positionnement, sub_segment, hq_city, website, siren,
 funds: [{name, role, entry_date, deal_type, seller, source_url, source_title, source_date}],
 previous_owners: [{name, entry, exit, source_url}], ceo: {name, title, source_url},
 key_figures: [{metric, value, year, source_url}], exit_signals: [{fact, date, source_url}], notes}],
@@ -58,7 +66,7 @@ database. Never modify the page's database except creating missing `contacts` do
 The scheduled task wakes the owner's working Claude session (fresh sessions cannot attach the repo), which pulls this repo and:
 1. Installs requirements, runs the tests (stops on failure).
 2. Finds NEW targets first (target: at least 10 newly confirmed PE-backed companies per run, France first), working through `inputs/backlog.json`, fund portfolio pages and new deal announcements; then re-checks every tracked company for news since the last run (sale process, mandate, closing, new owner,
-   refinancing, IPO, build-up), looks for new PE deals in French and European cosmetics, and moves completed
+   refinancing, IPO, build-up), looks for new PE deals in French and European cosmetics and luxury, and moves completed
    exits to "exited". Same golden rule as the initial research: every new fact has a source URL; unconfirmed
    items stay in base with a doubt in `inputs/review.json`.
 3. Updates `inputs/review.json` (doubts, statut, these, priorite) only where facts changed.

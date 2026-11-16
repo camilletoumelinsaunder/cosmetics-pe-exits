@@ -45,3 +45,13 @@ def test_contacts_match_company_and_fund():
     docs = mc.match(people, data)
     assert [d["id"] for d in docs] == ["li-a", "li-c"]
     assert docs[0]["liens"][0]["type"] == "fonds" and docs[1]["liens"][0]["type"] == "societe"
+
+
+def test_classification_maps_legacy_segment_and_review_wins():
+    rec = {"company": "Exemple Beauté", "segment": "Packaging", "positionnement": "Premium"}
+    build.classify(rec, {"positionnement": "Luxe & prestige"})
+    assert (rec["secteur"], rec["maillon"], rec["positionnement"], rec["segment"]) == \
+        ("Beauté & parfum", "Packaging & PLV", "Luxe & prestige", "Packaging & PLV")
+    lux = {"company": "Exemple Cuir", "secteur": "Maroquinerie & sacs", "maillon": "Sous-traitant / façonnier"}
+    build.classify(lux, {})
+    assert lux["secteur"] == "Maroquinerie & sacs" and lux["maillon"] == "Sous-traitant / façonnier"

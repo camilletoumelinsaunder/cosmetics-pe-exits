@@ -1,0 +1,409 @@
+{
+ "companies": [
+  {
+   "company": "Breitling",
+   "country": "CH",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Montres de luxe (horlogerie suisse)",
+   "hq_city": null,
+   "website": "https://www.breitling.com",
+   "funds": [
+    {
+     "name": "Partners Group",
+     "role": "majoritaire",
+     "entry_date": "2021",
+     "deal_type": "capital développement (minoritaire 2021) puis prise de contrôle (accord déc. 2022)",
+     "seller": "CVC Capital Partners (partiel)",
+     "source_url": "https://www.partnersgroup.com/en/news-views/press-releases/investment-news/detail/partners-group-to-increase-its-stake-in-leading-independent-swiss-watchmaker-breitling/",
+     "source_title": "Partners Group to increase its stake in leading independent Swiss watchmaker Breitling",
+     "source_date": "2022-12-23"
+    },
+    {
+     "name": "CVC Capital Partners",
+     "role": "minoritaire",
+     "entry_date": "2017",
+     "deal_type": "LBO primaire (80 %)",
+     "seller": null,
+     "source_url": "https://www.jckonline.com/editorial-article/breitling-ipo-ownership-shifts/",
+     "source_title": "Breitling Plans IPO As Ownership Shifts: Report (JCK)",
+     "source_date": "2022-12-09"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Georges Kern",
+    "title": "CEO",
+    "source_url": "https://www.swissinfo.ch/eng/breitling-cuts-jobs-as-swiss-franc-and-luxury-slump-hit-results/91397061"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "769 MCHF (net, exercice clos mars 2026, -11 %)",
+     "year": "2026",
+     "source_url": "https://www.swissinfo.ch/eng/breitling-cuts-jobs-as-swiss-franc-and-luxury-slump-hit-results/91397061"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "162 MCHF ajusté (-21 %)",
+     "year": "2026",
+     "source_url": "https://www.swissinfo.ch/eng/breitling-cuts-jobs-as-swiss-franc-and-luxury-slump-hit-results/91397061"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 2 000",
+     "year": "2026",
+     "source_url": "https://www.swissinfo.ch/eng/breitling-cuts-jobs-as-swiss-franc-and-luxury-slump-hit-results/91397061"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Valorisation fortement dépréciée par CVC (environ la moitié de 2023) et Partners Group (70 %) ; revue stratégique en cours (FT, repris par National Jeweler)",
+     "date": "2026-02",
+     "source_url": "https://nationaljeweler.com/articles/14730-private-equity-firms-write-down-value-of-breitling-report-says"
+    },
+    {
+     "fact": "Projet d'IPO à la bourse suisse évoqué pour 2027 (Bloomberg/finews, 2022)",
+     "date": "2022-12",
+     "source_url": "https://www.jckonline.com/editorial-article/breitling-ipo-ownership-shifts/"
+    },
+    {
+     "fact": "Suppression de plus de 50 postes, ventes et EBITDA en baisse",
+     "date": "2026-05",
+     "source_url": "https://www.swissinfo.ch/eng/breitling-cuts-jobs-as-swiss-franc-and-luxury-slump-hit-results/91397061"
+    }
+   ],
+   "notes": "Partners Group détient 51 % (Bloomberg via swissinfo, mai 2026) ; CVC conserve environ 23,6 % selon la presse 2022. Valorisation 2022 : 4,2 MdCHF. Alfred Gantner (Partners Group) préside le conseil.",
+   "id": "breitling"
+  },
+  {
+   "company": "THOM Group (Histoire d'Or, Marc Orian, TrésOr, Stroili, Agatha)",
+   "country": "FR",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Distribution & retail",
+   "positionnement": "Grand public",
+   "sub_segment": "Chaîne européenne de bijouteries-horlogeries (or, argent, montres)",
+   "hq_city": null,
+   "website": "https://thomgroup.com",
+   "funds": [
+    {
+     "name": "Altamir (Amboise)",
+     "role": "majoritaire",
+     "entry_date": "2021-02",
+     "deal_type": "LBO secondaire (réinvestissement comme actionnaire de référence)",
+     "seller": "Bridgepoint, Altamir et fonds Amboise",
+     "source_url": "https://ca.marketscreener.com/quote/stock/ALTAMIR-5156/news/Altamir-Altamir-to-sell-its-investment-in-THOM-Group-and-to-reinvest-in-the-company-as-the-lea-32265133/",
+     "source_title": "Altamir to sell its investment in THOM Group and to reinvest in the company as the lead shareholder",
+     "source_date": "2021-01-25"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Bridgepoint",
+     "entry": "2010",
+     "exit": "2021",
+     "source_url": "https://mergr.com/transaction/seven2-acquires-thom-group"
+    },
+    {
+     "name": "Apax Partners France (Seven2) / Altamir",
+     "entry": "2010",
+     "exit": "2021",
+     "source_url": "https://mergr.com/transaction/seven2-acquires-thom-group"
+    }
+   ],
+   "ceo": {
+    "name": "Flavien d'Audiffret",
+    "title": "Group CEO",
+    "source_url": "https://thomgroup.com/group/governance"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "1 078 M€ (ventes réseau, exercice clos sept. 2025)",
+     "year": "2025",
+     "source_url": "https://thomgroup.com/wp-content/uploads/2026/01/PRESS-RELEASE_Q4-FY-2025-Publication_FINAL.pdf"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "281,1 M€ (publié)",
+     "year": "2025",
+     "source_url": "https://thomgroup.com/wp-content/uploads/2026/01/PRESS-RELEASE_Q4-FY-2025-Publication_FINAL.pdf"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Refinancement de THOM au S1 2024 ayant remonté 59,6 M€ à Altamir",
+     "date": "2024",
+     "source_url": "https://www.boursorama.com/bourse/actualites/altamir-anr-en-hausse-de-2-7-sur-le-semestre-dividende-inclus-reprise-de-l-activite-d-investissement-et-de-desinvestissement-fbdfd1702a279088d4bed191ebf44ba1"
+    },
+    {
+     "fact": "THOM toujours citée parmi les principales participations d'Altamir au 30 juin 2026, sans processus de cession annoncé",
+     "date": "2026-09",
+     "source_url": "https://www.abcbourse.com/marches/altamir-affiche-un-anr-par-action-en-hausse-au-1er-semestre-2026_702718"
+    }
+   ],
+   "notes": "Acquisition 2021 via la holding Goldstory (Altamir 100 M€ en direct + management + nouveaux actionnaires, financée par obligations). Maurice Tchenio (Altamir/Amboise) préside le conseil de surveillance. Agatha détenue à 100 % par Goldstory. Le % exact d'Altamir n'est pas public.",
+   "id": "thom-group"
+  },
+  {
+   "company": "APM Monaco",
+   "country": "MC",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Bijoux en argent (luxe accessible)",
+   "hq_city": "Monaco",
+   "website": null,
+   "funds": [
+    {
+     "name": "TPG Capital Asia (avec China Synergy et Trail)",
+     "role": "minoritaire",
+     "entry_date": "2019-04",
+     "deal_type": "capital développement (30 %)",
+     "seller": "Actionnaires existants",
+     "source_url": "https://prnewswire.com/news-releases/tpg-leads-a-consortium-of-investors-with-china-synergy-and-trail-to-invest-in-apm-monaco-300833662.html",
+     "source_title": "TPG Leads a Consortium of Investors with China Synergy and Trail to Invest in APM Monaco",
+     "source_date": "2019-04-17"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Philippe Prette",
+    "title": "CEO (co-fondateur)",
+    "source_url": "https://fashionunited.uk/news/business/cvc-reportedly-in-talks-to-buy-tpgs-stake-in-jeweller-apm-monaco/2026072889457"
+   },
+   "key_figures": [],
+   "exit_signals": [
+    {
+     "fact": "TPG étudie une cession de sa participation ou une IPO (dual track évoqué début 2026)",
+     "date": "2025-12",
+     "source_url": "https://inforcapital.com/news/tpg-weighs-stake-sale-or-ipo-for-apm-monaco/"
+    },
+    {
+     "fact": "CVC en négociation pour racheter la participation de TPG, valorisation de plus de 2 Md$ (Bloomberg)",
+     "date": "2026-07",
+     "source_url": "https://www.privateequitywire.co.uk/cvc-emerges-as-frontrunner-for-stake-in-jeweller-apm-monaco/"
+    }
+   ],
+   "notes": "Environ 200 boutiques fin 2018, ~500 selon la presse 2025. IPO Hong Kong envisagée en 2021, non réalisée. Famille Prette majoritaire. Bijoux en argent : classé Joaillerie, à la frontière de 'Accessoires (bijoux fantaisie)'.",
+   "id": "apm-monaco"
+  },
+  {
+   "company": "Acrotec Group",
+   "country": "CH",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Composants de précision pour mouvements et habillage horloger (et medtech)",
+   "hq_city": "Develier",
+   "website": "https://www.acrotec.ch",
+   "funds": [
+    {
+     "name": "Carlyle (Carlyle Europe Partners V)",
+     "role": "majoritaire",
+     "entry_date": "2021",
+     "deal_type": "LBO secondaire",
+     "seller": "Castik Capital",
+     "source_url": "https://www.carlyle.com/ja/node/33126",
+     "source_title": "The Carlyle Group to acquire the Acrotec Group from Castik Capital",
+     "source_date": "2020-12-07"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Quilvest Private Equity",
+     "entry": "2012",
+     "exit": "2018",
+     "source_url": "https://www.privateequitywire.co.uk/quilvest-private-equity-sells-holding-acrotec-group-funds-advised-castik-capital/"
+    },
+    {
+     "name": "Castik Capital",
+     "entry": "2018",
+     "exit": "2021",
+     "source_url": "https://www.carlyle.com/ja/node/33126"
+    }
+   ],
+   "ceo": {
+    "name": "François Billig",
+    "title": "Fondateur et CEO (en 2020)",
+    "source_url": "https://www.carlyle.com/ja/node/33126"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "environ 1 200",
+     "year": "2020",
+     "source_url": "https://www.carlyle.com/ja/node/33126"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Carlyle étudie une sortie (vente ou IPO) jusqu'à 4 MdCHF, Rothschild mandaté pour préparer une IPO (Bloomberg)",
+     "date": "2023-12",
+     "source_url": "https://www.investing.com/news/stock-market-news/carlyle-group-eyes-46-billion-exit-from-acrotec-in-strategic-shift-3255020"
+    }
+   ],
+   "notes": "Fermeture prévue au T1 2021. Build-ups : CAPSA, Friedrich Daniels (2023). ~30 sociétés dans 3 divisions (Watch & Jewellery, Medtech, Precision High-Tech). Aucune sortie constatée après 2023 dans les sources consultées.",
+   "id": "acrotec-group"
+  },
+  {
+   "company": "Mattioli",
+   "country": "IT",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Joaillerie (marque propre et fabrication)",
+   "hq_city": "Turin",
+   "website": null,
+   "funds": [
+    {
+     "name": "Peninsula Capital",
+     "role": "minoritaire",
+     "entry_date": "2024-02",
+     "deal_type": "capital développement (augmentation de capital 25,1 M€)",
+     "seller": null,
+     "source_url": "https://bebeez.eu/2024/04/22/italys-private-equity-weekly-roundup-news-from-and-more-14/",
+     "source_title": "Italy's private equity weekly roundup (BeBeez)",
+     "source_date": "2024-04-22"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Licia Mattioli",
+    "title": "CEO",
+    "source_url": "https://bebeez.eu/2024/04/22/italys-private-equity-weekly-roundup-news-from-and-more-14/"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "105 M€",
+     "year": "2023",
+     "source_url": "https://bebeez.eu/2024/04/22/italys-private-equity-weekly-roundup-news-from-and-more-14/"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "11,5 M€",
+     "year": "2023",
+     "source_url": "https://bebeez.eu/2024/04/22/italys-private-equity-weekly-roundup-news-from-and-more-14/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Participation d'environ 25 % selon l'URL d'un article BeBeez antérieur (non lu). AG d'approbation le 22/02/2024. Année des chiffres supposée 2023.",
+   "id": "mattioli"
+  },
+  {
+   "company": "Groupe Chaumont (Efteor, Le Composant, Télôs Watch, Henri Robert)",
+   "country": "CH",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Boîtes, fermoirs, bracelets en métal précieux et développement de complications pour la haute horlogerie",
+   "hq_city": "Neuchâtel",
+   "website": null,
+   "funds": [
+    {
+     "name": "Vam Investments",
+     "role": "majoritaire",
+     "entry_date": "2026",
+     "deal_type": "LBO primaire / buy-and-build",
+     "seller": null,
+     "source_url": "https://inforcapital.com/news/vam-investments-valica-i-confini-italiani-e-forma-in-svizzera-groupe-chaumont-piattaforma-buy-and-build-della-componentistica-per-alta-orologeria/",
+     "source_title": "Vam Investments forma in Svizzera Groupe Chaumont",
+     "source_date": "2026-07-01"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Umberto Macchi di Cellere",
+    "title": "Dirigeant du groupe (ex-CEO de Bulgari)",
+    "source_url": "https://inforcapital.com/news/vam-investments-valica-i-confini-italiani-e-forma-in-svizzera-groupe-chaumont-piattaforma-buy-and-build-della-componentistica-per-alta-orologeria/"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Plateforme constituée en 2026 par l'acquisition de quatre fournisseurs suisses. Rôle majoritaire de Vam supposé (non explicité).",
+   "id": "groupe-chaumont"
+  },
+  {
+   "company": "RC Group",
+   "country": "FR",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Packaging & PLV",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "PLV et merchandising pour marques de luxe",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "Crédit Mutuel Equity",
+     "role": null,
+     "entry_date": "2018",
+     "deal_type": "LBO (réinvestissement en LBO ter en 2024)",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-ter/RC-Group-expose-un-MBO-500092",
+     "source_title": "RC Group expose un MBO (CFNEWS)",
+     "source_date": "2024-09-30"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "135 M€",
+     "year": "2024",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-ter/RC-Group-expose-un-MBO-500092"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "LBO ter (MBO) de septembre 2024 organisant la transition fondateur-management ; Crédit Mutuel Equity présent depuis environ 2018 (« depuis six ans »). Article payant : rôle et % non visibles.",
+   "id": "rc-group"
+  },
+  {
+   "company": "Groupe Maier",
+   "country": "FR",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Distribution & retail",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Bijouteries-horlogeries haut de gamme (région lyonnaise)",
+   "hq_city": "Lyon",
+   "website": null,
+   "funds": [
+    {
+     "name": "Garibaldi Participations",
+     "role": "minoritaire",
+     "entry_date": "2022-03",
+     "deal_type": "LBO bis (OBO), famille majoritaire",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Maier-se-pare-d-un-nouveau-LBO-398108",
+     "source_title": "Maier se pare d'un nouveau LBO (CFNEWS)",
+     "source_date": "2022-03-29"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Jean-Louis Maier",
+    "title": "Fondateur et président",
+    "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Maier-se-pare-d-un-nouveau-LBO-398108"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Groupe familial ; OBO initial en 2016. Deux autres financiers entrés en 2022 (noms non visibles, article payant). Un extrait de recherche mentionne ~25 M€ de revenus, non confirmé sur la page lue.",
+   "id": "groupe-maier"
+  }
+ ],
+ "exited": [
+  {
+   "company": "Orest Group / Platinum Invest (Orest, Abysse)",
+   "country": "FR",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Sous-traitant / façonnier",
+   "fund": "Andera Partners (avec Bpifrance)",
+   "entry": "2018",
+   "exit_date": "2023-04",
+   "buyer": "LVMH (prise de participation majoritaire)",
+   "source_url": "https://www.cfnews.net/L-actualite/M-A-Corporate/Operations/100/Orest-s-allie-a-un-geant-cote-du-luxe-438053",
+   "notes": "Fabricant de pièces joaillières pour les grandes maisons (dont Tiffany), ~150 M€ de CA en 2023 contre ~50 M€ à l'entrée d'Andera. Rôle de Bpifrance cité par Le Monde du Droit (build-up Abysse). Voir aussi https://luxus-plus.com/joaillerie-orest-propriete-de-lvmh-elargit-capacites-production/"
+  }
+ ]
+}

@@ -1,0 +1,488 @@
+{
+ "companies": [
+  {
+   "company": "Cosmelux (vernissage et métallisation UV pour packaging cosmétique)",
+   "country": "IT",
+   "sub_segment": "Sous-traitant : vernissage et métallisation UV pour packaging de luxe cosmétique",
+   "hq_city": "Carate Brianza",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "PM&Partners",
+     "role": "majoritaire (70 %) avec Capital Dynamics",
+     "entry_date": "2021-05",
+     "deal_type": "Prise de participation majoritaire",
+     "seller": null,
+     "source_url": "https://www.capdyn.com/Customer-Content/www/news/PDFs/PM___Partners_and_Capital_Dynamics_Acquire_Cosmelux.pdf",
+     "source_title": "PM & Partners and Capital Dynamics acquire Cosmelux (communiqué)",
+     "source_date": "2021-05-25"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "Fondation",
+     "value": "2002",
+     "year": null,
+     "source_url": "https://www.rplt.it/rassegna/2021/maggio/20210526a.pdf"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Leader du vernissage et de la métallisation UV de packaging cosmétique (Carate Brianza). Cible de sous-traitance 'luxe' : finitions des flacons et étuis de parfum et de maquillage. Rachat annoncé le 25 mai 2021 ; les bases de données datent l'opération du 26 mai.",
+   "id": "cosmelux",
+   "secteur": "Beauté & parfum",
+   "maillon": "Packaging & PLV",
+   "positionnement": "Luxe & prestige"
+  },
+  {
+   "company": "Mosaiq Group (Valtenna, Bulgarelli Production, D'Auria Packaging, CO.Ri Sacchettificio, Brand Label)",
+   "country": "IT",
+   "sub_segment": "Packaging et accessoires de luxe (mode et beauté) : coffrets, étuis, sacs, étiquettes",
+   "hq_city": null,
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Arca Space Capital",
+     "role": "consortium majoritaire (68 %) avec Amundi Private Equity Italia et BNP Paribas BNL Equity Investments",
+     "entry_date": "2024-07",
+     "deal_type": "Acquisition de cinq sociétés de packaging de luxe, regroupées dans Mosaiq",
+     "seller": null,
+     "source_url": "https://www.hlc.com/en/news/hogan-lovells-advises-five-italian-companies-active-in-the-luxury-and-fashion-packaging-industry-on-their-sale-to-arca-fondi-sgr",
+     "source_title": "Hogan Lovells : cinq sociétés italiennes de packaging de luxe cédées à Arca Fondi SGR",
+     "source_date": "2024-07-02"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 70 M€ (groupe)",
+     "year": null,
+     "source_url": "https://world-ma.com/transactions/detail/news/arca-space-capital-invested-in-five-luxury-packaging-companies"
+    },
+    {
+     "metric": "effectif",
+     "value": "plus de 300",
+     "year": null,
+     "source_url": "https://world-ma.com/transactions/detail/news/arca-space-capital-invested-in-five-luxury-packaging-companies"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Plateforme de packaging mode et luxe créée par Arca Space Capital en 2024. Périmètre : Valtenna (coffrets rigides), Bulgarelli Production (étiquettes et micro-packaging), D'Auria Packaging (sacs), CO.Ri Sacchettificio (housses et sacs en tissu), Brand Label (étiquettes tissées). Les sources ne concordent pas toujours sur le détail des activités.",
+   "id": "mosaiq-group",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Packaging & PLV",
+   "positionnement": "Luxe & prestige"
+  },
+  {
+   "company": "MANA Products",
+   "country": "US",
+   "sub_segment": "Façonnier : maquillage prestige (poudres, fonds de teint, rouges à lèvres)",
+   "hq_city": "Long Island City (New York)",
+   "website": null,
+   "siren": null,
+   "funds": [
+    {
+     "name": "Traub Capital",
+     "role": "majoritaire",
+     "entry_date": "2020-09",
+     "deal_type": "Acquisition",
+     "seller": null,
+     "source_url": "https://www.beautymatter.com/articles/traub-capital-acquires-mana-products",
+     "source_title": "Traub Capital acquires MANA Products (BeautyMatter)",
+     "source_date": "2020-09-09"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "plus de 800",
+     "year": null,
+     "source_url": "https://www.beautymatter.com/articles/traub-capital-acquires-mana-products"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "environ 20 M$ (selon WWD)",
+     "year": null,
+     "source_url": "https://www.beautymatter.com/articles/traub-capital-acquires-mana-products"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Façonnier américain de cosmétiques de prestige (maquillage, poudres pigmentées, fonds de teint, rouges à lèvres). Pas d'activité parfum identifiée. Conservé dans le segment 'Luxe' pour son positionnement prestige ; reclasser en Sous-traitants si vous préférez.",
+   "id": "mana-products",
+   "secteur": "Beauté & parfum",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige"
+  },
+  {
+   "company": "Gainerie 91 (Créanog)",
+   "country": "FR",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Packaging & PLV",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Écrins, coffrets et PLV / merchandising visuel pour maisons de luxe (horlogerie-joaillerie, beauté)",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "CAPZA (CAPZA Transition SLP)",
+     "role": "minoritaire",
+     "entry_date": "2024-02",
+     "deal_type": "OBO / LBO minoritaire (première ouverture du capital)",
+     "seller": "Arnaud Häfelin (associé dirigeant, conserve la majorité)",
+     "source_url": "https://www.lemondedudroit.fr/deals/91810-uggc-avocats-conseil-capza-transition-dans-le-cadre-de-son-entree-au-capital-du-groupe-gainerie-91.html",
+     "source_title": "UGGC Avocats conseil de CAPZA Transition dans le cadre de son entrée au capital du groupe Gainerie 91",
+     "source_date": "2024-03-08"
+    },
+    {
+     "name": "CAPZA",
+     "role": "minoritaire",
+     "entry_date": "2024-02",
+     "deal_type": "OBO",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/Gainerie-91-se-dessine-un-nouvel-actionnariat-475221",
+     "source_title": "Gainerie 91 se dessine un nouvel actionnariat (CFNEWS)",
+     "source_date": "2024-03-01"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Arnaud Häfelin",
+    "title": "Associé dirigeant",
+    "source_url": "https://www.lemondedudroit.fr/deals/91810-uggc-avocats-conseil-capza-transition-dans-le-cadre-de-son-entree-au-capital-du-groupe-gainerie-91.html"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": ">750",
+     "year": "2026",
+     "source_url": "https://www.oaklins.com/fr/en/deals/111805/"
+    },
+    {
+     "metric": "effectif",
+     "value": "≈700",
+     "year": "2024",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/OBO/Gainerie-91-se-dessine-un-nouvel-actionnariat-475221"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Build-up : acquisition de Créanog (atelier de gaufrage/dorure sur papier, clients Chanel, Dior, Guerlain), conseil Oaklins",
+     "date": "2026-03",
+     "source_url": "https://www.oaklins.com/fr/en/deals/111805/"
+    }
+   ],
+   "notes": "4 usines (France, Portugal, Chine, Maurice). Activité principalement horlogerie-joaillerie selon les bases de données ; la composante beauté passe notamment par Créanog. Fonds CAPZA Transition dédié aux PME en transition actionnariale.",
+   "id": "gainerie-91"
+  },
+  {
+   "company": "Decortiat Estelle",
+   "country": "FR",
+   "secteur": "Beauté & parfum",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Conditionnement à façon de parfums et cosmétiques de luxe en petites séries",
+   "hq_city": "Saint-Laurent-Nouan",
+   "website": null,
+   "funds": [
+    {
+     "name": "Arkéa Capital",
+     "role": null,
+     "entry_date": "2018-11",
+     "deal_type": "MBI primaire",
+     "seller": "Famille fondatrice",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Decortiat-Estelle-faconne-son-MBI-284790",
+     "source_title": "Decortiat Estelle façonne son MBI (CFNEWS)",
+     "source_date": "2018-11-28"
+    },
+    {
+     "name": "Sofimac Régions",
+     "role": null,
+     "entry_date": "2018-11",
+     "deal_type": "MBI primaire",
+     "seller": "Famille fondatrice",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Decortiat-Estelle-faconne-son-MBI-284790",
+     "source_title": "Decortiat Estelle façonne son MBI (CFNEWS)",
+     "source_date": "2018-11-28"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Dominique Bidaut",
+    "title": "Dirigeant repreneur (MBI)",
+    "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Decortiat-Estelle-faconne-son-MBI-284790"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "7 M€",
+     "year": "2018",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Decortiat-Estelle-faconne-son-MBI-284790"
+    },
+    {
+     "metric": "effectif",
+     "value": "90",
+     "year": "2018",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBI/Decortiat-Estelle-faconne-son-MBI-284790"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Montants rapportés par les résumés de presse : Arkéa Capital 1,5 M€, Sofimac Régions 0,8 M€ (article CFNEWS payant, chiffres lus via extrait de recherche). Aucune actualité postérieure trouvée : les fonds sont peut-être déjà sortis.",
+   "id": "decortiat-estelle"
+  },
+  {
+   "company": "Arcade Beauty",
+   "country": "FR",
+   "secteur": "Beauté & parfum",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Échantillons et miniatures de parfum, solutions de sampling et retail pour marques de prestige",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "Consortium d'investisseurs (ex-prêteurs ; Oaktree cité par PitchBook)",
+     "role": "majoritaire",
+     "entry_date": "2023-03",
+     "deal_type": "restructuration / recapitalisation (prise de contrôle par les prêteurs)",
+     "seller": null,
+     "source_url": "https://www.davispolk.com/experience/arcade-beauty-out-court-restructuring",
+     "source_title": "Arcade Beauty out-of-court restructuring (Davis Polk)",
+     "source_date": "2023-03-13"
+    },
+    {
+     "name": "Consortium d'investisseurs",
+     "role": "majoritaire",
+     "entry_date": "2023-03",
+     "deal_type": "recapitalisation",
+     "seller": null,
+     "source_url": "https://www.beautypackaging.com/contents/view_breaking-news/2023-03-14/arcade-beauty-concludes-recapitalization/",
+     "source_title": "Arcade Beauty concludes recapitalization (Beauty Packaging)",
+     "source_date": "2023-03-14"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Carl Allain",
+    "title": "Président-directeur général",
+    "source_url": "https://www.premiumbeautynews.com/fr/arcade-beauty-accelere-sur-le,25913"
+   },
+   "key_figures": [
+    {
+     "metric": "effectif",
+     "value": "12 sites industriels, >400 marques clientes",
+     "year": "2023",
+     "source_url": "https://www.davispolk.com/experience/arcade-beauty-out-court-restructuring"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Rachat du site parfum du Groupe Rocher à Ploërmel (89 emplois) en 2024 ; site de Val-de-Reuil (Normandie)",
+     "date": "2024-09",
+     "source_url": "https://www.premiumbeautynews.com/fr/arcade-beauty-accelere-sur-le,25913"
+    },
+    {
+     "fact": "PitchBook indique une opération 'acquired' au 31/12/2025 (non confirmée)",
+     "date": "2025-12",
+     "source_url": "https://www.pitchbook.com/profiles/company/65197-72"
+    }
+   ],
+   "notes": "Né en 2014 de la fusion d'Arcade Marketing (New York) et Bioplan (Paris). Actionnaires post-restructuration non nommés publiquement. Siège juridique (Paris ou New York) à confirmer ; pays FR retenu pour les opérations industrielles françaises.",
+   "id": "arcade-beauty"
+  },
+  {
+   "company": "Augustinus Bader",
+   "country": "GB",
+   "secteur": "Beauté & parfum",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Soin de la peau de luxe d'inspiration biotech",
+   "hq_city": "Londres",
+   "website": null,
+   "funds": [
+    {
+     "name": "General Atlantic",
+     "role": "minoritaire",
+     "entry_date": "2022-11",
+     "deal_type": "capital croissance (tour de 25 M$, valorisation ≈1 Md$)",
+     "seller": null,
+     "source_url": "https://beautymatter.com/articles/augustinus-bader-reaches-unicorn-status-with-25-million-investment",
+     "source_title": "Augustinus Bader reaches unicorn status with $25 million investment (BeautyMatter)",
+     "source_date": "2022-11"
+    },
+    {
+     "name": "Impala (holding de Jacques Veyrat)",
+     "role": "minoritaire",
+     "entry_date": null,
+     "deal_type": "capital croissance (investisseur historique, co-leader du tour 2022)",
+     "seller": null,
+     "source_url": "https://ae.fashionnetwork.com/news/Augustinus-Bader-closes-25-million-strategic-funding-round,1458173.html",
+     "source_title": "Augustinus Bader closes $25 million strategic funding round (FashionNetwork)",
+     "source_date": "2022-11-13"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Charles Rosier",
+    "title": "Co-fondateur et CEO",
+    "source_url": "https://cosmeticsbusiness.com/augustinus-bader-closes-25-million-funding-round-204789"
+   },
+   "key_figures": [],
+   "exit_signals": [
+    {
+     "fact": "La marque serait en train d'explorer des options avec la banque Centerview Partners (titre Cosmetics Business, non confirmé)",
+     "date": null,
+     "source_url": "https://cosmeticsbusiness.com/augustinus-bader-closes-25-million-funding-round-204789"
+    }
+   ],
+   "notes": "Tour 2022 mené par Impala et General Atlantic avec Antoine Arnault, Natalia Vodianova, Javier Ferrán. La page FashionNetwork n'a pas pu être lue directement (403) : rôle de General Atlantic repris via BeautyMatter / extraits de recherche.",
+   "id": "augustinus-bader"
+  },
+  {
+   "company": "111Skin",
+   "country": "GB",
+   "secteur": "Beauté & parfum",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Soin clinique de luxe (masques, sérums) issu d'une clinique de Harley Street",
+   "hq_city": "Londres",
+   "website": null,
+   "funds": [
+    {
+     "name": "SKKY Partners",
+     "role": "minoritaire",
+     "entry_date": "2025-01",
+     "deal_type": "capital croissance (participation minoritaire significative)",
+     "seller": null,
+     "source_url": "https://fashionunited.uk/news/business/111skin-secures-investment-from-kim-kardashians-skky-partners/2025012379759",
+     "source_title": "111Skin secures investment from Kim Kardashian's Skky Partners (FashionUnited)",
+     "source_date": "2025-01-23"
+    },
+    {
+     "name": "SKKY Partners",
+     "role": "minoritaire",
+     "entry_date": "2025-01",
+     "deal_type": "capital croissance",
+     "seller": null,
+     "source_url": "https://www.arnoldporter.com/en/perspectives/news/2025/01/arnold-porter-advises-111skin-on-significant-minority-investment-from-skky-partners",
+     "source_title": "Arnold & Porter advises 111SKIN on significant minority investment from SKKY Partners",
+     "source_date": "2025-01"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Vanessa Goddevrind",
+    "title": "CEO",
+    "source_url": "https://fashionunited.uk/news/business/111skin-secures-investment-from-kim-kardashians-skky-partners/2025012379759"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Fondée en 2012 par le Dr Yannis Alexandrides. Montant et pourcentage non communiqués.",
+   "id": "111skin"
+  },
+  {
+   "company": "Pusterla 1880 (Adine, Pollard Boxes)",
+   "country": "IT",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Packaging & PLV",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Coffrets rigides et étuis carton de luxe (parfum & cosmétique, vins & spiritueux)",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "Andera Partners",
+     "role": "minoritaire",
+     "entry_date": "2021",
+     "deal_type": "capital développement (minoritaire)",
+     "seller": null,
+     "source_url": "https://packagingscotland.com/2021/03/pusterla-1880-completes-landmark-acquisition-of-pollard-boxes/",
+     "source_title": "Pusterla 1880 completes landmark acquisition of Pollard Boxes (Packaging Scotland)",
+     "source_date": "2021-03"
+    },
+    {
+     "name": "Andera Partners",
+     "role": "minoritaire",
+     "entry_date": "2021-01",
+     "deal_type": "capital développement",
+     "seller": null,
+     "source_url": "https://mergr.com/transaction/andera-partners-invests-in-pusterla",
+     "source_title": "Andera Partners invests in Pusterla (Mergr)",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Roberto Marini",
+    "title": "CEO",
+    "source_url": "https://packagingscotland.com/2021/03/pusterla-1880-completes-landmark-acquisition-of-pollard-boxes/"
+   },
+   "key_figures": [],
+   "exit_signals": [
+    {
+     "fact": "Ouverture d'un nouveau site de production à Sousse (Tunisie) pour la beauté et le parfum",
+     "date": "2026-05",
+     "source_url": "https://www.ansa.it/amp/english/news/news_from_embassies/2026/05/14/tunisia-pusterla-1880-opens-new-production-site-in-sousse_c310b7ad-0f7a-45c5-9cf0-1787973a2c3b.html"
+    }
+   ],
+   "notes": "Contrôle par la famille Meana ; présence en France via Adine (acquis début 2021). CA non confirmé (ordre de grandeur ≈100 M€ évoqué en 2018 après Virojanglor).",
+   "id": "pusterla-1880"
+  }
+ ],
+ "exited": [
+  {
+   "company": "Creed",
+   "country": "FR",
+   "secteur": "Beauté & parfum",
+   "maillon": "Marque",
+   "fund": "BlackRock Long Term Private Capital (avec Javier Ferrán)",
+   "entry": "2020",
+   "exit_date": "2023-06",
+   "buyer": "Kering Beauté",
+   "source_url": "https://thenationalnews.com/business/2023/06/27/french-luxury-house-and-gucci-owner-kering-buys-house-of-creed-in-cosmetics-push",
+   "notes": "Cession de 100 % signée en juin 2023 (finalisation attendue au S2 2023), valeur estimée 1-2 Md€ ; CA ≈250 M€ en 2022 ; siège Paris."
+  },
+  {
+   "company": "Saverglass",
+   "country": "FR",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Packaging & PLV",
+   "fund": "Carlyle (Carlyle Europe Partners V)",
+   "entry": "2016",
+   "exit_date": "2023-09",
+   "buyer": "Orora (groupe australien coté)",
+   "source_url": "https://www.cfnews.net/Acces-libre/Saverglass-emballe-par-un-australien-453193",
+   "notes": "Verrier de luxe surtout spiritueux (65 % du CA) ; valorisation 1,29 Md€, CA 739 M€ et EBITDA ajusté 168 M€ (12 mois à fin juin 2023). Carlyle entré en 2016 pour 560 M€ (glass-international.com)."
+  },
+  {
+   "company": "Dr. Barbara Sturm",
+   "country": "DE",
+   "secteur": "Beauté & parfum",
+   "maillon": "Marque",
+   "fund": "Investisseurs minoritaires (Stripes, Keyhaven Capital, Vedra Partners cités par la presse, à vérifier)",
+   "entry": null,
+   "exit_date": "2024-01",
+   "buyer": "Puig (participation majoritaire)",
+   "source_url": "https://www.cosmeticsbusiness.com/puig-acquires-dr-barbara-sturm",
+   "notes": "La fondatrice garde une minorité. La présence de Stripes, Keyhaven et Vedra au capital avant la vente ne vient que d'un résumé de recherche : à confirmer."
+  },
+  {
+   "company": "Mega Verre Parfumerie / Mega Verre Pharmacie",
+   "country": "FR",
+   "secteur": "Beauté & parfum",
+   "maillon": "Sous-traitant / façonnier",
+   "fund": "NextStep Invest",
+   "entry": null,
+   "exit_date": "2023-03",
+   "buyer": "PLM Partners (holding de Christophe Cavaillès et Franck Menanteau)",
+   "source_url": "https://www.lemondedudroit.fr/deals/86554-franklin-conseille-plm-partners-acquisition-mega-verre-parfumerie-mega-verre-pharmacie.html",
+   "notes": "Contrôle qualité et remise en conformité de flacons verre nus et décorés pour la parfumerie et la cosmétique de luxe ; 157 salariés, CA 5 M€ (selon la source). Nature de NextStep Invest (fonds ou holding) à vérifier."
+  }
+ ]
+}

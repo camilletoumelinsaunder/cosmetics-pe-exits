@@ -620,7 +620,8 @@
    "entry": "2020-05",
    "exit_date": "2023-07",
    "buyer": "IDI (avec Stags)",
-   "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Prevost-Laboratory-Concept-formule-un-LBO-bis-448269"
+   "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Prevost-Laboratory-Concept-formule-un-LBO-bis-448269",
+   "maillon": "Sous-traitant / façonnier"
   },
   {
    "company": "Essences & Parfums",
@@ -629,7 +630,8 @@
    "entry": "2023-04",
    "exit_date": "2026-05",
    "buyer": "Sagard (Sagard Europe MidCap)",
-   "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/"
+   "source_url": "https://www.squirepattonboggs.com/news/squire-patton-boggs-advises-on-sale-of-essences-et-parfums/",
+   "maillon": "Sous-traitant / façonnier"
   },
   {
    "company": "New Cosmesy",
@@ -638,7 +640,8 @@
    "entry": null,
    "exit_date": "2025",
    "buyer": "Orienta Capital Partners, Armònia SGR, Square Capital Club",
-   "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital"
+   "source_url": "https://www.osborneclarke.com/news/osborne-clarke-advises-route-capital-acquisition-inunup-and-new-cosmesy-orienta-capital",
+   "maillon": "Sous-traitant / façonnier"
   },
   {
    "company": "Ancorotti Cosmetics",
@@ -647,7 +650,8 @@
    "entry": "2017",
    "exit_date": "2021-06",
    "buyer": "L-GAM",
-   "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/"
+   "source_url": "https://bebeez.it/private-equity/l-gam-al-controllo-dei-trucchi-ancorotti-cosmetics-exit-per-white-bridge/",
+   "maillon": "Sous-traitant / façonnier"
   },
   {
    "company": "Cosmogen (packaging/applicateurs, hors périmètre strict)",
@@ -656,7 +660,8 @@
    "entry": "2016-12",
    "exit_date": "2024-12",
    "buyer": "Weinberg Capital Partners (WCP#4) + BNP Paribas Développement",
-   "source_url": "https://www.cfnews.net/in-the-news/COSMOGEN-236444?page=1"
+   "source_url": "https://www.cfnews.net/in-the-news/COSMOGEN-236444?page=1",
+   "maillon": "Packaging & PLV"
   }
  ],
  "searched_but_not_confirmed": [

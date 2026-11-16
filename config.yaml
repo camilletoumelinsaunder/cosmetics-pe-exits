@@ -9,8 +9,20 @@ api:
 # The page lets the user change it; these are the defaults.
 holding_window_years: [4, 6]
 
-segments: ["Marques", "Sous-traitants", "Ingrédients et actifs", "Packaging"]
+# Classification: end market (secteur) x value-chain step (maillon) x positioning.
+taxonomy:
+  secteurs: ["Beauté & parfum", "Prêt-à-porter", "Maroquinerie & sacs", "Chaussures", "Accessoires", "Lunettes",
+             "Joaillerie & horlogerie", "Luxe multi-secteurs"]
+  maillons: ["Marque", "Sous-traitant / façonnier", "Matières & composants", "Packaging & PLV", "Distribution & retail"]
+  positionnements: ["Luxe & prestige", "Premium", "Grand public"]
+  default_secteur: "Beauté & parfum"
+  # Legacy `segment` of the cosmetics research files -> maillon
+  segment_to_maillon: {"Marques": "Marque", "Sous-traitants": "Sous-traitant / façonnier",
+                       "Ingrédients et actifs": "Matières & composants", "Packaging": "Packaging & PLV"}
 
-# NAF codes accepted when a French company is matched by name rather than SIREN (cosmetics and suppliers).
+# NAF codes accepted when a French company is matched by name rather than SIREN (cosmetics, luxury and suppliers).
 naf_cosmetics: ["20.42Z", "20.53Z", "20.59Z", "20.14Z", "21.20Z", "46.45Z", "47.75Z", "22.22Z", "22.29A", "22.29B",
-                "23.13Z", "17.21A", "17.21B", "17.21C", "17.29Z", "25.92Z", "32.99Z", "70.10Z", "64.20Z", "10.89Z", "72.19Z", "82.92Z"]
+                "23.13Z", "17.21A", "17.21B", "17.21C", "17.29Z", "25.92Z", "32.99Z", "70.10Z", "64.20Z", "10.89Z", "72.19Z", "82.92Z",
+                # luxury: clothing, leather, tanning, shoes, jewellery, watches, eyewear, related trade
+                "14.13Z", "14.14Z", "14.19Z", "14.39Z", "13.20Z", "13.99Z", "15.11Z", "15.12Z", "15.20Z", "32.12Z", "32.13Z",
+                "26.52Z", "32.50B", "46.16Z", "46.42Z", "46.48Z", "47.71Z", "47.72A", "47.77Z", "47.78A"]

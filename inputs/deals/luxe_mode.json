@@ -1,0 +1,933 @@
+{
+ "companies": [
+  {
+   "company": "Isabel Marant",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Prêt-à-porter féminin et masculin de créateur, accessoires",
+   "hq_city": "Paris",
+   "website": "https://www.isabelmarant.com",
+   "funds": [
+    {
+     "name": "Montefiore Investment",
+     "role": "majoritaire",
+     "entry_date": "2016-07",
+     "deal_type": "LBO primaire",
+     "seller": "Isabel Marant et ses associées (cession de 51 %)",
+     "source_url": "https://fashionunited.fr/actualite/business/isabel-marant-confirme-la-cession-de-51-pour-cent-de-son-capital-au-fonds-montefiore/2016072211324",
+     "source_title": "Isabel Marant confirme la cession de 51 pour cent de son capital au fonds Montefiore",
+     "source_date": "2016-07-22"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Catherine Jacquet",
+    "title": "Directrice générale (à partir de juin 2026, succède à Anouck Duranteau-Loeper)",
+    "source_url": "https://www.milanofinanza.it/fashion/isabel-marant-chiama-catherine-jacquet-come-ceo-202605261114413796"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 150 M€",
+     "year": "2016",
+     "source_url": "https://fashionunited.fr/actualite/business/isabel-marant-confirme-la-cession-de-51-pour-cent-de-son-capital-au-fonds-montefiore/2016072211324"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Montefiore étudie une cession et travaille avec JPMorgan sur les options de sortie (BoF) ; projet ensuite mis en pause avec la guerre en Ukraine",
+     "date": null,
+     "source_url": "https://www.businessoffashion.com/news/luxury/isabel-marant-majority-owner-mulls-sale-of-french-brand/"
+    },
+    {
+     "fact": "La DG déclare en 2024 que la maison « n'est pas sur le marché » ; CA plus que doublé avec Montefiore",
+     "date": "2024-06",
+     "source_url": "https://collaudo.milanofinanza.it/fashion/isabel-marant-returns-to-italy-202406041051324040"
+    },
+    {
+     "fact": "Changement de DG annoncé en mai 2026 (arrivée de Catherine Jacquet, ex-Lemaire et Fear of God)",
+     "date": "2026-05",
+     "source_url": "https://www.milanofinanza.it/fashion/isabel-marant-chiama-catherine-jacquet-come-ceo-202605261114413796"
+    }
+   ],
+   "notes": "Les fondatrices conservent 49 % (2016). Milano Finanza confirme en mai 2026 que la marque reste contrôlée par Montefiore. La presse cite une valorisation possible jusqu'à 1 Md€ lors du processus avorté (FashionNetwork, non confirmé). Une baisse des ventes de 17 % au premier semestre est titrée par Modaes (année non lue).",
+   "id": "isabel-marant"
+  },
+  {
+   "company": "Ami Paris (AMI Alexandre Mattiussi)",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter contemporain homme et femme, luxe accessible",
+   "hq_city": "Paris",
+   "website": "https://www.amiparis.com",
+   "funds": [
+    {
+     "name": "HongShan Capital Group (ex-Sequoia Capital China)",
+     "role": "majoritaire",
+     "entry_date": "2021-01",
+     "deal_type": "Prise de contrôle (capital développement)",
+     "seller": null,
+     "source_url": "https://ae.fashionnetwork.com/news/Chinese-investor-buys-controlling-stake-in-AMI,1270383.html",
+     "source_title": "Chinese investor buys controlling stake in AMI",
+     "source_date": "2021-01-07"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Mode et Finance (Bpifrance)",
+     "entry": null,
+     "exit": "2014",
+     "source_url": "https://fashionunited.fr/v1/fashion/premiere-sortie-reussie-pour-mode-et-finance-avec-ami-paris/201409266340"
+    }
+   ],
+   "ceo": {
+    "name": "Nicolas Santi-Weil",
+    "title": "Directeur général et associé",
+    "source_url": "https://fashionunited.fr/actualite/business/exclusif-le-ceo-dami-paris-leve-le-voile-sur-le-potentiel-depart-dhongshan/2025051638145"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "300 M€",
+     "year": "exercice clos mars 2023",
+     "source_url": "https://en.wikipedia.org/wiki/AMI_Paris"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "HongShan chercherait à vendre sa participation majoritaire (sources de marché)",
+     "date": "2025-05",
+     "source_url": "https://jingdaily.com/intels/2025-05/22/hongshan-capital-seeks-to-sell-ami-paris-stake"
+    },
+    {
+     "fact": "Le DG confirme que HongShan commence à réfléchir à une sortie, « pas une urgence » ; société rentable, sans dette obligataire",
+     "date": "2025-05",
+     "source_url": "https://fashionunited.fr/actualite/business/exclusif-le-ceo-dami-paris-leve-le-voile-sur-le-potentiel-depart-dhongshan/2025051638145"
+    }
+   ],
+   "notes": "Le DG évoque une entrée en 2020, la presse en janvier 2021. Aucune cession finalisée trouvée à date. Fondateur Alexandre Mattiussi (DA) et Nicolas Santi-Weil restent actionnaires.",
+   "id": "ami-paris"
+  },
+  {
+   "company": "Zadig & Voltaire",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter luxe accessible femme/homme, accessoires",
+   "hq_city": "Paris",
+   "website": "https://zadig-et-voltaire.com",
+   "funds": [
+    {
+     "name": "Peninsula Capital",
+     "role": "minoritaire",
+     "entry_date": "2020-01",
+     "deal_type": "LBO secondaire minoritaire (rachat de 30 %)",
+     "seller": "TA Associates",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Zadig-Voltaire-habille-un-nouveau-minoritaire-320119",
+     "source_title": "Zadig & Voltaire habille un nouveau minoritaire",
+     "source_date": "2020-01-20"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "TA Associates",
+     "entry": "2012",
+     "exit": "2020",
+     "source_url": "https://fashionunited.fr/actualite/business/changement-d-actionnaire-chez-zadig-voltaire/2020012122933"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 350 M€",
+     "year": "2019",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-bis/Zadig-Voltaire-habille-un-nouveau-minoritaire-320119"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Presse : la baisse anticipée des résultats inquiéterait Peninsula, qui craindrait de ne pas pouvoir revendre ses parts (spéculation)",
+     "date": "2024-01",
+     "source_url": "https://fashionunited.fr/actualite/business/depart-de-la-directrice-artistique-cecilia-boenstroem-rien-ne-va-plus-chez-zadig-voltaire/2024013034110"
+    }
+   ],
+   "notes": "Thierry Gillier reste majoritaire et président. Rémy Baume nommé DG en 2020 (à confirmer s'il est toujours en poste). Les Gillier ont racheté Poiray et Aurélie Bidermann en 2025. Une augmentation de capital du 21/01/2026 est signalée par une source juridique non vérifiée.",
+   "id": "zadig-voltaire"
+  },
+  {
+   "company": "Ba&sh",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter féminin luxe accessible",
+   "hq_city": "Paris",
+   "website": "https://ba-sh.com",
+   "funds": [
+    {
+     "name": "HLD",
+     "role": "majoritaire",
+     "entry_date": "2022-03",
+     "deal_type": "LBO secondaire",
+     "seller": "L Catterton",
+     "source_url": "https://prnewswire.com/news-releases/l-catterton-agrees-to-sell-majority-stake-in-bash-to-hld-301497703.html",
+     "source_title": "L Catterton agrees to sell majority stake in ba&sh to HLD",
+     "source_date": "2022-03-08"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "L Catterton",
+     "entry": "2015",
+     "exit": "2022",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Ba-sh-se-pare-d-un-LBO-bis-395358"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "300 M€ (25 % digital)",
+     "year": "2024",
+     "source_url": "https://www.lemondedudroit.fr/deals/97916-willkie-conseille-groupe-ba-sh-dans-le-cadre-de-sa-restructuration-financiere.html"
+    },
+    {
+     "metric": "CA",
+     "value": "environ 250 M€",
+     "year": "2021",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/LBO-Bis/Ba-sh-se-pare-d-un-LBO-bis-395358"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Sauvegarde accélérée de Muse Holding (18/03/2025) : dette obligataire et crédit-vendeur convertis en capital, 15 M€ apportés par les actionnaires ; dette financière de 218 M€ en 2024",
+     "date": "2025-03",
+     "source_url": "https://www.lemondedudroit.fr/deals/97916-willkie-conseille-groupe-ba-sh-dans-le-cadre-de-sa-restructuration-financiere.html"
+    }
+   ],
+   "notes": "Les fondatrices Barbara Boccara et Sharon Krief (avec Dan Arrouas) reprennent les commandes opérationnelles début 2025 et citent HLD comme actionnaire partenaire. La répartition du capital après conversion des créances n'est pas publiée.",
+   "id": "ba-sh"
+  },
+  {
+   "company": "A.P.C.",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter contemporain, denim et accessoires",
+   "hq_city": "Paris",
+   "website": "https://www.apc.fr",
+   "funds": [
+    {
+     "name": "L Catterton (L Catterton Europe)",
+     "role": "majoritaire",
+     "entry_date": "2023-03",
+     "deal_type": "LBO primaire",
+     "seller": "Jean et Judith Touitou (conservent une minorité significative)",
+     "source_url": "https://fashionunited.uk/news/business/l-catterton-acquires-majority-stake-in-a-p-c/2023030268196",
+     "source_title": "L Catterton acquires majority stake in A.P.C.",
+     "source_date": "2023-03-02"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Conditions financières non communiquées. Jean Touitou dirige la maison depuis 1987 ; son titre actuel n'est pas confirmé après l'opération.",
+   "id": "a-p-c"
+  },
+  {
+   "company": "Sézane",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter féminin digital-native, boutiques",
+   "hq_city": "Paris",
+   "website": "https://www.sezane.com",
+   "funds": [
+    {
+     "name": "General Atlantic",
+     "role": "minoritaire",
+     "entry_date": "2018",
+     "deal_type": "capital développement (rachat de la part de Summit Partners)",
+     "seller": "Summit Partners",
+     "source_url": "https://www.frenchweb.fr/sezane-fait-entrer-un-investisseur-americain-dans-son-capital/327140",
+     "source_title": "Sézane fait entrer un investisseur américain dans son capital",
+     "source_date": null
+    },
+    {
+     "name": "Téthys Invest (family office Bettencourt-Meyers)",
+     "role": "minoritaire",
+     "entry_date": "2022-09",
+     "deal_type": "capital développement (10-20 %)",
+     "seller": null,
+     "source_url": "https://www.cfnews.net/Acces-libre/Sezane-seduit-un-FO-413275",
+     "source_title": "Sézane séduit un FO",
+     "source_date": "2022-09-09"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Summit Partners",
+     "entry": null,
+     "exit": "2018",
+     "source_url": "https://www.frenchweb.fr/sezane-fait-entrer-un-investisseur-americain-dans-son-capital/327140"
+    }
+   ],
+   "ceo": {
+    "name": "Morgane Sézalory",
+    "title": "Fondatrice, directrice générale et directrice de la création",
+    "source_url": "https://www.modaes.com/empresas/sezane-vende-una-participacion-minoritaria-a-la-familia-propietaria-de-loreal"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 250 M€",
+     "year": "2021",
+     "source_url": "https://www.cfnews.net/Acces-libre/Sezane-seduit-un-FO-413275"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "General Atlantic a réinvesti lors du tour de 2022 ; la marque a été citée comme cible d'acquisition (FashionNetwork, exclusif)",
+     "date": null,
+     "source_url": "https://ae.fashionnetwork.com/news/Exclusive-french-label-sezane-mooted-as-acquisition-target,1397523.html"
+    }
+   ],
+   "notes": "La fondatrice reste majoritaire. Une source évoque environ 45 % pour General Atlantic (non confirmé). Téthys est un family office, pas un fonds de PE.",
+   "id": "sezane"
+  },
+  {
+   "company": "Eric Bompard",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Maille et accessoires en cachemire",
+   "hq_city": "Paris",
+   "website": "https://www.eric-bompard.com",
+   "funds": [
+    {
+     "name": "Apax Partners (devenu Seven2)",
+     "role": null,
+     "entry_date": "2018-03",
+     "deal_type": "LBO primaire (consortium avec Compagnie Marco Polo et Bpifrance)",
+     "seller": "Famille Bompard",
+     "source_url": "https://fashionunited.fr/actualite/business/eric-bompard-acquisition-finalisee-par-xavier-marie-apax-partners-et-bpifrance/2018032715237",
+     "source_title": "Eric Bompard : acquisition finalisée par Xavier Marie, Apax Partners et Bpifrance",
+     "source_date": "2018-03-27"
+    },
+    {
+     "name": "Bpifrance",
+     "role": null,
+     "entry_date": "2018-03",
+     "deal_type": "LBO primaire (co-investisseur)",
+     "seller": "Famille Bompard",
+     "source_url": "https://www.lemondedudroit.fr/deals/56961-goodwin-conseil-consortium-compagnie-marco-polo,-apax-partners-et-bpifrance-acquisition-bompard.html",
+     "source_title": "Goodwin conseil du consortium Compagnie Marco Polo, Apax Partners et Bpifrance dans l'acquisition de Bompard",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Laurence Levy",
+    "title": "Directrice générale (depuis 2023, ex-Repetto)",
+    "source_url": "https://fashionunited.fr/actualite/business/du-cachemire-toute-lannee-comment-bompard-a-renoue-avec-la-rentabilite/2025092639448"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "100 M€",
+     "year": "2024",
+     "source_url": "https://fashionunited.fr/actualite/business/du-cachemire-toute-lannee-comment-bompard-a-renoue-avec-la-rentabilite/2025092639448"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Rachat de 100 % du capital en 2018 par Compagnie Marco Polo (Xavier Marie), Apax Partners et Bpifrance, valorisation citée de 100 à 130 M€. Autorisation de l'Autorité de la concurrence le 15/02/2018. Retour à la rentabilité selon FashionUnited (2025). Répartition entre les membres du consortium inconnue.",
+   "id": "eric-bompard"
+  },
+  {
+   "company": "Sessùn",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter féminin, chaussures et accessoires",
+   "hq_city": "Marseille",
+   "website": "https://www.sessun.com",
+   "funds": [
+    {
+     "name": "Quadrivio Group (Lifestyle Fund II / Made in Italy Fund II)",
+     "role": "majoritaire",
+     "entry_date": "2024-09",
+     "deal_type": "LBO secondaire",
+     "seller": "Experienced Capital et la fondatrice (réinvestissement)",
+     "source_url": "https://www.lemondedudroit.fr/deals/94548-cession-sessun-a-quadrivio-group-goodwin-conseille-experienced-capital-cession-emma-francois-grasset-reinvestissement-quadrivio-group-financement.html",
+     "source_title": "Cession de Sessùn à Quadrivio Group",
+     "source_date": "2024-09-16"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Experienced Capital",
+     "entry": "2017",
+     "exit": "2024",
+     "source_url": "https://www.unquote.com/france/official-record/3005209/experienced-capital-takes-43-stake-in-sess-n"
+    }
+   ],
+   "ceo": {
+    "name": "Emma François",
+    "title": "Fondatrice, directrice générale et directrice de la création",
+    "source_url": "https://fashionunited.uk/news/fashion/brand-radar-boho-chic-heritage-meets-modern-momentum-at-sessun/2025100184202"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 70 M€",
+     "year": "2023",
+     "source_url": "https://www.lejournaldesentreprises.com/breve/la-marque-marseillaise-sessun-passe-sous-pavillon-italien-2104116"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "environ 10 M€",
+     "year": "2023",
+     "source_url": "https://www.lejournaldesentreprises.com/breve/la-marque-marseillaise-sessun-passe-sous-pavillon-italien-2104116"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Quadrivio détiendrait environ 70 % (FashionUnited). Les sources divergent sur le véhicule (Made in Italy Fund II selon Financecommunity, Lifestyle Fund II selon le site Quadrivio). Année des chiffres déduite de la date du deal.",
+   "id": "sessun"
+  },
+  {
+   "company": "Soeur",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter féminin et adolescent",
+   "hq_city": "Paris",
+   "website": "https://www.soeur.fr",
+   "funds": [
+    {
+     "name": "Style Capital",
+     "role": "majoritaire",
+     "entry_date": "2023-09",
+     "deal_type": "LBO secondaire (80 %)",
+     "seller": "Experienced Capital (minoritaire depuis 2016) et fondatrices",
+     "source_url": "https://fashionunited.fr/actualite/business/le-fonds-d-investissement-style-capital-acquiert-une-participation-majoritaire-dans-soeur/2023092733195",
+     "source_title": "Le fonds d'investissement Style Capital acquiert une participation majoritaire dans Soeur",
+     "source_date": "2023-09-27"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Experienced Capital",
+     "entry": "2016",
+     "exit": "2023",
+     "source_url": "https://fashionunited.fr/actualite/business/le-fonds-d-investissement-style-capital-acquiert-une-participation-majoritaire-dans-soeur/2023092733195"
+    }
+   ],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "50 M€",
+     "year": "2023",
+     "source_url": "https://www.cfnews.net/Acces-libre/Saeur-porte-par-un-fonds-italien-456416"
+    },
+    {
+     "metric": "CA",
+     "value": "65 M€",
+     "year": "2024",
+     "source_url": "https://www.mind.eu.com/retail/en/article/with-faume-soeur-launches-into-second-hand-goods-via-an-omnichannel-approach/"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Valorisation d'environ 70 M€ selon CFNEWS. Fondatrices Angélique et Domitille Brion. Objectif de croissance de 20 % en 2025.",
+   "id": "soeur"
+  },
+  {
+   "company": "Etro",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Prêt-à-porter et accessoires de luxe (motif paisley), textiles maison",
+   "hq_city": "Milan",
+   "website": "https://www.etro.com",
+   "funds": [
+    {
+     "name": "L Catterton",
+     "role": "majoritaire",
+     "entry_date": "2021-07",
+     "deal_type": "LBO primaire (60 %)",
+     "seller": "Famille Etro",
+     "source_url": "https://fashionunited.uk/news/business/l-catterton-to-buy-majority-stake-in-italian-luxury-brand-etro/2021071956665",
+     "source_title": "L Catterton to buy majority stake in Italian luxury brand Etro",
+     "source_date": "2021-07-19"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Fabrizio Cardinali",
+    "title": "CEO",
+    "source_url": "https://www.milanofinanza.it/fashion/nasce-la-nuova-etro-deal-da-70-milioni-ecco-come-cambia-l-assetto-societario-202512181953202518"
+   },
+   "key_figures": [],
+   "exit_signals": [
+    {
+     "fact": "Décembre 2025 : sortie de la famille (Gefin, 32,8 %) au profit de Rams Global, Swinger International et Sri Group ; augmentation de capital d'environ 30 M€ ; L Catterton dilué de 63,71 % à 51 %",
+     "date": "2025-12",
+     "source_url": "https://www.milanofinanza.it/fashion/nasce-la-nuova-etro-deal-da-70-milioni-ecco-come-cambia-l-assetto-societario-202512181953202518"
+    }
+   ],
+   "notes": "L Catterton a recapitalisé Etro (15 M€) après la perte de 2022 (BeBeez) ; perte de 33,4 M€ en 2023 (Milano Finanza, titre). Reuters indique une part de 51 à 55 % pour L Catterton après l'opération de 2025. Faruk Bülbül (Rams Global) devient président.",
+   "id": "etro"
+  },
+  {
+   "company": "Missoni",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Maille et prêt-à-porter de luxe, lifestyle et maison",
+   "hq_city": "Sumirago (Varese)",
+   "website": "https://www.missoni.com",
+   "funds": [
+    {
+     "name": "FSI (Fondo Strategico Italiano / FSI SGR)",
+     "role": "majoritaire",
+     "entry_date": "2018",
+     "deal_type": "capital développement (41,2 % pour environ 70 M€), puis montée à environ 73-75 % en mai 2026",
+     "seller": "Famille Missoni (2026)",
+     "source_url": "https://www.milanofinanza.it/fashion/completato-il-closing-di-fsi-su-missoni-la-griffe-rimane-italiana-202605201503479496",
+     "source_title": "Completato il closing di FSI su Missoni, la griffe rimane italiana",
+     "source_date": "2026-05-20"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Livio Proli",
+    "title": "Amministratore delegato",
+    "source_url": "https://www.milanofinanza.it/fashion/completato-il-closing-di-fsi-su-missoni-la-griffe-rimane-italiana-202605201503479496"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 130 M€ (estimation WWD)",
+     "year": "2025",
+     "source_url": "https://nssmag.com/fashion/44509/missoni-acquisizione-fondo-strategico-italiano-katjes"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "environ 20 M€ (attendu, estimation WWD)",
+     "year": "2025",
+     "source_url": "https://nssmag.com/fashion/44509/missoni-acquisizione-fondo-strategico-italiano-katjes"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Katjes International (Katjes Quiet Luxury, propriétaire de Bogner) prend environ 25-27 % et obtient une option d'achat sur les titres de FSI, pouvant le rendre majoritaire",
+     "date": "2026-03",
+     "source_url": "https://nssmag.com/fashion/44509/missoni-acquisizione-fondo-strategico-italiano-katjes"
+    }
+   ],
+   "notes": "Date d'entrée de FSI : 2018 selon nss/Bluerating, 2019 selon Milano Finanza. Part après closing : 73 % (Forbes, nss) ou 75 % (Milano Finanza). Closing le 22/05/2026.",
+   "id": "missoni"
+  },
+  {
+   "company": "Dondup (pôle Made in Italy Fund : Dondup, Rosantica, 120% Lino)",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Denim et prêt-à-porter casual haut de gamme",
+   "hq_city": "Fossombrone (Pesaro-Urbino)",
+   "website": "https://www.dondup.com",
+   "funds": [
+    {
+     "name": "Made in Italy Fund (Quadrivio & Pambianco)",
+     "role": "majoritaire",
+     "entry_date": "2021-03",
+     "deal_type": "LBO secondaire",
+     "seller": "L Catterton",
+     "source_url": "https://www.quadriviogroup.com/sites/default/files/comunicato-stampa/file/2021-05/PRESS-RELEASE-MADE-IN-ITALY-FUND-ACQUIRES-DONDUP-25-03-21.pdf",
+     "source_title": "Made in Italy Fund acquires Dondup",
+     "source_date": "2021-03-25"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "L Capital / L Catterton",
+     "entry": "2010",
+     "exit": "2021",
+     "source_url": "https://fashionunited.uk/news/business/l-capital-asia-ups-its-stake-in-dondup-to-91-percent/2015052216486"
+    }
+   ],
+   "ceo": {
+    "name": "Mauro Grange",
+    "title": "CEO du pôle mode (Dondup, Rosantica, 120% Lino), Managing Partner de Quadrivio",
+    "source_url": "https://www.quadriviogroup.com/en/media/press-review/dondup-acquisition-hunt-affordable-luxury-segment"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "66 M€ (marge d'EBITDA 28 %)",
+     "year": "2024",
+     "source_url": "https://www.quadriviogroup.com/en/media/press-review/dondup-acquisition-hunt-affordable-luxury-segment"
+    },
+    {
+     "metric": "CA",
+     "value": "100 M€ (EBITDA 25 M€)",
+     "year": "2023",
+     "source_url": "https://www.quadriviogroup.com/it/media/rassegna-stampa/quadrivio-makes-fundraising-progress-two-vehicles-explores-exit-options"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Quadrivio étudie une sortie de Dondup et prévoit de choisir un conseil (Mergermarket)",
+     "date": "2024-03",
+     "source_url": "https://www.quadriviogroup.com/it/media/rassegna-stampa/quadrivio-makes-fundraising-progress-two-vehicles-explores-exit-options"
+    },
+    {
+     "fact": "Le CEO de Quadrivio dit que 2025 « aurait pu être l'année de la sortie », mais le fonds n'est pas pressé ; Dondup cherche des acquisitions dans le luxe accessible",
+     "date": "2025-07",
+     "source_url": "https://www.quadriviogroup.com/en/media/press-review/dondup-acquisition-hunt-affordable-luxury-segment"
+    }
+   ],
+   "notes": "Contradiction : 100 M€ de CA pour 2023 contre 66 M€ pour 2024. Le premier chiffre couvre peut-être le pôle entier. Le Made in Italy Fund (premier fonds) a déjà cédé Autry en 2024 et arrive en fin de vie.",
+   "id": "dondup"
+  },
+  {
+   "company": "Forte_Forte",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "sub_segment": "Prêt-à-porter féminin haut de gamme contemporain",
+   "hq_city": null,
+   "website": "https://www.forteforte.com",
+   "funds": [
+    {
+     "name": "Style Capital",
+     "role": "majoritaire",
+     "entry_date": "2017-04",
+     "deal_type": "LBO primaire (51 %)",
+     "seller": "Fondateurs",
+     "source_url": "https://wwd.com/business-news/mergers-acquisitions/forte_forte-acquired-by-investment-fund-style-capital-10876569",
+     "source_title": "Forte_Forte acquired by investment fund Style Capital",
+     "source_date": null
+    }
+   ],
+   "previous_owners": [],
+   "ceo": null,
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "15 M€",
+     "year": "2016",
+     "source_url": "https://se.fashionnetwork.com/news/Style-Capital-investment-fund-buys-Forte-Forte,822940.html"
+    },
+    {
+     "metric": "CA",
+     "value": "29 M€",
+     "year": "2022",
+     "source_url": "https://www.milanofinanza.it/fashion/style-capital-takes-over-giuseppe-di-morabito-202304141023595436"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Mergr date l'acquisition au 28/04/2017. Style Capital a déjà cédé la majorité de Zimmermann à Advent en 2024. Aucune information de propriété postérieure à 2023 trouvée.",
+   "id": "forte-forte"
+  },
+  {
+   "company": "Gruppo Florence",
+   "country": "IT",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Plateforme de fabrication pour le luxe : confection, maille, maroquinerie, broderie",
+   "hq_city": "Florence",
+   "website": "https://www.florence-group.com",
+   "funds": [
+    {
+     "name": "Permira",
+     "role": "majoritaire",
+     "entry_date": "2023-05",
+     "deal_type": "LBO secondaire",
+     "seller": "VAM Investments, Italmobiliare, Fondo Italiano d'Investimento (ce dernier garde une minorité)",
+     "source_url": "https://www.permira.com/news-and-insights/announcements/funds-advised-by-permira-to-acquire-a-majority-stake-in-gruppo-florence-the-leading-integrated-manufacturing-hub-in-italy-for-the-international-luxury-sector",
+     "source_title": "Funds advised by Permira to acquire a majority stake in Gruppo Florence",
+     "source_date": "2023-05-25"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "VAM Investments / Fondo Italiano d'Investimento",
+     "entry": "2020",
+     "exit": "2023",
+     "source_url": "https://www.aziendabanca.it/notizie/legal/vam-investments-e-fondo-italiano-d-investimento-creano-la-holding-florence-spa-e-rilevano-tre-societa-toscane-del-lusso"
+    },
+    {
+     "name": "Italmobiliare",
+     "entry": null,
+     "exit": "2023",
+     "source_url": "https://italmobiliare.it/en/media/news/funds-advised-permira-acquire-majority-stake-gruppo-florence"
+    }
+   ],
+   "ceo": {
+    "name": "Attila Kiss",
+    "title": "CEO (Francesco Trapani président)",
+    "source_url": "https://italmobiliare.it/en/media/news/funds-advised-permira-acquire-majority-stake-gruppo-florence"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "plus de 600 M€",
+     "year": "2022",
+     "source_url": "https://bebeez.eu/?p=27411"
+    },
+    {
+     "metric": "EBITDA",
+     "value": "125 M€",
+     "year": "2022",
+     "source_url": "https://bebeez.eu/?p=27411"
+    }
+   ],
+   "exit_signals": [
+    {
+     "fact": "Le CEO vise une introduction en Bourse à Milan à horizon 3-4 ans après l'entrée de Permira",
+     "date": "2023-06",
+     "source_url": "https://misstweed.com/articles/weekly-highlights-may-29-june-2"
+    }
+   ],
+   "notes": "Valorisation de plus de 1 Md€ selon Reuters. Closing attendu au 4e trimestre 2023. L'exercice des chiffres BeBeez n'est pas précisé (2022 supposé).",
+   "id": "gruppo-florence"
+  },
+  {
+   "company": "Cadica Group (Cadica, Tessilgraf, Bernini)",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Étiquettes, étiquettes volantes, accessoires (trims) et packaging pour la mode de luxe",
+   "hq_city": null,
+   "website": "https://www.cadica.com",
+   "funds": [
+    {
+     "name": "H.I.G. Capital (H.I.G. Europe)",
+     "role": "majoritaire",
+     "entry_date": "2019-05",
+     "deal_type": "LBO secondaire (build-up)",
+     "seller": "Gradiente (pour Cadica)",
+     "source_url": "https://hig.com/news/h-i-g-capital-creates-a-leader-in-premium-and-ultra-luxury-fashion-components-through-the-acquisition-of-cadica-tessilgraf-and-bernini/",
+     "source_title": "H.I.G. Capital creates a leader in premium and ultra-luxury fashion components through the acquisition of Cadica, Tessilgraf and Bernini",
+     "source_date": "2019-05-07"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Gradiente",
+     "entry": null,
+     "exit": "2019",
+     "source_url": "https://www.just-style.com/news/italian-acquisition-forms-luxury-trim-and-packaging-supplier-2/"
+    }
+   ],
+   "ceo": {
+    "name": "Andrea Carnevali",
+    "title": "Président et fondateur de Cadica",
+    "source_url": "https://hig.com/news/h-i-g-capital-creates-a-leader-in-premium-and-ultra-luxury-fashion-components-through-the-acquisition-of-cadica-tessilgraf-and-bernini/"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Add-ons : Estro (2019), Scatolificio Cartotecnica Giorgi (2020), devenu Cadica Boxes selon BeBeez (2025), mais une autre source parle d'une cession en juin 2025. Plus de 900 clients dans plus de 90 pays.",
+   "id": "cadica-group"
+  },
+  {
+   "company": "A&B Couture (ateliers Auvinet, Baizet, AM Façons, Manoukian, Bertan)",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Ateliers de confection haut de gamme et haute couture pour maisons de luxe",
+   "hq_city": null,
+   "website": null,
+   "funds": [
+    {
+     "name": "InnovaFonds (fonds flex equity)",
+     "role": "minoritaire",
+     "entry_date": "2024-01",
+     "deal_type": "MBO",
+     "seller": "Odyssée Venture",
+     "source_url": "https://www.ideal-investisseur.fr/flash-invest/InnovaFonds-et-BNP-Paribas-entrent-au-capital-du-groupe-A-et-B-Couture-30110.html",
+     "source_title": "InnovaFonds et BNP Paribas entrent au capital du groupe A et B Couture",
+     "source_date": "2024-01-16"
+    },
+    {
+     "name": "BNP Paribas Développement",
+     "role": "minoritaire",
+     "entry_date": "2024-01",
+     "deal_type": "MBO",
+     "seller": "Odyssée Venture",
+     "source_url": "https://www.cfnews.net/L-actualite/LBO/Operations/MBO/A-B-Couture-faconne-un-MBO-sur-mesure-468585",
+     "source_title": "A&B Couture façonne un MBO sur mesure",
+     "source_date": "2024-01-16"
+    }
+   ],
+   "previous_owners": [
+    {
+     "name": "Odyssée Venture",
+     "entry": "2018",
+     "exit": "2024",
+     "source_url": "https://www.ideal-investisseur.fr/flash-invest/InnovaFonds-et-BNP-Paribas-entrent-au-capital-du-groupe-A-et-B-Couture-30110.html"
+    }
+   ],
+   "ceo": {
+    "name": "Tristan Henner",
+    "title": "Dirigeant",
+    "source_url": "https://www.ideal-investisseur.fr/flash-invest/InnovaFonds-et-BNP-Paribas-entrent-au-capital-du-groupe-A-et-B-Couture-30110.html"
+   },
+   "key_figures": [
+    {
+     "metric": "CA",
+     "value": "environ 15 M€",
+     "year": "2023",
+     "source_url": "https://www.ideal-investisseur.fr/flash-invest/InnovaFonds-et-BNP-Paribas-entrent-au-capital-du-groupe-A-et-B-Couture-30110.html"
+    },
+    {
+     "metric": "CA",
+     "value": "environ 25 M€",
+     "year": "2026",
+     "source_url": "https://www.cfnews.net/L-actualite/International/Operations/Build-up-International/A-B-Couture-maille-l-Italie-744668"
+    }
+   ],
+   "exit_signals": [],
+   "notes": "Le groupe est basé en Vendée. Le dirigeant est majoritaire depuis le MBO de 2024. En octobre 2026, il prend la majorité de Bertan, atelier italien de maille, et devient une plateforme franco-italienne. L'entrée d'Odyssée en 2018 est déduite du « MBI d'il y a six ans » cité par CFNEWS.",
+   "id": "a-b-couture"
+  },
+  {
+   "company": "Holesco (Sophie Hallette)",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "sub_segment": "Dentelle Leavers de Calais-Caudry et tulle pour la haute couture et la lingerie",
+   "hq_city": "Caudry",
+   "website": "https://www.sophiehallette.com",
+   "funds": [
+    {
+     "name": "Regain 340 (Turenne Groupe)",
+     "role": "minoritaire",
+     "entry_date": "2021-12",
+     "deal_type": "capital développement (renforcement des fonds propres)",
+     "seller": null,
+     "source_url": "https://fashionunited.fr/actualite/business/sophie-hallette-renforce-son-capital/2021120128508",
+     "source_title": "Sophie Hallette renforce son capital",
+     "source_date": "2021-12-01"
+    }
+   ],
+   "previous_owners": [],
+   "ceo": {
+    "name": "Romain Lescroart",
+    "title": "Dirigeant et actionnaire majoritaire (3e génération)",
+    "source_url": "https://fashionunited.fr/actualite/business/sophie-hallette-renforce-son-capital/2021120128508"
+   },
+   "key_figures": [],
+   "exit_signals": [],
+   "notes": "Chanel est actionnaire historique (part non précisée). 70 % du CA à l'export. Regain 340 est un fonds régional de Turenne (Hauts-de-France, Seine-et-Marne).",
+   "id": "holesco"
+  }
+ ],
+ "exited": [
+  {
+   "company": "Twinset",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "fund": "Carlyle",
+   "entry": "2012",
+   "exit_date": "2025-06",
+   "buyer": "Borletti Group et Quadrivio",
+   "source_url": "https://www.milanofinanza.it/fashion/twinset-passa-nelle-mani-di-borletti-e-quadrivio-ufficializzata-la-cessione-da-parte-di-carlyle-202506181946185923",
+   "notes": "Carlyle à 100 % depuis 2017. Prix d'environ 200 M€ selon Reuters, sur fond de fort endettement. CEO Alessandro Varisco. Twinset est de nouveau détenu par un PE (Quadrivio) : à suivre comme cible future."
+  },
+  {
+   "company": "Woolrich (Europe)",
+   "country": "IT",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "fund": "L-GAM",
+   "entry": null,
+   "exit_date": "2025-11",
+   "buyer": "BasicNet",
+   "source_url": "https://www.laconceria.it/en/finance/basicnet-acquires-woolrich-from-chinas-l-gam-e90-million-deal",
+   "notes": "VE de 90 M€ (droits Europe et 100 % de Woolrich Europe SpA), payée en partie en actions BasicNet. L-GAM reste actionnaire de BasicNet. Closing attendu en décembre 2025, non confirmé."
+  },
+  {
+   "company": "Riri Group",
+   "country": "CH",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Matières & composants",
+   "fund": "Chequers Capital",
+   "entry": "2018",
+   "exit_date": "2023-03",
+   "buyer": "Oerlikon",
+   "source_url": "https://it.riri.com/wp-content/uploads/2023/03/Riri-entra-nel-Gruppo-Oerlikon.pdf",
+   "notes": "Fabricant de fermetures éclair et de boutons de luxe. Chequers avait pris 65 % en 2018 (vendeur : Gilde Buy Out). Accord signé le 16/12/2022."
+  },
+  {
+   "company": "Sessùn",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "fund": "Experienced Capital",
+   "entry": "2017",
+   "exit_date": "2024-09",
+   "buyer": "Quadrivio Group",
+   "source_url": "https://goodwinlaw.com/en/news-and-events/news/2024/09/announcements-privateequity-experienced-capital-sells-its-stake",
+   "notes": "Experienced Capital détenait 43 % depuis juin 2017. Quadrivio prend la majorité (environ 70 %)."
+  },
+  {
+   "company": "Soeur",
+   "country": "FR",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "fund": "Experienced Capital",
+   "entry": "2016",
+   "exit_date": "2023-09",
+   "buyer": "Style Capital",
+   "source_url": "https://fashionunited.fr/actualite/business/le-fonds-d-investissement-style-capital-acquiert-une-participation-majoritaire-dans-soeur/2023092733195",
+   "notes": "Style Capital prend 80 %, avec une valorisation d'environ 70 M€ (CFNEWS)."
+  },
+  {
+   "company": "Gruppo Florence",
+   "country": "IT",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Sous-traitant / façonnier",
+   "fund": "VAM Investments / Italmobiliare (Fondo Italiano d'Investimento réinvestit en minoritaire)",
+   "entry": "2020",
+   "exit_date": "2023-05",
+   "buyer": "Permira",
+   "source_url": "https://italmobiliare.it/en/media/news/funds-advised-permira-acquire-majority-stake-gruppo-florence",
+   "notes": "Annonce en mai 2023, closing attendu au 4e trimestre 2023. Plus-value d'environ 78 M€ pour Italmobiliare."
+  },
+  {
+   "company": "MinervaHub",
+   "country": "IT",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Sous-traitant / façonnier",
+   "fund": "Xenon Private Equity",
+   "entry": "2022",
+   "exit_date": "2023-04",
+   "buyer": "San Quirico (familles Garrone et Mondini)",
+   "source_url": "https://www.laconceria.it/en/finance/san-quirico-acquires-75-of-minerva-hub-valued-500-million/",
+   "notes": "San Quirico prend 75 % (valorisation d'environ 500 M€). MergerLinks signale le 01/12/2025 l'achèvement du rachat de la majorité auprès de Xenon : sortie résiduelle de Xenon à vérifier."
+  }
+ ]
+}

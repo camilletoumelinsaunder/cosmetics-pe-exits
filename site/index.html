@@ -1,4 +1,4 @@
-<title>Sorties PE Cosmétique</title>
+<title>Sorties PE Cosmétique & Luxe</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -71,7 +71,7 @@ table.data th { position: sticky; top: 0; background: var(--surface); text-align
 table.data th[aria-sort="ascending"]::after { content: " ↑"; } table.data th[aria-sort="descending"]::after { content: " ↓"; }
 table.data td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 table.data tbody tr[data-id] { cursor: pointer; } table.data tbody tr[data-id]:hover { background: var(--accent-soft); }
-td.name { font-weight: 600; } .sub { font-weight: 400; color: var(--muted); font-size: .78rem; }
+td.name { font-weight: 600; } td.ca { max-width: 120px; overflow: hidden; text-overflow: ellipsis; } .sub { font-weight: 400; color: var(--muted); font-size: .78rem; }
 .num { text-align: right; font-family: var(--f-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .76rem; font-weight: 500; white-space: nowrap; }
 .chip.in { background: var(--ok-soft); color: var(--ok); } .chip.over { background: var(--bad-soft); color: var(--bad); }
@@ -101,13 +101,17 @@ td.name { font-weight: 600; } .sub { font-weight: 400; color: var(--muted); font
 .person:last-child { border-bottom: 0; }
 form.inline { display: grid; gap: 8px; grid-template-columns: 1fr 1fr; }
 form.inline .full { grid-column: 1 / -1; }
+table.mx td, table.mx th { text-align: center; } table.mx td.lab, table.mx th.lab { text-align: left; white-space: nowrap; }
+table.mx button { border: 0; background: transparent; cursor: pointer; font-family: var(--f-data); padding: 2px 8px; border-radius: var(--r); color: var(--ink); }
+table.mx button:hover, table.mx button.on { background: var(--accent-soft); color: var(--accent); } table.mx .z { color: var(--line); }
+.chip.lux { background: var(--accent-soft); color: var(--accent); } .chip.prem { background: var(--warn-soft); color: var(--warn); } .chip.gp { background: var(--idle-soft); color: var(--idle); }
 .saved { color: var(--ok); font-size: .82rem; } .err { color: var(--bad); }
 @media (prefers-reduced-motion: no-preference) { .drawer { animation: slide .18s ease-out; } @keyframes slide { from { transform: translateX(24px); opacity: .6; } } }
 </style>
 
 <header class="top">
-  <div><h1>Sorties PE Cosmétique</h1><div class="hint" id="meta">Chargement…</div></div>
-  <div class="hint">France en priorité, Europe en complément · marques, sous-traitants, ingrédients, packaging</div>
+  <div><h1>Sorties PE Cosmétique & Luxe</h1><div class="hint" id="meta">Chargement…</div></div>
+  <div class="hint">France en priorité, Europe en complément · beauté, mode, maroquinerie, chaussures, accessoires, lunettes, joaillerie · marques et chaîne d'approvisionnement</div>
 </header>
 <div class="wrap">
   <aside class="rail" id="rail" aria-label="Filtres"></aside>
@@ -126,8 +130,10 @@ const EFFECTIF = { "00": "0 salarié", "01": "1–2", "02": "3–5", "03": "6–
   "31": "200–249", "32": "250–499", "41": "500–999", "42": "1 000–1 999", "51": "2 000–4 999", "52": "5 000–9 999", "53": "10 000 et plus" };
 const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
                 set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
-const F = { q: "", segments: [], countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null, sort: ["prio", 1], ...store.get("pe-filters", {}) };
-const save = () => store.set("pe-filters", F);
+const F = { q: "", secteurs: [], maillons: [], pos: "all", countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null, sort: ["prio", 1], ...store.get("pe-filters-v2", {}) };
+const save = () => store.set("pe-filters-v2", F);
+const POSCLS = { "Luxe & prestige": "lux", "Premium": "prem", "Grand public": "gp" };
+const posChip = v => v ? `<span class="chip ${POSCLS[v] || "gp"}">${esc(v)}</span>` : "";
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const nf0 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }), nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 const TBC = `<span class="tbc">à vérifier</span>`;
@@ -228,7 +234,9 @@ function rail() {
   const [lo, hi] = win();
   document.getElementById("rail").innerHTML = `
     <div class="field"><label for="f-q">Recherche (société, fonds, dirigeant)</label><input id="f-q" type="search" value="${esc(F.q)}"></div>
-    <div class="field"><span class="lbl">Segment</span><div class="checks">${DATA.segments.map(s => `<label><input type="checkbox" data-seg="${esc(s)}" ${!F.segments.length || F.segments.includes(s) ? "checked" : ""}> ${esc(s)}</label>`).join("")}</div></div>
+    <div class="field"><span class="lbl">Secteur</span><div class="checks">${DATA.secteurs.map(s => `<label><input type="checkbox" data-sec="${esc(s)}" ${!F.secteurs.length || F.secteurs.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.secteur === s).length}</span></label>`).join("")}</div></div>
+    <div class="field"><span class="lbl">Maillon de la chaîne de valeur</span><div class="checks">${DATA.maillons.map(s => `<label><input type="checkbox" data-mai="${esc(s)}" ${!F.maillons.length || F.maillons.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.maillon === s).length}</span></label>`).join("")}</div></div>
+    <div class="field"><label for="f-pos">Positionnement</label><select id="f-pos"><option value="all">Tous</option>${DATA.positionnements.map(v => `<option ${F.pos === v ? "selected" : ""}>${esc(v)}</option>`).join("")}<option value="lp" ${F.pos === "lp" ? "selected" : ""}>Luxe & premium</option></select></div>
     <div class="field"><label for="f-country">Pays</label><select id="f-country"><option value="all">Tous</option><option value="FR" ${F.countries === "FR" ? "selected" : ""}>France</option><option value="EU" ${F.countries === "EU" ? "selected" : ""}>Europe hors France</option>
       ${countries.filter(c => c !== "FR").map(c => `<option value="${esc(c)}" ${F.countries === c ? "selected" : ""}>${esc(c)}</option>`).join("")}</select></div>
     <div class="field"><label for="f-status">Fenêtre de sortie</label><select id="f-status">
@@ -245,14 +253,16 @@ function rail() {
   on("f-status", "change", t => F.status = t.value);
   on("f-suivi", "change", t => F.suivi = t.value);
   on("f-verif", "change", t => F.verif = t.value);
+  on("f-pos", "change", t => F.pos = t.value);
   on("f-min", "change", t => F.min = Math.max(1, +t.value || 1));
   on("f-max", "change", t => F.max = Math.max(F.min ?? 1, +t.value || 1));
-  document.querySelectorAll("[data-seg]").forEach(b => b.addEventListener("change", () => {
-    F.segments = [...document.querySelectorAll("[data-seg]:checked")].map(x => x.dataset.seg);
-    if (F.segments.length === DATA.segments.length) F.segments = [];
-    save(); render(false);
-  }));
-  document.getElementById("f-reset").onclick = () => { Object.assign(F, { q: "", segments: [], countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null }); save(); render(true); };
+  for (const [attr, key, all] of [["sec", "secteurs", DATA.secteurs], ["mai", "maillons", DATA.maillons]])
+    document.querySelectorAll(`[data-${attr}]`).forEach(b => b.addEventListener("change", () => {
+      F[key] = [...document.querySelectorAll(`[data-${attr}]:checked`)].map(x => x.dataset[attr]);
+      if (F[key].length === all.length) F[key] = [];
+      save(); render(false);
+    }));
+  document.getElementById("f-reset").onclick = () => { Object.assign(F, { q: "", secteurs: [], maillons: [], pos: "all", countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null }); save(); render(true); };
 }
 
 /* ---------- Main view ---------- */
@@ -260,15 +270,16 @@ function filtered() {
   const q = F.q.trim().toLowerCase();
   return DATA.companies.filter(c => {
     const e = exitInfo(c);
-    return (!F.segments.length || F.segments.includes(c.segment))
+    return (!F.secteurs.length || F.secteurs.includes(c.secteur)) && (!F.maillons.length || F.maillons.includes(c.maillon))
+      && (F.pos === "all" || (F.pos === "lp" ? c.positionnement !== "Grand public" : c.positionnement === F.pos))
       && (F.countries === "all" || (F.countries === "EU" ? c.country !== "FR" : c.country === F.countries))
       && (F.status === "all" || (F.status === "sig" ? (c.exit_signals || []).length > 0 : e.status === F.status))
       && (F.suivi === "all" || suiviOf(c.id) === F.suivi)
       && (F.verif === "all" || c.verification === F.verif)
-      && (!q || [c.company, c.legal_name, c.sub_segment, c.hq_city, c.ceo?.name, ...(c.funds || []).map(f => f.name), ...(c.officers || []).map(o => o.nom)].join(" ").toLowerCase().includes(q));
+      && (!q || [c.company, c.legal_name, c.sub_segment, c.secteur, c.maillon, c.hq_city, c.ceo?.name, ...(c.funds || []).map(f => f.name), ...(c.officers || []).map(o => o.nom)].join(" ").toLowerCase().includes(q));
   });
 }
-const SORTS = { prio: prio, nom: c => c.company.toLowerCase(), segment: c => c.segment, pays: c => c.country, fonds: c => (c.ref_fund || "~").toLowerCase(),
+const SORTS = { prio: prio, nom: c => c.company.toLowerCase(), segment: c => `${DATA.secteurs.indexOf(c.secteur)}-${DATA.maillons.indexOf(c.maillon)}`, pays: c => c.country, fonds: c => (c.ref_fund || "~").toLowerCase(),
   entree: c => c.ref_entry || "9999", hold: c => -(exitInfo(c).hold ?? -1), fenetre: c => exitInfo(c).open ?? 9999,
   signaux: c => -(c.exit_signals || []).length, verif: c => c.verification === "Vérifié" ? 0 : 1, ca: c => -((c.finances || []).find(f => f.metric === "ca")?.value ?? -1), contacts: c => -contactsOf(c.id).length,
   dernier: c => SUIVI[c.id]?.dernier_contact ? -Date.parse(SUIVI[c.id].dernier_contact) : Infinity, next: c => (SUIVI[c.id]?.next_steps || "~").toLowerCase(), suivi: c => STATUTS.indexOf(suiviOf(c.id)) };
@@ -305,12 +316,12 @@ function render(rebuildRail) {
     <div class="kpi"><span class="v">${nf0.format(rows.filter(c => c.verification !== "Vérifié").length)}</span><span class="l">À vérifier</span></div>
     <div class="kpi"><span class="v">${nf0.format(rows.filter(c => contactsOf(c.id).length).length)}</span><span class="l">Avec au moins un contact</span></div></div>`;
   const cols = [
-    ["nom", "Société", c => `<td class="name">${esc(c.company)}<div class="sub">${esc(c.sub_segment || c.segment || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></td>`],
+    ["nom", "Société", c => `<td class="name">${esc(c.company)}<div class="sub">${esc(c.sub_segment || c.maillon || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></td>`],
     ["prio", "Priorité", c => { const v = prioOf(c), mine = !!SUIVI[c.id]?.priorite;
       return `<td><select class="cell-in prio-${{ Haute: "h", Moyenne: "m", Basse: "b" }[v] || "x"}" data-f="priorite" data-id="${esc(c.id)}" aria-label="Priorité de ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>
         ${["Haute", "Moyenne", "Basse"].map(o => `<option ${v === o ? "selected" : ""}>${o}</option>`).join("")}</select>
         <div class="sub">${mine ? `modifiée${c.priorite && c.priorite !== v ? ` (avis Claude : ${esc(c.priorite)})` : ""}` : "avis Claude"}</div></td>`; }],
-    ["segment", "Segment", c => `<td>${esc(c.segment || "—")}</td>`],
+    ["segment", "Classification", c => `<td>${esc(c.secteur || "—")}<div class="sub">${esc(c.maillon || "")}</div>${posChip(c.positionnement)}</td>`],
     ["pays", "Pays", c => `<td class="mono">${esc(c.country || "?")}</td>`],
     ["fonds", "Fonds de référence", c => `<td>${c.ref_fund ? esc(c.ref_fund) : TBC}${(c.funds || []).length > 1 ? `<div class="sub">+ ${c.funds.length - 1} autre(s)</div>` : ""}</td>`],
     ["entree", "Entrée", c => `<td class="mono">${c.ref_entry ? esc(fmtYm(c.ref_entry)) : TBC}</td>`],
@@ -318,7 +329,9 @@ function render(rebuildRail) {
     ["fenetre", "Fenêtre estimée", c => { const x = exitInfo(c); return `<td><span class="chip ${x.status}">${esc(x.label)}</span>${x.open ? `<div class="sub mono">${x.open}–${x.close}</div>` : ""}</td>`; }],
     ["verif", "Fiabilité", c => `<td><span class="chip ${c.verification === "Vérifié" ? "in" : "soon"}" title="${esc((c.verification_points || []).join(" · "))}">${esc(c.verification)}</span>${(c.verification_points || []).length ? `<div class="sub">${c.verification_points.length} point(s)</div>` : ""}</td>`],
     ["signaux", "Signaux", c => `<td>${(c.exit_signals || []).length ? `<span class="chip sig">${c.exit_signals.length} publié(s)</span>` : "—"}</td>`],
-    ["ca", "CA", c => { const v = latestCA(c); return `<td class="num">${v ? `${esc(v.v)}<div class="sub">${esc(v.year || "")}</div>` : TBC}</td>`; }],
+    ["ca", "CA", c => { const v = latestCA(c); if (!v) return `<td class="num">${TBC}</td>`;
+      const full = String(v.v), s = full.replace(/\s*\(.*?\)\s*/g, " ").trim(), short = s.length > 14 ? s.slice(0, 13).trim() + "…" : s;
+      return `<td class="num ca" title="${esc(full)}">${esc(short)}<div class="sub">${esc(v.year || "")}</div></td>`; }],
     ["contacts", "Contacts", c => { const n = contactsOf(c.id).length; return `<td class="num">${n || "—"}</td>`; }],
     ["suivi", "Suivi", c => `<td><span class="chip track">${esc(suiviOf(c.id))}</span></td>`],
     ["dernier", "Dernier contact", c => `<td><input type="date" class="cell-in" data-f="dernier_contact" data-id="${esc(c.id)}" value="${esc(SUIVI[c.id]?.dernier_contact || "")}" aria-label="Dernier contact avec ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}></td>`],
@@ -327,7 +340,14 @@ function render(rebuildRail) {
   const head = cols.map(([key, l]) => `<th data-sort="${key}" ${F.sort[0] === key ? `aria-sort="${F.sort[1] > 0 ? "ascending" : "descending"}"` : ""}>${l}</th>`).join("");
   const body = rows.map(c => `<tr data-id="${esc(c.id)}" tabindex="0">${cols.map(x => x[2](c)).join("")}</tr>`).join("");
   const exited = DATA.exited || [];
-  document.getElementById("main").innerHTML = `${kpis}
+  const cell = (s, m) => rows.filter(c => c.secteur === s && c.maillon === m).length;
+  const usedM = DATA.maillons.filter(m => rows.some(c => c.maillon === m)), usedS = DATA.secteurs.filter(s => rows.some(c => c.secteur === s));
+  const one = (k, v) => F[k].length === 1 && F[k][0] === v;
+  const matrix = `<section class="card"><div class="row"><h2>Classification</h2><span class="hint">Secteur × maillon, sociétés filtrées. Cliquez une case pour filtrer, recliquez pour tout afficher.</span></div>
+    <div class="tablebox" style="max-height:none"><table class="data mx"><thead><tr><th class="lab">Secteur</th>${usedM.map(m => `<th>${esc(m)}</th>`).join("")}<th>Total</th></tr></thead><tbody>
+    ${usedS.map(s => `<tr><td class="lab">${esc(s)}</td>${usedM.map(m => { const n = cell(s, m); return `<td>${n ? `<button data-mx="${esc(s)}|${esc(m)}" class="${one("secteurs", s) && one("maillons", m) ? "on" : ""}">${n}</button>` : `<span class="z">·</span>`}</td>`; }).join("")}<td class="mono">${rows.filter(c => c.secteur === s).length}</td></tr>`).join("")}
+    </tbody></table></div></section>`;
+  document.getElementById("main").innerHTML = `${kpis}${matrix}
     <section class="card chart"><div class="row"><h2>Ouverture de la fenêtre de sortie</h2><span class="hint">Année d'entrée du fonds + ${win()[0]} ans, sociétés filtrées</span></div>${chart(rows)}
       <p class="hint">Estimation calculée à partir des dates d'entrée sourcées et de votre hypothèse de détention. La première barre regroupe les fenêtres déjà ouvertes.</p></section>
     <section class="card"><div class="row"><h2>${nf0.format(rows.length)} sociétés</h2>
@@ -335,7 +355,7 @@ function render(rebuildRail) {
       <div class="tablebox"><table class="data" id="tbl"><thead><tr>${head}</tr></thead><tbody>${body || `<tr><td colspan="${cols.length}" class="hint">Aucune société avec ces filtres.</td></tr>`}</tbody></table></div>
       <p class="hint">Tri par priorité : la vôtre si vous l'avez changée, sinon mon avis argumenté dans chaque fiche, puis signal de sortie publié, puis position dans la fenêtre.</p></section>
     ${exited.length ? `<section class="card"><h2>Sorties récentes (références)</h2><div class="tablebox"><table class="data"><thead><tr><th>Société</th><th>Fonds sortant</th><th>Acquéreur</th><th>Date</th><th>Source</th></tr></thead><tbody>
-      ${exited.map(x => `<tr><td class="name">${esc(x.company)}<div class="sub">${esc(x.segment || "")} · ${esc(x.country || "")}</div></td><td>${esc(x.fund || x.seller || (x.funds || []).map(f => f.name).join(", ") || "—")}</td><td>${esc(x.buyer || "—")}</td><td class="mono">${esc(fmtYm(x.exit_date) || x.exit_date || "—")}</td><td>${x.source_url ? srcLink(x.source_url, "lien") : "—"}</td></tr>`).join("")}
+      ${exited.map(x => `<tr><td class="name">${esc(x.company)}<div class="sub">${esc([x.secteur, x.maillon, x.country].filter(Boolean).join(" · "))}</div></td><td>${esc(x.fund || x.seller || (x.funds || []).map(f => f.name).join(", ") || "—")}</td><td>${esc(x.buyer || "—")}</td><td class="mono">${esc(fmtYm(x.exit_date) || x.exit_date || "—")}</td><td>${x.source_url ? srcLink(x.source_url, "lien") : "—"}</td></tr>`).join("")}
       </tbody></table></div></section>` : ""}`;
   const tb = document.querySelector("#main .tablebox"); if (box && tb) tb.scrollTop = box; if (!rebuildRail) window.scrollTo(0, y);
   const tbl = document.getElementById("tbl");
@@ -347,6 +367,11 @@ function render(rebuildRail) {
     catch { /* keep the typed value so the viewer can retry */ }
     el.disabled = false;
   }));
+  document.querySelectorAll("[data-mx]").forEach(b => b.onclick = () => {
+    const [s, m] = b.dataset.mx.split("|");
+    if (one("secteurs", s) && one("maillons", m)) { F.secteurs = []; F.maillons = []; } else { F.secteurs = [s]; F.maillons = [m]; }
+    save(); render(true);
+  });
   document.getElementById("sort-prio").onclick = () => { F.sort = ["prio", 1]; save(); render(false); };
   document.getElementById("xls").onclick = ev => exportExcel(rows, ev.currentTarget);
 }
@@ -375,7 +400,7 @@ function openSheet(id, keepScroll) {
       <textarea class="p-note" data-id="${esc(p.id)}" rows="1" placeholder="Note sur ce contact" aria-label="Note sur ${esc(p.prenom)} ${esc(p.nom)}" style="width:100%;margin-top:6px;padding:5px 8px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg)">${esc(p.notes || "")}</textarea></div>
       <div><button class="btn small" data-del="${esc(p.id)}">Retirer</button></div></div>`;
   root.innerHTML = `<div class="scrim" id="scrim"></div><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title">
-    <div class="row"><div><h2 id="d-title">${esc(c.company)}</h2><div class="hint">${esc(c.segment || "")}${c.sub_segment ? " · " + esc(c.sub_segment) : ""} · ${esc(c.country || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></div>
+    <div class="row"><div><h2 id="d-title">${esc(c.company)}</h2><div class="hint">${esc(c.secteur || "")} · ${esc(c.maillon || "")} · ${esc(c.positionnement || "")}${c.sub_segment ? " · " + esc(c.sub_segment) : ""} · ${esc(c.country || "")}${c.hq_city ? " · " + esc(c.hq_city) : ""}</div></div>
       <button class="btn" id="d-close" aria-label="Fermer">Fermer</button></div>
     ${c.comment ? `<div class="why"><h3>Commentaire</h3><p style="margin:0"><strong>Statut.</strong> ${esc(c.comment.statut)}</p><p style="margin:0"><strong>Pourquoi une sortie.</strong> ${esc(c.comment.these)}</p>
       <div class="src">${esc(c.comment.auteur)}, ${fmtDay(c.comment.date)}. Analyse à partir des faits sourcés ci-dessous, à confirmer.</div></div>` : ""}
@@ -454,7 +479,7 @@ async function exportExcel(rows, btn) {
   if (!DL || !window.XLSX) return;
   btn.disabled = true;
   const sheet = rows.map(c => { const e = exitInfo(c), ca = latestCA(c), ppl = contactsOf(c.id);
-    return { "Société": c.company, "Segment": c.segment, "Sous-segment": c.sub_segment || "", "Pays": c.country, "Ville": c.hq_city || "", "SIREN": c.siren || "",
+    return { "Société": c.company, "Secteur": c.secteur, "Maillon": c.maillon, "Positionnement": c.positionnement || "", "Sous-segment": c.sub_segment || "", "Pays": c.country, "Ville": c.hq_city || "", "SIREN": c.siren || "",
       "Fonds de référence": c.ref_fund || "à vérifier", "Entrée": c.ref_entry || "à vérifier", "Détention (ans)": e.hold != null ? +e.hold.toFixed(1) : "",
       "Fenêtre estimée": e.open ? `${e.open}–${e.close}` : "", "Statut fenêtre": e.label, "Signaux publiés": (c.exit_signals || []).map(s => `${s.date || ""} ${s.fact}`).join(" | "),
       "Autres fonds": (c.funds || []).filter(f => f.name !== c.ref_fund).map(f => f.name).join(", "), "CEO": c.ceo?.name || "à vérifier",
@@ -467,7 +492,7 @@ async function exportExcel(rows, btn) {
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sheet), "Sociétés");
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sources), "Sources");
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["Fenêtre de sortie", `Estimation : année d'entrée + ${win()[0]} à ${win()[1]} ans (hypothèse de l'utilisateur)`], ["Export", new Date().toISOString()]]), "Méthode");
-  try { await DL.save({ filename: `sorties-pe-cosmetique-${new Date().toISOString().slice(0, 10)}.xlsx`, data: new Blob([XLSX.write(wb, { type: "array", bookType: "xlsx" })]) }); } catch {}
+  try { await DL.save({ filename: `sorties-pe-cosmetique-luxe-${new Date().toISOString().slice(0, 10)}.xlsx`, data: new Blob([XLSX.write(wb, { type: "array", bookType: "xlsx" })]) }); } catch {}
   btn.disabled = false;
 }
 

@@ -1,4 +1,4 @@
-"""Build site/data.json for the cosmetics PE-exit tracker.
+"""Build site/data.json for the cosmetics & luxury PE-exit tracker.
 
 Inputs (never invented, every fact carries its source URL):
 - inputs/deals/*.json   research files: {"companies": [...], "exited": [...]} (see CLAUDE.md for the schema)
@@ -120,7 +120,7 @@ def merge(companies: list[dict]) -> list[dict]:
             merged[key] = {**c, "funds": list(c.get("funds") or []), "_files": [c.get("_file")]}
             continue
         cur["_files"].append(c.get("_file"))
-        for field in ("country", "segment", "sub_segment", "hq_city", "website", "siren", "ceo", "notes"):
+        for field in ("country", "segment", "secteur", "maillon", "positionnement", "sub_segment", "hq_city", "website", "siren", "ceo", "notes"):
             cur[field] = cur.get(field) or c.get(field)
         for field in ("key_figures", "exit_signals", "previous_owners"):
             cur[field] = (cur.get(field) or []) + (c.get(field) or [])
@@ -168,7 +168,7 @@ def registry_lookup(c: dict, cache: dict, offline: bool) -> dict | None:
         target = norm(short_name(c["company"]))
         rec = next((r for r in results if r.get("activite_principale") in CFG["naf_cosmetics"] and r.get("etat_administratif") == "A"
                     and target in {norm(r.get("nom_complet") or ""), norm(r.get("nom_raison_sociale") or ""), norm(r.get("sigle") or "")}), None)
-        method = "Nom identique et code NAF cosmétique (rapprochement à vérifier)"
+        method = "Nom identique et code NAF du périmètre cosmétique ou luxe (rapprochement à vérifier)"
     if not rec:
         return None
     return {"rec": rec, "fetched_at": entry["fetched_at"], "method": method}
@@ -190,6 +190,22 @@ def registry_fields(found: dict) -> dict:
             "commune": siege.get("libelle_commune"), "departement": siege.get("departement"),
             "date_creation": rec.get("date_creation"), "finances": finances[:8], "officers": officers,
             "registry_source": API_SOURCE, "registry_fetched_at": fetched, "registry_match": found["method"]}
+
+
+# ---------- Classification ----------
+
+def classify(rec: dict, review: dict) -> None:
+    """Secteur x maillon x positionnement (labels in config.yaml). Old research files only carry `segment`
+    (cosmetics value-chain step), so they map to secteur "Beauté & parfum" and the matching maillon.
+    The analyst positionnement in review.json wins over the research file."""
+    tax = CFG["taxonomy"]
+    rec["secteur"] = rec.get("secteur") or tax["default_secteur"]
+    rec["maillon"] = rec.get("maillon") or tax["segment_to_maillon"].get(rec.get("segment") or "")
+    rec["positionnement"] = review.get("positionnement") or rec.get("positionnement")
+    rec["segment"] = rec["maillon"]  # kept for older page code and exports
+    for field, allowed in (("secteur", tax["secteurs"]), ("maillon", tax["maillons"]), ("positionnement", tax["positionnements"])):
+        if rec.get(field) not in allowed:
+            print(f"  classification: {rec.get('company')} -> {field} inconnu ({rec.get(field)!r})")
 
 
 # ---------- Output ----------
@@ -231,7 +247,7 @@ def build(offline: bool = False) -> dict:
     reviews, out = load_review(), []
     for c in companies:
         rec = {k: v for k, v in c.items() if not k.startswith("_")}
-        rec["id"] = slug(c["company"])
+        rec["id"] = c.get("id") or slug(c["company"])  # explicit id keeps shared follow-up and contacts attached
         rec["sources_files"] = sorted({f for f in c.get("_files", []) if f})
         for f in rec["funds"]:
             f["entry_date"] = parse_date(f.get("entry_date"))
@@ -243,6 +259,7 @@ def build(offline: bool = False) -> dict:
         rec["ref_fund"], rec["ref_entry"] = (ref["name"], ref["entry_date"]) if ref else (None, None)
         rec["verification"], rec["verification_points"] = verification(rec, review)
         rec["priorite"] = review.get("priorite")
+        classify(rec, review)
         if review.get("these"):
             rec["comment"] = {"statut": review.get("statut"), "these": review["these"], "auteur": "Analyse Claude à partir des sources citées",
                               "date": dt.date.today().isoformat()}
@@ -254,8 +271,13 @@ def build(offline: bool = False) -> dict:
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
     out.sort(key=lambda r: r["company"].lower())
+    for x in exited:
+        x["secteur"] = x.get("secteur") or CFG["taxonomy"]["default_secteur"]
+        x["maillon"] = x.get("maillon") or CFG["taxonomy"]["segment_to_maillon"].get(x.get("segment") or "")
+        x["segment"] = x["maillon"]
     return {"generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-            "holding_window_years": CFG["holding_window_years"], "segments": CFG["segments"],
+            "holding_window_years": CFG["holding_window_years"], "secteurs": CFG["taxonomy"]["secteurs"],
+            "maillons": CFG["taxonomy"]["maillons"], "positionnements": CFG["taxonomy"]["positionnements"],
             "companies": out, "exited": exited}
 
 
