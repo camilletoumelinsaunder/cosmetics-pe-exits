@@ -154,7 +154,7 @@
    "positionnement": "Premium",
    "sub_segment": "Bijoux en argent (luxe accessible)",
    "hq_city": "Monaco",
-   "website": null,
+   "website": "https://www.apm.mc",
    "funds": [
     {
      "name": "TPG Capital Asia (avec China Synergy et Trail)",
@@ -255,7 +255,7 @@
    "positionnement": "Luxe & prestige",
    "sub_segment": "Joaillerie (marque propre et fabrication)",
    "hq_city": "Turin",
-   "website": null,
+   "website": "https://www.mattioli.it",
    "funds": [
     {
      "name": "Peninsula Capital",
@@ -300,7 +300,7 @@
    "positionnement": "Luxe & prestige",
    "sub_segment": "Boîtes, fermoirs, bracelets en métal précieux et développement de complications pour la haute horlogerie",
    "hq_city": "Neuchâtel",
-   "website": null,
+   "website": "https://www.groupechaumont.ch",
    "funds": [
     {
      "name": "Vam Investments",
@@ -332,7 +332,7 @@
    "positionnement": "Luxe & prestige",
    "sub_segment": "PLV et merchandising pour marques de luxe",
    "hq_city": null,
-   "website": null,
+   "website": "https://www.rc-group.fr",
    "funds": [
     {
      "name": "Crédit Mutuel Equity",
@@ -367,7 +367,7 @@
    "positionnement": "Luxe & prestige",
    "sub_segment": "Bijouteries-horlogeries haut de gamme (région lyonnaise)",
    "hq_city": "Lyon",
-   "website": null,
+   "website": "https://www.maier.fr",
    "funds": [
     {
      "name": "Garibaldi Participations",

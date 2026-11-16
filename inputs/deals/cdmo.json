@@ -6,7 +6,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "formulation & fabrication soin/parfum, conditionnement",
    "hq_city": "Chartres",
-   "website": null,
+   "website": "https://www.groupe-vabel.com",
    "siren": null,
    "funds": [
     {
@@ -82,7 +82,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "CDMO formulation soin, maquillage, parfum (microfluidique)",
    "hq_city": "Marseille",
-   "website": null,
+   "website": "https://www.capsum.com",
    "siren": null,
    "funds": [
     {
@@ -183,7 +183,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "CDMO formulation/façonnage cosmétiques (liquides, semi-liquides, coulage à chaud, solaires) et compléments alimentaires",
    "hq_city": null,
-   "website": null,
+   "website": "https://www.prevostlaboratoryconcept.com",
    "siren": null,
    "funds": [
     {
@@ -255,7 +255,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "façonnier cosmétiques, parfums et dispositifs médicaux (multi-sites, dont Sicaf)",
    "hq_city": "Paris",
-   "website": null,
+   "website": "https://www.anjac.com",
    "siren": null,
    "funds": [
     {
@@ -311,7 +311,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "façonnier soin / produits solides, syndets, liquides",
    "hq_city": null,
-   "website": null,
+   "website": "https://lorcos.fr",
    "siren": null,
    "funds": [
     {
@@ -344,7 +344,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "création et fabrication de compositions parfumées pour marques/distributeurs",
    "hq_city": "Grasse",
-   "website": null,
+   "website": "https://essencesetparfums.com",
    "siren": null,
    "funds": [
     {
@@ -436,7 +436,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "CDMO maquillage (formulation, vrac, remplissage, packaging)",
    "hq_city": "Lallio (Bergame)",
-   "website": null,
+   "website": "https://www.gothacosmetics.com",
    "siren": null,
    "funds": [
     {
@@ -489,7 +489,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "maquillage (mascara, poudres), soin et fond de teint",
    "hq_city": null,
-   "website": null,
+   "website": "https://www.ancorotticosmetics.com",
    "siren": null,
    "funds": [
     {
@@ -551,7 +551,7 @@
    "segment": "Sous-traitants",
    "sub_segment": "maquillage (InUnUp, Trendcolor) et parfums private label (New Cosmesy)",
    "hq_city": null,
-   "website": null,
+   "website": "https://www.newtrendup.it",
    "siren": null,
    "funds": [
     {
