@@ -62,6 +62,7 @@ main { display: grid; gap: 16px; min-width: 0; }
 .btn { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 7px 12px; cursor: pointer; }
 .btn:hover { border-color: var(--accent); }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 .btn[disabled] { opacity: .5; cursor: not-allowed; }
 .btn.small { padding: 3px 8px; font-size: .8rem; }
 .tablebox { max-height: 640px; overflow: auto; border: 1px solid var(--line); border-radius: var(--r); }
@@ -377,10 +378,9 @@ function render(rebuildRail) {
     ${usedS.map(s => `<tr><td class="lab">${esc(s)}</td>${usedM.map(m => { const n = cell(s, m); return `<td>${n ? `<button data-mx="${esc(s)}|${esc(m)}" class="${one("secteurs", s) && one("maillons", m) ? "on" : ""}">${n}</button>` : `<span class="z">·</span>`}</td>`; }).join("")}<td class="mono">${rows.filter(c => c.secteur === s).length}</td></tr>`).join("")}
     </tbody></table></div></section>`;
   const cut = (t, n) => { t = String(t || ""); return t.length > n ? t.slice(0, n - 1).trim() + "…" : t; };
-  const top = rows.filter(c => prioOf(c) === "Haute")
-    .sort((a, b) => (b.exit_signals || []).length - (a.exit_signals || []).length || ORDER[exitInfo(a).status] - ORDER[exitInfo(b).status] || (exitInfo(b).hold || 0) - (exitInfo(a).hold || 0))
-    .slice(0, 10);
-  const topHTML = `<section class="card"><div class="row"><h2>Top ${top.length || ""} à approcher</h2><span class="hint">Priorité haute, avec signal publié d'abord</span></div>
+  // Same order as "Trier par priorité de sortie", so the Top 10 is the head of the sorted table.
+  const top = rows.filter(c => prioOf(c) === "Haute").sort((a, b) => prio(a) - prio(b)).slice(0, 10);
+  const topHTML = `<section class="card"><div class="row"><h2>Top ${top.length || ""} à approcher</h2><span class="hint">Priorité haute, même ordre que le tri par priorité</span></div>
     ${top.length ? `<ol class="top">${top.map((c, i) => { const x = exitInfo(c); return `<li data-open="${esc(c.id)}" tabindex="0"><span class="n">${i + 1}</span>
       <div class="row"><span class="nm">${logo(c)}<strong>${esc(c.company.split(" (")[0])}</strong></span><span>${(c.exit_signals || []).length ? `<span class="chip sig">${c.exit_signals.length} signal${c.exit_signals.length > 1 ? "s" : ""}</span> ` : ""}<span class="chip ${x.status}">${esc(x.label)}</span></span></div>
       <div class="sub">${esc(c.secteur || "")} · ${esc(c.maillon || "")} · ${c.ref_fund ? `${esc(c.ref_fund)}${c.ref_entry ? ` depuis ${esc(fmtYm(c.ref_entry))}` : ""}` : "fonds à vérifier"}</div>
@@ -401,7 +401,7 @@ function render(rebuildRail) {
       ${soon.length ? `<ul>${soon.map(c => { const x = exitInfo(c); return `<li data-open="${esc(c.id)}" tabindex="0"><div class="row"><span class="nm">${logo(c)}<strong>${esc(c.company.split(" (")[0])}</strong></span><span class="mono hint">${x.open}</span></div>
         <div class="sub">${esc(c.secteur || "")} · ${c.ref_fund ? esc(cut(c.ref_fund, 40)) : "fonds à vérifier"}</div></li>`; }).join("")}</ul>${nextAll > soon.length ? `<p class="hint" style="margin:0">+ ${nextAll - soon.length} autre(s) : filtre « Fenêtre de sortie ».</p>` : ""}` : `<p class="hint">Aucune société avec ces filtres.</p>`}</aside></section>
     <section class="card"><div class="row"><h2>${nf0.format(rows.length)} sociétés</h2>
-      <div class="row"><button class="btn" id="detail" aria-pressed="${F.detail ? "true" : "false"}">${F.detail ? "Vue courte" : "Vue détaillée"}</button><button class="btn" id="sort-prio" ${F.sort[0] === "prio" ? "disabled" : ""}>Trier par priorité de sortie</button><button class="btn primary" id="xls" ${DL ? "" : "disabled"}>Exporter en Excel</button></div></div>
+      <div class="row"><button class="btn" id="detail" aria-pressed="${F.detail ? "true" : "false"}">${F.detail ? "Vue courte" : "Vue détaillée"}</button><button class="btn" id="sort-prio" aria-pressed="${F.sort[0] === "prio" && F.sort[1] > 0 ? "true" : "false"}">${F.sort[0] === "prio" && F.sort[1] > 0 ? "✓ Trié par priorité de sortie" : "Trier par priorité de sortie"}</button><button class="btn primary" id="xls" ${DL ? "" : "disabled"}>Exporter en Excel</button></div></div>
       <div class="tablebox"><table class="data" id="tbl"><thead><tr>${head}</tr></thead><tbody>${body || `<tr><td colspan="${shown.length}" class="hint">Aucune société avec ces filtres.</td></tr>`}</tbody></table></div>
       <p class="hint">Tri par priorité : la vôtre si vous l'avez changée, sinon mon avis argumenté dans chaque fiche, puis signal de sortie publié, puis position dans la fenêtre.</p></section>
     ${exited.length ? `<section class="card"><h2>Sorties récentes (références)</h2><div class="tablebox"><table class="data"><thead><tr><th>Société</th><th>Fonds sortant</th><th>Acquéreur</th><th>Date</th><th>Source</th></tr></thead><tbody>
