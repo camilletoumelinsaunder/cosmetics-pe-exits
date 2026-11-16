@@ -246,6 +246,8 @@ def build(offline: bool = False) -> dict:
     companies = merge(research + load_import())
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     reviews, out = load_review(), []
+    logos_path = ROOT / "site" / "logos" / "index.json"  # written by scripts/fetch_logos.py
+    logos = json.loads(logos_path.read_text(encoding="utf-8")) if logos_path.exists() else {}
     for c in companies:
         rec = {k: v for k, v in c.items() if not k.startswith("_")}
         rec["id"] = c.get("id") or slug(c["company"])  # explicit id keeps shared follow-up and contacts attached
@@ -260,6 +262,8 @@ def build(offline: bool = False) -> dict:
         rec["ref_fund"], rec["ref_entry"] = (ref["name"], ref["entry_date"]) if ref else (None, None)
         rec["verification"], rec["verification_points"] = verification(rec, review)
         rec["a_completer"] = review.get("a_completer") or []  # missing details that do not question ownership
+        if rec["id"] in logos and (ROOT / "site" / "logos" / logos[rec["id"]]["file"]).exists():
+            rec["logo"] = "logos/" + logos[rec["id"]]["file"]
         rec["priorite"] = review.get("priorite")
         classify(rec, review)
         if review.get("these"):

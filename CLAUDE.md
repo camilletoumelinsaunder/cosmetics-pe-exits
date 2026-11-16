@@ -55,6 +55,7 @@ key_figures: [{metric, value, year, source_url}], exit_signals: [{fact, date, so
 ## Commands
 ```bash
 python3 -m pytest -q tests
+python3 scripts/fetch_logos.py                      # logos from official websites only, before build.py
 python3 scripts/build.py
 python3 scripts/linkedin_sync.py                    # needs LINKEDIN_TOKEN
 python3 scripts/match_contacts.py data/linkedin_connections.json /tmp/contacts
@@ -62,8 +63,9 @@ python3 scripts/match_contacts.py data/linkedin_connections.json /tmp/contacts
 
 ## Page
 Private claude.ai artifact: https://claude.ai/artifact/GE9MGoJKM4uxanSU4y3uon (capabilities db, user, downloads).
-Republish `site/index.html` with `data.json` to that URL without `capabilities` or `icon`, so the page keeps its
-database. Never modify the page's database except creating missing `contacts` documents (see above).
+Republish `site/index.html` with `data.json` and every `site/logos/*.png` (published as `logos/<file>`) to that URL
+without `capabilities` or `icon`, so the page keeps its database. Logos come only from the company's `website`
+(`site/logos/index.json` keeps the source URL); without one the page shows initials. Never modify the page's database except creating missing `contacts` documents (see above).
 
 ## Refresh every two weeks (scheduled routine, 1st and 15th of the month, 03:23 Paris)
 The scheduled task wakes the owner's working Claude session (fresh sessions cannot attach the repo), which pulls this repo and:
