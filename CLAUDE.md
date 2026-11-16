@@ -41,6 +41,9 @@ key_figures: [{metric, value, year, source_url}], exit_signals: [{fact, date, so
 - Collection `contacts` (shared): `li-<slug>` from LinkedIn, `m-<random>` manual; fields prenom, nom, poste,
   entreprise, linkedin, liens [{type: societe|fonds, societe: <company id>, nom}], notes, source, updated_by (user id).
   Personal data: never in the repo, data.json or the API cache.
+- `inputs/review.json`: per company `doubts` (on ownership or entry date: the company stays « À vérifier »),
+  `a_completer` (missing details such as CA or stake, shown but not blocking « Vérifié »), statut, these, priorite,
+  positionnement, override.ref_fund.
 - Collection `suivi/<company id>` (shared): statut, priorite (overrides the analyst priority), dernier_contact,
   next_steps, prochaine_date, updated_at, updated_by. Names are resolved at view time from user ids, never stored.
 - Collection `data/users/<viewer id>/pe/notes/<company id>` (private to each viewer): free notes.

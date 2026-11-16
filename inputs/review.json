@@ -468,15 +468,16 @@
   "priorite": "Basse"
  },
  "gainerie-91": {
-  "doubts": [
+  "statut": "Fabricant francilien d'écrins et PLV de luxe (>750 salariés), majorité conservée par le dirigeant, CAPZA Transition minoritaire depuis février 2024.",
+  "these": "Entrée récente et minoritaire, en phase de build-up (Créanog 2026) : sortie de CAPZA plutôt à horizon 2028-2029.",
+  "priorite": "Basse",
+  "a_completer": [
    "CA du groupe",
    "Pourcentage détenu par CAPZA",
    "Part du CA réalisée avec la beauté/parfum",
    "Ville du siège (Île-de-France)"
   ],
-  "statut": "Fabricant francilien d'écrins et PLV de luxe (>750 salariés), majorité conservée par le dirigeant, CAPZA Transition minoritaire depuis février 2024.",
-  "these": "Entrée récente et minoritaire, en phase de build-up (Créanog 2026) : sortie de CAPZA plutôt à horizon 2028-2029.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "decortiat-estelle": {
   "doubts": [
@@ -511,13 +512,14 @@
   "priorite": "Moyenne"
  },
  "111skin": {
-  "doubts": [
+  "statut": "Marque britannique de soin de luxe, minoritaire significatif SKKY Partners (fonds co-fondé par Kim Kardashian) depuis janvier 2025.",
+  "these": "Entrée très récente orientée croissance (DTC, Amérique du Nord, Asie) : sortie peu probable avant 2028.",
+  "priorite": "Basse",
+  "a_completer": [
    "Pourcentage détenu",
    "CA"
   ],
-  "statut": "Marque britannique de soin de luxe, minoritaire significatif SKKY Partners (fonds co-fondé par Kim Kardashian) depuis janvier 2025.",
-  "these": "Entrée très récente orientée croissance (DTC, Amérique du Nord, Asie) : sortie peu probable avant 2028.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "pusterla-1880": {
   "doubts": [
@@ -531,34 +533,37 @@
   "priorite": "Moyenne"
  },
  "isabel-marant": {
-  "doubts": [
+  "statut": "Montefiore Investment détient 51 % depuis juillet 2016, aux côtés des fondatrices ; CA d'environ 150 M€ à l'entrée, plus que doublé depuis selon la DG.",
+  "these": "Détention de plus de 10 ans, tentative de vente déjà menée avec JPMorgan, et nouvelle DG en 2026 : une reprise du processus de cession à 12-24 mois est plausible.",
+  "priorite": "Haute",
+  "a_completer": [
    "Date exacte du mandat JPMorgan (vers 2022)",
    "CA récent (2024-2025) non trouvé",
    "Pourcentage actuel de Montefiore"
   ],
-  "statut": "Montefiore Investment détient 51 % depuis juillet 2016, aux côtés des fondatrices ; CA d'environ 150 M€ à l'entrée, plus que doublé depuis selon la DG.",
-  "these": "Détention de plus de 10 ans, tentative de vente déjà menée avec JPMorgan, et nouvelle DG en 2026 : une reprise du processus de cession à 12-24 mois est plausible.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "ami-paris": {
-  "doubts": [
+  "statut": "HongShan (ex-Sequoia China) contrôle Ami depuis janvier 2021 ; CA de 300 M€ sur l'exercice 2022-23.",
+  "these": "Sortie ouvertement étudiée depuis mai 2025, marque rentable et en croissance : cible naturelle pour un fonds européen ou un groupe de luxe.",
+  "priorite": "Haute",
+  "a_completer": [
    "Pourcentage exact détenu par HongShan",
    "Avancement du processus de cession depuis mai 2025 (banque, acquéreurs)",
    "CA 2024-2025"
   ],
-  "statut": "HongShan (ex-Sequoia China) contrôle Ami depuis janvier 2021 ; CA de 300 M€ sur l'exercice 2022-23.",
-  "these": "Sortie ouvertement étudiée depuis mai 2025, marque rentable et en croissance : cible naturelle pour un fonds européen ou un groupe de luxe.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "zadig-voltaire": {
-  "doubts": [
+  "statut": "Peninsula détient environ 30 % depuis janvier 2020 (rachat à TA Associates), le fondateur Thierry Gillier gardant le contrôle ; CA d'environ 350 M€ en 2019.",
+  "these": "Minoritaire depuis près de 7 ans, Peninsula doit organiser sa liquidité (rachat par le fondateur ou un nouveau minoritaire), mais les performances récentes semblent compliquer l'opération.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "DG actuel",
    "CA récent",
    "Objet de l'augmentation de capital de janvier 2026 (entrée d'un nouvel investisseur ?)"
   ],
-  "statut": "Peninsula détient environ 30 % depuis janvier 2020 (rachat à TA Associates), le fondateur Thierry Gillier gardant le contrôle ; CA d'environ 350 M€ en 2019.",
-  "these": "Minoritaire depuis près de 7 ans, Peninsula doit organiser sa liquidité (rachat par le fondateur ou un nouveau minoritaire), mais les performances récentes semblent compliquer l'opération.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "ba-sh": {
   "doubts": [
@@ -571,27 +576,29 @@
   "priorite": "Basse"
  },
  "a-p-c": {
-  "doubts": [
+  "statut": "L Catterton contrôle A.P.C. depuis mars 2023, les fondateurs gardant une minorité significative.",
+  "these": "Détention récente (3,5 ans) : une sortie est plus probable à horizon 2028 qu'à 12-24 mois, sauf opportunité.",
+  "priorite": "Basse",
+  "a_completer": [
    "CA et EBITDA",
    "Pourcentage de L Catterton",
    "Dirigeant opérationnel nommé après l'entrée du fonds"
   ],
-  "statut": "L Catterton contrôle A.P.C. depuis mars 2023, les fondateurs gardant une minorité significative.",
-  "these": "Détention récente (3,5 ans) : une sortie est plus probable à horizon 2028 qu'à 12-24 mois, sauf opportunité.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "sezane": {
-  "doubts": [
-   "Pourcentage actuel de General Atlantic",
-   "CA 2024-2025",
-   "Date de l'article FashionNetwork sur la cible d'acquisition"
-  ],
   "statut": "General Atlantic est minoritaire depuis 2018 (réinvesti en 2022) aux côtés de Téthys Invest ; Morgane Sézalory est majoritaire ; CA d'environ 250 M€ en 2021.",
   "these": "Après 8 ans de détention, GA devra trouver une liquidité (secondaire minoritaire ou rachat de Téthys), mais la fondatrice contrôle le calendrier.",
   "priorite": "Moyenne",
   "override": {
    "ref_fund": "General Atlantic"
-  }
+  },
+  "a_completer": [
+   "Pourcentage actuel de General Atlantic",
+   "CA 2024-2025",
+   "Date de l'article FashionNetwork sur la cible d'acquisition"
+  ],
+  "doubts": []
  },
  "eric-bompard": {
   "doubts": [
@@ -604,52 +611,57 @@
   "priorite": "Moyenne"
  },
  "sessun": {
-  "doubts": [
+  "statut": "Quadrivio majoritaire (environ 70 %) depuis septembre 2024 après la sortie d'Experienced Capital ; CA d'environ 70 M€.",
+  "these": "Entrée récente : pas de sortie attendue avant 2028-2029.",
+  "priorite": "Basse",
+  "a_completer": [
    "Véhicule exact de Quadrivio",
    "Pourcentage détenu (environ 70 %)",
    "Exercice des chiffres 70 M€ / 10 M€"
   ],
-  "statut": "Quadrivio majoritaire (environ 70 %) depuis septembre 2024 après la sortie d'Experienced Capital ; CA d'environ 70 M€.",
-  "these": "Entrée récente : pas de sortie attendue avant 2028-2029.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "soeur": {
-  "doubts": [
+  "statut": "Style Capital détient 80 % depuis septembre 2023 ; CA de 65 M€ en 2024 (+30 %).",
+  "these": "Entrée récente et marque en croissance : sortie peu probable avant 2027-2028.",
+  "priorite": "Basse",
+  "a_completer": [
    "Nom du dirigeant opérationnel",
    "CA 2025"
   ],
-  "statut": "Style Capital détient 80 % depuis septembre 2023 ; CA de 65 M€ en 2024 (+30 %).",
-  "these": "Entrée récente et marque en croissance : sortie peu probable avant 2027-2028.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "etro": {
-  "doubts": [
+  "statut": "L Catterton majoritaire depuis 2021, ramené à environ 51 % en décembre 2025 après l'entrée de Rams Global, Swinger International et Sri Group.",
+  "these": "Marque déficitaire en redressement : l'arrivée d'actionnaires industriels turcs pourrait préparer une sortie progressive de L Catterton, mais elle dépendra du retour à la rentabilité.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "CA 2024-2025",
    "Part exacte de L Catterton (51 % ou 55 %)",
    "Pactes ou options d'achat des nouveaux minoritaires turcs"
   ],
-  "statut": "L Catterton majoritaire depuis 2021, ramené à environ 51 % en décembre 2025 après l'entrée de Rams Global, Swinger International et Sri Group.",
-  "these": "Marque déficitaire en redressement : l'arrivée d'actionnaires industriels turcs pourrait préparer une sortie progressive de L Catterton, mais elle dépendra du retour à la rentabilité.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "missoni": {
-  "doubts": [
+  "statut": "FSI, présent depuis 2018 (41,2 %), détient environ 73-75 % depuis mai 2026 après la sortie de la famille ; Katjes a pris 25-27 %.",
+  "these": "Sortie déjà organisée : l'option d'achat de Katjes sur les titres de FSI rend probable un passage sous contrôle de Katjes dans les prochaines années.",
+  "priorite": "Haute",
+  "a_completer": [
    "Conditions et calendrier d'exercice de l'option d'achat de Katjes",
    "Part exacte de FSI (73 % ou 75 %)",
    "CA publié 2025"
   ],
-  "statut": "FSI, présent depuis 2018 (41,2 %), détient environ 73-75 % depuis mai 2026 après la sortie de la famille ; Katjes a pris 25-27 %.",
-  "these": "Sortie déjà organisée : l'option d'achat de Katjes sur les titres de FSI rend probable un passage sous contrôle de Katjes dans les prochaines années.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "dondup": {
-  "doubts": [
+  "statut": "Le Made in Italy Fund (Quadrivio/Pambianco) contrôle Dondup depuis mars 2021 ; CA de 66 M€ et marge d'EBITDA de 28 % en 2024.",
+  "these": "Sortie étudiée depuis 2024 par un premier fonds en fin de vie, sur un actif très rentable : processus probable à 12-24 mois.",
+  "priorite": "Haute",
+  "a_completer": [
    "Périmètre des chiffres 2023 et 2024",
    "Nomination d'un conseil de cession"
   ],
-  "statut": "Le Made in Italy Fund (Quadrivio/Pambianco) contrôle Dondup depuis mars 2021 ; CA de 66 M€ et marge d'EBITDA de 28 % en 2024.",
-  "these": "Sortie étudiée depuis 2024 par un premier fonds en fin de vie, sur un actif très rentable : processus probable à 12-24 mois.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "forte-forte": {
   "doubts": [
@@ -662,32 +674,35 @@
   "priorite": "Moyenne"
  },
  "gruppo-florence": {
-  "doubts": [
+  "statut": "Permira contrôle Gruppo Florence depuis 2023 (valorisation de plus de 1 Md€), FII restant minoritaire ; CA de plus de 600 M€.",
+  "these": "Introduction en Bourse visée vers 2026-2027, mais le ralentissement du luxe pourrait repousser la sortie de Permira.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Exercice des chiffres 600 M€ / 125 M€",
    "Actualité 2025-2026 (IPO, acquisitions)"
   ],
-  "statut": "Permira contrôle Gruppo Florence depuis 2023 (valorisation de plus de 1 Md€), FII restant minoritaire ; CA de plus de 600 M€.",
-  "these": "Introduction en Bourse visée vers 2026-2027, mais le ralentissement du luxe pourrait repousser la sortie de Permira.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "cadica-group": {
-  "doubts": [
+  "statut": "H.I.G. Europe contrôle Cadica Group depuis mai 2019 (fusion de Cadica, Tessilgraf et Bernini).",
+  "these": "Plus de 7 ans de détention sur une plateforme de composants mode luxe : sortie (vente à un industriel ou LBO secondaire) attendue, sous réserve de confirmer qu'elle n'a pas déjà eu lieu.",
+  "priorite": "Haute",
+  "a_completer": [
    "HIG est-il toujours actionnaire en 2026 ?",
    "CA et EBITDA du groupe",
    "Sort de Scatolificio Giorgi en 2025"
   ],
-  "statut": "H.I.G. Europe contrôle Cadica Group depuis mai 2019 (fusion de Cadica, Tessilgraf et Bernini).",
-  "these": "Plus de 7 ans de détention sur une plateforme de composants mode luxe : sortie (vente à un industriel ou LBO secondaire) attendue, sous réserve de confirmer qu'elle n'a pas déjà eu lieu.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "a-b-couture": {
-  "doubts": [
+  "statut": "MBO de janvier 2024 avec InnovaFonds et BNP Paribas Développement minoritaires ; CA d'environ 25 M€ et build-up en Italie en 2026.",
+  "these": "Petite plateforme en build-up et entrée récente des fonds : une sortie n'est pas attendue avant 2028, mais l'actif pourrait intéresser une plateforme sous-traitante plus grande.",
+  "priorite": "Basse",
+  "a_completer": [
    "Parts respectives d'InnovaFonds et de BNP Paribas Développement",
    "Exercice du CA de 25 M€"
   ],
-  "statut": "MBO de janvier 2024 avec InnovaFonds et BNP Paribas Développement minoritaires ; CA d'environ 25 M€ et build-up en Italie en 2026.",
-  "these": "Petite plateforme en build-up et entrée récente des fonds : une sortie n'est pas attendue avant 2028, mais l'actif pourrait intéresser une plateforme sous-traitante plus grande.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "holesco": {
   "doubts": [
@@ -700,13 +715,14 @@
   "priorite": "Basse"
  },
  "camille-fournet": {
-  "doubts": [
+  "statut": "Crédit Mutuel Equity et Turenne minoritaires depuis février 2024 ; dirigeant majoritaire ; CA 40 M€.",
+  "these": "Entrée récente des fonds (2024) ; une sortie avant 2028 est peu probable, sauf transmission anticipée du dirigeant qui ouvrirait la porte à un LBO majoritaire.",
+  "priorite": "Basse",
+  "a_completer": [
    "Pourcentages détenus par les fonds non publiés",
    "Calendrier de transmission du dirigeant (évènement de liquidité potentiel)"
   ],
-  "statut": "Crédit Mutuel Equity et Turenne minoritaires depuis février 2024 ; dirigeant majoritaire ; CA 40 M€.",
-  "these": "Entrée récente des fonds (2024) ; une sortie avant 2028 est peu probable, sauf transmission anticipée du dirigeant qui ouvrirait la porte à un LBO majoritaire.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "maroquinerie-thomas": {
   "doubts": [
@@ -730,82 +746,90 @@
   "priorite": "Basse"
  },
  "conceria-pasubio": {
-  "doubts": [
+  "statut": "PAI Partners majoritaire depuis 2021 (LBO secondaire auprès de CVC) ; CA 2025 de 323,5 M€.",
+  "these": "Cinq ans de détention et un pivot vers le luxe pour valoriser l'actif ; mais le levier de 11,6x et la crise de l'automobile rendent une sortie en 2026-2027 difficile, sauf refinancement ou cession partielle de la branche mode.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "CEO actuel",
    "Part de CA mode/luxe après Antiba",
    "Lancement de la plateforme UNICA (vu seulement en résultat de recherche)"
   ],
-  "statut": "PAI Partners majoritaire depuis 2021 (LBO secondaire auprès de CVC) ; CA 2025 de 323,5 M€.",
-  "these": "Cinq ans de détention et un pivot vers le luxe pour valoriser l'actif ; mais le levier de 11,6x et la crise de l'automobile rendent une sortie en 2026-2027 difficile, sauf refinancement ou cession partielle de la branche mode.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "rino-mastrotto-group": {
-  "doubts": [
+  "statut": "NB Renaissance (≈65 %) contrôle depuis 2019 ; Prada 10 % depuis 2025 ; CA 2024 ≈360 M€, EBITDA 75 M€.",
+  "these": "Sept ans de détention, fonds de 2015 en fin de vie et entrée d'un industriel (Prada) au capital : sortie très plausible à 12-24 mois, Prada ou un autre groupe du luxe étant des acquéreurs naturels.",
+  "priorite": "Haute",
+  "a_completer": [
    "Répartition exacte du capital après l'entrée de Prada",
    "Montant co-investi par NB Aurora (11 % pour 20 M€ selon résumé BeBeez non lu en entier)"
   ],
-  "statut": "NB Renaissance (≈65 %) contrôle depuis 2019 ; Prada 10 % depuis 2025 ; CA 2024 ≈360 M€, EBITDA 75 M€.",
-  "these": "Sept ans de détention, fonds de 2015 en fin de vie et entrée d'un industriel (Prada) au capital : sortie très plausible à 12-24 mois, Prada ou un autre groupe du luxe étant des acquéreurs naturels.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "amf-group": {
-  "doubts": [
+  "statut": "Alpha Private Equity majoritaire depuis juillet 2019 ; buy-and-build porté à plus de 130 M€ de CA.",
+  "these": "Plus de sept ans de détention, CA multiplié par 2,5, rumeurs de cession rapportées par la presse : candidat de sortie prioritaire dans les composants métalliques du luxe.",
+  "priorite": "Haute",
+  "a_completer": [
    "Date et contenu de l'article Il Sole 24 Ore sur la cession (GBL)",
    "EBITDA récent",
    "Pourcentage actuel d'Alpha"
   ],
-  "statut": "Alpha Private Equity majoritaire depuis juillet 2019 ; buy-and-build porté à plus de 130 M€ de CA.",
-  "these": "Plus de sept ans de détention, CA multiplié par 2,5, rumeurs de cession rapportées par la presse : candidat de sortie prioritaire dans les composants métalliques du luxe.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "mtw-holding": {
-  "doubts": [
+  "statut": "DBAG Fund VIII majoritaire (≈62 %) depuis 2022 ; CA 2025 de 124 M€, doublé par croissance externe.",
+  "these": "Buy-and-build achevé en grande partie et 4,5 ans de détention : sortie envisageable à horizon 2027, mais le ralentissement du luxe peut décaler le calendrier.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "CEO actuel",
    "EBITDA",
    "Aucun processus de vente trouvé"
   ],
-  "statut": "DBAG Fund VIII majoritaire (≈62 %) depuis 2022 ; CA 2025 de 124 M€, doublé par croissance externe.",
-  "these": "Buy-and-build achevé en grande partie et 4,5 ans de détention : sortie envisageable à horizon 2027, mais le ralentissement du luxe peut décaler le calendrier.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "eurmoda": {
-  "doubts": [
+  "statut": "Aurora Growth Capital actionnaire de référence (≈50 %) depuis 2025 ; Mindful Capital Partners conserve ≈27 % depuis 2019 ; ≈90 M€ de CA pro forma.",
+  "these": "Aurora vient d'entrer, mais MCP (fonds de 2019) devra liquider sa part résiduelle de ≈27 % : sortie partielle plausible à 24 mois.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Pourcentage exact d'Aurora (47 % ou 50 %)",
    "Date de closing (prévu fin juillet 2025)",
    "CA 2025 consolidé"
   ],
-  "statut": "Aurora Growth Capital actionnaire de référence (≈50 %) depuis 2025 ; Mindful Capital Partners conserve ≈27 % depuis 2019 ; ≈90 M€ de CA pro forma.",
-  "these": "Aurora vient d'entrer, mais MCP (fonds de 2019) devra liquider sa part résiduelle de ≈27 % : sortie partielle plausible à 24 mois.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "altofare-group": {
-  "doubts": [
+  "statut": "White Bridge Investments II contrôle depuis fin 2021 une plateforme d'une dizaine de sociétés (110 M€ de CA 2023), lourdement endettée.",
+  "these": "Situation tendue : une cession contrainte, une prise de contrôle par les créanciers ou un apport à un consolidateur (AMF, MTWH) est plausible ; actif à suivre en « special situation ».",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Issue de la renégociation de dette (2025-2026)",
    "CEO actuel (Davide Aicardi ?)",
    "CA 2024-2025"
   ],
-  "statut": "White Bridge Investments II contrôle depuis fin 2021 une plateforme d'une dizaine de sociétés (110 M€ de CA 2023), lourdement endettée.",
-  "these": "Situation tendue : une cession contrainte, une prise de contrôle par les créanciers ou un apport à un consolidateur (AMF, MTWH) est plausible ; actif à suivre en « special situation ».",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "tre-zeta-group": {
-  "doubts": [
+  "statut": "Koinos Capital majoritaire depuis décembre 2021 ; plateforme de composants chaussure (>40 M€ de CA à l'entrée).",
+  "these": "Buy-and-build mature (5 add-ons) et 5 ans de détention en 2026 : sortie secondaire ou vers un industriel plausible à 12-24 mois, sous réserve de la reprise du marché de la chaussure de luxe.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "CA actuel après add-ons",
    "Dirigeant",
    "Aucun processus de vente identifié"
   ],
-  "statut": "Koinos Capital majoritaire depuis décembre 2021 ; plateforme de composants chaussure (>40 M€ de CA à l'entrée).",
-  "these": "Buy-and-build mature (5 add-ons) et 5 ans de détention en 2026 : sortie secondaire ou vers un industriel plausible à 12-24 mois, sous réserve de la reprise du marché de la chaussure de luxe.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "pole-chaussure-equita": {
-  "doubts": [
+  "statut": "EQUITA Smart Capital-ELTIF majoritaire depuis août 2024 d'un pôle de >30 M€ de CA.",
+  "these": "Entrée récente et phase de buy-and-build : sortie peu probable avant 2028.",
+  "priorite": "Basse",
+  "a_completer": [
    "Nom de la holding du pôle",
    "Add-ons réalisés depuis 2024"
   ],
-  "statut": "EQUITA Smart Capital-ELTIF majoritaire depuis août 2024 d'un pôle de >30 M€ de CA.",
-  "these": "Entrée récente et phase de buy-and-build : sortie peu probable avant 2028.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "filiera-toscana-della-calzatura": {
   "doubts": [
@@ -829,83 +853,91 @@
   "priorite": "Basse"
  },
  "golden-goose": {
-  "doubts": [
+  "statut": "HSG majoritaire depuis juin 2026 (valorisation ≈2,5 Md€), Temasek et Permira minoritaires ; CA 2025 de 734 M€.",
+  "these": "LBO secondaire tout juste réalisé : pas de nouvelle sortie avant 2029-2030 ; seule la part résiduelle de Permira pourrait être cédée plus tôt.",
+  "priorite": "Basse",
+  "a_completer": [
    "Pourcentages respectifs HSG / Temasek / Permira",
    "Valorisation (Bloomberg)"
   ],
-  "statut": "HSG majoritaire depuis juin 2026 (valorisation ≈2,5 Md€), Temasek et Permira minoritaires ; CA 2025 de 734 M€.",
-  "these": "LBO secondaire tout juste réalisé : pas de nouvelle sortie avant 2029-2030 ; seule la part résiduelle de Permira pourrait être cédée plus tôt.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "jimmy-fairly": {
-  "doubts": [
+  "statut": "Contrôlée par HLD depuis juillet 2021 ; plus de 160 boutiques en Europe en 2025.",
+  "these": "Cinq ans de détention et forte expansion européenne en font un actif cessible, mais HLD est un investisseur à horizon long, ce qui tempère la probabilité de sortie à 12–24 mois.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Pourcentage détenu par HLD",
    "CA consolidé récent",
    "Nom et titre du dirigeant actuel (Antonin Chartier / Emmanuel Stern cités sans titre par HLD)"
   ],
-  "statut": "Contrôlée par HLD depuis juillet 2021 ; plus de 160 boutiques en Europe en 2025.",
-  "these": "Cinq ans de détention et forte expansion européenne en font un actif cessible, mais HLD est un investisseur à horizon long, ce qui tempère la probabilité de sortie à 12–24 mois.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "izipizi": {
-  "doubts": [
+  "statut": "TowerBrook minoritaire (25 %) depuis juillet 2022 aux côtés des fondateurs.",
+  "these": "Participation minoritaire d'un fonds buyout de 4 ans : une liquidité (rachat par fondateurs, entrée d'un nouveau fonds ou cession à un lunetier) est plausible à horizon 2027–2028.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Montant investi (~45 M$ selon Modaes)",
    "CA récent",
    "Dirigeant actuel",
    "TowerBrook toujours au capital en 2026"
   ],
-  "statut": "TowerBrook minoritaire (25 %) depuis juillet 2022 aux côtés des fondateurs.",
-  "these": "Participation minoritaire d'un fonds buyout de 4 ans : une liquidité (rachat par fondateurs, entrée d'un nouveau fonds ou cession à un lunetier) est plausible à horizon 2027–2028.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "seaport-odlm": {
-  "doubts": [
+  "statut": "Contrôlée à ~75 % par B & Capital depuis décembre 2021 ; ~40 M€ de CA.",
+  "these": "Premier LBO de cinq ans arrivant à maturité avec un plan de doublement à 2030 : un LBO secondaire ou une cession à un lunetier sous licences est plausible d'ici 2027.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Date de l'article JDE (CA 2024)",
    "Date de nomination de Nicolas Berdugo",
    "Valorisation d'entrée"
   ],
-  "statut": "Contrôlée à ~75 % par B & Capital depuis décembre 2021 ; ~40 M€ de CA.",
-  "these": "Premier LBO de cinq ans arrivant à maturité avec un plan de doublement à 2030 : un LBO secondaire ou une cession à un lunetier sous licences est plausible d'ici 2027.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "bolle-brands": {
-  "doubts": [
+  "statut": "Détenue par A&M Capital Europe depuis août 2018 (carve-out de Vista Outdoor).",
+  "these": "Huit ans de détention et cessions successives de marques (Cébé, SPY, Serengeti) indiquent un démantèlement/recentrage typique d'une fin de cycle ; la vente du reste (Bollé Safety notamment) est probable à court terme.",
+  "priorite": "Haute",
+  "a_completer": [
    "Dirigeant actuel",
    "CA consolidé du périmètre restant",
    "Date exacte d'annonce/closing de la vente SPY/Serengeti à Safilo"
   ],
-  "statut": "Détenue par A&M Capital Europe depuis août 2018 (carve-out de Vista Outdoor).",
-  "these": "Huit ans de détention et cessions successives de marques (Cébé, SPY, Serengeti) indiquent un démantèlement/recentrage typique d'une fin de cycle ; la vente du reste (Bollé Safety notamment) est probable à court terme.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "groupe-afflelou": {
-  "doubts": [
+  "statut": "Lion Capital détient 62 % (via un fonds de continuation depuis 2023), la famille Afflelou 38 %.",
+  "these": "Détention de 14 ans et recap de 2025 : la sortie finale pourrait passer par un rachat progressif par la famille ou une cession ; le fonds de continuation repousse toutefois l'échéance.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Pertinence luxe faible : à confirmer si le périmètre l'inclut",
    "Horizon du fonds de continuation"
   ],
-  "statut": "Lion Capital détient 62 % (via un fonds de continuation depuis 2023), la famille Afflelou 38 %.",
-  "these": "Détention de 14 ans et recap de 2025 : la sortie finale pourrait passer par un rachat progressif par la famille ou une cession ; le fonds de continuation repousse toutefois l'échéance.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "rodenstock": {
-  "doubts": [
+  "statut": "Détenue par les fonds Apax (Mubadala minoritaire) depuis mars 2021, valeur d'entrée ~1,5 Md€.",
+  "these": "Cinq ans de détention, recentrage sur les verres et rumeur de cession 2026 : sortie probable à 12–24 mois.",
+  "priorite": "Haute",
+  "a_completer": [
    "Réalité d'un processus de vente 2026 (article Insight non lu)",
    "CEO actuel",
    "CA récent",
    "Opération PitchBook « DEA Lens Project » 03/2026"
   ],
-  "statut": "Détenue par les fonds Apax (Mubadala minoritaire) depuis mars 2021, valeur d'entrée ~1,5 Md€.",
-  "these": "Cinq ans de détention, recentrage sur les verres et rumeur de cession 2026 : sortie probable à 12–24 mois.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "ahlem": {
-  "doubts": [
+  "statut": "1686 Partners minoritaire depuis février 2025.",
+  "these": "Investissement très récent dans une phase d'expansion : aucune sortie attendue avant 2028.",
+  "priorite": "Basse",
+  "a_completer": [
    "Taille de la participation",
    "Lieu de fabrication (France ?)"
   ],
-  "statut": "1686 Partners minoritaire depuis février 2025.",
-  "these": "Investissement très récent dans une phase d'expansion : aucune sortie attendue avant 2028.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "edgard-opticiens": {
   "doubts": [
@@ -936,50 +968,55 @@
   "priorite": "Basse"
  },
  "breitling": {
-  "doubts": [
+  "statut": "Partners Group (51 %) et CVC (~24 %) détiennent Breitling ; CVC depuis 2017, Partners Group depuis 2021 ; ~770 MCHF de ventes nettes.",
+  "these": "CVC est en portefeuille depuis 9 ans et a déprécié sa ligne : une sortie au moins partielle est probable, mais la baisse des résultats et du marché horloger repousse l'IPO ou la cession.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Pourcentage actuel de CVC",
    "Horizon IPO 2027-2029 évoqué par la presse (non vu en source primaire)"
   ],
-  "statut": "Partners Group (51 %) et CVC (~24 %) détiennent Breitling ; CVC depuis 2017, Partners Group depuis 2021 ; ~770 MCHF de ventes nettes.",
-  "these": "CVC est en portefeuille depuis 9 ans et a déprécié sa ligne : une sortie au moins partielle est probable, mais la baisse des résultats et du marché horloger repousse l'IPO ou la cession.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "thom-group": {
-  "doubts": [
+  "statut": "Altamir (géré par Amboise, M. Tchenio) est actionnaire de référence de THOM depuis février 2021 ; ~1,08 Md€ de ventes et 281 M€ d'EBITDA publié.",
+  "these": "Actif très rentable, en portefeuille depuis plus de 5 ans dans sa forme actuelle, et déjà refinancé (dividende 2024) : une cession est plausible, mais Altamir est un actionnaire patient.",
+  "priorite": "Moyenne",
+  "a_completer": [
    "Pourcentage détenu par Altamir et identité des co-investisseurs",
    "Date du refinancement 2024 et maturités obligataires"
   ],
-  "statut": "Altamir (géré par Amboise, M. Tchenio) est actionnaire de référence de THOM depuis février 2021 ; ~1,08 Md€ de ventes et 281 M€ d'EBITDA publié.",
-  "these": "Actif très rentable, en portefeuille depuis plus de 5 ans dans sa forme actuelle, et déjà refinancé (dividende 2024) : une cession est plausible, mais Altamir est un actionnaire patient.",
-  "priorite": "Moyenne"
+  "doubts": []
  },
  "apm-monaco": {
-  "doubts": [
+  "statut": "TPG (avec Trail et China Synergy) détient 30 % d'APM Monaco depuis 2019, la famille Prette contrôle.",
+  "these": "Sortie en cours : CVC est en pole position pour racheter la ligne TPG (juillet 2026), à surveiller pour la signature.",
+  "priorite": "Haute",
+  "a_completer": [
    "Issue des discussions avec CVC (signature ?)",
    "CA et EBITDA non publiés"
   ],
-  "statut": "TPG (avec Trail et China Synergy) détient 30 % d'APM Monaco depuis 2019, la famille Prette contrôle.",
-  "these": "Sortie en cours : CVC est en pole position pour racheter la ligne TPG (juillet 2026), à surveiller pour la signature.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "acrotec-group": {
-  "doubts": [
+  "statut": "Carlyle contrôle Acrotec, premier sous-traitant indépendant de composants horlogers suisses, depuis début 2021 (~1 200 salariés en 2020).",
+  "these": "Processus de sortie déjà exploré en 2023-2024 (Rothschild) ; après 5 ans de détention, une cession ou IPO reste probable dès que le marché horloger se stabilise.",
+  "priorite": "Haute",
+  "a_completer": [
    "Confirmer qu'aucune cession n'a eu lieu en 2024-2026",
    "CEO actuel et CA récent",
    "Années d'entrée/sortie Castik (2018) à confirmer"
   ],
-  "statut": "Carlyle contrôle Acrotec, premier sous-traitant indépendant de composants horlogers suisses, depuis début 2021 (~1 200 salariés en 2020).",
-  "these": "Processus de sortie déjà exploré en 2023-2024 (Rothschild) ; après 5 ans de détention, une cession ou IPO reste probable dès que le marché horloger se stabilise.",
-  "priorite": "Haute"
+  "doubts": []
  },
  "mattioli": {
-  "doubts": [
+  "statut": "Peninsula Capital est minoritaire (~25 %) chez Mattioli depuis 2024 aux côtés de la famille Mattioli ; ~105 M€ de CA.",
+  "these": "Entrée récente pour financer l'international : sortie peu probable avant 2027-2028.",
+  "priorite": "Basse",
+  "a_completer": [
    "Pourcentage exact (~25 %)",
    "Exercice de référence du CA 105 M€"
   ],
-  "statut": "Peninsula Capital est minoritaire (~25 %) chez Mattioli depuis 2024 aux côtés de la famille Mattioli ; ~105 M€ de CA.",
-  "these": "Entrée récente pour financer l'international : sortie peu probable avant 2027-2028.",
-  "priorite": "Basse"
+  "doubts": []
  },
  "groupe-chaumont": {
   "doubts": [

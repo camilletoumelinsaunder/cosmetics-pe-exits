@@ -105,6 +105,16 @@ table.mx td, table.mx th { text-align: center; } table.mx td.lab, table.mx th.la
 table.mx button { border: 0; background: transparent; cursor: pointer; font-family: var(--f-data); padding: 2px 8px; border-radius: var(--r); color: var(--ink); }
 table.mx button:hover, table.mx button.on { background: var(--accent-soft); color: var(--accent); } table.mx .z { color: var(--line); }
 .chip.lux { background: var(--accent-soft); color: var(--accent); } .chip.prem { background: var(--warn-soft); color: var(--warn); } .chip.gp { background: var(--idle-soft); color: var(--idle); }
+.two > .card { align-content: start; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; }
+ol.top, ul.feed { list-style: none; margin: 0; padding: 0; display: grid; }
+ol.top li, ul.feed li { padding: 10px 4px; border-bottom: 1px solid var(--line); display: grid; gap: 3px; }
+ol.top li:last-child, ul.feed li:last-child { border-bottom: 0; }
+ol.top li { cursor: pointer; grid-template-columns: 26px minmax(0, 1fr); column-gap: 8px; } ol.top li:hover { background: var(--accent-soft); }
+ol.top .n { font-family: var(--f-data); color: var(--accent); font-weight: 500; grid-row: span 3; }
+ol.top .t, ul.feed .t { font-size: .86rem; } ul.feed li { grid-template-columns: 78px minmax(0, 1fr); column-gap: 10px; }
+ul.feed .d { font-family: var(--f-data); font-size: .8rem; color: var(--muted); grid-row: span 2; }
+ul.feed a.co { font-weight: 600; color: var(--ink); text-decoration: none; cursor: pointer; } ul.feed a.co:hover { color: var(--accent); }
 .saved { color: var(--ok); font-size: .82rem; } .err { color: var(--bad); }
 @media (prefers-reduced-motion: no-preference) { .drawer { animation: slide .18s ease-out; } @keyframes slide { from { transform: translateX(24px); opacity: .6; } } }
 </style>
@@ -234,8 +244,9 @@ function rail() {
   const [lo, hi] = win();
   document.getElementById("rail").innerHTML = `
     <div class="field"><label for="f-q">Recherche (société, fonds, dirigeant)</label><input id="f-q" type="search" value="${esc(F.q)}"></div>
-    <div class="field"><span class="lbl">Secteur</span><div class="checks">${DATA.secteurs.map(s => `<label><input type="checkbox" data-sec="${esc(s)}" ${!F.secteurs.length || F.secteurs.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.secteur === s).length}</span></label>`).join("")}</div></div>
-    <div class="field"><span class="lbl">Maillon de la chaîne de valeur</span><div class="checks">${DATA.maillons.map(s => `<label><input type="checkbox" data-mai="${esc(s)}" ${!F.maillons.length || F.maillons.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.maillon === s).length}</span></label>`).join("")}</div></div>
+    <div class="field"><span class="lbl">Secteur</span><div class="checks">${DATA.secteurs.filter(s => DATA.companies.some(c => c.secteur === s)).map(s => `<label><input type="checkbox" data-sec="${esc(s)}" ${!F.secteurs.length || F.secteurs.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.secteur === s).length}</span></label>`).join("")}</div></div>
+    ${(() => { const e = DATA.secteurs.filter(x => !DATA.companies.some(c => c.secteur === x)); return e.length ? `<span class="hint">Non couvert à ce stade : ${esc(e.join(", "))}.</span>` : ""; })()}
+    <div class="field"><span class="lbl">Maillon de la chaîne de valeur</span><div class="checks">${DATA.maillons.filter(s => DATA.companies.some(c => c.maillon === s)).map(s => `<label><input type="checkbox" data-mai="${esc(s)}" ${!F.maillons.length || F.maillons.includes(s) ? "checked" : ""}> ${esc(s)} <span class="hint">${DATA.companies.filter(c => c.maillon === s).length}</span></label>`).join("")}</div></div>
     <div class="field"><label for="f-pos">Positionnement</label><select id="f-pos"><option value="all">Tous</option>${DATA.positionnements.map(v => `<option ${F.pos === v ? "selected" : ""}>${esc(v)}</option>`).join("")}<option value="lp" ${F.pos === "lp" ? "selected" : ""}>Luxe & premium</option></select></div>
     <div class="field"><label for="f-country">Pays</label><select id="f-country"><option value="all">Tous</option><option value="FR" ${F.countries === "FR" ? "selected" : ""}>France</option><option value="EU" ${F.countries === "EU" ? "selected" : ""}>Europe hors France</option>
       ${countries.filter(c => c !== "FR").map(c => `<option value="${esc(c)}" ${F.countries === c ? "selected" : ""}>${esc(c)}</option>`).join("")}</select></div>
@@ -337,8 +348,11 @@ function render(rebuildRail) {
     ["dernier", "Dernier contact", c => `<td><input type="date" class="cell-in" data-f="dernier_contact" data-id="${esc(c.id)}" value="${esc(SUIVI[c.id]?.dernier_contact || "")}" aria-label="Dernier contact avec ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}></td>`],
     ["next", "Next steps", c => `<td><textarea class="cell-in next" rows="2" data-f="next_steps" data-id="${esc(c.id)}" placeholder="Prochaine action…" aria-label="Next steps pour ${esc(c.company)}" ${DB ? "" : "disabled"} ${stop}>${esc(SUIVI[c.id]?.next_steps || "")}</textarea>${SUIVI[c.id]?.updated_by ? `<div class="sub">par ${esc(who(SUIVI[c.id].updated_by))}, ${fmtDay(SUIVI[c.id].updated_at)}</div>` : ""}</td>`],
   ];
-  const head = cols.map(([key, l]) => `<th data-sort="${key}" ${F.sort[0] === key ? `aria-sort="${F.sort[1] > 0 ? "ascending" : "descending"}"` : ""}>${l}</th>`).join("");
-  const body = rows.map(c => `<tr data-id="${esc(c.id)}" tabindex="0">${cols.map(x => x[2](c)).join("")}</tr>`).join("");
+  // Short view by default (screen sharing); the detailed view shows every column.
+  const SHORT = new Set(["nom", "prio", "segment", "fonds", "hold", "fenetre", "signaux"]);
+  const shown = F.detail ? cols : cols.filter(x => SHORT.has(x[0]));
+  const head = shown.map(([key, l]) => `<th data-sort="${key}" ${F.sort[0] === key ? `aria-sort="${F.sort[1] > 0 ? "ascending" : "descending"}"` : ""}>${l}</th>`).join("");
+  const body = rows.map(c => `<tr data-id="${esc(c.id)}" tabindex="0">${shown.map(x => x[2](c)).join("")}</tr>`).join("");
   const exited = DATA.exited || [];
   const cell = (s, m) => rows.filter(c => c.secteur === s && c.maillon === m).length;
   const usedM = DATA.maillons.filter(m => rows.some(c => c.maillon === m)), usedS = DATA.secteurs.filter(s => rows.some(c => c.secteur === s));
@@ -347,12 +361,27 @@ function render(rebuildRail) {
     <div class="tablebox" style="max-height:none"><table class="data mx"><thead><tr><th class="lab">Secteur</th>${usedM.map(m => `<th>${esc(m)}</th>`).join("")}<th>Total</th></tr></thead><tbody>
     ${usedS.map(s => `<tr><td class="lab">${esc(s)}</td>${usedM.map(m => { const n = cell(s, m); return `<td>${n ? `<button data-mx="${esc(s)}|${esc(m)}" class="${one("secteurs", s) && one("maillons", m) ? "on" : ""}">${n}</button>` : `<span class="z">·</span>`}</td>`; }).join("")}<td class="mono">${rows.filter(c => c.secteur === s).length}</td></tr>`).join("")}
     </tbody></table></div></section>`;
-  document.getElementById("main").innerHTML = `${kpis}${matrix}
+  const cut = (t, n) => { t = String(t || ""); return t.length > n ? t.slice(0, n - 1).trim() + "…" : t; };
+  const top = rows.filter(c => prioOf(c) === "Haute")
+    .sort((a, b) => (b.exit_signals || []).length - (a.exit_signals || []).length || ORDER[exitInfo(a).status] - ORDER[exitInfo(b).status] || (exitInfo(b).hold || 0) - (exitInfo(a).hold || 0))
+    .slice(0, 10);
+  const topHTML = `<section class="card"><div class="row"><h2>Top ${top.length || ""} à approcher</h2><span class="hint">Priorité haute, avec signal publié d'abord</span></div>
+    ${top.length ? `<ol class="top">${top.map((c, i) => { const x = exitInfo(c); return `<li data-open="${esc(c.id)}" tabindex="0"><span class="n">${i + 1}</span>
+      <div class="row"><strong>${esc(c.company.split(" (")[0])}</strong><span>${(c.exit_signals || []).length ? `<span class="chip sig">${c.exit_signals.length} signal${c.exit_signals.length > 1 ? "s" : ""}</span> ` : ""}<span class="chip ${x.status}">${esc(x.label)}</span></span></div>
+      <div class="sub">${esc(c.secteur || "")} · ${esc(c.maillon || "")} · ${c.ref_fund ? `${esc(c.ref_fund)}${c.ref_entry ? ` depuis ${esc(fmtYm(c.ref_entry))}` : ""}` : "fonds à vérifier"}</div>
+      <div class="t">${esc(cut(c.comment?.these, 170))}</div></li>`; }).join("")}</ol>` : `<p class="hint">Aucune société en priorité haute avec ces filtres.</p>`}</section>`;
+  const feed = rows.flatMap(c => (c.exit_signals || []).filter(s => s.date).map(s => ({ c, s })))
+    .sort((a, b) => String(b.s.date).localeCompare(String(a.s.date))).slice(0, 10);
+  const feedHTML = `<section class="card"><div class="row"><h2>Derniers signaux de sortie</h2><span class="hint">Faits publiés, datés et sourcés</span></div>
+    ${feed.length ? `<ul class="feed">${feed.map(({ c, s }) => `<li><span class="d">${esc(fmtYm(s.date) || s.date)}</span>
+      <div><a class="co" href="#" data-open="${esc(c.id)}">${esc(c.company.split(" (")[0])}</a> <span class="sub">${esc(c.secteur || "")}</span></div>
+      <div class="t">${esc(cut(s.fact, 190))} ${s.source_url ? `<span class="src">(${srcLink(s.source_url, "source")})</span>` : ""}</div></li>`).join("")}</ul>` : `<p class="hint">Aucun signal daté avec ces filtres.</p>`}</section>`;
+  document.getElementById("main").innerHTML = `${kpis}<div class="two">${topHTML}${feedHTML}</div>${matrix}
     <section class="card chart"><div class="row"><h2>Ouverture de la fenêtre de sortie</h2><span class="hint">Année d'entrée du fonds + ${win()[0]} ans, sociétés filtrées</span></div>${chart(rows)}
       <p class="hint">Estimation calculée à partir des dates d'entrée sourcées et de votre hypothèse de détention. La première barre regroupe les fenêtres déjà ouvertes.</p></section>
     <section class="card"><div class="row"><h2>${nf0.format(rows.length)} sociétés</h2>
-      <div class="row"><button class="btn" id="sort-prio" ${F.sort[0] === "prio" ? "disabled" : ""}>Trier par priorité de sortie</button><button class="btn primary" id="xls" ${DL ? "" : "disabled"}>Exporter en Excel</button></div></div>
-      <div class="tablebox"><table class="data" id="tbl"><thead><tr>${head}</tr></thead><tbody>${body || `<tr><td colspan="${cols.length}" class="hint">Aucune société avec ces filtres.</td></tr>`}</tbody></table></div>
+      <div class="row"><button class="btn" id="detail" aria-pressed="${F.detail ? "true" : "false"}">${F.detail ? "Vue courte" : "Vue détaillée"}</button><button class="btn" id="sort-prio" ${F.sort[0] === "prio" ? "disabled" : ""}>Trier par priorité de sortie</button><button class="btn primary" id="xls" ${DL ? "" : "disabled"}>Exporter en Excel</button></div></div>
+      <div class="tablebox"><table class="data" id="tbl"><thead><tr>${head}</tr></thead><tbody>${body || `<tr><td colspan="${shown.length}" class="hint">Aucune société avec ces filtres.</td></tr>`}</tbody></table></div>
       <p class="hint">Tri par priorité : la vôtre si vous l'avez changée, sinon mon avis argumenté dans chaque fiche, puis signal de sortie publié, puis position dans la fenêtre.</p></section>
     ${exited.length ? `<section class="card"><h2>Sorties récentes (références)</h2><div class="tablebox"><table class="data"><thead><tr><th>Société</th><th>Fonds sortant</th><th>Acquéreur</th><th>Date</th><th>Source</th></tr></thead><tbody>
       ${exited.map(x => `<tr><td class="name">${esc(x.company)}<div class="sub">${esc([x.secteur, x.maillon, x.country].filter(Boolean).join(" · "))}</div></td><td>${esc(x.fund || x.seller || (x.funds || []).map(f => f.name).join(", ") || "—")}</td><td>${esc(x.buyer || "—")}</td><td class="mono">${esc(fmtYm(x.exit_date) || x.exit_date || "—")}</td><td>${x.source_url ? srcLink(x.source_url, "lien") : "—"}</td></tr>`).join("")}
@@ -372,6 +401,8 @@ function render(rebuildRail) {
     if (one("secteurs", s) && one("maillons", m)) { F.secteurs = []; F.maillons = []; } else { F.secteurs = [s]; F.maillons = [m]; }
     save(); render(true);
   });
+  document.getElementById("detail").onclick = () => { F.detail = !F.detail; save(); render(false); };
+  document.querySelectorAll("#main [data-open]").forEach(el => { el.onclick = ev => { ev.preventDefault(); openSheet(el.dataset.open); }; el.onkeydown = ev => { if (ev.key === "Enter") openSheet(el.dataset.open); }; });
   document.getElementById("sort-prio").onclick = () => { F.sort = ["prio", 1]; save(); render(false); };
   document.getElementById("xls").onclick = ev => exportExcel(rows, ev.currentTarget);
 }
@@ -406,6 +437,7 @@ function openSheet(id, keepScroll) {
       <div class="src">${esc(c.comment.auteur)}, ${fmtDay(c.comment.date)}. Analyse à partir des faits sourcés ci-dessous, à confirmer.</div></div>` : ""}
     <div class="verif ${c.verification === "Vérifié" ? "ok" : ""}"><h3>${c.verification === "Vérifié" ? "Données vérifiées" : "À vérifier"}</h3>
       ${(c.verification_points || []).length ? `<ul>${c.verification_points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p class="hint" style="margin:0">Actionnariat et date d'entrée confirmés par les sources citées.</p>`}
+      ${(c.a_completer || []).length ? `<p class="hint" style="margin:0"><strong>À compléter :</strong> ${c.a_completer.map(esc).join(" · ")}</p>` : ""}
       ${c.registry_match && c.registry_match.includes("vérifier") ? `<p class="hint" style="margin:0">Entité du registre rapprochée par le nom : ${esc(c.legal_name)} (SIREN ${esc(c.siren)}). Vérifiez que c'est la bonne société.</p>` : ""}</div>
     <div class="why"><h3>Sortie possible : quand et pourquoi</h3><ul>${why(c).map(x => `<li>${x}</li>`).join("")}</ul>
       <div class="src">Les dates et signaux viennent des sources citées. La fenêtre est une estimation à partir de votre hypothèse de détention, pas une information publiée.</div></div>
@@ -484,7 +516,7 @@ async function exportExcel(rows, btn) {
       "Fenêtre estimée": e.open ? `${e.open}–${e.close}` : "", "Statut fenêtre": e.label, "Signaux publiés": (c.exit_signals || []).map(s => `${s.date || ""} ${s.fact}`).join(" | "),
       "Autres fonds": (c.funds || []).filter(f => f.name !== c.ref_fund).map(f => f.name).join(", "), "CEO": c.ceo?.name || "à vérifier",
       "Dernier CA": ca ? ca.v : "à vérifier", "Année CA": ca?.year || "", "Source CA": ca ? (ca.url || ca.src) : "",
-      "Priorité": prioOf(c) || "", "Avis Claude": c.priorite || "", "Fiabilité": c.verification, "Points à vérifier": (c.verification_points || []).join(" | "),
+      "Priorité": prioOf(c) || "", "Avis Claude": c.priorite || "", "Fiabilité": c.verification, "Points à vérifier": (c.verification_points || []).join(" | "), "À compléter": (c.a_completer || []).join(" | "),
       "Statut (commentaire)": c.comment?.statut || "", "Pourquoi une sortie (commentaire)": c.comment?.these || "", "Contacts": ppl.map(p => `${p.prenom} ${p.nom} (${p.poste || ""}, ${p.entreprise || ""})`).join(" | "), "Suivi": suiviOf(c.id), "Dernier contact": SUIVI[c.id]?.dernier_contact || "", "Next steps": SUIVI[c.id]?.next_steps || "", "Mes notes privées": NOTES[c.id]?.notes || "" }; });
   const sources = rows.flatMap(c => [...(c.funds || []).map(f => ({ "Société": c.company, "Fait": `Entrée ${f.name} ${f.entry_date || ""}`, "Source": f.source_url || f.source_title || "", "Date source": f.source_date || "" })),
     ...(c.exit_signals || []).map(s => ({ "Société": c.company, "Fait": s.fact, "Source": s.source_url || "", "Date source": s.date || "" }))]);

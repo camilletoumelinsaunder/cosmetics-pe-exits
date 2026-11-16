@@ -211,7 +211,8 @@ def classify(rec: dict, review: dict) -> None:
 # ---------- Output ----------
 
 def load_review() -> dict:
-    """inputs/review.json: analyst review per company id (doubts, status comment, exit thesis, overrides)."""
+    """inputs/review.json: analyst review per company id (doubts on ownership, a_completer = missing details,
+    status comment, exit thesis, positionnement, overrides)."""
     path = ROOT / "inputs" / "review.json"
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
@@ -258,6 +259,7 @@ def build(offline: bool = False) -> dict:
             ref = next((f for f in rec["funds"] if f["name"] == forced), ref)
         rec["ref_fund"], rec["ref_entry"] = (ref["name"], ref["entry_date"]) if ref else (None, None)
         rec["verification"], rec["verification_points"] = verification(rec, review)
+        rec["a_completer"] = review.get("a_completer") or []  # missing details that do not question ownership
         rec["priorite"] = review.get("priorite")
         classify(rec, review)
         if review.get("these"):
