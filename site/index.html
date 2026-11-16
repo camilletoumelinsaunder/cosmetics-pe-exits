@@ -78,7 +78,7 @@ td.name { font-weight: 600; } td.ca { max-width: 120px; overflow: hidden; text-o
 .chip.soon { background: var(--warn-soft); color: var(--warn); } .chip.early, .chip.unk { background: var(--idle-soft); color: var(--idle); }
 .chip.sig { background: var(--accent-soft); color: var(--accent); } .chip.track { background: var(--idle-soft); color: var(--ink); }
 .tbc { color: var(--warn); font-style: italic; }
-.chart svg { width: 100%; height: auto; display: block; }
+.chart svg { width: 100%; height: auto; max-height: 190px; display: block; }
 .chart text { fill: var(--muted); font-family: var(--f-data); font-size: 11px; }
 .chart .bar { fill: var(--accent); } .chart .bar.past { fill: var(--bad); } .chart .grid { stroke: var(--line); }
 .chart .val { fill: var(--ink); }
@@ -299,7 +299,7 @@ function chart(rows) {
   const now = new Date().getFullYear(), years = [];
   for (let y = now - 1; y <= now + 6; y++) years.push(y);
   const counts = years.map(y => rows.filter(c => { const e = exitInfo(c); return e.open != null && (y === now - 1 ? e.open <= y : e.open === y); }).length);
-  const W = 640, H = 170, pad = { l: 28, r: 8, t: 16, b: 34 }, max = Math.max(1, ...counts), bw = (W - pad.l - pad.r) / years.length;
+  const W = 1000, H = 150, pad = { l: 28, r: 8, t: 16, b: 30 }, max = Math.max(1, ...counts), bw = (W - pad.l - pad.r) / years.length;
   const yScale = v => H - pad.b - (v / max) * (H - pad.t - pad.b);
   const ticks = [0, Math.ceil(max / 2), max].filter((v, i, a) => a.indexOf(v) === i);
   return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Nombre de sociétés par année d'ouverture de la fenêtre de sortie">
