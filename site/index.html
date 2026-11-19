@@ -1,4 +1,4 @@
-<title>Sorties PE Cosmétique & Luxe</title>
+<title>Radar M&A Cosmétique & Luxe</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -139,7 +139,7 @@ ul.feed a.co { font-weight: 600; color: var(--ink); text-decoration: none; curso
 </style>
 
 <header class="top">
-  <div><h1>Sorties PE Cosmétique & Luxe</h1><div class="hint" id="meta">Chargement…</div></div>
+  <div><h1>Radar M&A Cosmétique & Luxe</h1><div class="hint" id="meta">Chargement…</div></div>
   <nav class="tabs" role="tablist" aria-label="Vue"><button role="tab" data-view="pe">Sorties PE</button><button role="tab" data-view="co">Carve-outs des grands groupes</button></nav>
   <div class="hint">France en priorité, Europe en complément · beauté, mode, maroquinerie, chaussures, accessoires, lunettes, joaillerie · marques et chaîne d'approvisionnement</div>
 </header>
@@ -598,7 +598,7 @@ async function exportExcel(rows, btn) {
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sheet), "Sociétés");
   XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sources), "Sources");
   XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["Fenêtre de sortie", `Estimation : année d'entrée + ${win()[0]} à ${win()[1]} ans (hypothèse de l'utilisateur)`], ["Export", new Date().toISOString()]]), "Méthode");
-  try { await DL.save({ filename: `sorties-pe-cosmetique-luxe-${new Date().toISOString().slice(0, 10)}.xlsx`, data: new Blob([XLSX.write(wb, { type: "array", bookType: "xlsx" })]) }); } catch {}
+  try { await DL.save({ filename: `radar-ma-cosmetique-luxe-${new Date().toISOString().slice(0, 10)}.xlsx`, data: new Blob([XLSX.write(wb, { type: "array", bookType: "xlsx" })]) }); } catch {}
   btn.disabled = false;
 }
 

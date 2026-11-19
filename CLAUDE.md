@@ -1,4 +1,4 @@
-# CLAUDE.md — Cosmetics & luxury PE-exit tracker (AlixPartners)
+# CLAUDE.md — Radar M&A Cosmétique & Luxe (AlixPartners): PE exits and corporate carve-outs
 
 Separate project from the acquisition-screening dashboard. Tracks cosmetics and luxury companies (brands and
 supply chain) held by private-equity funds (France first, then Europe) to spot likely exits. UI in French, code comments in English.
