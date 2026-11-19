@@ -1,0 +1,363 @@
+{"carveouts": [
+{
+  "id": "coty-consumer-beauty",
+  "parent": "Coty", "parent_country": "US",
+  "asset": "Consumer Beauty : maquillage grand public (CoverGirl, Rimmel, Sally Hansen, Max Factor) et marques locales au Brésil",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Processus en cours",
+  "date": "2026-11",
+  "buyer": null, "buyer_type": null,
+  "advisers": "Citi (conseil de Coty pour la revue stratégique)",
+  "size": "Maquillage grand public ≈ 1,2 Md$ de CA et Brésil ≈ 400 M$ (annonce sept. 2025) ; Consumer Beauty 496,8 M$ au T1 FY2027",
+  "facts": [
+    {"fact": "Coty lance une revue stratégique de Consumer Beauty (partenariats, cessions, spin-off), conseillée par Citi.", "date": "2025-09", "source_url": "https://www.businesswire.com/news/home/20250929276617/en"},
+    {"fact": "Selon WWD, Coty envisage une cession en deux parties ; Interparfums aurait eu des discussions préliminaires sur des licences prestige.", "date": "2025-06", "source_url": "https://fashionunited.uk/news/business/coty-considering-two-part-sale-according-to-industry-sources/2025061782264"},
+    {"fact": "Analyse Reuters : cessions par morceaux plus probables qu'une vente unique ; Permira et L Catterton cités comme acquéreurs possibles.", "date": "2025-10", "source_url": "https://www.rte.ie/news/makeup"},
+    {"fact": "Résultats T1 FY2027 : Consumer Beauty -3 % en comparable ; Coty dit vouloir achever la revue stratégique d'ici fin 2026.", "date": "2026-11", "source_url": "https://cosmeticsbusiness.com/coty-reports-rocky-start-to-2027-fiscal-year"}
+  ],
+  "these": "Grand carve-out mass-market européen (Rimmel, Max Factor très présents en Europe) avec décision attendue fin 2026 : cible naturelle pour fonds spécialisés consumer ou cessions marque par marque.",
+  "priorite": "Haute",
+  "doubts": ["Aucun acquéreur ni offre nommés publiquement", "Périmètre final (bloc ou marque par marque, Brésil inclus ou non) non arrêté", "Source Reuters vue via reprise RTÉ, date exacte à confirmer"]
+},
+{
+  "id": "lvmh-make-up-for-ever",
+  "parent": "LVMH", "parent_country": "FR",
+  "asset": "Make Up For Ever (maquillage professionnel et prestige, marque française)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Luxe & prestige",
+  "statut": "Processus en cours",
+  "date": "2026-06",
+  "buyer": null, "buyer_type": null,
+  "advisers": "Morgan Stanley et Rothschild & Co (selon Journal du Luxe)",
+  "size": "CA ≈ 300 M€ (stagnant), pertes depuis plusieurs années (presse, 2026)",
+  "facts": [
+    {"fact": "LVMH étudie la cession de Make Up For Ever dans le cadre d'une réorganisation de sa division beauté ; CA ≈ 300 M€.", "date": "2026-02", "source_url": "https://jingdaily.com/intels/2026-02/17/lvmh-explores-sale-of-make-up-for-ever"},
+    {"fact": "LVMH aurait approché plusieurs groupes de beauté et fonds ; marque déficitaire depuis huit ans selon la presse.", "date": "2026-02", "source_url": "https://beautymatter.com/articles/lvmh-explores-sale-of-make-up-for-ever"},
+    {"fact": "Journal du Luxe : LVMH a mandaté Morgan Stanley et Rothschild & Co pour vendre la marque.", "date": "2026-06", "source_url": "https://www.journalduluxe.fr/fr/beaute/beaute-ere-portefeuille-resserre"}
+  ],
+  "these": "Marque française de maquillage en retournement, cédée par un groupe qui se recentre sur Dior/Guerlain : profil typique de carve-out pour un fonds ou un groupe beauté mid-cap.",
+  "priorite": "Haute",
+  "doubts": ["Aucun acquéreur nommé", "Montant des pertes non publié", "Mandat bancaire rapporté par la presse, non confirmé par LVMH"]
+},
+{
+  "id": "lvmh-fresh",
+  "parent": "LVMH", "parent_country": "FR",
+  "asset": "Fresh (soin de la peau prestige)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Luxe & prestige",
+  "statut": "Candidat",
+  "date": "2026-05",
+  "buyer": null, "buyer_type": null,
+  "advisers": null,
+  "size": null,
+  "facts": [
+    {"fact": "LVMH envisagerait aussi la vente de la marque de soin Fresh, décrite comme déficitaire.", "date": "2026-02", "source_url": "https://beautymatter.com/articles/lvmh-explores-sale-of-make-up-for-ever"},
+    {"fact": "En mai 2026, Fresh figure parmi les actifs passés en revue par LVMH (avec Make Up For Ever, Eminente, Le Parisien) ; LVMH ne commente pas.", "date": "2026-05", "source_url": "https://www.retailgazette.co.uk/blog/2026/05/lvmh-weighs-sale-of-marc-jacobs-and-fenty-beauty-stake-as-luxury-slowdown-bites/"}
+  ],
+  "these": "Marque de soin prestige non stratégique pour LVMH, potentiellement cédée à bas prix : opportunité de retournement.",
+  "priorite": "Moyenne",
+  "doubts": ["Aucun processus formel ni banque confirmés", "CA et pertes non publiés"]
+},
+{
+  "id": "lvmh-fenty-beauty",
+  "parent": "LVMH (Kendo Brands)", "parent_country": "FR",
+  "asset": "Participation de 50 % dans Fenty Beauty (Rihanna détient l'autre moitié)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Premium",
+  "statut": "Processus en cours",
+  "date": "2026-06",
+  "buyer": "MarcyPen Capital Partners (en discussions, non signé)", "buyer_type": "Fonds",
+  "advisers": "Evercore (pour LVMH, selon Reuters)",
+  "size": "CA ≈ 450 M$ en 2024 ; valorisation 1–2 Md$ (sources Reuters)",
+  "facts": [
+    {"fact": "LVMH explore la vente de sa participation de 50 % dans Fenty Beauty via Kendo, avec Evercore ; CA 2024 ≈ 450 M$.", "date": "2025-10", "source_url": "https://cosmeticsbusiness.com/lvmh-is-reportedly-exploring-a-sale-of-its"},
+    {"fact": "MarcyPen Capital Partners (cofondé par Jay-Z) serait en discussions pour racheter la participation.", "date": "2026-06", "source_url": "https://cosmeticsbusiness.com/marcypen-capital-partners-in-talks-to-buy-fenty-beauty"}
+  ],
+  "these": "Participation minoritaire paritaire dans une marque mondiale : référence de valorisation pour les marques de célébrités et ticket possible pour un fonds en co-investissement.",
+  "priorite": "Moyenne",
+  "doubts": ["Discussions MarcyPen non confirmées par LVMH", "Actif peu européen (marque US)"]
+},
+{
+  "id": "estee-lauder-too-faced-smashbox-drjart",
+  "parent": "Estée Lauder Companies", "parent_country": "US",
+  "asset": "Too Faced, Smashbox (maquillage) et Dr. Jart+ (K-beauty)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Premium",
+  "statut": "Candidat",
+  "date": "2026-07",
+  "buyer": null, "buyer_type": null,
+  "advisers": "Conseils mandatés pour revoir le portefeuille (non nommés)",
+  "size": "Package estimé « low nine figures » (BoF) ; dépréciations de 375 M$ (Dr. Jart+) et 50 M$ (Too Faced)",
+  "facts": [
+    {"fact": "ELC envisage la vente groupée de Too Faced, Smashbox et Dr. Jart+ (valeur estimée à quelques centaines de millions de dollars).", "date": "2026-01", "source_url": "https://fashionista.com/2026/01/estee-lauder-sell-three-brands"},
+    {"fact": "Offres finales reçues en mai 2026 selon WWD ; ELC ne commente pas.", "date": "2026-05", "source_url": "https://www.personalcareinsights.com/news/estee-lauder-toofaced-drjart-smashbox.html"},
+    {"fact": "Selon un document interne, ELC renonce à vendre et restructure les trois marques (équipes réduites).", "date": "2026-07", "source_url": "https://www.personalcareinsights.com/news/estee-lauder-scraps-brand-sale.html"}
+  ],
+  "these": "Processus retiré faute d'offres suffisantes : les marques restent candidates à une reprise si la restructuration échoue ; utile comme référence de valorisation basse pour le maquillage premium.",
+  "priorite": "Basse",
+  "doubts": ["Vente abandonnée en juillet 2026 : statut Candidat à réévaluer", "Information issue d'un document interne, non publiée officiellement"]
+},
+{
+  "id": "kenvue-marques-soin-secondaires",
+  "parent": "Kenvue (Kimberly-Clark depuis nov. 2026)", "parent_country": "US",
+  "asset": "Marques secondaires Skin Health & Beauty : Clean & Clear, Maui Moisture, Neostrata, Bebe, Dr.Ci:Labo",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Candidat",
+  "date": "2026-11",
+  "buyer": null, "buyer_type": null,
+  "advisers": "Goldman Sachs (selon Reuters, 2025)",
+  "size": "Plus de 500 M$ de CA cumulé (Reuters, 2025)",
+  "facts": [
+    {"fact": "Reuters : Kenvue étudie la cession de marques secondaires (Clean & Clear, Maui Moisture, Neostrata, Bebe, Dr.Ci:Labo) avec Goldman Sachs, en gardant Neutrogena et Aveeno.", "date": "2025-06", "source_url": "https://finance.yahoo.com/news/kenvue-mulls-sale-skin-health-200936149.html"},
+    {"fact": "Kimberly-Clark finalise l'acquisition de Kenvue (48,7 Md$).", "date": "2026-11", "source_url": "https://cosmeticsbusiness.com/kimberly-clark-completes-48-7-billion-acquisition-of-kenvue"}
+  ],
+  "these": "Après la fusion, Kimberly-Clark pourrait relancer l'élagage du portefeuille beauté : marques dermo (Neostrata) intéressantes pour des acteurs européens.",
+  "priorite": "Moyenne",
+  "doubts": ["Aucune nouvelle sur ce processus depuis 2025", "Position de Kimberly-Clark sur ces marques inconnue"]
+},
+{
+  "id": "rocher-stanhome",
+  "parent": "Groupe Rocher", "parent_country": "FR",
+  "asset": "Stanhome (vente directe d'entretien de la maison et de soins, France, Italie, Mexique)",
+  "secteur": "Beauté & parfum", "maillon": "Distribution & retail", "positionnement": "Grand public",
+  "statut": "Processus en cours",
+  "date": "2025-01",
+  "buyer": null, "buyer_type": null,
+  "advisers": null,
+  "size": "≈ 198 M€ de CA (9 % du groupe)",
+  "facts": [
+    {"fact": "Le groupe Rocher lance la cession de Petit Bateau et de Stanhome pour se recentrer sur la cosmétique végétale.", "date": "2025-01", "source_url": "https://www.lejournaldesentreprises.com/article/le-groupe-rocher-prepare-la-cession-de-petit-bateau-et-stanhome-et-se-recentre-sur-la-cosmetique-2111115"},
+    {"fact": "Stanhome pèse 9 % des ventes du groupe (≈ 198 M€) ; Bris Rocher indique n'avoir aucun acquéreur au lancement.", "date": "2025-01", "source_url": "https://www.retaildetail.eu/news/fashion/groupe-rocher-to-sell-petit-bateau-and-stanhome/"}
+  ],
+  "these": "Carve-out français de taille moyenne, vendeur motivé : cible pour un fonds small/mid-cap ou un spécialiste de la vente directe.",
+  "priorite": "Moyenne",
+  "doubts": ["Aucune nouvelle sur Stanhome en 2026 : processus peut-être suspendu", "Part cosmétique vs entretien de la maison non précisée"]
+},
+{
+  "id": "ashland-personal-care",
+  "parent": "Ashland", "parent_country": "US",
+  "asset": "Vente du groupe Ashland, dont la division Personal Care (actifs biofonctionnels, soin de la peau, conservateurs)",
+  "secteur": "Beauté & parfum", "maillon": "Matières & composants", "positionnement": "Premium",
+  "statut": "Processus en cours",
+  "date": "2026-10",
+  "buyer": null, "buyer_type": null,
+  "advisers": "Citigroup et Lazard (pour Ashland)",
+  "size": "Personal Care : 155 M$ de CA au T3 FY2026",
+  "facts": [
+    {"fact": "Ashland étudie une vente après l'intérêt d'Advent, Apollo et Carlyle ; Citigroup et Lazard mandatés ; pression de l'activiste Ancora.", "date": "2026-08", "source_url": "https://www.personalcareinsights.com/news/ashland-sale-private-equity.html"},
+    {"fact": "Premières offres reçues le 2 octobre ; Clariant et CD&R se seraient associés pour candidater.", "date": "2026-10", "source_url": "https://ionanalytics.com/insights/mergermarket/activistmonitor/ashland-collects-initial-bids/"}
+  ],
+  "these": "Processus d'ingrédients cosmétiques le plus avancé du moment ; une reprise par un consortium fonds-industriel pourrait entraîner des cessions de pôles (dont Personal Care).",
+  "priorite": "Moyenne",
+  "doubts": ["Il s'agit d'une vente du groupe entier, pas d'un carve-out isolé", "Offres et consortium rapportés par Mergermarket, non confirmés"]
+},
+{
+  "id": "loccitane-elemis",
+  "parent": "L'Occitane Group", "parent_country": "LU",
+  "asset": "Elemis (soin de la peau premium, Royaume-Uni)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Premium",
+  "statut": "Réalisé",
+  "date": "2026-11",
+  "buyer": "PAI Partners", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": "CA > 300 M$ en FY2026 ; achetée ≈ 900 M$ en 2019",
+  "facts": [
+    {"fact": "L'Occitane cède Elemis à PAI Partners, prix non communiqué ; CA FY2026 > 300 M$.", "date": "2026-11", "source_url": "https://cosmeticsbusiness.com/l-occitane-group-offloads-elemis-to-pai-partners"},
+    {"fact": "Elemis avait été achetée environ 900 M$ en 2019.", "date": "2026-11", "source_url": "https://bourse.fortuneo.fr/actualites-amp/cosmetiques-l-occitane-va-ceder-la-marque-britannique-elemis-au-fonds-pai-partners-149177"},
+    {"fact": "Closing attendu au T1 2027.", "date": "2026-11", "source_url": "https://www.modaes.com/cosmetica/elemis-cambia-de-manos-pai-partners-adquiere-la-marca-a-loccitane"}
+  ],
+  "these": "Référence récente d'un carve-out beauté repris par un fonds français : PAI confirme l'appétit des fonds pour les marques de soin premium.",
+  "priorite": "Haute",
+  "doubts": ["Signé, closing attendu T1 2027", "Prix non divulgué"]
+},
+{
+  "id": "kering-beaute-loreal",
+  "parent": "Kering", "parent_country": "FR",
+  "asset": "Kering Beauté (Creed) et licences beauté 50 ans Gucci, Bottega Veneta, Balenciaga",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Luxe & prestige",
+  "statut": "Réalisé",
+  "date": "2026-03",
+  "buyer": "L'Oréal", "buyer_type": "Industriel",
+  "advisers": null,
+  "size": "4 Md€ en numéraire",
+  "facts": [
+    {"fact": "Kering cède sa division beauté à L'Oréal pour 4 Md€, avec licences 50 ans.", "date": "2025-10", "source_url": "https://www.personalcareinsights.com/news/loreal-acquires-kering-beaute-4-billion.html"},
+    {"fact": "L'Oréal finalise l'acquisition le 31 mars 2026.", "date": "2026-03", "source_url": "https://www.loreal.com/en/press-release/group/loreal-completes-the-acquisition-of-kering-beaute/"}
+  ],
+  "these": "Plus grosse opération beauté de la période : fixe le prix des parfums de niche (Creed) et confirme le désengagement des groupes de mode de la beauté en propre.",
+  "priorite": "Basse",
+  "doubts": []
+},
+{
+  "id": "coty-licence-gucci",
+  "parent": "Coty", "parent_country": "US",
+  "asset": "Licence beauté Gucci (restitution anticipée à Kering, reprise par L'Oréal)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Luxe & prestige",
+  "statut": "Réalisé",
+  "date": "2026-07",
+  "buyer": "Kering / L'Oréal (nouvelle licence 50 ans dès juillet 2027)", "buyer_type": "Industriel",
+  "advisers": null,
+  "size": "≈ 400 M$ versés à Coty (250 M$ + 150 M$) ; ≈ 115 M$ d'EBITDA annuel perdu (Barclays)",
+  "facts": [
+    {"fact": "Coty rend la licence Gucci un an plus tôt contre environ 400 M$ ; L'Oréal finance ≈ 70 % des coûts.", "date": "2026-07", "source_url": "https://www.personalcareinsights.com/news/loreal-secures-gucci-beauty-license.html"},
+    {"fact": "Barclays estime à ≈ 115 M$ l'EBITDA annuel abandonné par Coty (≈ 15 % de ses profits).", "date": "2026-07", "source_url": "https://live.euronext.com/en/financial-news/analysis-no-gucci-no-problem-coty-learns-live-without-flagship-brand"}
+  ],
+  "these": "Coty affaiblie et endettée : accélère la pression pour vendre Consumer Beauty et d'autres actifs.",
+  "priorite": "Basse",
+  "doubts": ["Calendrier de paiement différent selon les sources"]
+},
+{
+  "id": "coty-wella-kkr",
+  "parent": "Coty", "parent_country": "US",
+  "asset": "Participation résiduelle de 25,8 % dans Wella (coiffure professionnelle et grand public)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Premium",
+  "statut": "Réalisé",
+  "date": "2025-12",
+  "buyer": "KKR", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": "750 M$ en numéraire + 45 % des produits d'une future sortie au-delà du rendement préférentiel de KKR",
+  "facts": [
+    {"fact": "Coty vend ses 25,8 % restants de Wella à KKR pour 750 M$ + complément de prix.", "date": "2025-12", "source_url": "https://www.sec.gov/Archives/edgar/data/1024305/000119312525325599/d66788dex991.htm"}
+  ],
+  "these": "KKR détient désormais 100 % de Wella : future sortie (cession ou IPO) à suivre.",
+  "priorite": "Moyenne",
+  "doubts": []
+},
+{
+  "id": "natura-avon-international",
+  "parent": "Natura &Co", "parent_country": "BR",
+  "asset": "Avon International (Europe, Afrique, Asie ; vente directe)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2025-12",
+  "buyer": "Regent LP", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": null,
+  "facts": [
+    {"fact": "Natura signe la cession d'Avon International à Regent.", "date": "2025-09", "source_url": "https://tools.prnewswire.com/en-us/live/20823/release/20250918EN76996"},
+    {"fact": "Cession finalisée le 31 décembre 2025 ; Natura garde la marque Avon en Amérique latine.", "date": "2025-12", "source_url": "https://www.premiumbeautynews.com/en/natura-sells-avon-international-to,26860"}
+  ],
+  "these": "Référence de carve-out en difficulté repris par un fonds de retournement ; Avon International reste un actif à suivre en Europe.",
+  "priorite": "Moyenne",
+  "doubts": ["Prix non communiqué"]
+},
+{
+  "id": "unilever-kate-somerville",
+  "parent": "Unilever", "parent_country": "GB",
+  "asset": "Kate Somerville (soin de la peau prestige et clinique de Los Angeles)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Luxe & prestige",
+  "statut": "Réalisé",
+  "date": "2025-10",
+  "buyer": "Rare Beauty Brands", "buyer_type": "Autre",
+  "advisers": "PwC Corporate Finance (conseil exclusif d'Unilever)",
+  "size": null,
+  "facts": [
+    {"fact": "Unilever cède Kate Somerville à Rare Beauty Brands (Chris Hobson) ; closing attendu T4 2025.", "date": "2025-10", "source_url": "https://www.cosmeticsbusiness.com/unilever-sells-kate-somerville-as-new-owner-promises"},
+    {"fact": "PwC Corporate Finance conseil exclusif d'Unilever ; REN Clean Skincare fermée faute d'acquéreur.", "date": "2025-10", "source_url": "https://www.beautyindependent.com/unilever-sells-kate-somerville-west-hollywood-skin-clinic-rare-beauty-brands"}
+  ],
+  "these": "Unilever élague son pôle Prestige : d'autres marques prestige (Murad cité comme sous-performant) peuvent suivre.",
+  "priorite": "Basse",
+  "doubts": ["Actionnaires de Rare Beauty Brands non identifiés", "Rôle de PwC à confirmer sur la page source"]
+},
+{
+  "id": "unilever-zwitsal",
+  "parent": "Unilever", "parent_country": "GB",
+  "asset": "Zwitsal (soins bébé, Pays-Bas, Belgique, Suriname, Caraïbes néerlandaises)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2026-09",
+  "buyer": "Royal Sanders", "buyer_type": "Industriel",
+  "advisers": "Baker McKenzie (juridique, Unilever)",
+  "size": null,
+  "facts": [
+    {"fact": "Unilever cède Zwitsal à Royal Sanders, fabricant néerlandais ; closing attendu début 2027.", "date": "2026-09", "source_url": "https://www.bakermckenzie.com/en/newsroom/2026/09/unilever-sells-zwitsal-to-royal-sanders"}
+  ],
+  "these": "Unilever cède ses marques locales hors « Power Brands » : d'autres marques européennes locales pourraient suivre.",
+  "priorite": "Basse",
+  "doubts": ["Actionnariat de Royal Sanders à vérifier", "Signé, closing début 2027"]
+},
+{
+  "id": "unilever-elida-beauty",
+  "parent": "Unilever", "parent_country": "GB",
+  "asset": "Elida Beauty (Q-tips, Caress, Impulse, Timotei, Monsavon, Pond's et St. Ives en Amérique du Nord/Europe…)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2024-06",
+  "buyer": "Yellow Wood Partners", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": null,
+  "facts": [
+    {"fact": "Unilever reçoit une offre ferme de Yellow Wood pour Elida Beauty.", "date": "2023-12", "source_url": "https://www.unilever.com/news/press-and-media/press-releases/2023/unilever-to-sell-elida-beauty-business-to-yellow-wood-partners"},
+    {"fact": "Yellow Wood finalise l'acquisition.", "date": "2024-06", "source_url": "https://yellowwoodpartners.com/news-article/yellow-wood-partners-completes-acquisition-of-elida-beauty-from-unilever"}
+  ],
+  "these": "Référence de carve-out de marques grand public vieillissantes par un fonds spécialisé ; Monsavon et Timotei, marques européennes, désormais sous LBO.",
+  "priorite": "Basse",
+  "doubts": ["Prix non communiqué", "Liste exacte des marques variable selon les sources"]
+},
+{
+  "id": "loreal-decleor-saint-gervais",
+  "parent": "L'Oréal", "parent_country": "FR",
+  "asset": "Decléor (soins spa) et Saint-Gervais Mont Blanc (dermo-cosmétique et thermes)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Premium",
+  "statut": "Réalisé",
+  "date": "2024-12",
+  "buyer": "Cospal (groupe familial, Matthieu Lesieur)", "buyer_type": "Family office",
+  "advisers": null,
+  "size": null,
+  "facts": [
+    {"fact": "L'Oréal cède Decléor et Saint-Gervais Mont Blanc (dont les thermes) au groupe familial français Cospal.", "date": "2024-12", "source_url": "https://www.beautypackaging.com/contents/view_breaking-news/2024-12-12/cospal-acquires-loreals-saint-gervais-mont-blanc-decleor-brands/"},
+    {"fact": "CFNews cite M3 Invest aux côtés de Cospal.", "date": "2024-12", "source_url": "https://www.cfnews.net/L-actualite/M-A-Corporate/Operations/100/Saint-Gervais-Mont-Blanc-change-de-proprietaire-509570"}
+  ],
+  "these": "L'Oréal se défait de petites marques françaises non stratégiques : signal pour d'autres marques de niche du groupe.",
+  "priorite": "Basse",
+  "doubts": ["Nature exacte de l'acquéreur (Cospal / M3 Invest) à confirmer"]
+},
+{
+  "id": "rocher-flormar",
+  "parent": "Groupe Rocher", "parent_country": "FR",
+  "asset": "Flormar (maquillage, Turquie)",
+  "secteur": "Beauté & parfum", "maillon": "Marque", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2024-10",
+  "buyer": "Consortium turc Esas Private Equity, Tacirler Asset Management PE Fund I et Credia Partners", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": "≈ 1 000 salariés",
+  "facts": [
+    {"fact": "Rocher signe la cession de Flormar à un consortium de trois investisseurs turcs.", "date": "2024-05", "source_url": "https://groupe-rocher.com/sites/default/files/2024-05/GROUPE%20ROCHER%20HAS%20SIGNED%20A%20SHARE%20PURCHASE%20AGREEMENT%20WITH%20A%20VIEW%20TO%20SELLING%20THE%20FLORMAR%20BRAND%20-%202024.pdf"},
+    {"fact": "Cession finalisée.", "date": "2024-10", "source_url": "https://groupe-rocher.com/sites/default/files/2024-10/PR%20-%20GROUPE%20ROCHER%20FINALISES%20THE%20SALE%20OF%20THE%20FLORMAR%20BRAND%20-%20Sept%202024.pdf"}
+  ],
+  "these": "Fait partie du recentrage de Rocher (puis Petit Bateau, Stanhome) : le groupe reste vendeur.",
+  "priorite": "Basse",
+  "doubts": ["Prix non communiqué"]
+},
+{
+  "id": "rocher-usine-ploermel",
+  "parent": "Groupe Rocher", "parent_country": "FR",
+  "asset": "Usine de Ploërmel (fabrication et conditionnement de produits parfumés)",
+  "secteur": "Beauté & parfum", "maillon": "Sous-traitant / façonnier", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2024-10",
+  "buyer": "Arcade Beauty", "buyer_type": "Industriel",
+  "advisers": null,
+  "size": null,
+  "facts": [
+    {"fact": "Rocher finalise la vente du site de Ploërmel à Arcade Beauty, qui reprend toutes les équipes.", "date": "2024-10", "source_url": "https://www.premiumbeautynews.com/fr/le-groupe-rocher-finalise-la-vente,24529"}
+  ],
+  "these": "Exemple de carve-out industriel français repris par un façonnier : modèle reproductible pour d'autres sites de marques intégrées.",
+  "priorite": "Basse",
+  "doubts": ["Actionnaire d'Arcade Beauty (fonds ?) non vérifié", "Effectif repris non publié"]
+},
+{
+  "id": "symrise-ameriterpenes",
+  "parent": "Symrise", "parent_country": "DE",
+  "asset": "AmeriTerpenes (ingrédients terpéniques pour parfumerie, arômes et usages industriels, États-Unis)",
+  "secteur": "Beauté & parfum", "maillon": "Matières & composants", "positionnement": "Grand public",
+  "statut": "Réalisé",
+  "date": "2026-09",
+  "buyer": "Mutares", "buyer_type": "Fonds",
+  "advisers": null,
+  "size": "Moins-value non monétaire de quelques dizaines de millions d'euros attendue par Symrise",
+  "facts": [
+    {"fact": "Symrise cède AmeriTerpenes à Mutares, signature et closing simultanés le 1er septembre 2026 ; termes non divulgués.", "date": "2026-09", "source_url": "https://www.chemeurope.com/en/news/1189718/symrise-signs-agreement-to-divest-its-terpene-ingredients-business-to-mutares-se-co-kgaa.html"}
+  ],
+  "these": "Les groupes d'ingrédients élaguent leurs activités non cœur au profit de fonds de retournement : d'autres actifs de chimie aromatique pourraient suivre.",
+  "priorite": "Basse",
+  "doubts": ["Actif principalement américain et en partie non cosmétique"]
+}
+]}

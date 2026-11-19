@@ -1,0 +1,652 @@
+{
+ "carveouts": [
+  {
+   "id": "lvmh-marc-jacobs",
+   "parent": "LVMH",
+   "parent_country": "FR",
+   "asset": "Marc Jacobs (marque, PI et activité opérationnelle mondiale)",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Réalisé",
+   "date": "2026-09",
+   "buyer": "JV 50/50 WHP Global (PI, licences) et G-III Apparel Group (exploitation)",
+   "buyer_type": "Industriel",
+   "advisers": "Morgan Stanley Senior Funding (financement dette de G-III)",
+   "size": "Environ 850 M$ (2026)",
+   "facts": [
+    {
+     "fact": "Le WSJ rapporte des discussions pour céder Marc Jacobs pour environ 1 Md$ ; acheteurs cités : Authentic, Bluestar Alliance, WHP Global.",
+     "date": "2025-07",
+     "source_url": "https://news.bloomberglaw.com/mergers-and-acquisitions/lvmh-said-to-be-in-talks-to-sell-fashion-label-marc-jacobs"
+    },
+    {
+     "fact": "Selon le FT, LVMH envisage de céder des actifs « sous-performants » et des participations minoritaires (Marc Jacobs, Fenty Beauty, Joseph Phelps).",
+     "date": "2026-05",
+     "source_url": "https://www.retailgazette.co.uk/blog/2026/05/lvmh-weighs-sale-of-marc-jacobs-and-fenty-beauty-stake-as-luxury-slowdown-bites/"
+    },
+    {
+     "fact": "Accord définitif LVMH / WHP Global / G-III, JV 50/50 propriétaire de la marque ; environ 850 M$.",
+     "date": "2026-05",
+     "source_url": "https://www.lvmh.com/en/publications/lvmh-and-whp-global-announce-definitive-agreement-for-the-acquisition-of-marc-jacobs"
+    },
+    {
+     "fact": "Closing annoncé le 1er septembre 2026.",
+     "date": "2026-09",
+     "source_url": "https://fashionunited.com/news/business/whp-global-and-g-iii-complete-acquisition-of-marc-jacobs/2026090274382"
+    }
+   ],
+   "these": "Référence clé : LVMH cède ses marques de mode secondaires à des brand managers américains, pas à des fonds. Le FT signale d'autres cessions possibles dans le portefeuille.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Montant investi par G-III : 425 M$ (Bloomberg Law) ou environ 500 M$ (FashionUnited)."
+   ]
+  },
+  {
+   "id": "lvmh-off-white",
+   "parent": "LVMH",
+   "parent_country": "FR",
+   "asset": "Off-White LLC (marque streetwear de luxe)",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Réalisé",
+   "date": "2024-10",
+   "buyer": "Bluestar Alliance",
+   "buyer_type": "Autre",
+   "advisers": null,
+   "size": null,
+   "facts": [
+    {
+     "fact": "Bluestar Alliance (brand management, New York) annonce l'acquisition d'Off-White LLC auprès de LVMH ; conditions non publiées.",
+     "date": "2024-10",
+     "source_url": "https://www.retaildive.com/news/lvmh-virgil-abloh-off-white-bluestar-alliance-acquisition/728512"
+    }
+   ],
+   "these": "Précédent : sortie d'une marque achetée en 2021 (60 %) et cédée à un brand manager. Montre le prix qu'un modèle de licences accepte de payer.",
+   "priorite": "Basse",
+   "doubts": [
+    "Wikipedia indique Bluestar 60 % / Farfetch 40 %, ce qui contredit l'annonce d'une cession complète."
+   ]
+  },
+  {
+   "id": "lvmh-stella-mccartney",
+   "parent": "LVMH",
+   "parent_country": "FR",
+   "asset": "Participation minoritaire de 49 % dans Stella McCartney",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2025-01",
+   "buyer": "Stella McCartney (fondatrice)",
+   "buyer_type": "Autre",
+   "advisers": null,
+   "size": "CA 2022 d'environ 40 M£, perte opérationnelle d'environ 8,8 M£ (comptes déposés)",
+   "facts": [
+    {
+     "fact": "LVMH revend à la créatrice sa participation de 49 % détenue depuis 2019 ; prix non publié.",
+     "date": "2025-01",
+     "source_url": "https://fashionunited.com/news/business/stella-mccartney-takes-back-full-control-of-her-brand-from-lvmh/2025012764148"
+    }
+   ],
+   "these": "Signal de rationalisation chez LVMH. Une marque désormais détenue par sa fondatrice pourrait chercher un partenaire financier.",
+   "priorite": "Basse",
+   "doubts": [
+    "Les chiffres de CA et de perte viennent d'une seule source de presse."
+   ]
+  },
+  {
+   "id": "lvmh-dfs-greater-china",
+   "parent": "LVMH (DFS)",
+   "parent_country": "FR",
+   "asset": "DFS Grande Chine : 2 magasins à Hong Kong, 7 à Macao et droits sur la marque DFS en Grande Chine",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Distribution & retail",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2026-01",
+   "buyer": "China Tourism Group Duty Free",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": "395 M$ maximum (dépôt CTG Duty Free, 2026)",
+   "facts": [
+    {
+     "fact": "DFS et China Tourism Group Duty Free signent la cession du retail Grande Chine.",
+     "date": "2026-01",
+     "source_url": "https://www.lvmh.com/en/publications/dfs-and-china-tourism-group-duty-free-announce-agreement-for-sale-and-purchase-of-dfs-greater-china-retail-business"
+    },
+    {
+     "fact": "Prix plafonné à 395 M$ ; LVMH et la famille Miller souscrivent des actions CTG Duty Free (924 M HK$).",
+     "date": "2026-01",
+     "source_url": "https://www.thestandard.com.hk/finance/article/322053/CTG-Duty-Free-to-buy-DFSs-Greater-China-travel-retail-biz-from-LVMH-for-US400m"
+    },
+    {
+     "fact": "Cession séparée de l'activité DFS à l'aéroport d'Abu Dhabi au groupe Falic (Duty Free Americas).",
+     "date": null,
+     "source_url": "https://www.modaes.com/global/companies/lvmh-sells-its-duty-free-business-in-abu-dhabi"
+    }
+   ],
+   "these": "LVMH démantèle DFS par zone. Le reste du réseau mondial est un candidat possible, mais aucune source ne le confirme.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Date exacte du closing et prix final non confirmés.",
+    "Date de la cession d'Abu Dhabi non vue."
+   ]
+  },
+  {
+   "id": "richemont-ynap",
+   "parent": "Richemont",
+   "parent_country": "CH",
+   "asset": "Yoox Net-a-Porter (YNAP, e-commerce de luxe)",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Distribution & retail",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2025-04",
+   "buyer": "Mytheresa (devenu LuxExperience B.V.)",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": "Richemont reçoit environ 33 % du capital de Mytheresa ; YNAP apporté avec 555 M€ de trésorerie et sans dette (2025)",
+   "facts": [
+    {
+     "fact": "Closing de l'acquisition de YNAP par Mytheresa ; Richemont reçoit environ 33 % du capital, et YNAP est apporté avec 555 M€ de trésorerie.",
+     "date": "2025-04",
+     "source_url": "https://www.richemont.com/news-media/press-releases-news/myt-netherlands-parent-bv-mytheresa-and-richemont-announce-the-successful-completion-of-mytheresa-s-acquisition-of-yoox-net-a-porter-ynap/"
+    }
+   ],
+   "these": "Référence : une sortie sans cash, avec soulte négative. La participation de 33 % que Richemont garde dans LuxExperience reste un bloc qui pourra être cédé.",
+   "priorite": "Basse",
+   "doubts": []
+  },
+  {
+   "id": "richemont-baume-mercier",
+   "parent": "Richemont",
+   "parent_country": "CH",
+   "asset": "Baume & Mercier (100 %, horlogerie)",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Réalisé",
+   "date": "2026-07",
+   "buyer": "Damiani Group",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": null,
+   "facts": [
+    {
+     "fact": "Accord pour la cession de 100 % de Baume & Mercier à Damiani.",
+     "date": "2026-01",
+     "source_url": "https://www.richemont.com/news-media/press-releases-news/richemont-and-the-damiani-group-sign-agreement-for-the-damiani-group-to-acquire-baume-mercier/"
+    },
+    {
+     "fact": "Closing finalisé ; Richemont assure les services opérationnels au moins 12 mois.",
+     "date": "2026-07",
+     "source_url": "https://fashionunited.com/news/business/richemont-finalises-sale-of-baume-mercier-to-damiani-group/2026070173277"
+    }
+   ],
+   "these": "Première cession horlogère sous Nicolas Bos, présentée comme une approche plus dure envers les unités en difficulté. C'est la référence pour les autres marques secondaires de Richemont.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Prix non publié."
+   ]
+  },
+  {
+   "id": "capri-versace",
+   "parent": "Capri Holdings",
+   "parent_country": "US",
+   "asset": "Versace (100 %)",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2025-12",
+   "buyer": "Prada Group",
+   "buyer_type": "Industriel",
+   "advisers": "Barclays (revue stratégique Capri, 2024) ; Citi (côté Prada, selon Reuters)",
+   "size": "1,375 Md$ en numéraire (2025)",
+   "facts": [
+    {
+     "fact": "Capri mandate Barclays pour étudier la cession de Versace et de Jimmy Choo ; fonds et groupes de luxe sont approchés.",
+     "date": "2024-12",
+     "source_url": "https://insideretail.com.au/sectors/after-merger-deal-dropped-capri-mulls-sale-of-jimmy-choo-versace-202412"
+    },
+    {
+     "fact": "Accord de cession de Versace à Prada.",
+     "date": "2025-04",
+     "source_url": "https://www.benzinga.com/25/04/44738776/versace-goes-prada-capris-big-exit-sparks-fashion-power-shift"
+    },
+    {
+     "fact": "Closing confirmé le 2 décembre 2025 pour 1,375 Md$.",
+     "date": "2025-12",
+     "source_url": "https://www.ntd.com/prada-completes-1-37-billion-versace-acquisition_1111333.html"
+    }
+   ],
+   "these": "Référence de valorisation d'une grande maison italienne vendue à prix réduit à un industriel.",
+   "priorite": "Basse",
+   "doubts": []
+  },
+  {
+   "id": "capri-jimmy-choo-groupe",
+   "parent": "Capri Holdings",
+   "parent_country": "US",
+   "asset": "Jimmy Choo (chaussures et accessoires, marque britannique), voire l'ensemble du groupe Capri (Michael Kors + Jimmy Choo)",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Candidat",
+   "date": "2026-09",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": "Barclays (mandat de revue stratégique de 2024)",
+   "size": "CA Jimmy Choo de 179 M$ au T1 de l'exercice 2027 (+10,5 %)",
+   "facts": [
+    {
+     "fact": "Barclays mandaté pour vendre Versace et Jimmy Choo ; l'ensemble du groupe pourrait aussi être vendu.",
+     "date": "2024-12",
+     "source_url": "https://insideretail.com.au/sectors/after-merger-deal-dropped-capri-mulls-sale-of-jimmy-choo-versace-202412"
+    },
+    {
+     "fact": "Selon WWD, Capri a pris des contacts informels avec des investisseurs, dont certains ont vu les comptes ; aucun processus formel n'est lancé.",
+     "date": "2026-09",
+     "source_url": "https://fashionunited.com/news/business/is-capri-holdings-up-for-sale/2026092574852"
+    },
+    {
+     "fact": "Couvertures de change avec un passif estimé à 809 M$, potentiellement exigible en cas de changement de contrôle.",
+     "date": "2026-09",
+     "source_url": "https://fashionunited.com/news/business/is-capri-holdings-up-for-sale/2026092574852"
+    }
+   ],
+   "these": "Jimmy Choo est en croissance et de taille adaptée à un fonds européen. Si Capri est vendu en entier, un acquéreur pourrait ensuite détacher Jimmy Choo.",
+   "priorite": "Haute",
+   "doubts": [
+    "Les rapports de 2026 portent sur le groupe entier, pas sur Jimmy Choo seul.",
+    "Processus informel, source unique (WWD), Capri ne commente pas."
+   ]
+  },
+  {
+   "id": "tapestry-stuart-weitzman",
+   "parent": "Tapestry",
+   "parent_country": "US",
+   "asset": "Stuart Weitzman (chaussures)",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Réalisé",
+   "date": "2025-08",
+   "buyer": "Caleres",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": "120,2 M$ dont 11,5 M$ de trésorerie, soit 108,7 M$ net ; CA sur 12 mois d'environ 220 M$ (2025)",
+   "facts": [
+    {
+     "fact": "Accord définitif de cession à Caleres pour 105 M$.",
+     "date": "2025-02",
+     "source_url": "https://www.businesswire.com/news/home/20250219518173/en/Tapestry-Inc.-Enters-Into-Definitive-Agreement-to-Sell-Stuart-Weitzman-Brand-to-Caleres"
+    },
+    {
+     "fact": "Closing : 120,2 M$ payés, 108,7 M$ net de trésorerie, CA sur 12 mois d'environ 220 M$.",
+     "date": "2025-08",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/14707/000001470725000049/cal-20250804xex99.htm"
+    }
+   ],
+   "these": "Référence de multiple très bas (environ 0,5x le CA) pour une marque de chaussures premium cédée par un groupe.",
+   "priorite": "Basse",
+   "doubts": []
+  },
+  {
+   "id": "vf-supreme",
+   "parent": "VF Corporation",
+   "parent_country": "US",
+   "asset": "Supreme (streetwear)",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Réalisé",
+   "date": "2024-10",
+   "buyer": "EssilorLuxottica",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": "1,5 Md$ en numéraire ; CA de 538 M$ et résultat opérationnel de 116 M$ l'année précédente",
+   "facts": [
+    {
+     "fact": "EssilorLuxottica finalise l'acquisition de Supreme auprès de VF pour 1,5 Md$.",
+     "date": "2024-10",
+     "source_url": "https://live.euronext.com/en/products/equities/company-news/2024-10-02-essilorluxottica-completes-acquisition-supremer-vf"
+    },
+    {
+     "fact": "VF avait payé 2,4 Md$ en 2020 ; CA de 538 M$ et résultat opérationnel de 116 M$.",
+     "date": "2024-10",
+     "source_url": "https://uk.finance.yahoo.com/news/supreme-future-now-rests-essilorluxottica-152256517.html"
+    }
+   ],
+   "these": "Référence : un groupe endetté cède avec décote une marque achetée quatre ans plus tôt. VF a ensuite vendu Dickies à Bluestar (hors luxe).",
+   "priorite": "Basse",
+   "doubts": []
+  },
+  {
+   "id": "lanvin-caruso",
+   "parent": "Lanvin Group (Fosun)",
+   "parent_country": "CN",
+   "asset": "Caruso (tailleur et usine de costumes homme, Soragna, Italie)",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2026-02",
+   "buyer": "MondeVita Italy S.r.l. (groupe Mondevo)",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": null,
+   "facts": [
+    {
+     "fact": "Lanvin Group annonce la cession de Caruso à MondeVita (Mondevo), présentée comme un « carve-out stratégique ».",
+     "date": "2026-02",
+     "source_url": "https://www.barchart.com/story/news/67220/lanvin-group-announces-strategic-carve-out-of-caruso"
+    }
+   ],
+   "these": "Lanvin Group passe à un modèle sans actifs industriels. D'autres cessions d'usines et de marques sont possibles (voir Sergio Rossi).",
+   "priorite": "Basse",
+   "doubts": [
+    "Prix non publié.",
+    "Maillon déduit : Caruso est à la fois une marque et un façonnier de costumes (à vérifier)."
+   ]
+  },
+  {
+   "id": "lanvin-sergio-rossi-usine",
+   "parent": "Lanvin Group (Fosun)",
+   "parent_country": "CN",
+   "asset": "Usine de chaussures Sergio Rossi à San Mauro Pascoli",
+   "secteur": "Chaussures",
+   "maillon": "Sous-traitant / façonnier",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2025-09",
+   "buyer": "Massimo Bonini (plateforme chaussures et maroquinerie, Milan)",
+   "buyer_type": "Industriel",
+   "advisers": null,
+   "size": null,
+   "facts": [
+    {
+     "fact": "Selon La Conceria, la reprise de l'usine Sergio Rossi par Massimo Bonini est déjà effective opérationnellement ; aucune annonce officielle.",
+     "date": "2025-09",
+     "source_url": "https://www.laconceria.it/en/finance/what-we-know-about-the-handover-of-sergio-rossi-to-massimo-bonini"
+    },
+    {
+     "fact": "Analyse : les actifs industriels de Sergio Rossi ont été cédés, et une vente de la marque est possible.",
+     "date": "2026-02",
+     "source_url": "https://thebambooworks.com/profit-challenged-lanvin-slims-down-with-caruso-sale-whos-next/"
+    }
+   ],
+   "these": "Exemple de cession d'un atelier de chaussures de luxe en Romagne par un groupe en difficulté. C'est un façonnier potentiellement consolidable.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Aucune annonce officielle vue ; taille de la participation et prix inconnus."
+   ]
+  },
+  {
+   "id": "lanvin-sergio-rossi-marque",
+   "parent": "Lanvin Group (Fosun)",
+   "parent_country": "CN",
+   "asset": "Marque Sergio Rossi (chaussures de luxe)",
+   "secteur": "Chaussures",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Candidat",
+   "date": "2026-02",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": null,
+   "size": "CA 2024 de 41,9 M€ (-30 %)",
+   "facts": [
+    {
+     "fact": "La Conceria rapporte que Lanvin Group a mis Sergio Rossi en vente ; toutes les marques du groupe seraient « officieusement sur le marché ».",
+     "date": "2025-05",
+     "source_url": "https://www.laconceria.it/en/luxury/looks-like-lanvin-group-has-put-sergio-rossi-up-for-sale"
+    },
+    {
+     "fact": "Après la vente de Caruso, une cession future de la marque Sergio Rossi est jugée possible.",
+     "date": "2026-02",
+     "source_url": "https://thebambooworks.com/profit-challenged-lanvin-slims-down-with-caruso-sale-whos-next/"
+    }
+   ],
+   "these": "Marque italienne de petite taille, à redresser et déjà séparée de son usine. C'est une cible pour un fonds de retournement ou un brand manager.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Aucune confirmation par Lanvin Group ; rapports de presse spécialisée."
+   ]
+  },
+  {
+   "id": "prada-tanneries-rino-mastrotto",
+   "parent": "Prada Group",
+   "parent_country": "IT",
+   "asset": "Tanneries Conceria Superior (100 %) et Tannerie Limoges, apportées à Rino Mastrotto Group",
+   "secteur": "Maroquinerie & sacs",
+   "maillon": "Matières & composants",
+   "positionnement": "Luxe & prestige",
+   "statut": "Réalisé",
+   "date": "2025-06",
+   "buyer": "Rino Mastrotto Group (contrôlé par Renaissance Partners, famille Mastrotto)",
+   "buyer_type": "Fonds",
+   "advisers": "PwC (conseil de Prada)",
+   "size": null,
+   "facts": [
+    {
+     "fact": "Accord engageant : Prada apporte 100 % de Conceria Superior et de Tannerie Limoges, plus du numéraire, contre 10 % de Rino Mastrotto Group.",
+     "date": "2025-06",
+     "source_url": "https://www.pradagroup.com/en/news-media/press-releases-documents/2025/25-06-05-prada-group-rino-mastrotto-group.html"
+    },
+    {
+     "fact": "Rino Mastrotto est détenu majoritairement par Renaissance Partners ; Prada est conseillé par PwC.",
+     "date": "2025-06",
+     "source_url": "https://financecommunity.it/il-gruppo-prada-assistito-da-pwc-entra-nel-capitale-di-rino-mastrotto-renaissance/"
+    }
+   ],
+   "these": "Modèle de carve-out d'un actif industriel par une maison vers une plateforme de fonds (Renaissance), avec la maison comme actionnaire minoritaire. Le schéma est transposable aux tanneries ou ateliers d'autres groupes.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Closing (prévu à l'été 2025) non confirmé.",
+    "Montant du numéraire non publié."
+   ]
+  },
+  {
+   "id": "smcp-bloc-majoritaire",
+   "parent": "European TopSoho / GLAS (créanciers de l'ex-actionnaire Shandong Ruyi)",
+   "parent_country": "LU",
+   "asset": "Jusqu'à 51,2 % du capital de SMCP (Sandro, Maje, Claudie Pierlot, Fursac)",
+   "secteur": "Prêt-à-porter",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Processus en cours",
+   "date": "2025-11",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": "Lazard Frères (processus) ; AlixPartners (Alastair Beveridge et Daniel Imison, receivers de la participation d'ETS)",
+   "size": null,
+   "facts": [
+    {
+     "fact": "SMCP annonce un processus de cession de jusqu'à 51,2 % de son capital, mené par Lazard (28 % GLAS, 7,7 % ETS, 15,5 % restitués à ETS).",
+     "date": "2025-11",
+     "source_url": "https://www.smcp.com/en/smcp-press-release-shares-sales-project/"
+    },
+    {
+     "fact": "Au-delà de 30 %, l'acquéreur pourrait devoir déposer une offre publique sur la totalité des actions.",
+     "date": "2025-11",
+     "source_url": "https://www.optionfinance.fr/info-financiere-en-continu/d/2025-11-28-smcp-bondit-cession-en-vue-de-512-de-son-capital-et-possible-opa.html"
+    }
+   ],
+   "these": "Bloc de contrôle d'une société française cotée, vendu par des créanciers, avec OPA possible. Opportunité directe pour un fonds ou un industriel.",
+   "priorite": "Haute",
+   "doubts": [
+    "AlixPartners intervient sur ce dossier (receivers de la participation d'ETS) : vérifier les conflits en interne avant toute approche.",
+    "Ce n'est pas un carve-out d'un groupe industriel, mais une cession forcée de créanciers.",
+    "Aucune information vue sur l'issue du processus en 2026.",
+    "AlixPartners agit comme receiver : conflit d'intérêts à vérifier en interne."
+   ]
+  },
+  {
+   "id": "aeffe-moschino-ferretti-pollini",
+   "parent": "Aeffe",
+   "parent_country": "IT",
+   "asset": "Activités d'Aeffe : Moschino, Alberta Ferretti, Pollini et usine de San Giovanni in Marignano",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Processus en cours",
+   "date": "2026-09",
+   "buyer": "Consortium mené par Oxy Capital Italia (avec un partenaire industriel chinois ; Invitalia possible)",
+   "buyer_type": "Fonds",
+   "advisers": null,
+   "size": "Offre engageante d'environ 115 M€ (2026)",
+   "facts": [
+    {
+     "fact": "Oxy Capital dépose une offre engageante d'environ 115 M€ sur les activités d'Aeffe, réparties en trois sociétés (Moschino, Alberta Ferretti, Pollini et production).",
+     "date": "2026-07",
+     "source_url": "https://fashionunited.com/news/business/aeffe-binding-offer-of-115-million-euros-for-relaunch-and-safeguarding-of-jobs/2026073173843"
+    },
+    {
+     "fact": "Oxy confirme l'offre, valable jusqu'au 4 octobre ; discussions en cours avec la famille Ferretti, majoritaire.",
+     "date": "2026-09",
+     "source_url": "https://us.fashionnetwork.com/news/Aeffe-oxy-confirms-115-million-binding-offer,1871915.html"
+    }
+   ],
+   "these": "Cession par un groupe coté italien en composition négociée de crise. C'est un fonds de retournement qui reprend, ce qui en fait un dossier proche de ceux que suit AlixPartners.",
+   "priorite": "Haute",
+   "doubts": [
+    "Issue après l'échéance du 4 octobre 2026 inconnue.",
+    "NSS Magazine (août 2026) qualifiait encore l'offre de non engageante."
+   ]
+  },
+  {
+   "id": "lvmh-zenith",
+   "parent": "LVMH",
+   "parent_country": "FR",
+   "asset": "Zenith (manufacture horlogère, Le Locle)",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Candidat",
+   "date": "2026-10",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": null,
+   "size": "Pertes estimées par un analyste à 20-30 MCHF par an (chiffres non officiels)",
+   "facts": [
+    {
+     "fact": "Selon l'agence AWP, la vente de Zenith serait en cours et le dossier circulerait entre banques d'affaires ; LVMH dément formellement.",
+     "date": "2026-01",
+     "source_url": "https://latele.ch/articles/lvmh-souhaite-vendre-sa-maison-horlogere-zenith-sources"
+    },
+    {
+     "fact": "Zenith supprime des postes et monte en gamme ; consultation du personnel ouverte le 22 octobre 2026.",
+     "date": "2026-10",
+     "source_url": "https://live.euronext.com/en/financial-news/lvmh-owned-watchmaker-zenith-cut-jobs-shift-upmarket-source-says"
+    }
+   ],
+   "these": "Manufacture suisse déficitaire, objet de rumeurs de vente récurrentes. Si LVMH change de position, c'est une cible pour un industriel horloger ou un fonds.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "LVMH dément tout projet de vente (janvier 2026), et une source de l'entreprise l'écarte de nouveau en octobre 2026."
+   ]
+  },
+  {
+   "id": "richemont-marques-secondaires",
+   "parent": "Richemont",
+   "parent_country": "CH",
+   "asset": "Marques secondaires : Dunhill, Alaïa, Roger Dubuis",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Candidat",
+   "date": "2026-01",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": null,
+   "size": null,
+   "facts": [
+    {
+     "fact": "Après la vente de Baume & Mercier, l'analyste de Vontobel Alexander Koller cite Dunhill, Alaïa ou Roger Dubuis comme cessions possibles (Dow Jones Market Talk).",
+     "date": "2026-01",
+     "source_url": "https://www.itiger.com/news/2605329471"
+    },
+    {
+     "fact": "Le rapport annuel FY26 de Richemont liste toujours Dunhill parmi les « autres » maisons ; Alaïa est décrite en croissance.",
+     "date": "2026-05",
+     "source_url": "https://www.richemont.com/media/ud3bety3/richemont-fy26-annual-report.pdf"
+    }
+   ],
+   "these": "Dunhill (maroquinerie et mode homme, britannique) est le candidat le plus logique pour un fonds européen si Richemont continue d'élaguer.",
+   "priorite": "Moyenne",
+   "doubts": [
+    "Spéculation d'analyste uniquement ; aucune déclaration de Richemont.",
+    "Date de la note Dow Jones à confirmer (janvier 2026 selon un résumé de recherche)."
+   ]
+  },
+  {
+   "id": "swatch-marques",
+   "parent": "Swatch Group",
+   "parent_country": "CH",
+   "asset": "Marques horlogères en difficulté (portefeuille de 16 marques)",
+   "secteur": "Joaillerie & horlogerie",
+   "maillon": "Marque",
+   "positionnement": "Premium",
+   "statut": "Candidat",
+   "date": "2026-02",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": null,
+   "size": "Résultat net 2025 du groupe de 25 MCHF",
+   "facts": [
+    {
+     "fact": "Analyse Reuters : l'analyste d'UBS Zuzanna Pusz suggère de céder les marques en difficulté ; l'activiste GreenWood pousse au changement.",
+     "date": "2026-02",
+     "source_url": "https://www.streetinsider.com/Reuters/Analysis-For+Swatch%2C+the+clock+is+ticking+on+strategy+overhaul/25977850.html"
+    },
+    {
+     "fact": "Résultat net 2025 de Swatch Group : 25 MCHF.",
+     "date": "2026-01",
+     "source_url": "https://fashionunited.de/nachrichten/business/gewinn-der-swatch-group-bricht-2025-auf-25-millionen-schweizer-franken-ein/2026013065210/"
+    }
+   ],
+   "these": "La pression des actionnaires pourrait faire émerger des cessions de petites marques (Jaquet Droz, Glashütte Original, Mido... selon un éditorialiste).",
+   "priorite": "Basse",
+   "doubts": [
+    "Aucune marque nommée par Swatch ; les noms cités viennent d'une tribune d'opinion.",
+    "La famille Hayek, qui contrôle le groupe, n'a pas annoncé de revue."
+   ]
+  },
+  {
+   "id": "kering-valentino",
+   "parent": "Kering / Mayhoola",
+   "parent_country": "FR",
+   "asset": "Valentino (Kering 30 %, Mayhoola 70 %)",
+   "secteur": "Luxe multi-secteurs",
+   "maillon": "Marque",
+   "positionnement": "Luxe & prestige",
+   "statut": "Candidat",
+   "date": "2025-09",
+   "buyer": null,
+   "buyer_type": null,
+   "advisers": null,
+   "size": "30 % acquis pour 1,7 Md€ en 2023",
+   "facts": [
+    {
+     "fact": "Le Corriere della Sera rapporte que Kering et Mayhoola envisagent une vente de Valentino ; Mayhoola dément.",
+     "date": "2025-07",
+     "source_url": "https://www.zawya.com/en/capital-markets/equities/gucci-owner-kering-and-qatars-mayhoola-considering-valentino-sale-italian-daily-reports-oij4eh5g"
+    },
+    {
+     "fact": "Avenant au pacte : les options de vente de Mayhoola sont reportées à 2028 et 2029, l'option d'achat de Kering à 2029.",
+     "date": "2025-09",
+     "source_url": "https://live.euronext.com/en/products/equities/company-news/2025-09-10-kering-amendment-valentino-shareholders-agreement"
+    }
+   ],
+   "these": "Si Kering renonce au rachat complet, la participation de 30 % ou le contrôle de Valentino pourraient revenir sur le marché. C'est un horizon long (2028-2029).",
+   "priorite": "Basse",
+   "doubts": [
+    "Vente démentie par Mayhoola.",
+    "Kering n'a pas annoncé de cession de marque lors de son Capital Markets Day d'avril 2026."
+   ]
+  }
+ ]
+}
