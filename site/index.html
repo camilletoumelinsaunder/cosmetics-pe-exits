@@ -107,6 +107,12 @@ table.mx button { border: 0; background: transparent; cursor: pointer; font-fami
 table.mx button:hover, table.mx button.on { background: var(--accent-soft); color: var(--accent); } table.mx .z { color: var(--line); }
 .chip.lux { background: var(--accent-soft); color: var(--accent); } .chip.prem { background: var(--warn-soft); color: var(--warn); } .chip.gp { background: var(--idle-soft); color: var(--idle); }
 .two > .card { align-content: start; }
+nav.tabs { display: flex; gap: 4px; flex-wrap: wrap; } nav.tabs button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 14px; cursor: pointer; font-weight: 500; }
+nav.tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.wrap.solo { grid-template-columns: minmax(0, 1fr); } .wrap.solo aside.rail { display: none; }
+.cofilters { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; } .cofilters input, .cofilters select { padding: 7px 9px; border: 1px solid var(--line); border-radius: var(--r); background: var(--bg); }
+.chip.st-r { background: var(--idle-soft); color: var(--ink); } .chip.st-p { background: var(--bad-soft); color: var(--bad); } .chip.st-c { background: var(--warn-soft); color: var(--warn); }
+tr.codetail td { background: var(--bg); } tr.codetail ul { margin: 6px 0; padding-left: 18px; display: grid; gap: 4px; }
 .logo { width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--line); background: #fff; object-fit: contain; flex: none; display: inline-grid; place-items: center; vertical-align: middle; }
 .logo.lg { width: 44px; height: 44px; border-radius: 10px; }
 .logo.ini { background: var(--accent-soft); color: var(--accent); font: 600 .68rem/1 var(--f-body); letter-spacing: .02em; }
@@ -134,6 +140,7 @@ ul.feed a.co { font-weight: 600; color: var(--ink); text-decoration: none; curso
 
 <header class="top">
   <div><h1>Sorties PE Cosmétique & Luxe</h1><div class="hint" id="meta">Chargement…</div></div>
+  <nav class="tabs" role="tablist" aria-label="Vue"><button role="tab" data-view="pe">Sorties PE</button><button role="tab" data-view="co">Carve-outs des grands groupes</button></nav>
   <div class="hint">France en priorité, Europe en complément · beauté, mode, maroquinerie, chaussures, accessoires, lunettes, joaillerie · marques et chaîne d'approvisionnement</div>
 </header>
 <div class="wrap">
@@ -153,7 +160,7 @@ const EFFECTIF = { "00": "0 salarié", "01": "1–2", "02": "3–5", "03": "6–
   "31": "200–249", "32": "250–499", "41": "500–999", "42": "1 000–1 999", "51": "2 000–4 999", "52": "5 000–9 999", "53": "10 000 et plus" };
 const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
                 set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
-const F = { q: "", secteurs: [], maillons: [], pos: "all", countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null, sort: ["prio", 1], ...store.get("pe-filters-v2", {}) };
+const F = { view: "pe", co: { q: "", statut: "all", secteur: "all" }, q: "", secteurs: [], maillons: [], pos: "all", countries: "all", status: "all", suivi: "all", verif: "all", min: null, max: null, sort: ["prio", 1], ...store.get("pe-filters-v2", {}) };
 const save = () => store.set("pe-filters-v2", F);
 const POSCLS = { "Luxe & prestige": "lux", "Premium": "prem", "Grand public": "gp" };
 // Logo from the company's official site (scripts/fetch_logos.py), else its initials.
@@ -329,6 +336,9 @@ function chart(rows) {
 
 function render(rebuildRail) {
   if (!DATA) return;
+  document.querySelectorAll("nav.tabs [data-view]").forEach(b => { b.setAttribute("aria-selected", String(b.dataset.view === F.view)); b.onclick = () => { F.view = b.dataset.view; save(); render(true); window.scrollTo(0, 0); }; });
+  document.querySelector(".wrap").classList.toggle("solo", F.view === "co");
+  if (F.view === "co") return renderCarveouts();
   if (rebuildRail) rail();
   const box = document.querySelector("#main .tablebox")?.scrollTop, y = window.scrollY;
   const rows = filtered();
@@ -426,6 +436,49 @@ function render(rebuildRail) {
   document.querySelectorAll("#main [data-open]").forEach(el => { el.onclick = ev => { ev.preventDefault(); openSheet(el.dataset.open); }; el.onkeydown = ev => { if (ev.key === "Enter") openSheet(el.dataset.open); }; });
   document.getElementById("sort-prio").onclick = () => { F.sort = ["prio", 1]; save(); render(false); };
   document.getElementById("xls").onclick = ev => exportExcel(rows, ev.currentTarget);
+}
+
+/* ---------- Carve-outs of large groups (separate list: corporate-owned assets, not PE holdings) ---------- */
+const CO_ORDER = { "Processus en cours": 0, "Candidat": 1, "Réalisé": 2 };
+const CO_CLS = { "Processus en cours": "st-p", "Candidat": "st-c", "Réalisé": "st-r" };
+let CO_OPEN = null;
+function renderCarveouts() {
+  const all = DATA.carveouts || [], C = F.co || (F.co = { q: "", statut: "all", secteur: "all" });
+  const q = C.q.trim().toLowerCase();
+  const rows = all.filter(x => (C.statut === "all" || x.statut === C.statut) && (C.secteur === "all" || x.secteur === C.secteur)
+      && (!q || [x.parent, x.asset, x.buyer, x.advisers, x.secteur].join(" ").toLowerCase().includes(q)))
+    .sort((a, b) => (CO_ORDER[a.statut] ?? 9) - (CO_ORDER[b.statut] ?? 9) || (PRIO[a.priorite] ?? 3) - (PRIO[b.priorite] ?? 3) || String(b.date || "").localeCompare(String(a.date || "")));
+  const n = st => all.filter(x => x.statut === st).length;
+  const secs = DATA.secteurs.filter(s => all.some(x => x.secteur === s));
+  const body = rows.map(x => `<tr data-co="${esc(x.id)}" tabindex="0" style="cursor:pointer">
+      <td class="name">${esc(x.parent)}<div class="sub">${esc(x.parent_country || "")}</div></td>
+      <td>${esc(x.asset)}<div class="sub">${esc([x.secteur, x.maillon].filter(Boolean).join(" · "))}</div>${posChip(x.positionnement)}</td>
+      <td><span class="chip ${CO_CLS[x.statut] || "st-r"}">${esc(x.statut)}</span></td>
+      <td class="mono">${esc(fmtYm(x.date) || "—")}</td>
+      <td>${x.buyer ? esc(x.buyer) : "—"}${x.buyer_type ? `<div class="sub">${esc(x.buyer_type)}</div>` : ""}</td>
+      <td>${x.size ? esc(x.size) : TBC}</td>
+      <td>${esc(x.priorite || "—")}</td></tr>
+    ${CO_OPEN === x.id ? `<tr class="codetail"><td colspan="7"><div class="why" style="margin:4px 0"><h3>Pourquoi c'est intéressant</h3><p style="margin:0">${esc(x.these || "")}</p></div>
+      <ul>${(x.facts || []).map(f => `<li><span class="mono hint">${esc(fmtYm(f.date) || "")}</span> ${esc(f.fact)} ${f.source_url ? `<span class="src">(${srcLink(f.source_url, "source")})</span>` : ""}</li>`).join("")}</ul>
+      ${x.advisers ? `<p class="hint" style="margin:0">Conseils : ${esc(x.advisers)}</p>` : ""}
+      ${(x.doubts || []).length ? `<p class="hint" style="margin:4px 0 0"><strong>À vérifier :</strong> ${x.doubts.map(esc).join(" · ")}</p>` : ""}</td></tr>` : ""}`).join("");
+  document.getElementById("main").innerHTML = `<div class="kpis">
+      <div class="kpi"><span class="v">${nf0.format(all.length)}</span><span class="l">Carve-outs suivis</span></div>
+      <div class="kpi"><span class="v">${nf0.format(n("Processus en cours"))}</span><span class="l">Processus en cours</span></div>
+      <div class="kpi"><span class="v">${nf0.format(n("Candidat"))}</span><span class="l">Candidats (non stratégiques, en revue)</span></div>
+      <div class="kpi"><span class="v">${nf0.format(n("Réalisé"))}</span><span class="l">Réalisés depuis 2023</span></div>
+      <div class="kpi"><span class="v">${nf0.format(all.filter(x => x.statut === "Réalisé" && x.buyer_type === "Fonds").length)}</span><span class="l">Rachetés par un fonds</span></div></div>
+    <section class="card"><div class="row"><h2>Carve-outs des grands groupes</h2><span class="hint">Actifs que des groupes cèdent ou pourraient céder. Chaque fait renvoie à sa source.</span></div>
+      <div class="cofilters"><input id="co-q" type="search" placeholder="Groupe, marque, acquéreur…" value="${esc(C.q)}" aria-label="Recherche">
+        <select id="co-st" aria-label="Statut"><option value="all">Tous les statuts</option>${Object.keys(CO_ORDER).map(v => `<option ${C.statut === v ? "selected" : ""}>${v}</option>`).join("")}</select>
+        <select id="co-sec" aria-label="Secteur"><option value="all">Tous les secteurs</option>${secs.map(v => `<option ${C.secteur === v ? "selected" : ""}>${esc(v)}</option>`).join("")}</select>
+        <span class="hint">${nf0.format(rows.length)} affiché(s) · cliquez une ligne pour le détail et les sources</span></div>
+      <div class="tablebox"><table class="data"><thead><tr><th>Groupe cédant</th><th>Actif</th><th>Statut</th><th>Date</th><th>Acquéreur</th><th>Taille</th><th>Priorité</th></tr></thead>
+        <tbody>${body || `<tr><td colspan="7" class="hint">${all.length ? "Aucun carve-out avec ces filtres." : "Recherche en cours : la liste sera ajoutée à la prochaine mise à jour."}</td></tr>`}</tbody></table></div>
+      <p class="hint">Statuts : « Processus en cours » = vente rapportée (banques mandatées, offres, exclusivité) ; « Candidat » = actif déclaré non stratégique ou en revue, selon une source publiée ; « Réalisé » = cession signée depuis 2023 (références). Les actifs rachetés par un fonds sont de futures sorties PE.</p></section>`;
+  const on = (id, ev, fn) => document.getElementById(id).addEventListener(ev, e => { fn(e.target.value); save(); renderCarveouts(); if (id === "co-q") { const el = document.getElementById("co-q"); el.focus(); el.setSelectionRange(el.value.length, el.value.length); } });
+  on("co-q", "input", v => C.q = v); on("co-st", "change", v => C.statut = v); on("co-sec", "change", v => C.secteur = v);
+  document.querySelectorAll("tr[data-co]").forEach(tr => { const t = () => { CO_OPEN = CO_OPEN === tr.dataset.co ? null : tr.dataset.co; renderCarveouts(); }; tr.onclick = t; tr.onkeydown = ev => { if (ev.key === "Enter") t(); }; });
 }
 
 /* ---------- Company sheet ---------- */

@@ -208,6 +208,37 @@ def classify(rec: dict, review: dict) -> None:
             print(f"  classification: {rec.get('company')} -> {field} inconnu ({rec.get(field)!r})")
 
 
+# ---------- Carve-outs ----------
+
+CO_STATUTS = ("Processus en cours", "Candidat", "Réalisé")
+
+
+def load_carveouts() -> list[dict]:
+    """inputs/carveouts/*.json: assets large groups sell or may sell (corporate-owned, kept apart from PE holdings).
+    A record needs at least one sourced fact; records without one are rejected."""
+    tax, out = CFG["taxonomy"], []
+    for path in sorted((ROOT / "inputs" / "carveouts").glob("*.json")):
+        for x in json.loads(path.read_text(encoding="utf-8")).get("carveouts", []):
+            x = dict(x)
+            x["id"] = x.get("id") or slug(f"{x.get('parent', '')}-{x.get('asset', '')}")
+            x["date"] = parse_date(x.get("date"))
+            x["facts"] = [f for f in x.get("facts") or [] if f.get("source_url")]
+            x["source_file"] = path.name
+            if not x["facts"]:
+                print(f"  carve-out rejeté (aucun fait sourcé): {x.get('parent')} / {x.get('asset')}")
+                continue
+            for field, allowed in (("statut", CO_STATUTS), ("secteur", tax["secteurs"]), ("maillon", tax["maillons"]),
+                                   ("positionnement", tax["positionnements"])):
+                if x.get(field) not in allowed:
+                    print(f"  carve-out: {x['id']} -> {field} inconnu ({x.get(field)!r})")
+            out.append(x)
+    seen, uniq = set(), []
+    for x in out:
+        if x["id"] not in seen:
+            seen.add(x["id"]); uniq.append(x)
+    return uniq
+
+
 # ---------- Output ----------
 
 def load_review() -> dict:
@@ -284,7 +315,7 @@ def build(offline: bool = False) -> dict:
     return {"generated_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "holding_window_years": CFG["holding_window_years"], "secteurs": CFG["taxonomy"]["secteurs"],
             "maillons": CFG["taxonomy"]["maillons"], "positionnements": CFG["taxonomy"]["positionnements"],
-            "companies": out, "exited": exited}
+            "companies": out, "exited": exited, "carveouts": load_carveouts()}
 
 
 def main() -> None:
@@ -294,7 +325,7 @@ def main() -> None:
     OUT.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     fr = [c for c in data["companies"] if (c.get("country") or "").upper() == "FR"]
     print(f"{len(data['companies'])} sociétés ({len(fr)} FR, {sum(1 for c in fr if c.get('siren') and c.get('finances') is not None)} rapprochées du registre), "
-          f"{len(data['exited'])} sorties récentes -> {OUT}")
+          f"{len(data['exited'])} sorties récentes, {len(data['carveouts'])} carve-outs -> {OUT}")
 
 
 if __name__ == "__main__":

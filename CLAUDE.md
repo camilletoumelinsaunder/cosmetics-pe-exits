@@ -12,6 +12,12 @@ The original cosmetics files only carry the legacy `segment` (Marques, Sous-trai
 `build.py` maps it to secteur « Beauté & parfum » and the matching maillon. New research files set `secteur`, `maillon`,
 `positionnement` directly (`inputs/deals/luxe_*.json`). Family-office-only or corporate-owned companies are out of scope.
 
+Second tab « Carve-outs des grands groupes »: assets that large corporates sell or may sell
+(`inputs/carveouts/*.json`: id, parent, parent_country, asset, secteur, maillon, positionnement, statut
+« Processus en cours » | « Candidat » | « Réalisé » (signed since 2023), date, buyer, buyer_type, advisers, size,
+facts [{fact, date, source_url}], these, priorite, doubts). A candidate needs a published source calling the asset
+non-core or under review; records without a sourced fact are rejected by build.py. The refresh re-checks them too.
+
 ## Golden rule
 - Never invent or estimate a fact. Every company, fund, entry date, CEO, figure and exit signal carries the
   URL (or import file) it comes from. Missing = « à vérifier ».

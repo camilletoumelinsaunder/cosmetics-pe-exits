@@ -55,3 +55,14 @@ def test_classification_maps_legacy_segment_and_review_wins():
     lux = {"company": "Exemple Cuir", "secteur": "Maroquinerie & sacs", "maillon": "Sous-traitant / façonnier"}
     build.classify(lux, {})
     assert lux["secteur"] == "Maroquinerie & sacs" and lux["maillon"] == "Sous-traitant / façonnier"
+
+
+def test_carveouts_need_a_sourced_fact(tmp_path, monkeypatch):
+    (tmp_path / "inputs" / "carveouts").mkdir(parents=True)
+    (tmp_path / "inputs" / "carveouts" / "x.json").write_text(
+        '{"carveouts": [{"parent": "Groupe Exemple", "asset": "Marque A", "statut": "Candidat", "date": "2026-05-12",'
+        ' "facts": [{"fact": "revue stratégique", "source_url": "https://example.org/a"}]},'
+        ' {"parent": "Groupe Exemple", "asset": "Marque B", "statut": "Candidat", "facts": [{"fact": "rumeur"}]}]}', encoding="utf-8")
+    monkeypatch.setattr(build, "ROOT", tmp_path)
+    out = build.load_carveouts()
+    assert [x["id"] for x in out] == ["groupe-exemple-marque-a"] and out[0]["date"] == "2026-05"
